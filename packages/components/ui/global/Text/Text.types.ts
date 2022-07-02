@@ -6,5 +6,5 @@ export type TextElement = React.ReactElement<TextProps>;
 type ChildElement = string | number | TextElement;
 
 export interface TextProps extends RNTextProps {
-  children?: ChildElement | ChildElement[];
+    // children?: ChildElement | ChildElement[];
 }

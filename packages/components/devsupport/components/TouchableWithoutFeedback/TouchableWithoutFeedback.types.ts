@@ -5,6 +5,5 @@ import {
 } from "react-native";
 
 export interface TouchableWithoutFeedbackProps extends TouchableOpacityProps {
-  children?: React.ReactNode;
   focusable?: boolean;
 }

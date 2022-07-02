@@ -1,0 +1,24 @@
+{
+  "name": "@zerry-ui/components",
+  "description": "Example cross-platform component library for react-native and web.",
+  "version": "0.0.1",
+  "author": "zerry <zerry@jerrywithaz.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/akveo/react-native-ui-kitten#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akveo/react-native-ui-kitten.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akveo/react-native-ui-kitten/issues"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react-native-svg": "*"
+  }
+}

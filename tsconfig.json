@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/tsc-out",
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@zerry-ui/*": ["./packages/*"]
+    }
+  },
+  "include": ["./packages", "./packages/**/package.json"],
+  "exclude": []
+}

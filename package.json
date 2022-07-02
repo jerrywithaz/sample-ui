@@ -1,0 +1,14 @@
+{
+  "name": "sample-ui",
+  "packageManager": "yarn@3.2.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/react": "^18.0.14",
+    "@types/react-native": "^0.69.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "^0.69.1"
+  }
+}

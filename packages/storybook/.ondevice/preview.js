@@ -4,7 +4,7 @@ import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
 import { ThemeProvider } from "@zerry-ui/components";
 
 const StoryContainer = ({ children }) => {
-  return <View style={{ padding: 12 }}>{children}</View>;
+  return <View style={{ padding: 12, flex: 1 }}>{children}</View>;
 };
 
 const withTheme = (Story) => (

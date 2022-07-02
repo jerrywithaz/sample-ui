@@ -29,7 +29,11 @@ try {
 } catch {}
 
 const getStories = () => {
-  return [require("../stories/Button.stories.tsx")];
+  return [
+    require("../stories/Button.stories.tsx"),
+    require("../stories/FlexBox.stories.tsx"),
+    require("../stories/Text.stories.tsx"),
+  ];
 };
 
 configure(getStories, module, false);

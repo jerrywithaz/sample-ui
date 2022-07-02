@@ -4,12 +4,12 @@ import { ButtonProps } from './Button.types';
 
 type StyledButtonProps = Omit<ButtonProps, 'children'>;
 
-export const Button = styled(TouchableWeb)<StyledButtonProps>`
+export const Button = styled.View<StyledButtonProps>`
     background-color: ${({ theme, status = "primary" }) => theme.colors[status].default};
     border: 0px;
     border-radius: ${({ theme, borderRadius = "default" }) => theme.borderRadius[borderRadius]};
     padding: ${({ theme, size = "medium" }) => theme.spacing[size]}px;
-
+    
     &:hover {
         background-color: ${({ theme, status = "primary" }) => theme.colors[status].dark};
     }

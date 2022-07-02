@@ -23,10 +23,10 @@ const theme: Theme = {
         xxxxLarge: 72,
     },
     borderRadius: {
-        sharp: 0,
+        sharp: "0px",
         pill: "20rem",
-        default: 4,
-        circle: (size) => typeof size === "number" ? size / 2 : "50%",
+        default: "4px",
+        circle: (size) => typeof size === "number" ? `${size / 2}px` : "50%",
     }
 }
 

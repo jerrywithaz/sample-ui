@@ -6,4 +6,5 @@ export interface TouchableWebProps extends TouchableWithoutFeedbackProps {
   onMouseLeave?: (e: NativeSyntheticEvent<TargetedEvent>) => void;
   onFocus?: (e: NativeSyntheticEvent<TargetedEvent>) => void;
   onBlur?: (e: NativeSyntheticEvent<TargetedEvent>) => void;
+  feedback?: boolean;
 }

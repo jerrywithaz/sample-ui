@@ -9,7 +9,7 @@
     "web": "APP=native expo start --web",
     "eject": "expo eject",
     "storybook": "APP=web start-storybook -p 6006 --config-dir .storybook",
-    "storybook:native": "start-storybook -p 6006 --config-dir .ondevice",
+    "storybook:native": "concurrently \"yarn start\" \"yarn storybook-watcher\"",
     "build-storybook": "build-storybook",
     "update-stories": "sb-rn-get-stories --config-path .ondevice",
     "prestart": "yarn update-stories",
@@ -48,6 +48,7 @@
     "@storybook/react-native": "next",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.2.5",
+    "concurrently": "^7.2.2",
     "typescript": "^4.7.4"
   },
   "resolutions": {

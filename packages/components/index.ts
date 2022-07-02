@@ -1,3 +1,5 @@
+import '@expo/match-media';
+
 export {
   default as ThemeProvider,
   Theme,

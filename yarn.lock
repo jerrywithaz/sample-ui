@@ -2107,6 +2107,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@expo/match-media@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@expo/match-media@npm:0.3.0"
+  dependencies:
+    css-mediaquery: ^0.1.2
+  peerDependencies:
+    expo-modules-core: ^0.6.3
+    expo-screen-orientation: ^4.1.1
+  checksum: f5de052cc0086565239330080d7476a6c6b877a60323b9acb4f03a6ae1911d2050aac5f48b9afcca7c31ff312fc6af002d51659112a347e64ab4ce7242ed872f
+  languageName: node
+  linkType: hard
+
 "@expo/metro-config@npm:0.3.18, @expo/metro-config@npm:~0.3.16":
   version: 0.3.18
   resolution: "@expo/metro-config@npm:0.3.18"
@@ -5771,6 +5783,7 @@ __metadata:
     "@types/styled-components-react-native": ^5.1.3
     styled-components: ^5.3.5
   peerDependencies:
+    expo-screen-orientation: "*"
     react-native-svg: "*"
   languageName: unknown
   linkType: soft
@@ -8412,6 +8425,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-mediaquery@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "css-mediaquery@npm:0.1.2"
+  checksum: 8e26ae52d8aaaa71893f82fc485363ff0fab494b7d3b3464572aaed50714b8b538d33dbdaa69f0c02cf7f80d1f4d9a77519306c0492223ce91b3987475031a69
+  languageName: node
+  linkType: hard
+
 "css-select@npm:^4.1.3":
   version: 4.3.0
   resolution: "css-select@npm:4.3.0"
@@ -9645,6 +9665,17 @@ __metadata:
     compare-versions: ^3.4.0
     invariant: ^2.2.4
   checksum: cc7a5efa50cdd193f3240c824276eae2aad4bbae256607529df6f039c9db3cea5bd898002096fb152026abeca33fc46755d3ea68644c7b25dfdb913d9cef383e
+  languageName: node
+  linkType: hard
+
+"expo-screen-orientation@npm:~4.2.0":
+  version: 4.2.0
+  resolution: "expo-screen-orientation@npm:4.2.0"
+  dependencies:
+    "@expo/config-plugins": ^4.0.14
+  peerDependencies:
+    expo: "*"
+  checksum: 68b8392712b54c4599335142f02ce9072bc841c710e966f2d291a8a38865f60b862494039b24b85d1e8aef76583e1a373fce55e6673e75376bf92f463e6e39f3
   languageName: node
   linkType: hard
 
@@ -17577,6 +17608,7 @@ __metadata:
   resolution: "storybook@workspace:packages/storybook"
   dependencies:
     "@babel/core": ^7.12.9
+    "@expo/match-media": ^0.3.0
     "@expo/ngrok": ^4.1.0
     "@mdx-js/react": ^1.6.22
     "@react-native-async-storage/async-storage": ^1.17.7
@@ -17602,6 +17634,7 @@ __metadata:
     babel-loader: ^8.2.5
     concurrently: ^7.2.2
     expo: ~45.0.0
+    expo-screen-orientation: ~4.2.0
     expo-status-bar: ~1.3.0
     react: 17.0.2
     react-dom: 17.0.2

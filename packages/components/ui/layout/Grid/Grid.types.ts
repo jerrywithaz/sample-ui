@@ -10,7 +10,6 @@ export interface RowProps extends BoxProps {
     verticalAlignment?: "top" | "middle" | "bottom"
     horizontalAlignment?: "start" | "end" | "center" | "space-around" | "space-between" | "space-evenly";
     wrap?: boolean;
-    colPadding?: number | string;
 }
 
 export interface ColProps extends BoxProps {

@@ -10,7 +10,7 @@ export default {
 const Template: ComponentStory<typeof Grid> = (args: GridProps & RowProps) => {
   return (
     <Grid flex={1}>
-      <Row gutter={args.gutter} flex={1} colPadding={args.colPadding} wrap={args.wrap}>
+      <Row gutter={args.gutter} flex={1} wrap={args.wrap}>
         <Col size={6} backgroundColor="red" xs={24} m={6} height={400}></Col>
         <Col size={6} backgroundColor="green" xs={24}  m={6} height={400}></Col>
         <Col size={6} backgroundColor="blue" xs={24} m={6} height={400}></Col>
@@ -24,6 +24,5 @@ export const Primary = Template.bind({});
 
 Primary.args = {
   gutter: 4,
-  colPadding: 12,
   wrap: true
 };

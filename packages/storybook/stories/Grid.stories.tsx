@@ -70,6 +70,9 @@ Primary.args = {
   gutter: 4,
   wrap: true,
   xs: 24,
-  s: undefined,
-  m: 6,
+  s: 24,
+  m: 12,
+  lg: 6,
+  xl: 6,
+  xxl: 6,
 };

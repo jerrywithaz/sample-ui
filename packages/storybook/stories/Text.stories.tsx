@@ -7,7 +7,7 @@ export default {
   component: Text,
   argTypes: {
     status: {
-      options: ['primary'],
+      options: ['default', 'success', 'warning', 'danger'],
       control: { type: 'select' },
     },
     category: {
@@ -24,15 +24,7 @@ const Template: ComponentStory<typeof Text> = (args) => (
 export const Primary = Template.bind({});
 
 Primary.args = {
-  status: 'primary',
-  children: 'Button',
-  category: "p1"
-};
-
-export const Secondary = Template.bind({});
-
-Secondary.args = {
-  status: 'primary',
-  children: 'Button',
+  status: 'default',
+  children: 'Welcome to Jurrasic Park',
   category: "p1"
 };

@@ -6,33 +6,41 @@ const ariaLevel = "aria-level";
 const CATEGORY_TO_PROPS: Record<TextCategory, TextCategoryProps> = {
     h1: {
         [ariaLevel]: 1,
-        accessibilityRole: "header"
+        accessibilityRole: "header",
+        fontSize: "xxxLarge"
     },
     h2: {
         [ariaLevel]: 2,
-        accessibilityRole: "header"
+        accessibilityRole: "header",
+        fontSize: "xxLarge"
     },
     h3: {
         [ariaLevel]: 3,
-        accessibilityRole: "header"
+        accessibilityRole: "header",
+        fontSize: "xLarge"
     },
     h4: {
         [ariaLevel]: 4,
-        accessibilityRole: "header"
+        accessibilityRole: "header",
+        fontSize: "large"
     },
     h5: {
         [ariaLevel]: 5,
-        accessibilityRole: "header"
+        accessibilityRole: "header",
+        fontSize: "medium"
     },
     h6: {
         [ariaLevel]: 5,
-        accessibilityRole: "header"
+        accessibilityRole: "header",
+        fontSize: "small"
     },
     p1: {
-        accessibilityRole: "text"
+        accessibilityRole: "text",
+        fontSize: "small"
     },
     p2: {
-        accessibilityRole: "text"
+        accessibilityRole: "text",
+        fontSize: "small"
     }
 } 
 

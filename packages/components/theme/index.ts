@@ -7,6 +7,12 @@ export type {
   ThemeBorderRadius,
   ThemeBorderRadiusKey,
   ThemeStatus, 
-  LiteralUnion
+  LiteralUnion,
+  ThemeColorWithDarker,
+  ThemeFontSize,
+  ThemeFontSizeKey,
+  ThemeShadow,
+  ThemeStatusColors,
+  ThemeTypography
 } from "./theme.types";
 export { default } from './provider';

@@ -10,7 +10,13 @@ export {
   ThemeSpacing,
   ThemeSpacingKey,
   ThemeStatus, 
-  LiteralUnion
+  LiteralUnion,
+  ThemeColorWithDarker,
+  ThemeFontSize,
+  ThemeFontSizeKey,
+  ThemeShadow,
+  ThemeStatusColors,
+  ThemeTypography
 } from "./theme";
 
 // Forms
@@ -21,6 +27,7 @@ export { default as Text, TextProps } from "./ui/global/Text";
 
 // Layout
 export { default as Box, BoxProps, FlexBox } from "./ui/layout/Box";
+export { default as Card, CardProps } from "./ui/layout/Card";
 export { Grid, Row, Col, GridProps, ColProps, RowProps } from "./ui/layout/Grid";
 
 // Navigation

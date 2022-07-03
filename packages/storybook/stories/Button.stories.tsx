@@ -7,7 +7,7 @@ export default {
   component: Button,
   argTypes: {
     status: {
-      options: ['primary'],
+      options: ['default', 'success', 'danger', 'warning'],
       control: { type: 'select' },
     },
     borderRadius: {
@@ -24,7 +24,7 @@ const Template: ComponentStory<typeof Button> = (args) => (
 export const Primary = Template.bind({});
 
 Primary.args = {
-  status: 'primary',
+  status: 'default',
   borderRadius: 'pill',
   children: 'Button',
 };
@@ -32,7 +32,7 @@ Primary.args = {
 export const Secondary = Template.bind({});
 
 Secondary.args = {
-  status: 'primary',
+  status: 'default',
   borderRadius: 'pill',
   children: 'Button',
 };

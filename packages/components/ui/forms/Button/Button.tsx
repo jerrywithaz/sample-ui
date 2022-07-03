@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
         status={status}
       >
         <FalsyFC component={accessoryLeft} />
-        <FalsyText component={children} style={{ color: "#ffffff" }} />
+        <FalsyText component={children} color="#ffffff" fontSize="medium" />
         <FalsyFC component={accessoryRight} />
       </Styled.Button>
     </TouchableWeb>

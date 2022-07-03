@@ -28,7 +28,10 @@ const Box = styled.View<BoxProps>`
     backgroundColor,
     borderRadius,
     padding,
-    margin
+    margin,
+    flexGrow,
+    flexShrink,
+    flexBasis
   }) => `
         ${createStyleProp("padding-top", paddingVertical)}
         ${createStyleProp("padding-bottom", paddingVertical)}
@@ -36,6 +39,9 @@ const Box = styled.View<BoxProps>`
         ${createStyleProp("padding-right", paddingHorizontal)}
         ${createStyleProp("display", display)}
         ${createStyleProp("flex", flex, "")}
+        ${createStyleProp("flex-grow", flexGrow, "")}
+        ${createStyleProp("flex-shrink", flexShrink, "")}
+        ${createStyleProp("flex-basis", flexBasis, "")}
         ${createStyleProp("flex-direction", horizontal ? `row` : vertical ? `column`: flexDirection)}
         ${createStyleProp("justify-content", justifyContent)}
         ${createStyleProp("align-items", alignItems)}

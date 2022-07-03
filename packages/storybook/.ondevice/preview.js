@@ -1,10 +1,14 @@
 import React from "react";
-import { View } from "react-native";
+import { View, ScrollView } from "react-native";
 import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
 import { ThemeProvider } from "@zerry-ui/components";
 
 const StoryContainer = ({ children }) => {
-  return <View style={{ padding: 12, flex: 1 }}>{children}</View>;
+  return (
+    <ScrollView style={{ flex: 1 }}>
+      <View style={{ padding: 12, flex: 1 }}>{children}</View>
+    </ScrollView>
+  );
 };
 
 const withTheme = (Story) => (

@@ -1,0 +1,1 @@
+export type ResponsiveSize = "xs" | "s" | "m" | "lg" | "xl" | "xxl";

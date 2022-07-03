@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, useLocation } from "react-router-dom";
+import { BrowserRouter, useLocation, MemoryRouter } from "react-router-dom";
 import { NavigationProviderProps } from "./Provider.types";
 
 const DocumentTitle: React.FC = () => {
@@ -12,11 +12,14 @@ const DocumentTitle: React.FC = () => {
 
 export const NavigationProvider: React.FC<
   React.PropsWithChildren<NavigationProviderProps>
-> = ({ children }) => {
+> = ({ children, memoryRouter }) => {
+    
+  const Router = memoryRouter ? MemoryRouter : BrowserRouter;
+
   return (
-    <BrowserRouter>
+    <Router>
       <DocumentTitle />
       {children}
-    </BrowserRouter>
+    </Router>
   );
 };

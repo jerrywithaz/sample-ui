@@ -1,5 +1,6 @@
-import { ThemeProvider, FlexBox } from '@zerry-ui/components';
-import { createGlobalStyle } from 'styled-components';
+import { ThemeProvider, FlexBox } from "@zerry-ui/components";
+import { createGlobalStyle } from "styled-components";
+import { withRouter } from "storybook-addon-react-router-v6";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -9,7 +10,7 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -20,13 +21,13 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const decorators = [
-  (Story) => (
-    <ThemeProvider>
-      <GlobalStyle/>
-      <FlexBox height="100%" width="100%">
+const withTheme = (Story) => (
+  <ThemeProvider>
+    <GlobalStyle />
+    <FlexBox height="100%" width="100%">
       <Story />
-      </FlexBox>
-    </ThemeProvider>
-  ),
-];
+    </FlexBox>
+  </ThemeProvider>
+);
+
+export const decorators = [withTheme];

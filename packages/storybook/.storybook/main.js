@@ -7,6 +7,7 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    "storybook-addon-react-router-v6",
     "@storybook/addon-react-native-web",
   ],
   "framework": "@storybook/react"

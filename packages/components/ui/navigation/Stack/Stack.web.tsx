@@ -21,13 +21,15 @@ export function createStackNavigator<ParamList extends ParamListBase>() {
 
         return null;
       });
-      
+    
+      const initialRoute = initialRoutePath ? (
+        <Route path="*" element={<Navigate to={initialRoutePath} />} />
+      ) : null;
+
       return (
         <Routes>
           {routes}
-          {initialRoutePath ? (
-            <Route path="*" element={<Navigate to={initialRoutePath} />} />
-          ) : null}
+          {initialRoute}
         </Routes>
       );
     },

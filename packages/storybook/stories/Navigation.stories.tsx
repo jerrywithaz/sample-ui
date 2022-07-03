@@ -32,7 +32,7 @@ const Screen2 = () => {
 };
 
 const Template: ComponentStory<typeof Box> = (args) => (
-  <NavigationProvider>
+  <NavigationProvider memoryRouter>
     <FlexBox horizontal>
       <Link to="/screen1" name="Screen1">
         Navigate to Screen 1

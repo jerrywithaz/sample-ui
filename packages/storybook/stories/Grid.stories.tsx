@@ -1,28 +1,75 @@
-import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Grid, Row, Col, GridProps, RowProps } from '@zerry-ui/components';
+import React from "react";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import {
+  Grid,
+  Row,
+  Col,
+  GridProps,
+  RowProps,
+  ColProps,
+} from "@zerry-ui/components";
 
 export default {
-  title: 'Layout/Grid',
+  title: "Layout/Grid",
   component: Grid,
+  argTypes: {
+    xs: {
+      name: "xs",
+      description: "Column size for extra small devices and below.",
+      control: { type: "number" },
+    },
+    s: {
+      name: "s",
+      description: "Column size for small devices and above.",
+      control: { type: "number" },
+    },
+    m: {
+      name: "m",
+      description: "Column size for medium devices and above.",
+      control: { type: "number" },
+    },
+    lg: {
+      name: "lg",
+      description: "Column size for large devices and above.",
+      control: { type: "number" },
+    },
+    xl: {
+      name: "xl",
+      description: "Column size for xlarge devices and above.",
+      control: { type: "number" },
+    },
+    xxl: {
+      name: "xxl",
+      description: "Column size for xxlarge devices and above.",
+      control: { type: "number" },
+    },
+  },
 } as ComponentMeta<typeof Grid>;
 
-const Template: ComponentStory<typeof Grid> = (args: GridProps & RowProps) => {
+const Template: ComponentStory<typeof Grid> = (
+  args: GridProps & RowProps & ColProps
+) => {
+  const { xs, s, m, lg, xl, xxl } = args;
+  const colSizes = { xs, s, m, lg, xl, xxl };
+
   return (
     <Grid flex={1}>
       <Row gutter={args.gutter} flex={1} wrap={args.wrap}>
-        <Col size={6} backgroundColor="red" xs={24} m={6} height={400}></Col>
-        <Col size={6} backgroundColor="green" xs={24}  m={6} height={400}></Col>
-        <Col size={6} backgroundColor="blue" xs={24} m={6} height={400}></Col>
-        <Col size={6} backgroundColor="yellow" xs={24} m={6} height={400}></Col>
+        <Col size={6} backgroundColor="red" {...colSizes} height={400}></Col>
+        <Col size={6} backgroundColor="green" {...colSizes} height={400}></Col>
+        <Col size={6} backgroundColor="blue" {...colSizes} height={400}></Col>
+        <Col size={6} backgroundColor="yellow" {...colSizes} height={400}></Col>
       </Row>
     </Grid>
-  )
+  );
 };
 
 export const Primary = Template.bind({});
 
 Primary.args = {
   gutter: 4,
-  wrap: true
+  wrap: true,
+  xs: 24,
+  s: undefined,
+  m: 6,
 };

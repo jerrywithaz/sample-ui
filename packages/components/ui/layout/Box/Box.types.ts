@@ -6,4 +6,5 @@ export type BoxProps = FlexStyle & {
   horizontal?: boolean;
   vertical?: boolean;
   wrap?: boolean;
+  fullWidth?: boolean;
 };

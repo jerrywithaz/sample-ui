@@ -31,17 +31,18 @@ const Box = styled.View<BoxProps>`
     margin,
     flexGrow,
     flexShrink,
-    flexBasis
+    flexBasis,
+    fullWidth
   }) => `
         ${createStyleProp("padding-top", paddingVertical)}
         ${createStyleProp("padding-bottom", paddingVertical)}
         ${createStyleProp("padding-left", paddingHorizontal)}
         ${createStyleProp("padding-right", paddingHorizontal)}
         ${createStyleProp("display", display)}
-        ${createStyleProp("flex", flex, "")}
+        ${createStyleProp("flex", fullWidth ? 1 : flex, "")}
         ${createStyleProp("flex-grow", flexGrow, "")}
         ${createStyleProp("flex-shrink", flexShrink, "")}
-        ${createStyleProp("flex-basis", flexBasis, "")}
+        ${createStyleProp("flex-basis", fullWidth ? "100%" : flexBasis, "")}
         ${createStyleProp("flex-direction", horizontal ? `row` : vertical ? `column`: flexDirection)}
         ${createStyleProp("justify-content", justifyContent)}
         ${createStyleProp("align-items", alignItems)}

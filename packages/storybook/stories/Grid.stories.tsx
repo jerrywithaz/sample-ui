@@ -54,7 +54,7 @@ const Template: ComponentStory<typeof Grid> = (
 
   return (
     <Grid flex={1}>
-      <Row gutter={args.gutter} flex={1} wrap={args.wrap}>
+      <Row gutter={args.gutter} wrap={args.wrap} fullWidth>
         <Col size={6} backgroundColor="red" {...colSizes} height={400}></Col>
         <Col size={6} backgroundColor="green" {...colSizes} height={400}></Col>
         <Col size={6} backgroundColor="blue" {...colSizes} height={400}></Col>

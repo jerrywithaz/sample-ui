@@ -15,6 +15,8 @@ const Box = styled.View<BoxProps>`
     marginLeft,
     marginTop,
     marginBottom,
+    marginHorizontal,
+    marginVertical,
     flexWrap,
     wrap,
     overflow,
@@ -38,6 +40,10 @@ const Box = styled.View<BoxProps>`
         ${createStyleProp("padding-bottom", paddingVertical)}
         ${createStyleProp("padding-left", paddingHorizontal)}
         ${createStyleProp("padding-right", paddingHorizontal)}
+        ${createStyleProp("margin-top", marginVertical)}
+        ${createStyleProp("margin-bottom", marginVertical)}
+        ${createStyleProp("margin-left", marginHorizontal)}
+        ${createStyleProp("margin-right", marginHorizontal)}
         ${createStyleProp("display", display)}
         ${createStyleProp("flex", fullWidth ? 1 : flex, "")}
         ${createStyleProp("flex-grow", flexGrow, "")}
@@ -59,7 +65,6 @@ const Box = styled.View<BoxProps>`
         ${createStyleProp("max-height", maxHeight)}
         ${createStyleProp("position", position)}
         ${createStyleProp("align-self", alignSelf)}
-        ${createStyleProp("background-color", backgroundColor, "")}
         ${createStyleProp("background-color", backgroundColor, "")}
         ${createStyleProp("border-radius", borderRadius)}
     `}

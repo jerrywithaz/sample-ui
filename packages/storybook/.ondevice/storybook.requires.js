@@ -34,6 +34,7 @@ const getStories = () => {
     require("../stories/Button.stories.tsx"),
     require("../stories/FlexBox.stories.tsx"),
     require("../stories/Grid.stories.tsx"),
+    require("../stories/Navigation.stories.tsx"),
     require("../stories/Text.stories.tsx"),
   ];
 };

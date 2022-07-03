@@ -5,7 +5,7 @@ import { ThemeProvider } from "@zerry-ui/components";
 
 const StoryContainer = ({ children }) => {
   return (
-    <ScrollView style={{ flex: 1 }}>
+    <ScrollView style={{ flex: 1, padding: 12 }} contentContainerStyle={{ flex: 1 }} onLayout={(e) => console.log(e.nativeEvent.layout)}>
       <View style={{ padding: 12, flex: 1 }}>{children}</View>
     </ScrollView>
   );

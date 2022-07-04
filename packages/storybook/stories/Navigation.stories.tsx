@@ -1,13 +1,15 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import {
+import { 
   Box,
-  createStackNavigator,
   FlexBox,
-  Link,
-  NavigationProvider,
   Text,
 } from "@zerry-ui/components";
+import {
+  createStackNavigator,
+  Link,
+  NavigationProvider,
+} from "@zerry-ui/navigation";
 
 export default {
   title: "Layout/Navigation",
@@ -42,6 +44,8 @@ const Template: ComponentStory<typeof Box> = (args) => (
         Navigate to Screen 2
       </Link>
     </FlexBox>
+    <FlexBox flex={1} height={400}>
+
     <Stack.Navigator
       initialRouteName="Screen1"
       screenOptions={{ headerShown: false }}
@@ -59,6 +63,7 @@ const Template: ComponentStory<typeof Box> = (args) => (
         options={{ headerTitle: "Screen2" }}
       />
     </Stack.Navigator>
+    </FlexBox>
   </NavigationProvider>
 );
 

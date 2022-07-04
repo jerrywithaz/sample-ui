@@ -18,10 +18,12 @@ const plugins =
     ? [
         ["module-resolver", moduleResolverConfig],
         ["@babel/plugin-proposal-decorators", { legacy: true }],
+        ["react-native-reanimated/plugin"],
       ]
     : [
         ["module-resolver", moduleResolverConfig],
         ["@babel/plugin-proposal-decorators", { legacy: true }],
+        ["react-native-reanimated/plugin"],
       ];
 
 module.exports = function (api) {

@@ -29,6 +29,3 @@ export { default as Text, TextProps, Heading1, Heading2, Heading3, Heading4, Hea
 export { default as Box, BoxProps, FlexBox } from "./ui/layout/Box";
 export { default as Card, CardProps } from "./ui/layout/Card";
 export { Grid, Row, Col, GridProps, ColProps, RowProps } from "./ui/layout/Grid";
-
-// Navigation
-export * from './ui/navigation';

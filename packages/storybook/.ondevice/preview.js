@@ -1,7 +1,7 @@
 import React from "react";
 import { View, ScrollView } from "react-native";
 import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
-import { ThemeProvider } from "@zerry-ui/components";
+import ThemeProvider from "@zerry-ui/components/theme/provider";
 
 const StoryContainer = ({ children }) => {
   return (
@@ -16,13 +16,15 @@ const StoryContainer = ({ children }) => {
   );
 };
 
-const withTheme = (Story) => (
-  <ThemeProvider>
-    <StoryContainer>
-      <Story />
-    </StoryContainer>
-  </ThemeProvider>
-);
+const withTheme = (Story) => {
+  return (
+    <ThemeProvider>
+      <StoryContainer>
+        <Story />
+      </StoryContainer>
+    </ThemeProvider>
+  )
+};
 
 export const decorators = [withBackgrounds, withTheme];
 

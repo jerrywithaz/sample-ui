@@ -5,4 +5,10 @@ module.exports = {
       "@storybook/addon-ondevice-backgrounds",
       "@storybook/addon-ondevice-actions",
     ],
+    babel: (config) => {
+      console.log(config);
+      return {
+        ...config,
+      }
+    }
   };

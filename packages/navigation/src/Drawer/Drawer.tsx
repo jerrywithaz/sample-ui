@@ -11,6 +11,7 @@ export function createDrawerNavigator<ParamList extends ParamListBase>() {
       children,
       initialRouteName,
       screenOptions,
+      drawerContent
     }: DrawerNavigatorProps<ParamList>) => {
       const screens = React.Children.map(children, (child) => {
         if (React.isValidElement<ScreenProps<ParamList>>(child)) {
@@ -31,6 +32,7 @@ export function createDrawerNavigator<ParamList extends ParamListBase>() {
               ...screenOptions,
             }}
             initialRouteName={initialRouteName}
+            drawerContent={(props) => drawerContent ? drawerContent({}) : null}
           >
             {screens}
           </Stack.Navigator>

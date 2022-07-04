@@ -9,5 +9,5 @@ export interface ButtonProps extends TouchableWebProps {
     accessoryRight?: RenderProp<Partial<ImageProps>>;
     borderRadius?: Exclude<ThemeBorderRadiusKey, "circle">;
     status?: ThemeStatus;
-    size?: 'large' | 'medium' | 'small';
+    size?: 'large' | 'medium' | 'small' | 'xSmall';
 }

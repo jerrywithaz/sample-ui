@@ -1,2 +1,2 @@
 export { TextProps, TextElement } from './Text.types';
-export { default } from './Text';
+export { default, Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 } from './Text';

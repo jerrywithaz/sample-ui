@@ -36,6 +36,7 @@ export interface ThemeBorderRadius {
   sharp: number | string;
   pill: number | string;
   default: number | string;
+  card: number | string;
   circle: (size?: number) => number | string;
 }
 

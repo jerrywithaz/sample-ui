@@ -6,10 +6,19 @@ export interface GridProps extends BoxProps {
 }
 
 export interface RowProps extends BoxProps {
-    gutter?: number;
+    gutter?: number | ResponsiveGutter;
     verticalAlignment?: "top" | "middle" | "bottom"
-    horizontalAlignment?: "start" | "end" | "center" | "space-around" | "space-between" | "space-evenly";
+    horizontalAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-between" | "space-evenly";
     wrap?: boolean;
+}
+
+export interface ResponsiveGutter {
+    xs?: number;
+    s?: number;
+    m?: number;
+    lg?: number;
+    xl?: number;
+    xxl?: number;
 }
 
 export interface ColProps extends BoxProps {
@@ -20,6 +29,7 @@ export interface ColProps extends BoxProps {
     lg?: number;
     xl?: number;
     xxl?: number;
+    gutter?: number | ResponsiveGutter;
 }
 
 export interface StyledColProps extends ColProps {

@@ -34,7 +34,7 @@ const Box = styled.View<BoxProps>`
     flexGrow,
     flexShrink,
     flexBasis,
-    fullWidth
+    fullWidth,
   }) => `
         ${createStyleProp("padding-top", paddingVertical)}
         ${createStyleProp("padding-bottom", paddingVertical)}

@@ -1,3 +1,5 @@
-export interface CardProps {
-    
+import { BoxProps } from "../Box";
+
+export interface CardProps extends BoxProps {
+
 }

@@ -12,12 +12,13 @@ const Col: React.FC<React.PropsWithChildren<ColProps>> = ({
   xl,
   xxl,
   size,
+  gutter,
   ...rest
 }) => {
   const deviceSize = useDeviceSize();
   
   return (
-    <Styled.Col {...rest} deviceSize={deviceSize} size={size} xs={xs} s={s} m={m} lg={lg} xl={xl} xxl={xxl}>
+    <Styled.Col {...rest} deviceSize={deviceSize} size={size} xs={xs} s={s} m={m} lg={lg} xl={xl} xxl={xxl} gutter={gutter}>
       {children}
     </Styled.Col>
   );

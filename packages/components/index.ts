@@ -23,7 +23,7 @@ export {
 export { default as Button, ButtonProps } from "./ui/forms/Button";
 
 // Global
-export { default as Text, TextProps } from "./ui/global/Text";
+export { default as Text, TextProps, Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 } from "./ui/global/Text";
 
 // Layout
 export { default as Box, BoxProps, FlexBox } from "./ui/layout/Box";

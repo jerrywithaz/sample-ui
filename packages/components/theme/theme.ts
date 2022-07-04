@@ -47,14 +47,15 @@ const theme: Theme = {
         sharp: "0px",
         pill: Platform.OS === "web" ? "20rem" : "50%",
         default: "4px",
+        card: "8px",
         circle: (size) => typeof size === "number" ? `${size / 2}px` : "50%",
     },
     shadow: {
-        tooltip: "0 2px 10px 0 rgba(0, 41, 77, 0.07)",
-        modal: "0 2px 20px 0 rgba(0, 0, 0, 0.2)",
-        card: "0 2px 6px 0 rgba(0, 41, 77, 0.07)",
-        default: "0 2px 6px 0 rgba(0, 41, 77, 0.07)",
-        hover: "0 2px 10px 0 rgba(0, 41, 77, 0.1)"
+        tooltip: "0px 2px 10px 0px rgba(0, 41, 77, 0.07)",
+        modal: "0px 2px 20px 0px rgba(0, 0, 0, 0.2)",
+        card: "0px 2px 6px 0px rgba(0, 41, 77, 0.07)",
+        default: "0px 2px 6px 0px rgba(0, 41, 77, 0.07)",
+        hover: "0px 2px 10px 0px rgba(0, 41, 77, 0.1)"
     },
     typography: {
         fontSizes: {

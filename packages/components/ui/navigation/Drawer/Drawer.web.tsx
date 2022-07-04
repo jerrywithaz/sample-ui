@@ -1,11 +1,15 @@
 import React from "react";
-import { NavigatorProps, ParamListBase, ScreenProps } from "./Stack.types";
+import { DrawerNavigatorProps } from "./Drawer.types";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { getInitialRoutePath } from "./Stack.utils";
+import { ParamListBase, ScreenProps, getInitialRoutePath } from "../Stack";
+import { FlexBox } from "../../layout/Box";
 
-export function createStackNavigator<ParamList extends ParamListBase>() {
+export function createDrawerNavigator<ParamList extends ParamListBase>() {
   return {
-    Navigator: ({ children, initialRouteName }: NavigatorProps<ParamList>) => {
+    Navigator: ({
+      children,
+      initialRouteName,
+    }: DrawerNavigatorProps<ParamList>) => {
       const initialRoutePath = getInitialRoutePath<ParamList>(
         children,
         initialRouteName
@@ -21,16 +25,18 @@ export function createStackNavigator<ParamList extends ParamListBase>() {
 
         return null;
       });
-    
+
       const initialRoute = initialRoutePath ? (
         <Route path="*" element={<Navigate to={initialRoutePath} />} />
       ) : null;
 
       return (
-        <Routes>
-          {routes}
-          {initialRoute}
-        </Routes>
+        <FlexBox horizontal>
+          <Routes>
+            {routes}
+            {initialRoute}
+          </Routes>
+        </FlexBox>
       );
     },
     Screen: (_: ScreenProps<ParamList>) => {

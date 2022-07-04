@@ -27,6 +27,7 @@
     "react-router-dom": ">=6"
   },
   "devDependencies": {
+    "@react-navigation/drawer": "^6.4.2",
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.2",
     "@types/styled-components": "^5.1.25",

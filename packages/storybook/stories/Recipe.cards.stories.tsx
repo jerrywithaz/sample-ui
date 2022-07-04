@@ -12,16 +12,15 @@ const Template: ComponentStory<any> = (args) => {
   const isxSmallDevice = useIsXSmallDevice();
 
   return (
-    <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flex: 1 }}>
-      <Box flex={1} backgroundColor="#F7F8FD">
+      <Box flex={1}>
         <Grid>
           <Row wrap={isxSmallDevice} gutter={args.gutter}>
-            <Col size={12} xs={24} height={500}>
+            <Col size={12} xs={24} minHeight={500}>
               <Card flex={1} marginVertical={16}>
                 <Text>Card 1</Text>
               </Card>
             </Col>
-            <Col size={6} xs={24} height={500}>
+            <Col size={6} xs={24} minHeight={500}>
               <Card flex={1} marginVertical={16}>
                 <Text>Card 2</Text>
               </Card>
@@ -29,7 +28,7 @@ const Template: ComponentStory<any> = (args) => {
                 <Text>Card 3</Text>
               </Card>
             </Col>
-            <Col size={6} xs={24} height={500}>
+            <Col size={6} xs={24} minHeight={500}>
               <Card flex={1} marginVertical={16}>
                 <Text>Card 4</Text>
               </Card>
@@ -44,7 +43,6 @@ const Template: ComponentStory<any> = (args) => {
           </Row>
         </Grid>
       </Box>
-    </ScrollView>
   );
 };
 

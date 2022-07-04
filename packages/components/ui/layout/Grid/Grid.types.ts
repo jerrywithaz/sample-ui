@@ -10,6 +10,7 @@ export interface RowProps extends BoxProps {
     verticalAlignment?: "top" | "middle" | "bottom"
     horizontalAlignment?: "flex-start" | "flex-end" | "center" | "space-around" | "space-between" | "space-evenly";
     wrap?: boolean;
+    responsiveWrap?: ResponsiveWrap;
 }
 
 export interface ResponsiveGutter {
@@ -20,6 +21,16 @@ export interface ResponsiveGutter {
     xl?: number;
     xxl?: number;
 }
+
+export interface ResponsiveWrap {
+    xs?: number;
+    s?: number;
+    m?: number;
+    lg?: number;
+    xl?: number;
+    xxl?: number;
+}
+
 
 export interface ColProps extends BoxProps {
     size?: number;

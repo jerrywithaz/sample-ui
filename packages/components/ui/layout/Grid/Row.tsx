@@ -9,10 +9,11 @@ const Row: React.FC<React.PropsWithChildren<RowProps>> = ({
   wrap,
   verticalAlignment,
   horizontalAlignment,
+  responsiveWrap,
   ...rest
 }) => {
   return (
-    <Styled.Row {...rest} gutter={gutter} wrap={wrap} flexDirection="row">
+    <Styled.Row {...rest} gutter={gutter} wrap={wrap} flexDirection="row" responsiveWrap={responsiveWrap}>
       {React.Children.map(children, (child) => {
         if (React.isValidElement<ColProps>(child)) {
           const { props } = child;

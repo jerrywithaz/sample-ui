@@ -14,7 +14,7 @@ const Text: React.FC<TextProps> = ({
   ...props
 }) => {
   return (
-    <Styled.Text {...props} {...categoryToProps(category)} style={[style]} color={color}>
+    <Styled.Text {...props} {...categoryToProps(category)} fontSize={fontSize} style={[style]} color={color}>
       {children}
     </Styled.Text>
   );

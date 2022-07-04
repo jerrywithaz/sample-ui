@@ -17,7 +17,7 @@ const theme: Theme = {
             default: "#ffffff"
         },
         gray: {
-            darker: "#909599",
+            darker: "#657787",
             dark: "#909599",
             default: "#cfd2d4",
             light: "#e1e3e6",

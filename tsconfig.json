@@ -12,6 +12,8 @@
     "sourceMap": true,
     "declaration": true,
     "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
     "paths": {
       "@zerry-ui/*": ["./packages/*"]
     }

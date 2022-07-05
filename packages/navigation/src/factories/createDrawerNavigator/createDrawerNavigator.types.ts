@@ -1,15 +1,9 @@
+import { ResponsiveProp } from "@zerry-ui/components";
 import { ParamListBase } from "../createStackNavigator";
 
 export type DrawerType = "permanent" | "front" | "slide";
 
-export interface ResponsiveDrawerType {
-    xs?: DrawerType;
-    s?: DrawerType;
-    m?: DrawerType;
-    lg?: DrawerType;
-    xl?: DrawerType;
-    xxl?: DrawerType;
-}
+export type ResponsiveDrawerType = ResponsiveProp<DrawerType>;
 
 export interface DrawerNavigatorProps<ParamList extends ParamListBase> {
     children: React.ReactNode;

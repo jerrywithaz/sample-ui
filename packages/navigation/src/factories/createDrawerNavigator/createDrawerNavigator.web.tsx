@@ -1,5 +1,5 @@
 import React from "react";
-import { DrawerNavigatorProps } from "./Drawer.types";
+import { DrawerNavigatorProps } from "./createDrawerNavigator.types";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { ParamListBase, ScreenProps, getInitialRoutePath } from "../createStackNavigator";
 import { FlexBox } from "@zerry-ui/components";

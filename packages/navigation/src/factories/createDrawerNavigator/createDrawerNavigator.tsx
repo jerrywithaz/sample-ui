@@ -1,7 +1,7 @@
 import React from "react";
 import { createDrawerNavigator as _createDrawerNavigator } from "@react-navigation/drawer";
 import { ParamListBase, ScreenProps } from "../createStackNavigator";
-import { DrawerNavigatorProps } from "./Drawer.types";
+import { DrawerNavigatorProps } from "./createDrawerNavigator.types";
 import NavigationProvider from "../../providers/NavigationProvider";
 import DrawerNavigationProvider from "../../providers/DrawerNavigationProvider";
 import useResponsiveDrawerType from "../../hooks/useResponsiveDrawerType";
@@ -52,7 +52,9 @@ export function createDrawerNavigator<ParamList extends ParamListBase>() {
         <Stack.Navigator
           screenOptions={{
             ...screenOptions,
-            drawerType: type
+            drawerType: type,
+            drawerStyle: {
+            }
           }}
           initialRouteName={initialRouteName}
           drawerContent={(props) => (DrawerContent ? <DrawerContent /> : null)}

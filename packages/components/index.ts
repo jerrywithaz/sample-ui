@@ -28,7 +28,13 @@ export * from "./ui/forms";
 // Global
 export { default as Text, TextProps, Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 } from "./ui/global/Text";
 
+// Hooks
+export { default as useResponsiveProp, responsiveProp } from './hooks/useResponsiveProp';
+
 // Layout
 export { default as Box, BoxProps, FlexBox } from "./ui/layout/Box";
 export { default as Card, CardProps } from "./ui/layout/Card";
 export { Grid, Row, Col, GridProps, ColProps, RowProps } from "./ui/layout/Grid";
+
+// Types
+export { ResponsiveProp } from './types';

@@ -1,17 +1,16 @@
 import React from "react";
-import { useTheme } from "styled-components/native";
 import * as Styled from "./Card.styled";
 import { CardProps } from "./Card.types";
 
 const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
   children,
+  header,
+  footer,
   ...props
 }) => {
-  const theme = useTheme();
   return (
     <Styled.Card
       {...props}
-      padding={theme.spacing.medium}
       style={{
         shadowColor: "#000",
         shadowOffset: {
@@ -23,7 +22,21 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
         elevation: 4,
       }}
     >
-      {children}
+      {header && (
+        <Styled.CardHeader>
+          {typeof header === "function" ? header() : header}
+        </Styled.CardHeader>
+      )}
+
+      <Styled.CardContent>
+        {children}
+      </Styled.CardContent>
+
+      {footer && (
+        <Styled.CardHeader>
+          {typeof footer === "function" ? footer() : footer}
+        </Styled.CardHeader>
+      )}
     </Styled.Card>
   );
 };

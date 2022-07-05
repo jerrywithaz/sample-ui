@@ -10,6 +10,7 @@ import {
   Text,
   Button,
   LabelValue,
+  Heading3,
 } from "@zerry-ui/components";
 import {
   useDeviceSize,
@@ -49,7 +50,7 @@ const LabelValueRowTable: React.FC<{
 
 const OverviewCard = () => {
   return (
-    <Card flex={1} marginVertical={16}>
+    <Card flex={1} marginVertical={16} header={<Heading3>Overview</Heading3>}>
       <LabelValueRowTable
         left={<LabelValue label="Allergy" value="Peniccilen" />}
         right={<LabelValue label="Blood Type" value="B -" />}
@@ -78,7 +79,7 @@ const OverviewCard = () => {
 
 const VitalsCard = () => {
   return (
-    <Card flex={1} marginVertical={16}>
+    <Card flex={1} marginVertical={16} header={<Heading3>Vitals</Heading3>}>
       <LabelValueRowTable
         left={<LabelValue label="Blood Pressure" value="130/90" />}
         right={<LabelValue label="Pulse" value="60 bpm" />}
@@ -93,7 +94,7 @@ const VitalsCard = () => {
 
 const LabResultsCards = () => {
   return (
-    <Card flex={1} marginVertical={16}>
+    <Card flex={1} marginVertical={16} header={<Heading3>Label Results</Heading3>}>
       <Text>Card 3</Text>
     </Card>
   );
@@ -101,7 +102,7 @@ const LabResultsCards = () => {
 
 const AssesmentCard = () => {
   return (
-    <Card flex={1} marginVertical={16}>
+    <Card flex={1} marginVertical={16} header={<Heading3>Assesment</Heading3>}>
       <Text>Card 4</Text>
     </Card>
   );
@@ -109,12 +110,12 @@ const AssesmentCard = () => {
 
 const OrdersCard = () => {
   return (
-    <Card flex={1} marginVertical={16}>
+    <Card flex={1} marginVertical={16} header={<Heading3>Prescriptions</Heading3>}>
       <FlexBox flex={1}></FlexBox>
       <FlexBox horizontal alignItems="center" justifyContent="space-between">
         <Text>Welcome</Text>
         <Button status="success" borderRadius="pill" size="xSmall">
-          Sign Up
+          Add
         </Button>
       </FlexBox>
     </Card>

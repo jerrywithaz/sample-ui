@@ -1,5 +1,4 @@
-import { AccessibilityRole } from "react-native";
-import { TextCategory, TextCategoryProps, TextProps } from "./Text.types";
+import { TextCategory, TextCategoryProps } from "./Text.types";
 
 const ariaLevel = "aria-level";
 
@@ -36,11 +35,11 @@ const CATEGORY_TO_PROPS: Record<TextCategory, TextCategoryProps> = {
     },
     p1: {
         accessibilityRole: "text",
-        fontSize: "small"
+        fontSize: "medium"
     },
     p2: {
         accessibilityRole: "text",
-        fontSize: "small"
+        fontSize: "medium"
     }
 } 
 

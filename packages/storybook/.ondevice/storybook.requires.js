@@ -35,6 +35,7 @@ const getStories = () => {
     require("../stories/Drawer.stories.tsx"),
     require("../stories/FlexBox.stories.tsx"),
     require("../stories/Grid.stories.tsx"),
+    require("../stories/List.stories.tsx"),
     require("../stories/Navigation.stories.tsx"),
     require("../stories/Recipe.cards.stories.tsx"),
     require("../stories/Text.stories.tsx"),

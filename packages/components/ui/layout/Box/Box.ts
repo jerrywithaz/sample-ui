@@ -1,11 +1,8 @@
-import { Platform } from "react-native";
 import styled from "styled-components/native";
 import createStyleProp from "../../../utils/createStyleProp";
 import { BoxProps } from "./Box.types";
 
 const Box = styled.View<BoxProps>`
-  min-height: ${Platform.OS === "web" ? "fit-content" : 0};
-
   ${({
     flex,
     alignItems,
@@ -39,7 +36,7 @@ const Box = styled.View<BoxProps>`
     flexBasis,
     fullWidth,
     minHeight,
-    minWidth
+    minWidth,
   }) => `
         ${createStyleProp("padding-top", paddingVertical)}
         ${createStyleProp("padding-bottom", paddingVertical)}

@@ -5,7 +5,7 @@ import { ParamListBase, ScreenProps, getInitialRoutePath } from "../Stack";
 import { FlexBox } from "@zerry-ui/components";
 import NavigationProvider from "../NavigationProvider";
 import DrawerNavigationProvider from "../DrawerNavigationProvider";
-import useResponsiveDrawerType from "./useResponsiveDrawerType";
+import useResponsiveDrawerType from "./hooks/useResponsiveDrawerType";
 
 export function createDrawerNavigator<ParamList extends ParamListBase>() {
   return {

@@ -4,7 +4,7 @@ import { ParamListBase, ScreenProps } from "../Stack";
 import { DrawerNavigatorProps } from "./Drawer.types";
 import NavigationProvider from "../NavigationProvider";
 import DrawerNavigationProvider from "../DrawerNavigationProvider";
-import useResponsiveDrawerType from "./useResponsiveDrawerType";
+import useResponsiveDrawerType from "./hooks/useResponsiveDrawerType";
 
 export function createDrawerNavigator<ParamList extends ParamListBase>() {
   const Stack = _createDrawerNavigator<ParamList>();

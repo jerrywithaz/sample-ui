@@ -1,12 +1,12 @@
 import { FlexBox } from '@zerry-ui/components';
 import React from 'react';
-import { useNavigationState } from '../Provider';
-import { DrawerProps } from './Drawer.types';
+import { useDrawerNavigation } from '../DrawerNavigationProvider';
+import { DrawerContainerProps } from './Drawer.types';
 
-export const Drawer: React.FC<React.PropsWithChildren<DrawerProps>> = ({ width, children }) => {
-    const { drawerState } = useNavigationState();
+export const DrawerContainer: React.FC<React.PropsWithChildren<DrawerContainerProps>> = ({ width, children }) => {
+    const { drawerState, drawerType } = useDrawerNavigation();
 
-    if (drawerState === "closed") return null;
+    if (drawerState === "closed" && drawerType !== "permanent") return null;
     
     return (
         <FlexBox width={width}>

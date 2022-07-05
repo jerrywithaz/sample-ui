@@ -1,23 +1,34 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigatorProps, ParamListBase, ScreenProps } from "./Stack.types";
+import NavigationProvider from "../NavigationProvider";
 
 export function createStackNavigator<ParamList extends ParamListBase>() {
   const Stack = createNativeStackNavigator<ParamList>();
 
   return {
-    Navigator: ({
-      children,
-      initialRouteName,
-      screenOptions,
-    }: NavigatorProps<ParamList>) => {
+    Navigator: (props: NavigatorProps<ParamList>) => {
+      const { children, initialRouteName, screenOptions } = props;
+      
       const screens = React.Children.map(children, (child) => {
         if (React.isValidElement<ScreenProps<ParamList>>(child)) {
           const { props } = child;
-          const { component, name, options } = props;
+          const { component: Component, name, options } = props;
+
+          const ComponentWithNavigationProvider = () => {
+            return (
+              <NavigationProvider>
+                <Component />
+              </NavigationProvider>
+            );
+          };
 
           return (
-            <Stack.Screen name={name} component={component} options={options} />
+            <Stack.Screen
+              name={name}
+              component={ComponentWithNavigationProvider}
+              options={options}
+            />
           );
         }
 

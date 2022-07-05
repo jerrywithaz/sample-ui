@@ -2,6 +2,7 @@ import React from "react";
 import { NavigatorProps, ParamListBase, ScreenProps } from "./Stack.types";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { getInitialRoutePath } from "./Stack.utils";
+import NavigationProvider from "../NavigationProvider";
 
 export function createStackNavigator<ParamList extends ParamListBase>() {
   return {
@@ -21,16 +22,18 @@ export function createStackNavigator<ParamList extends ParamListBase>() {
 
         return null;
       });
-    
+
       const initialRoute = initialRoutePath ? (
         <Route path="*" element={<Navigate to={initialRoutePath} />} />
       ) : null;
 
       return (
-        <Routes>
-          {routes}
-          {initialRoute}
-        </Routes>
+        <NavigationProvider>
+          <Routes>
+            {routes}
+            {initialRoute}
+          </Routes>
+        </NavigationProvider>
       );
     },
     Screen: (_: ScreenProps<ParamList>) => {

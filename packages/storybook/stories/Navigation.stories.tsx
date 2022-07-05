@@ -8,11 +8,11 @@ import {
 import {
   createStackNavigator,
   Link,
-  NavigationProvider,
+  NavigationContainer,
 } from "@zerry-ui/navigation";
 
 export default {
-  title: "Layout/Navigation",
+  title: "Navigation/Stack",
 } as ComponentMeta<any>;
 
 const Stack = createStackNavigator();
@@ -34,7 +34,7 @@ const Screen2 = () => {
 };
 
 const Template: ComponentStory<typeof Box> = (args) => (
-  <NavigationProvider memoryRouter>
+  <NavigationContainer memoryRouter>
     <FlexBox horizontal>
       <Link to="/screen1" name="Screen1">
         Navigate to Screen 1
@@ -64,7 +64,7 @@ const Template: ComponentStory<typeof Box> = (args) => (
       />
     </Stack.Navigator>
     </FlexBox>
-  </NavigationProvider>
+  </NavigationContainer>
 );
 
 export const Primary = Template.bind({});

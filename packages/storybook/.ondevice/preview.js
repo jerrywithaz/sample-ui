@@ -6,13 +6,7 @@ import ThemeProvider from "@zerry-ui/components/theme/provider";
 const StoryContainer = ({ children }) => {
   return (
     <View style={{ padding: 12, flex: 1 }}>
-      <ScrollView
-        style={{ flex: 1 }}
-        contentContainerStyle={{ flex: 1 }}
-        showsVerticalScrollIndicator
-      >
         {children}
-      </ScrollView>
     </View>
   );
 };

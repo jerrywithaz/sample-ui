@@ -1,2 +1,4 @@
+export type { DrawerType } from './Drawer.types';
 export { createDrawerNavigator } from './createDrawerNavigator';
-export { Drawer } from './DrawerContainer';
+export { DrawerContainer } from './DrawerContainer';
+

@@ -1,10 +1,11 @@
+import { FlexBox } from '@zerry-ui/components';
 import React from 'react';
-import { DrawerProps } from './Drawer.types';
+import { DrawerContainerProps } from './Drawer.types';
 
-export const Drawer: React.FC<React.PropsWithChildren<DrawerProps>> = ({ width, children }) => {
+export const DrawerContainer: React.FC<React.PropsWithChildren<DrawerContainerProps>> = ({ width, children }) => {
     return (
-        <>
+        <FlexBox width={width}>
             {children}
-        </>
+        </FlexBox>
     );
 }

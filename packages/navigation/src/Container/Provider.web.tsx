@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, useLocation, MemoryRouter } from "react-router-dom";
-import { NavigationProviderProps } from "./Provider.types";
+import { NavigationContainerProps } from "./Provider.types";
 
 const DocumentTitle: React.FC = () => {
   const location = useLocation();
@@ -10,8 +10,8 @@ const DocumentTitle: React.FC = () => {
   return null;
 };
 
-export const NavigationProvider: React.FC<
-  React.PropsWithChildren<NavigationProviderProps>
+export const NavigationContainer: React.FC<
+  React.PropsWithChildren<NavigationContainerProps>
 > = ({ children, memoryRouter }) => {
     
   const Router = memoryRouter ? MemoryRouter : BrowserRouter;

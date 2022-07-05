@@ -3,10 +3,10 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { Box, Button, FlexBox, Text } from "@zerry-ui/components";
 import {
   createDrawerNavigator,
-  NavigationProvider,
+  NavigationContainer,
   Link,
-  useNavigationState,
-  Drawer as DrawerContainer,
+  DrawerContainer,
+  useDrawerNavigation
 } from "@zerry-ui/navigation";
 
 export default {
@@ -16,26 +16,34 @@ export default {
 const Stack = createDrawerNavigator();
 
 const Screen1 = () => {
-  const { toggleDrawer } = useNavigationState();
+  const { toggleDrawer, drawerType } = useDrawerNavigation();
 
   return (
     <FlexBox flex={1} backgroundColor="#ffffff">
       <Text>Welcome to Screen 1</Text>
-      <Button size="medium" status="success" onPress={() => toggleDrawer()}>
-        Toggle Drawer
-      </Button>
+      {(drawerType === "front") || (drawerType === "slide") ? (
+        <Button size="medium" status="success" onPress={() => toggleDrawer()}>
+          Toggle Mobile Drawer
+        </Button>
+      ) : (
+        <Text>Permanent Drawer</Text>
+      )}
     </FlexBox>
   );
 };
 
 const Screen2 = () => {
-  const { toggleDrawer } = useNavigationState();
+  const { toggleDrawer, drawerType } = useDrawerNavigation();
   return (
     <FlexBox flex={1} backgroundColor="#ffffff">
       <Text>Welcome to Screen 2</Text>
-      <Button size="medium" status="success" onPress={() => toggleDrawer()}>
-        Toggle Drawer
-      </Button>
+      {(drawerType === "front") || (drawerType === "slide") ? (
+        <Button size="medium" status="success" onPress={() => toggleDrawer()}>
+          Toggle Mobile Drawer
+        </Button>
+      ) : (
+        <Text>Permanent Drawer</Text>
+      )}
     </FlexBox>
   );
 };
@@ -43,7 +51,7 @@ const Screen2 = () => {
 const Drawer = () => {
   return (
     <DrawerContainer width={200}>
-      <FlexBox>
+      <FlexBox flex={1}>
         <FlexBox vertical>
           <Link to="/screen1" name="Screen1">
             Screen 1
@@ -60,26 +68,32 @@ const Drawer = () => {
 
 const Template: ComponentStory<typeof Box> = (args) => (
   <FlexBox flex={1}>
-  <NavigationProvider memoryRouter>
-    <Stack.Navigator
-      initialRouteName="Screen1"
-      screenOptions={{ headerShown: false }}
-      drawerContent={Drawer}
-    >
-      <Stack.Screen
-        name="Screen1"
-        path="/screen1"
-        component={Screen1}
-        options={{ headerTitle: "Screen1" }}
-      />
-      <Stack.Screen
-        name="Screen2"
-        path="/screen2"
-        component={Screen2}
-        options={{ headerTitle: "Screen2" }}
-      />
-    </Stack.Navigator>
-  </NavigationProvider>
+    <NavigationContainer memoryRouter>
+      <Stack.Navigator
+        initialRouteName="Screen1"
+        screenOptions={{ headerShown: false }}
+        drawerContent={Drawer}
+        drawerType={{
+          xs: "front",
+          s: "front",
+          m: "slide",
+          xl: "permanent"
+        }}
+      >
+        <Stack.Screen
+          name="Screen1"
+          path="/screen1"
+          component={Screen1}
+          options={{ headerTitle: "Screen1" }}
+        />
+        <Stack.Screen
+          name="Screen2"
+          path="/screen2"
+          component={Screen2}
+          options={{ headerTitle: "Screen2" }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   </FlexBox>
 );
 

@@ -15,6 +15,7 @@ import {
   useDeviceSize,
   useIsXSmallDevice,
 } from "@zerry-ui/components/devsupport/responsive";
+import { ScrollView } from "react-native";
 
 export default {
   title: "Recipes/Dashboard",
@@ -126,27 +127,23 @@ const Template: ComponentStory<any> = (args) => {
 
   return (
     <Box flex={1}>
-      <Grid>
-        <Row wrap gutter={args.gutter}>
-          <Col xs={24} s={24} m={12} xl={10} minHeight={500}>
-            <OverviewCard />
-          </Col>
-          <Col
-            xs={24}
-            s={24}
-            m={12}
-            xl={8}
-            minHeight={500}
-          >
-            <VitalsCard />
-            <LabResultsCards />
-          </Col>
-          <Col xs={24} s={24} xl={6} minHeight={500}>
-            <AssesmentCard />
-            <OrdersCard />
-          </Col>
-        </Row>
-      </Grid>
+      <ScrollView style={{ flex: 1 }}>
+        <Grid>
+          <Row wrap gutter={args.gutter}>
+            <Col xs={24} s={24} m={12} xl={10} minHeight={500}>
+              <OverviewCard />
+            </Col>
+            <Col xs={24} s={24} m={12} xl={8} minHeight={500}>
+              <VitalsCard />
+              <LabResultsCards />
+            </Col>
+            <Col xs={24} s={24} xl={6} minHeight={500}>
+              <AssesmentCard />
+              <OrdersCard />
+            </Col>
+          </Row>
+        </Grid>
+      </ScrollView>
     </Box>
   );
 };

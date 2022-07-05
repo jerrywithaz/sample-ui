@@ -8,6 +8,7 @@ import {
   RowProps,
   ColProps,
 } from "@zerry-ui/components";
+import { ScrollView } from "react-native";
 
 export default {
   title: "Layout/Grid",
@@ -53,14 +54,26 @@ const Template: ComponentStory<typeof Grid> = (
   const colSizes = { xs, s, m, lg, xl, xxl };
 
   return (
-    <Grid flex={1}>
-      <Row gutter={args.gutter} wrap={args.wrap} fullWidth>
-        <Col size={6} backgroundColor="red" {...colSizes} height={400}></Col>
-        <Col size={6} backgroundColor="green" {...colSizes} height={400}></Col>
-        <Col size={6} backgroundColor="blue" {...colSizes} height={400}></Col>
-        <Col size={6} backgroundColor="yellow" {...colSizes} height={400}></Col>
-      </Row>
-    </Grid>
+    <ScrollView style={{ flex: 1 }}>
+      <Grid flex={1}>
+        <Row gutter={args.gutter} wrap={args.wrap} fullWidth>
+          <Col size={6} backgroundColor="red" {...colSizes} height={400}></Col>
+          <Col
+            size={6}
+            backgroundColor="green"
+            {...colSizes}
+            height={400}
+          ></Col>
+          <Col size={6} backgroundColor="blue" {...colSizes} height={400}></Col>
+          <Col
+            size={6}
+            backgroundColor="yellow"
+            {...colSizes}
+            height={400}
+          ></Col>
+        </Row>
+      </Grid>
+    </ScrollView>
   );
 };
 

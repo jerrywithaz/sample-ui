@@ -20,7 +20,3 @@ export interface DrawerNavigatorProps<ParamList extends ParamListBase> {
     drawerContent?: React.ComponentType<any>;
     drawerType?: ResponsiveDrawerType;
 }
-
-export interface DrawerContainerProps {
-    width?: number | string;
-}

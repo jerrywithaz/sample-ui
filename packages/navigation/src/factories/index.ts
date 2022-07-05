@@ -1,2 +1,2 @@
-export * from './Drawer';
+export * from './createDrawerNavigator';
 export * from './createStackNavigator';

@@ -1,4 +1,4 @@
-import type { DrawerType } from "../../factories/Drawer";
+import type { DrawerType } from "../../factories/createDrawerNavigator";
 import { NavigationProviderContext } from "../NavigationProvider";
 import { ParamListBase } from "../../factories/createStackNavigator";
 

@@ -1,6 +1,6 @@
-import { FlexBox } from '@zerry-ui/components';
 import React from 'react';
-import { DrawerContainerProps } from './Drawer.types';
+import { FlexBox } from '@zerry-ui/components';
+import { DrawerContainerProps } from './DrawerContainer.types';
 
 export const DrawerContainer: React.FC<React.PropsWithChildren<DrawerContainerProps>> = ({ width, children }) => {
     return (

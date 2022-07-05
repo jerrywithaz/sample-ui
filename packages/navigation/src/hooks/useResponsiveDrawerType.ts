@@ -1,5 +1,5 @@
 import { useDeviceSize } from "@zerry-ui/components/devsupport/responsive";
-import { ResponsiveDrawerType, DrawerType } from "../factories/Drawer/Drawer.types";
+import { ResponsiveDrawerType, DrawerType } from "../factories/createDrawerNavigator/Drawer.types";
 
 function useResponsiveDrawerType(
   drawerType?: ResponsiveDrawerType

@@ -1,6 +1,6 @@
 import React from "react";
 import { createDrawerNavigator as _createDrawerNavigator } from "@react-navigation/drawer";
-import { ParamListBase, ScreenProps } from "../Stack";
+import { ParamListBase, ScreenProps } from "../createStackNavigator";
 import { DrawerNavigatorProps } from "./Drawer.types";
 import NavigationProvider from "../../providers/NavigationProvider";
 import DrawerNavigationProvider from "../../providers/DrawerNavigationProvider";

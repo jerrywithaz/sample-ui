@@ -1,7 +1,7 @@
 import React from "react";
-import { NavigatorProps, ParamListBase, ScreenProps } from "./Stack.types";
+import { NavigatorProps, ParamListBase, ScreenProps } from "./createStackNavigator.types";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { getInitialRoutePath } from "./Stack.utils";
+import { getInitialRoutePath } from "./createStackNavigator.utils";
 import NavigationProvider from "../../providers/NavigationProvider";
 
 export function createStackNavigator<ParamList extends ParamListBase>() {

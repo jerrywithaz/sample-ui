@@ -1,5 +1,5 @@
 import React from "react";
-import { ParamListBase, ScreenProps } from "./Stack.types";
+import { ParamListBase, ScreenProps } from "./createStackNavigator.types";
 
 export function getInitialRoutePath<ParamList extends ParamListBase>(children: React.ReactNode, initialRouteName: string) {
     const initialRouteElement = React.Children.toArray(children).find((child) => {

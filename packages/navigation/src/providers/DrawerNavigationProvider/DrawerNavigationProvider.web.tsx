@@ -1,7 +1,7 @@
 import React, { createContext, useCallback, useContext, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { DrawerNavigationProviderContext, DrawerNavigationProviderProps } from "./DrawerNavigationProvider.types";
-import { ParamListBase } from "../../factories/Stack";
+import { ParamListBase } from "../../factories/createStackNavigator";
 import { useNavigation } from "../NavigationProvider";
 
 const Context =

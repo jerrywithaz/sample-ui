@@ -1,4 +1,4 @@
-import { ParamListBase } from "../Stack";
+import { ParamListBase } from "../createStackNavigator";
 
 export type DrawerType = "permanent" | "front" | "slide";
 

@@ -2,7 +2,7 @@ import {
   useNavigation as useNativeNavigation,
 } from "@react-navigation/native";
 import React, { createContext, useContext } from "react";
-import { ParamListBase } from "../../factories/Stack";
+import { ParamListBase } from "../../factories/createStackNavigator";
 import { NavigationProviderContext } from "./NavigationProvider.types";
 
 const Context = createContext<NavigationProviderContext | undefined>(undefined);

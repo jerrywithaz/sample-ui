@@ -1,7 +1,7 @@
 import React, { createContext, useCallback, useContext, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { NavigateFunction, NavigationProviderContext } from './NavigationProvider.types';
-import { ParamListBase } from '../../factories/Stack';
+import { ParamListBase } from '../../factories/createStackNavigator';
 
 const Context = createContext<NavigationProviderContext | undefined>(undefined);
 

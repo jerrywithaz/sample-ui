@@ -2,9 +2,9 @@ import React from "react";
 import { createDrawerNavigator as _createDrawerNavigator } from "@react-navigation/drawer";
 import { ParamListBase, ScreenProps } from "../Stack";
 import { DrawerNavigatorProps } from "./Drawer.types";
-import NavigationProvider from "../NavigationProvider";
-import DrawerNavigationProvider from "../DrawerNavigationProvider";
-import useResponsiveDrawerType from "./hooks/useResponsiveDrawerType";
+import NavigationProvider from "../../providers/NavigationProvider";
+import DrawerNavigationProvider from "../../providers/DrawerNavigationProvider";
+import useResponsiveDrawerType from "../../hooks/useResponsiveDrawerType";
 
 export function createDrawerNavigator<ParamList extends ParamListBase>() {
   const Stack = _createDrawerNavigator<ParamList>();

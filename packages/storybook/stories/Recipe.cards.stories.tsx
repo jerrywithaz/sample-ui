@@ -157,7 +157,7 @@ const OrdersCard = () => {
 const Template: ComponentStory<any> = (args) => {
   return (
     <Box flex={1}>
-      <ScrollView style={{ flex: 1 }}>
+      <ScrollView style={{ flex: 1 }} nestedScrollEnabled>
         <Grid>
           <Row wrap gutter={args.gutter}>
             <Col xs={24} s={24} m={12} xl={10} minHeight={500}>

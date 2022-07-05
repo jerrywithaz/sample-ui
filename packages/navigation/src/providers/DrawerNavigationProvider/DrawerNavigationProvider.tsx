@@ -2,7 +2,7 @@ import { useDrawerStatus } from "@react-navigation/drawer";
 import { DrawerActionHelpers, NavigationProp, useNavigation as useNativeNavigation } from "@react-navigation/native";
 import React, { createContext, useContext } from "react";
 import { useNavigation } from "../NavigationProvider";
-import { ParamListBase } from "../Stack";
+import { ParamListBase } from "../../factories/Stack";
 import { DrawerNavigationProviderContext, DrawerNavigationProviderProps } from "./DrawerNavigationProvider.types";
 
 type DrawerNavigationProps<ParamList extends ParamListBase> =

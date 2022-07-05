@@ -1,4 +1,4 @@
-import { ParamListBase } from "../Stack";
+import { ParamListBase } from "../../factories/Stack";
 
 export type NavigateArgs<ParamList extends ParamListBase, RouteName extends keyof ParamList = keyof ParamList> = undefined extends ParamList[RouteName] ? [screen: RouteName] | [screen: RouteName, params: ParamList[RouteName]] : [screen: RouteName, params: ParamList[RouteName]];
 

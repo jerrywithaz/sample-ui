@@ -1,6 +1,6 @@
-import type { DrawerType } from "../Drawer";
+import type { DrawerType } from "../../factories/Drawer";
 import { NavigationProviderContext } from "../NavigationProvider";
-import { ParamListBase } from "../Stack";
+import { ParamListBase } from "../../factories/Stack";
 
 export interface DrawerNavigationProviderProps {
   drawerType: DrawerType;

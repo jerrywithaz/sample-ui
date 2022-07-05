@@ -11,11 +11,10 @@ import {
   Button,
   LabelValue,
   Heading3,
+  List,
+  ListItem,
 } from "@zerry-ui/components";
-import {
-  useDeviceSize,
-  useIsXSmallDevice,
-} from "@zerry-ui/components/devsupport/responsive";
+import { useIsXSmallDevice } from "@zerry-ui/components/devsupport/responsive";
 import { ScrollView } from "react-native";
 
 export default {
@@ -94,26 +93,59 @@ const VitalsCard = () => {
 
 const LabResultsCards = () => {
   return (
-    <Card flex={1} marginVertical={16} header={<Heading3>Label Results</Heading3>}>
-      <Text>Card 3</Text>
+    <Card
+      flex={1}
+      marginVertical={16}
+      header={<Heading3>Lab Results</Heading3>}
+    >
+      <LabelValueRowTable
+        left={<LabelValue label="Date" value="15 June 2020" />}
+        right={<LabelValue label="Time" value="10:00 AM" />}
+      />
     </Card>
   );
 };
 
 const AssesmentCard = () => {
   return (
-    <Card flex={1} marginVertical={16} header={<Heading3>Assesment</Heading3>}>
-      <Text>Card 4</Text>
+    <Card flex={1} marginVertical={16} header={<Heading3>Assessment</Heading3>}>
+      <LabelValueRowTable
+        left={<LabelValue label="Date" value="15 June 2020" />}
+        right={<LabelValue label="Time" value="10:00 AM" />}
+      />
     </Card>
   );
 };
 
 const OrdersCard = () => {
   return (
-    <Card flex={1} marginVertical={16} header={<Heading3>Prescriptions</Heading3>}>
-      <FlexBox flex={1}></FlexBox>
-      <FlexBox horizontal alignItems="center" justifyContent="space-between">
-        <Text>Welcome</Text>
+    <Card
+      flex={1}
+      marginVertical={16}
+      header={<Heading3>Prescriptions</Heading3>}
+    >
+      <FlexBox flex={1}>
+        <List
+          data={[
+            {
+              id: 1,
+              name: "Presciption 1",
+              description: "Prescribed on June 10th for chronic fatigue.",
+            },
+            {
+              id: 2,
+              name: "Presciption 2",
+              description: "Prescribed on April 20th for you know...",
+            },
+          ]}
+          renderItem={({ item }) => {
+            return (
+              <ListItem title={item.name} description={item.description} />
+            );
+          }}
+        />
+      </FlexBox>
+      <FlexBox horizontal alignItems="center" justifyContent="flex-end">
         <Button status="success" borderRadius="pill" size="xSmall">
           Add
         </Button>
@@ -123,9 +155,6 @@ const OrdersCard = () => {
 };
 
 const Template: ComponentStory<any> = (args) => {
-  const isxSmallDevice = useIsXSmallDevice();
-  const deviceSize = useDeviceSize();
-
   return (
     <Box flex={1}>
       <ScrollView style={{ flex: 1 }}>

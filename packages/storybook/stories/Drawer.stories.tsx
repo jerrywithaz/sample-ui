@@ -6,7 +6,7 @@ import {
   NavigationContainer,
   Link,
   DrawerContainer,
-  useDrawerNavigation
+  useDrawerNavigation,
 } from "@zerry-ui/navigation";
 
 export default {

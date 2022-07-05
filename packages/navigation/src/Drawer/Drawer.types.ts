@@ -6,9 +6,9 @@ export interface DrawerNavigatorProps<ParamList extends ParamListBase> {
     screenOptions: {
         headerShown?: boolean;
     };
-    drawerContent?: (props: {}) => React.ReactNode;
+    drawerContent?: React.ComponentType<any>;
 }
 
 export interface DrawerProps {
-
+    width?: number | string;
 }

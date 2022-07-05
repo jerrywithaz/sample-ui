@@ -8,6 +8,7 @@ const StoryContainer = ({ children }) => {
     <View style={{ padding: 12, flex: 1 }}>
       <ScrollView
         style={{ flex: 1 }}
+        contentContainerStyle={{ flex: 1 }}
         showsVerticalScrollIndicator
       >
         {children}

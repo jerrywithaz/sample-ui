@@ -1,3 +1,8 @@
+export interface NavigationStateProviderContext {
+    drawerState: 'open' | 'closed';
+    toggleDrawer: () => void;
+}
+
 export interface NavigationProviderProps {
     documentTitle?: {
         enabled?: boolean;

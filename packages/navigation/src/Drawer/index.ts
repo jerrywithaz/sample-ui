@@ -1,1 +1,2 @@
-export { createDrawerNavigator } from './Drawer';
+export { createDrawerNavigator } from './createDrawerNavigator';
+export { Drawer } from './DrawerContainer';

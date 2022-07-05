@@ -44,7 +44,7 @@ const Template: ComponentStory<typeof Box> = (args) => (
         Navigate to Screen 2
       </Link>
     </FlexBox>
-    <FlexBox flex={1} height={400}>
+    <FlexBox flex={1}>
 
     <Stack.Navigator
       initialRouteName="Screen1"

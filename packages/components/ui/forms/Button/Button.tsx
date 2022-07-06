@@ -3,7 +3,7 @@ import FalsyFC from "../../../devsupport/components/FalsyFC";
 import FalsyText from "../../../devsupport/components/FalsyText";
 import { ButtonProps } from "./Button.types";
 import * as Styled from "./Button.styled";
-import TouchableWeb from "../../../devsupport/components/TouchableWeb";
+import { ButtonInteractionStateStyles } from "../ButtonBase";
 
 const Button: React.FC<ButtonProps> = ({
   children,
@@ -12,23 +12,47 @@ const Button: React.FC<ButtonProps> = ({
   style,
   borderRadius,
   size,
-  status,
+  status = "default",
   ...props
 }) => {
   return (
-    <TouchableWeb feedback {...props}>
-      <Styled.Button
-        accessibilityRole="button"
-        borderRadius={borderRadius}
-        size={size}
-        status={status}
-      >
-        <FalsyFC component={accessoryLeft} />
-        <FalsyText component={children} color="#ffffff" fontSize="medium" />
-        <FalsyFC component={accessoryRight} />
-      </Styled.Button>
-    </TouchableWeb>
+    <Styled.Button
+      {...props}
+      interactionStyles={interactionStyles}
+      borderRadius={borderRadius}
+      size={size}
+      status={status}
+    >
+      <FalsyFC component={accessoryLeft} />
+      <FalsyText component={children} color="#ffffff" fontSize="medium" />
+      <FalsyFC component={accessoryRight} />
+    </Styled.Button>
   );
+};
+
+const interactionStyles: ButtonInteractionStateStyles = {
+  normal: {
+    button: {},
+    text: {},
+  },
+  hovered: {
+    button: {
+      opacity: 0.8
+    },
+    text: {}
+  },
+  pressed: {
+    button: {
+      opacity: 0.8
+    },
+    text: {}
+  },
+  focused: {
+    button: {
+      opacity: 0.8
+    },
+    text: {}
+  }
 };
 
 export default Button;

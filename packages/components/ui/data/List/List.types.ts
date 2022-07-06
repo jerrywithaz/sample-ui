@@ -1,4 +1,4 @@
-import { ListRenderItemInfo, FlatListProps } from "react-native";
+import { FlatListProps } from "react-native";
 
 export interface ListProps<Data extends any> extends FlatListProps<Data> {
 }

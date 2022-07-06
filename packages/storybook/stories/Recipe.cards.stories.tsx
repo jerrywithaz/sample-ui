@@ -7,7 +7,6 @@ import {
   FlexBox,
   Grid,
   Row,
-  Text,
   Button,
   LabelValue,
   Heading3,
@@ -120,9 +119,16 @@ const AssesmentCard = () => {
 const OrdersCard = () => {
   return (
     <Card
-      flex={1}
+      flex={2}
       marginVertical={16}
       header={<Heading3>Prescriptions</Heading3>}
+      footer={
+        <FlexBox horizontal alignItems="center" justifyContent="flex-end">
+          <Button status="success" borderRadius="pill" size="xSmall">
+            Add
+          </Button>
+        </FlexBox>
+      }
     >
       <FlexBox flex={1}>
         <List
@@ -145,11 +151,6 @@ const OrdersCard = () => {
           }}
         />
       </FlexBox>
-      <FlexBox horizontal alignItems="center" justifyContent="flex-end">
-        <Button status="success" borderRadius="pill" size="xSmall">
-          Add
-        </Button>
-      </FlexBox>
     </Card>
   );
 };
@@ -158,16 +159,16 @@ const Template: ComponentStory<any> = (args) => {
   return (
     <Box flex={1}>
       <ScrollView style={{ flex: 1 }} nestedScrollEnabled>
-        <Grid>
-          <Row wrap gutter={args.gutter}>
-            <Col xs={24} s={24} m={12} xl={10} minHeight={500}>
+        <Grid flex={1}>
+          <Row wrap gutter={args.gutter} flex={1}>
+            <Col xs={24} s={24} m={12} xl={10} minHeight={600}>
               <OverviewCard />
             </Col>
-            <Col xs={24} s={24} m={12} xl={8} minHeight={500}>
+            <Col xs={24} s={24} m={12} xl={8} minHeight={600}>
               <VitalsCard />
               <LabResultsCards />
             </Col>
-            <Col xs={24} s={24} xl={6} minHeight={500}>
+            <Col xs={24} s={24} xl={6} minHeight={600}>
               <AssesmentCard />
               <OrdersCard />
             </Col>

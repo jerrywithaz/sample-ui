@@ -9,6 +9,7 @@ const moduleResolverConfig = {
   alias: {
     ...frameworkModules,
   },
+  "extensions": [".js", ".jsx", ".ts", ".tsx"]
 };
 
 const presets = process.env.APP === "web" ? [] : ["babel-preset-expo"];
@@ -19,11 +20,13 @@ const plugins =
         ["module-resolver", moduleResolverConfig],
         ["@babel/plugin-proposal-decorators", { legacy: true }],
         ["react-native-reanimated/plugin"],
+        ["babel-plugin-styled-components", { "ssr": false }]
       ]
     : [
         ["module-resolver", moduleResolverConfig],
         ["@babel/plugin-proposal-decorators", { legacy: true }],
         ["react-native-reanimated/plugin"],
+        ["babel-plugin-styled-components", { "ssr": false }]
       ];
 
 module.exports = function (api) {

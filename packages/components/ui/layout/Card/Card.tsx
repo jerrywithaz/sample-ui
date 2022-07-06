@@ -33,9 +33,9 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
       </Styled.CardContent>
 
       {footer && (
-        <Styled.CardHeader>
+        <Styled.CardFooter>
           {typeof footer === "function" ? footer() : footer}
-        </Styled.CardHeader>
+        </Styled.CardFooter>
       )}
     </Styled.Card>
   );

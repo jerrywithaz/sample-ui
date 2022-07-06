@@ -16,10 +16,10 @@ export const CardContent = styled(Box)`
 
 export const CardHeader = styled(Box)`
     flex-shrink: 0;
-    padding-bottom: ${({ theme }) => theme.spacing.medium}px;
+    margin-bottom: ${({ theme }) => theme.spacing.medium}px;
 `;
 
 export const CardFooter = styled(Box)`
     flex-shrink: 0;
-    padding-top: ${({ theme }) => theme.spacing.medium}px;
+    margin-top: ${({ theme }) => theme.spacing.medium}px;
 `;

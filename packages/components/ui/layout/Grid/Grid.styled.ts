@@ -1,4 +1,3 @@
-import createStyleProp from "@zerry-ui/components/utils/createStyleProp";
 import styled from "styled-components/native";
 import { FlexBox } from "../Box";
 import { RowProps, StyledColProps } from "./Grid.types";
@@ -21,12 +20,12 @@ export const Col = styled(FlexBox)<StyledColProps>`
       ${createColGutterStyle(gutter, true)}
     `
       : `
-      ${createColGutterStyle(gutter.xs, deviceSize.xs)}
-      ${createColGutterStyle(gutter.s, deviceSize.s)}
-      ${createColGutterStyle(gutter.m, deviceSize.m)}
-      ${createColGutterStyle(gutter.lg, deviceSize.lg)}
-      ${createColGutterStyle(gutter.xl, deviceSize.xl)}
-      ${createColGutterStyle(gutter.xxl, deviceSize.xxl)}
+      ${createColGutterStyle(gutter?.xs, deviceSize.xs)}
+      ${createColGutterStyle(gutter?.s, deviceSize.s)}
+      ${createColGutterStyle(gutter?.m, deviceSize.m)}
+      ${createColGutterStyle(gutter?.lg, deviceSize.lg)}
+      ${createColGutterStyle(gutter?.xl, deviceSize.xl)}
+      ${createColGutterStyle(gutter?.xxl, deviceSize.xxl)}
     `}
 `;
 

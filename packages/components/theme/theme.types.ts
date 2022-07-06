@@ -69,9 +69,7 @@ export interface ThemeTypography {
 export type ThemeFontSizeKey = keyof ThemeTypography['fontSizes'];
 
 // export type ThemeStatus = LiteralUnion<'basic' | 'primary' | 'success' | 'info' | 'warning' | 'danger' | 'control'>;
-export type ThemeStatus = LiteralUnion<
-  "default" | "success" | "warning" | "danger"
->;
+export type ThemeStatus = "default" | "success" | "warning" | "danger";
 
 export interface Theme {
   colors: {

@@ -12,8 +12,8 @@ import {
   Heading3,
   List,
   ListItem,
+  useResponsiveProp,
 } from "@zerry-ui/components";
-import { useIsXSmallDevice } from "@zerry-ui/components/devsupport/responsive";
 import { ScrollView } from "react-native";
 
 export default {
@@ -25,14 +25,19 @@ const LabelValueRowTable: React.FC<{
   right?: React.ReactNode;
   collapseOnMobile?: boolean;
 }> = ({ left, right, collapseOnMobile }) => {
-  const isxSmallDevice = useIsXSmallDevice();
-  const collapse = isxSmallDevice && collapseOnMobile;
+  const collapse = useResponsiveProp(false, {
+    xs: collapseOnMobile
+  }, false);
+  
+  const width = useResponsiveProp("300px", {
+    xs: undefined
+  }, true);
 
   return (
     <FlexBox
       horizontal={collapse ? false : true}
       vertical={collapse}
-      width={isxSmallDevice ? undefined : "300px"}
+      width={width}
       marginBottom={24}
     >
       <Box
@@ -136,7 +141,7 @@ const OrdersCard = () => {
             {
               id: 1,
               name: "Presciption 1",
-              description: "Prescribed on June 10th for chronic fatigue.",
+              description: "Prescribed on June 10th for chronic fatigue. Will take for 3 days and report on effects.",
             },
             {
               id: 2,
@@ -156,19 +161,23 @@ const OrdersCard = () => {
 };
 
 const Template: ComponentStory<any> = (args) => {
+  const columnHeight = useResponsiveProp(600, {
+    xs: undefined,
+  }, true);
+  
   return (
     <Box flex={1}>
       <ScrollView style={{ flex: 1 }} nestedScrollEnabled>
         <Grid flex={1}>
           <Row wrap gutter={args.gutter} flex={1}>
-            <Col xs={24} s={24} m={12} xl={10} minHeight={600}>
+            <Col xs={24} s={24} m={12} xl={10} minHeight={columnHeight}>
               <OverviewCard />
             </Col>
-            <Col xs={24} s={24} m={12} xl={8} minHeight={600}>
+            <Col xs={24} s={24} m={12} xl={8} minHeight={columnHeight}>
               <VitalsCard />
               <LabResultsCards />
             </Col>
-            <Col xs={24} s={24} xl={6} minHeight={600}>
+            <Col xs={24} s={24} xl={6} minHeight={columnHeight}>
               <AssesmentCard />
               <OrdersCard />
             </Col>

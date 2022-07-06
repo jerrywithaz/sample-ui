@@ -37,6 +37,8 @@ const Box = styled.View<BoxProps>`
     fullWidth,
     minHeight,
     minWidth,
+    maxWidth,
+    wrapText
   }) => `
         ${createStyleProp("padding-top", paddingVertical)}
         ${createStyleProp("padding-bottom", paddingVertical)}
@@ -64,6 +66,7 @@ const Box = styled.View<BoxProps>`
         ${createStyleProp("overflow", overflow)}
         ${createStyleProp("height", height)}
         ${createStyleProp("width", width)}
+        ${createStyleProp("max-width", wrapText ? "100%" : maxWidth)}
         ${createStyleProp("max-height", maxHeight)}
         ${createStyleProp("min-height", minHeight)}
         ${createStyleProp("min-width", minWidth)}

@@ -15,7 +15,7 @@ function ListItem<Data extends any>({
         children
       ) : (
         <>
-          <FlexBox vertical>
+          <FlexBox vertical wrapText>
             <Text fontSize="medium">{title}</Text>
             <Text fontSize="small">{description}</Text>
           </FlexBox>

@@ -40,6 +40,7 @@ const getStories = () => {
     require("../stories/Navigation.stories.tsx"),
     require("../stories/Recipe.cards.stories.tsx"),
     require("../stories/Text.stories.tsx"),
+    require("../stories/TextInput.stories.tsx"),
   ];
 };
 

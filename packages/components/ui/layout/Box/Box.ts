@@ -38,7 +38,7 @@ const Box = styled.View<BoxProps>`
     minHeight,
     minWidth,
     maxWidth,
-    wrapText
+    wrapText,
   }) => `
         ${createStyleProp("padding-top", paddingVertical)}
         ${createStyleProp("padding-bottom", paddingVertical)}

@@ -1,10 +1,9 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Box, Button, FlexBox, Text } from "@zerry-ui/components";
+import { Box, Button, FlexBox, Text, Link } from "@zerry-ui/components";
 import {
   createDrawerNavigator,
   NavigationContainer,
-  Link,
   DrawerContainer,
   useDrawerNavigation,
 } from "@zerry-ui/navigation";

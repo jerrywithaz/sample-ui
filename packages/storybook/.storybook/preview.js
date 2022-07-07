@@ -1,6 +1,5 @@
 import { ThemeProvider, FlexBox } from "@zerry-ui/components";
 import { createGlobalStyle } from "styled-components";
-import { withRouter } from "storybook-addon-react-router-v6";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -18,6 +17,10 @@ const GlobalStyle = createGlobalStyle`
   #root {
     height: 100%;
     width: 100%;
+  }
+
+  #root {
+    display: flex;
   }
 `;
 

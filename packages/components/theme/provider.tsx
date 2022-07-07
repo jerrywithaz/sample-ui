@@ -1,13 +1,14 @@
 import React from "react";
-import { ThemeProvider as DefaultThemeProvider } from "styled-components/native";
-import { ResponsiveProvider } from "../devsupport/responsive";
-import theme from "./theme";
+import NativeThemeProvider from "./native.provider";
+import WebThemeProvider from "./web.provider";
 
 const ThemeProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
   return (
-    <DefaultThemeProvider theme={theme}>
-      <ResponsiveProvider>{children}</ResponsiveProvider>
-    </DefaultThemeProvider>
+    <NativeThemeProvider>
+      <WebThemeProvider>
+        {children}
+      </WebThemeProvider>
+    </NativeThemeProvider>
   );
 };
 

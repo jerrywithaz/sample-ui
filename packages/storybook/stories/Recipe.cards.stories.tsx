@@ -28,7 +28,7 @@ const LabelValueRowTable: React.FC<{
   const collapse = useResponsiveProp(false, {
     xs: collapseOnMobile
   }, false);
-  
+
   const width = useResponsiveProp("300px", {
     xs: undefined
   }, true);
@@ -149,7 +149,8 @@ const OrdersCard = () => {
               description: "Prescribed on April 20th for you know...",
             },
           ]}
-          renderItem={({ item }) => {
+          rowHeight={50}
+          renderItem={(type, item) => {
             return (
               <ListItem title={item.name} description={item.description} />
             );

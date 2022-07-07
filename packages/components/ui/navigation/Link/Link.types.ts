@@ -3,4 +3,5 @@ export interface LinkProps {
     to: string;
     /** The name of the Screen */
     name: string;
+    onPress?: () => void;
 }

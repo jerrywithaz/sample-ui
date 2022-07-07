@@ -4,10 +4,10 @@ import {
   Box,
   FlexBox,
   Text,
+  Link,
 } from "@zerry-ui/components";
 import {
   createStackNavigator,
-  Link,
   NavigationContainer,
 } from "@zerry-ui/navigation";
 

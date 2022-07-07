@@ -153,7 +153,7 @@ const OrdersCard = () => {
               description: "Prescribed on April 20th for you know...",
             },
           ]}
-          renderItem={({ item }) => {
+          renderItem={(_, item) => {
             return (
               <ListItem title={item.name} description={item.description} />
             );

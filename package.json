@@ -15,5 +15,9 @@
   "resolutions": {
     "@types/react": "17.0.2",
     "@types/react-native": "0.69.2"
+  },
+  "dependencies": {
+    "@zerry-ui/components": "workspace:^",
+    "@zerry-ui/navigation": "workspace:^"
   }
 }

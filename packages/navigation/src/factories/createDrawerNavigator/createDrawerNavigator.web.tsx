@@ -1,11 +1,12 @@
 import React from "react";
 import { DrawerNavigatorProps } from "./createDrawerNavigator.types";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { ParamListBase, ScreenProps, getInitialRoutePath } from "../createStackNavigator";
+import { ScreenProps, getInitialRoutePath } from "../createStackNavigator";
 import { FlexBox } from "@zerry-ui/components";
 import NavigationProvider from "../../providers/NavigationProvider";
 import DrawerNavigationProvider from "../../providers/DrawerNavigationProvider";
 import useResponsiveDrawerType from "../../hooks/useResponsiveDrawerType";
+import { ParamListBase } from "../../types";
 
 export function createDrawerNavigator<ParamList extends ParamListBase>() {
   return {
@@ -26,7 +27,7 @@ export function createDrawerNavigator<ParamList extends ParamListBase>() {
       const routes = React.Children.map(children, (child) => {
         if (React.isValidElement<ScreenProps<ParamList>>(child)) {
           const { props } = child;
-          const { path, component: Component, name, options } = props;
+          const { path, component: Component } = props;
 
           return <Route path={path} element={<Component />} />;
         }
@@ -41,7 +42,7 @@ export function createDrawerNavigator<ParamList extends ParamListBase>() {
       return (
         <NavigationProvider>
           <DrawerNavigationProvider drawerType={type}>
-            <FlexBox horizontal>
+            <FlexBox flex={1} horizontal>
               {DrawerContent && <DrawerContent />}
               <Routes>
                 {routes}

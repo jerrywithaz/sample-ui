@@ -1,8 +1,5 @@
 import React from "react";
-
-export type ParamListBase = {
-    [x: string]: Record<string, unknown>;
-};
+import { ParamListBase } from "../../types";
 
 export interface NavigatorProps<ParamList extends ParamListBase> {
     children: React.ReactNode;
@@ -28,13 +25,14 @@ export interface ScreenOptions {
 export interface ScreenProps<ParamList extends ParamListBase> {
     // Shared Props
 
-    name: string;
+    name: keyof ParamList;
     options?: ScreenOptions;
     component: React.ComponentType<any>;
 
     // Native Only Props
 
     path: string;
+    headerTitle?: string;
 
     // Web Only Props
 }

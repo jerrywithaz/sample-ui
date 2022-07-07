@@ -1,7 +1,8 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { NavigatorProps, ParamListBase, ScreenProps } from "./createStackNavigator.types";
+import { NavigatorProps, ScreenProps } from "./createStackNavigator.types";
 import NavigationProvider from "../../providers/NavigationProvider";
+import { ParamListBase } from "../../types";
 
 export function createStackNavigator<ParamList extends ParamListBase>() {
   const Stack = createNativeStackNavigator<ParamList>();

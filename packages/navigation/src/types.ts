@@ -1,3 +1,1 @@
-export type ParamListBase = {
-    [x: string]: Record<string, unknown>;
-};
+export type ParamListBase = Record<string, object | undefined>;

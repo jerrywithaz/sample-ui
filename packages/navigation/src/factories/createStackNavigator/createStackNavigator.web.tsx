@@ -1,8 +1,9 @@
 import React from "react";
-import { NavigatorProps, ParamListBase, ScreenProps } from "./createStackNavigator.types";
+import { NavigatorProps, ScreenProps } from "./createStackNavigator.types";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { getInitialRoutePath } from "./createStackNavigator.utils";
 import NavigationProvider from "../../providers/NavigationProvider";
+import { ParamListBase } from "../../types";
 
 export function createStackNavigator<ParamList extends ParamListBase>() {
   return {
@@ -15,7 +16,7 @@ export function createStackNavigator<ParamList extends ParamListBase>() {
       const routes = React.Children.map(children, (child) => {
         if (React.isValidElement<ScreenProps<ParamList>>(child)) {
           const { props } = child;
-          const { path, component: Component, name, options } = props;
+          const { path, component: Component } = props;
 
           return <Route path={path} element={<Component />} />;
         }

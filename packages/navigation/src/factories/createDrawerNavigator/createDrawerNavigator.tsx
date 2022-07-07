@@ -17,7 +17,7 @@ export function createDrawerNavigator<ParamList extends ParamListBase>() {
         initialRouteName,
         screenOptions,
         drawerContent: DrawerContent,
-        drawerType
+        drawerType,
       } = props;
 
       const type = useResponsiveDrawerType(drawerType);
@@ -54,8 +54,7 @@ export function createDrawerNavigator<ParamList extends ParamListBase>() {
           screenOptions={{
             ...screenOptions,
             drawerType: type,
-            drawerStyle: {
-            },
+            drawerStyle: {},
             headerStyle: {
               borderWidth: 0,
               shadowRadius: 0,
@@ -63,6 +62,7 @@ export function createDrawerNavigator<ParamList extends ParamListBase>() {
                   height: 0,
                   width: 0
               },
+              ...typeof screenOptions?.headerStyle === "object" ? screenOptions?.headerStyle : {}
             }
           }}
           initialRouteName={initialRouteName}

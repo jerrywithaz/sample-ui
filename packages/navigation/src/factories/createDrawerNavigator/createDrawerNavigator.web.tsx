@@ -14,9 +14,9 @@ export function createDrawerNavigator<ParamList extends ParamListBase>() {
       children,
       initialRouteName,
       drawerContent: DrawerContent,
-      drawerType
+      drawerType,
+      header: Header,
     }: DrawerNavigatorProps<ParamList>) => {
-
       const type = useResponsiveDrawerType(drawerType);
 
       const initialRoutePath = getInitialRoutePath<ParamList>(
@@ -42,12 +42,15 @@ export function createDrawerNavigator<ParamList extends ParamListBase>() {
       return (
         <NavigationProvider>
           <DrawerNavigationProvider drawerType={type}>
-            <FlexBox flex={1} horizontal>
-              {DrawerContent && <DrawerContent />}
-              <Routes>
-                {routes}
-                {initialRoute}
-              </Routes>
+            <FlexBox flex={1} vertical>
+              {Header && <Header drawerType={type} />}
+              <FlexBox flex={1} horizontal>
+                {DrawerContent && <DrawerContent />}
+                <Routes>
+                  {routes}
+                  {initialRoute}
+                </Routes>
+              </FlexBox>
             </FlexBox>
           </DrawerNavigationProvider>
         </NavigationProvider>

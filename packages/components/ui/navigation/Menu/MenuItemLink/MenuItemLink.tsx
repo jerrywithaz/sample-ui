@@ -5,8 +5,8 @@ import { MenuItemLinkProps } from "./MenuItemLink.types";
 
 const MenuItemLink: React.FC<MenuItemLinkProps> = ({ title, to, name, onPress }) => {
   return (
-    <ListItem paddingHorizontal={4} paddingVertical={4} >
-      <Link to={to} name={name} onPress={onPress}>
+    <ListItem paddingHorizontal={12} paddingVertical={8}>
+      <Link to={to} name={name} onPress={onPress} fontSize="medium">
         {title}
       </Link>
     </ListItem>

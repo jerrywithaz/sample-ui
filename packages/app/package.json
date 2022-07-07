@@ -12,7 +12,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "deploy": "gh-pages -b main -d web-build",
+    "deploy": "gh-pages -b deploy -d web-build",
     "predeploy": "expo build:web"
   },
   "dependencies": {

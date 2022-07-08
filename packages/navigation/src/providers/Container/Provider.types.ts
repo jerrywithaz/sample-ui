@@ -5,4 +5,6 @@ export interface NavigationContainerProps {
     };
     /** Web Only - Use MemoryRouter */
     memoryRouter?: boolean;
+    hashRouter?: boolean;
+    basename?: string;
 }

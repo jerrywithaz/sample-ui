@@ -1,14 +1,14 @@
 import { useDrawerStatus } from "@react-navigation/drawer";
 import { DrawerActionHelpers, NavigationProp, useNavigation as useNativeNavigation } from "@react-navigation/native";
 import React, { createContext, useContext } from "react";
+import { ParamListBase } from "../../types";
 import { useNavigation } from "../NavigationProvider";
-import { ParamListBase } from "../../factories/createStackNavigator";
 import { DrawerNavigationProviderContext, DrawerNavigationProviderProps } from "./DrawerNavigationProvider.types";
 
 type DrawerNavigationProps<ParamList extends ParamListBase> =
   NavigationProp<ParamList> & DrawerActionHelpers<ParamList>;
   
-const Context = createContext<DrawerNavigationProviderContext | undefined>(undefined);
+const Context = createContext<DrawerNavigationProviderContext<any> | undefined>(undefined);
 
 const DrawerNavigationProvider: React.FC<React.PropsWithChildren<DrawerNavigationProviderProps>> = (props) => {
   const { children, drawerType } = props;

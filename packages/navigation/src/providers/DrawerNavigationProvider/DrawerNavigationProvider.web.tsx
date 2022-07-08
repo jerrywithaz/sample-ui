@@ -1,19 +1,17 @@
 import React, { createContext, useCallback, useContext, useState } from "react";
-import { useLocation } from "react-router-dom";
 import { DrawerNavigationProviderContext, DrawerNavigationProviderProps } from "./DrawerNavigationProvider.types";
-import { ParamListBase } from "../../factories/createStackNavigator";
 import { useNavigation } from "../NavigationProvider";
+import { ParamListBase } from "../../types";
 
 const Context =
-  createContext<DrawerNavigationProviderContext | undefined>(undefined);
+  createContext<DrawerNavigationProviderContext<any> | undefined>(undefined);
 
 const DrawerNavigationProvider: React.FC<React.PropsWithChildren<DrawerNavigationProviderProps>> = ({
   children,
   drawerType
 }) => {
-  const location = useLocation();
   const { goBack, canGoBack, navigate } = useNavigation();
-  const [drawerState, setDrawerState] = useState<"open" | "closed">("open");
+  const [drawerState, setDrawerState] = useState<"open" | "closed">("closed");
 
   const toggleDrawer = useCallback(() => {
     setDrawerState((drawerState) => {

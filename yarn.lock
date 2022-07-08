@@ -5948,6 +5948,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zerry-ui/components@workspace:packages/components"
   dependencies:
+    "@expo/vector-icons": ^13.0.0
     "@react-navigation/native": ^6.0.10
     "@types/lodash.merge": ^4.6.7
     "@types/styled-components": ^5.1.25
@@ -5955,6 +5956,7 @@ __metadata:
     lodash.merge: ^4.6.2
     react-native-gesture-handler: ^2.5.0
     react-native-reanimated: 2.8.0
+    react-native-svg: ^12.3.0
     react-responsive: ^9.0.0-beta.10
     react-router-dom: ^6.3.0
     recyclerlistview: ^4.0.1
@@ -5968,7 +5970,6 @@ __metadata:
     react-native-gesture-handler: ">= 2.0.0"
     react-native-safe-area-context: ">= 3.0.0"
     react-native-screens: ">= 3.0.0"
-    react-native-svg: "*"
     react-router-dom: ">= 6.0.0"
   languageName: unknown
   linkType: soft
@@ -6358,6 +6359,7 @@ __metadata:
     "@babel/core": ^7.18.6
     "@babel/preset-env": ^7.18.6
     "@babel/preset-typescript": ^7.18.6
+    "@expo/vector-icons": ^13.0.0
     "@expo/webpack-config": ^0.16.25
     "@types/react": ~17.0.21
     "@types/react-native": 0.69.2
@@ -6373,6 +6375,7 @@ __metadata:
     react-dom: 17.0.2
     react-native: 0.68.2
     react-native-reanimated: ~2.8.0
+    react-native-svg: 12.3.0
     react-native-web: 0.17.7
     styled-components: ^5.3.5
     ts-loader: ^8.4.0
@@ -8892,7 +8895,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-select@npm:^4.1.3":
+"css-select@npm:^4.1.3, css-select@npm:^4.2.1":
   version: 4.3.0
   resolution: "css-select@npm:4.3.0"
   dependencies:
@@ -8937,7 +8940,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-tree@npm:^1.1.2":
+"css-tree@npm:^1.0.0-alpha.39, css-tree@npm:^1.1.2":
   version: 1.1.3
   resolution: "css-tree@npm:1.1.3"
   dependencies:
@@ -17821,6 +17824,19 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 8792203c2a1f9ab80b33814f78e7bd10be8c09dcc105f44fa22ca70f4417bc028613f49831c8972fbb49531ef45433e8971f07d6e0365d3da3042dc40f30f7a3
+  languageName: node
+  linkType: hard
+
+"react-native-svg@npm:12.3.0, react-native-svg@npm:^12.3.0":
+  version: 12.3.0
+  resolution: "react-native-svg@npm:12.3.0"
+  dependencies:
+    css-select: ^4.2.1
+    css-tree: ^1.0.0-alpha.39
+  peerDependencies:
+    react: "*"
+    react-native: ">=0.50.0"
+  checksum: 9bed890d030819ed650fdc84ae8127f78f72a28d81a160dd574729b81f237c85be6a5ff4a0951b4dd28bd2836189f18afffef1fd6447fb3b6537c7ecd23f08c2
   languageName: node
   linkType: hard
 

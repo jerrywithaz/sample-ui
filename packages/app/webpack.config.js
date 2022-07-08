@@ -1,40 +1,46 @@
-const createExpoWebpackConfigAsync = require('@expo/webpack-config');
+const createExpoWebpackConfigAsync = require("@expo/webpack-config");
+// const { getExpoBabelLoader } = require("@expo/webpack-config/utils");
 
 // Expo CLI will await this method so you can optionally return a promise.
-module.exports = async function(env, argv) {
+module.exports = async function (env, argv) {
   const config = await createExpoWebpackConfigAsync(env, argv);
   // If you want to add a new alias to the config.
-//   config.resolve.alias['moduleA'] = 'moduleB';
+  //   config.resolve.alias['moduleA'] = 'moduleB';
 
-console.log(config.module.rules[0]);
-console.log(config.module.rules[1]);
+  // console.log(config.module.rules[0]);
+  // console.log(config.module.rules[1].oneOf[2]);
 
-config.module.rules.push({
-    test: /\.tsx?$/,
-    use: [
-      {
-        loader: "babel-loader",
-        options: {
-          cacheDirectory: true,
-          presets: [
-            ["@babel/preset-env", { targets: { node: "8" } }],
-            [
-              "@babel/preset-typescript",
-              { isTSX: true, allExtensions: true }
+  config.module.rules.push({
+      test: /\.(mjs|[jt]sx?)$/,
+      use: [
+        {
+          loader: "babel-loader",
+          options: {
+            cacheDirectory: true,
+            presets: [
+                ["babel-preset-expo", {}],
+            //   ["@babel/preset-env", { targets: { node: "8" } }],
+            //   [
+            //     "@babel/preset-typescript",
+            //     { isTSX: true, allExtensions: true }
+            //   ]
             ]
-          ]
+          }
         }
-      }
-    ],
-    exclude: /node_modules/
-  });
+      ],
+      exclude: /node_modules/
+    });
+
+//   const loader = getExpoBabelLoader(config);
+//   console.log(loader);
+
   // Maybe you want to turn off compression in dev mode.
-  if (config.mode === 'development') {
+  if (config.mode === "development") {
     config.devServer.compress = false;
   }
 
   // Or prevent minimizing the bundle when you build.
-  if (config.mode === 'production') {
+  if (config.mode === "production") {
     config.optimization.minimize = false;
   }
 

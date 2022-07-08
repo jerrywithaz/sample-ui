@@ -1,13 +1,12 @@
-import React, { createContext, useCallback, useContext, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { createContext, useCallback, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ParamListBase } from '../../types';
 import { NavigateFunction, NavigationProviderContext } from './NavigationProvider.types';
-import { ParamListBase } from '../../factories/createStackNavigator';
 
-const Context = createContext<NavigationProviderContext | undefined>(undefined);
+const Context = createContext<NavigationProviderContext<any> | undefined>(undefined);
 
 const NavigationProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
     const navigate = useNavigate();
-    const location = useLocation();
 
     const customNavigate = useCallback<NavigateFunction<ParamListBase>>((screen, params) => {
         if (typeof screen === "string") {
@@ -35,7 +34,9 @@ const NavigationProvider: React.FC<React.PropsWithChildren<{}>> = ({ children })
     );
 }
 
-export function useNavigation() {
+export function useNavigation<
+ParamList extends ParamListBase
+>(): NavigationProviderContext<ParamList> {
     const context = useContext(Context);
 
     if (context === undefined) {

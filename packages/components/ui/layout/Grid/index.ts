@@ -1,4 +1,4 @@
 export { default as Grid } from './Grid';
 export { default as Row } from './Row';
 export { default as Col } from './Col';
-export { GridProps, RowProps, ColProps } from './Grid.types';
+export type { GridProps, RowProps, ColProps } from './Grid.types';

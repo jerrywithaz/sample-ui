@@ -2,10 +2,10 @@ import {
   useNavigation as useNativeNavigation,
 } from "@react-navigation/native";
 import React, { createContext, useContext } from "react";
-import { ParamListBase } from "../../factories/createStackNavigator";
+import { ParamListBase } from "../../types";
 import { NavigationProviderContext } from "./NavigationProvider.types";
 
-const Context = createContext<NavigationProviderContext | undefined>(undefined);
+const Context = createContext<NavigationProviderContext<any> | undefined>(undefined);
 
 const NavigationProvider: React.FC<React.PropsWithChildren<{}>> = (props) => {
   const { children } = props;

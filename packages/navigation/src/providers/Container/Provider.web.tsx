@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, useLocation, MemoryRouter } from "react-router-dom";
+import { BrowserRouter, useLocation, MemoryRouter, HashRouter } from "react-router-dom";
 import { NavigationContainerProps } from "./Provider.types";
 
 const DocumentTitle: React.FC = () => {
@@ -12,12 +12,12 @@ const DocumentTitle: React.FC = () => {
 
 export const NavigationContainer: React.FC<
   React.PropsWithChildren<NavigationContainerProps>
-> = ({ children, memoryRouter }) => {
+> = ({ children, memoryRouter, basename, hashRouter }) => {
     
-  const Router = memoryRouter ? MemoryRouter : BrowserRouter;
+  const Router = memoryRouter ? MemoryRouter : hashRouter ? HashRouter : BrowserRouter;
 
   return (
-    <Router>
+    <Router basename={basename}>
       <DocumentTitle />
       {children}
     </Router>

@@ -26,7 +26,6 @@
     "react-native-gesture-handler": ">= 2.0.0",
     "react-native-safe-area-context": ">= 3.0.0",
     "react-native-screens": ">= 3.0.0",
-    "react-native-svg": "*",
     "react-router-dom": ">= 6.0.0"
   },
   "devDependencies": {
@@ -39,8 +38,10 @@
     "styled-components": "^5.3.5"
   },
   "dependencies": {
+    "@expo/vector-icons": "^13.0.0",
     "lodash.merge": "^4.6.2",
     "react-native-gesture-handler": "^2.5.0",
+    "react-native-svg": "^12.3.0",
     "react-responsive": "^9.0.0-beta.10",
     "recyclerlistview": "^4.0.1",
     "ts-deepmerge": "^2.0.1"

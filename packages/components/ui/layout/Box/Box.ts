@@ -52,7 +52,7 @@ const Box = styled.View<BoxProps>`
         ${createStyleProp("flex", fullWidth ? 1 : flex, "")}
         ${createStyleProp("flex-grow", flexGrow, "")}
         ${createStyleProp("flex-shrink", flexShrink, "")}
-        ${createStyleProp("flex-basis", fullWidth ? "100%" : flexBasis, "")}
+        ${createStyleProp("flex-basis", fullWidth ? "100%" : flexBasis ?? "auto", "")}
         ${createStyleProp("flex-direction", horizontal ? `row` : vertical ? `column`: flexDirection)}
         ${createStyleProp("justify-content", justifyContent)}
         ${createStyleProp("align-items", alignItems)}
@@ -68,7 +68,7 @@ const Box = styled.View<BoxProps>`
         ${createStyleProp("width", width)}
         ${createStyleProp("max-width", wrapText ? "100%" : maxWidth)}
         ${createStyleProp("max-height", maxHeight)}
-        ${createStyleProp("min-height", minHeight)}
+        ${createStyleProp("min-height", minHeight ?? "auto")}
         ${createStyleProp("min-width", minWidth)}
         ${createStyleProp("position", position)}
         ${createStyleProp("align-self", alignSelf)}

@@ -195,10 +195,10 @@ var IndexPath_IndexPath=createClass_default()(function IndexPath(row,section){cl
 // CONCATENATED MODULE: ../components/ui/navigation/Menu/IndexPath/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-router-dom/index.js
-var react_router_dom = __webpack_require__(95);
+var react_router_dom = __webpack_require__(87);
 
 // CONCATENATED MODULE: ../components/ui/navigation/Link/Link.styled.web.tsx
-var Link_styled_web_Link=Object(styled_components_browser_esm["b" /* default */])(react_router_dom["b" /* Link */]).withConfig({displayName:"Linkstyledweb__Link"})(["text-decoration:none;color:",";"],function(_ref){var theme=_ref.theme;return theme.colors.secondary.default;});
+var Link_styled_web_Link=Object(styled_components_browser_esm["b" /* default */])(react_router_dom["c" /* Link */]).withConfig({displayName:"Linkstyledweb__Link"})(["text-decoration:none;color:",";"],function(_ref){var theme=_ref.theme;return theme.colors.secondary.default;});
 // CONCATENATED MODULE: ../components/ui/navigation/Link/Link.web.tsx
 var Link_web_Link=function Link(_ref){var to=_ref.to,children=_ref.children,onPress=_ref.onPress,fontSize=_ref.fontSize;return Object(jsx_runtime["jsx"])(Link_styled_web_Link,{to:to,onClick:onPress,style:{width:"100%"},children:Object(jsx_runtime["jsx"])(global_Text_Text,{fontSize:fontSize,children:children})});};
 // CONCATENATED MODULE: ../components/ui/navigation/Link/index.ts
@@ -236,7 +236,7 @@ function createDrawerNavigator(){return{Navigator:function Navigator(_ref){var c
 // CONCATENATED MODULE: ../navigation/src/factories/index.ts
 
 // CONCATENATED MODULE: ../navigation/src/providers/Container/Provider.web.tsx
-var Provider_web_DocumentTitle=function DocumentTitle(){var location=Object(react_router["g" /* useLocation */])();Object(react["useEffect"])(function(){},[location.pathname]);return null;};var Provider_web_NavigationContainer=function NavigationContainer(_ref){var children=_ref.children,memoryRouter=_ref.memoryRouter,basename=_ref.basename;var Router=memoryRouter?react_router["a" /* MemoryRouter */]:react_router_dom["a" /* BrowserRouter */];return Object(jsx_runtime["jsxs"])(Router,{basename:basename,children:[Object(jsx_runtime["jsx"])(Provider_web_DocumentTitle,{}),children]});};
+var Provider_web_DocumentTitle=function DocumentTitle(){var location=Object(react_router["g" /* useLocation */])();Object(react["useEffect"])(function(){},[location.pathname]);return null;};var Provider_web_NavigationContainer=function NavigationContainer(_ref){var children=_ref.children,memoryRouter=_ref.memoryRouter,basename=_ref.basename,hashRouter=_ref.hashRouter;var Router=memoryRouter?react_router["a" /* MemoryRouter */]:hashRouter?react_router_dom["b" /* HashRouter */]:react_router_dom["a" /* BrowserRouter */];return Object(jsx_runtime["jsxs"])(Router,{basename:basename,children:[Object(jsx_runtime["jsx"])(Provider_web_DocumentTitle,{}),children]});};
 // CONCATENATED MODULE: ../navigation/src/providers/Container/index.ts
 
 // CONCATENATED MODULE: ../navigation/src/providers/index.ts
@@ -274,11 +274,11 @@ var drawer_Drawer=function Drawer(){return Object(jsx_runtime["jsx"])(DrawerCont
 // CONCATENATED MODULE: ./src/navigation/header.tsx
 var header_Header=function Header(){var theme=Object(styled_components_native_esm["c" /* useTheme */])();return Object(jsx_runtime["jsx"])(FlexBox,{height:50,backgroundColor:theme.colors.primary.dark});};/* harmony default export */ var navigation_header = (header_Header);
 // CONCATENATED MODULE: ./src/App.tsx
-function App(){return Object(jsx_runtime["jsx"])(responsive_provider,{children:Object(jsx_runtime["jsx"])(Provider_web_NavigationContainer,{basename:"/sample-ui",children:Object(jsx_runtime["jsx"])(provider,{children:Object(jsx_runtime["jsxs"])(FlexBox,{flex:1,horizontal:true,backgroundColor:"#F7F8FD",children:[Object(jsx_runtime["jsxs"])(DrawerStack.Navigator,{initialRouteName:"Home",drawerContent:function drawerContent(){return Object(jsx_runtime["jsx"])(drawer,{});},drawerType:{xs:"front",s:"front",m:"slide",xl:"permanent"},screenOptions:{headerShown:true,headerStyle:{backgroundColor:"#004d80"},headerTitleStyle:{color:"#ffffff"},headerTintColor:"#ffffff"},header:function header(){return Object(jsx_runtime["jsx"])(navigation_header,{});},children:[Object(jsx_runtime["jsx"])(DrawerStack.Screen,{name:"Home",component:screens_Home_Home,path:"/",options:{headerTitle:"Home"}}),Object(jsx_runtime["jsx"])(DrawerStack.Screen,{name:"EditProfile",component:screens_EditProfile_EditProfile,path:"/profile",options:{headerTitle:"Edit Profile"}})]}),Object(jsx_runtime["jsx"])(StatusBar["a" /* StatusBar */],{style:"auto"})]})})})});}
+function App(){return Object(jsx_runtime["jsx"])(responsive_provider,{children:Object(jsx_runtime["jsx"])(Provider_web_NavigationContainer,{hashRouter:true,children:Object(jsx_runtime["jsx"])(provider,{children:Object(jsx_runtime["jsxs"])(FlexBox,{flex:1,horizontal:true,backgroundColor:"#F7F8FD",children:[Object(jsx_runtime["jsxs"])(DrawerStack.Navigator,{initialRouteName:"Home",drawerContent:function drawerContent(){return Object(jsx_runtime["jsx"])(drawer,{});},drawerType:{xs:"front",s:"front",m:"slide",xl:"permanent"},screenOptions:{headerShown:true,headerStyle:{backgroundColor:"#004d80"},headerTitleStyle:{color:"#ffffff"},headerTintColor:"#ffffff"},header:function header(){return Object(jsx_runtime["jsx"])(navigation_header,{});},children:[Object(jsx_runtime["jsx"])(DrawerStack.Screen,{name:"Home",component:screens_Home_Home,path:"/",options:{headerTitle:"Home"}}),Object(jsx_runtime["jsx"])(DrawerStack.Screen,{name:"EditProfile",component:screens_EditProfile_EditProfile,path:"/profile",options:{headerTitle:"Edit Profile"}})]}),Object(jsx_runtime["jsx"])(StatusBar["a" /* StatusBar */],{style:"auto"})]})})})});}
 // CONCATENATED MODULE: ./index.js
 Object(registerRootComponent["a" /* default */])(App);
 
 /***/ })
 
 },[[255,1,2]]]);
-//# sourceMappingURL=app.a8e9d37d.chunk.js.map
+//# sourceMappingURL=app.caef0a65.chunk.js.map

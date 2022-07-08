@@ -1,14 +1,14 @@
 (this["webpackJsonp"] = this["webpackJsonp"] || []).push([[0],{
 
-/***/ 255:
+/***/ 261:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(381);
+module.exports = __webpack_require__(387);
 
 
 /***/ }),
 
-/***/ 381:
+/***/ 387:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16,23 +16,23 @@ module.exports = __webpack_require__(381);
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-gesture-handler/lib/module/index.js + 30 modules
-var lib_module = __webpack_require__(383);
+var lib_module = __webpack_require__(389);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo/build/launch/registerRootComponent.js + 4 modules
-var registerRootComponent = __webpack_require__(253);
+var registerRootComponent = __webpack_require__(259);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@expo/match-media/build/index.js
-var build = __webpack_require__(211);
+var build = __webpack_require__(213);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/StatusBar.js + 8 modules
-var StatusBar = __webpack_require__(252);
+var StatusBar = __webpack_require__(258);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react/index.js
 var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-router/index.js
-var react_router = __webpack_require__(31);
+var react_router = __webpack_require__(32);
 
 // CONCATENATED MODULE: ../navigation/src/factories/createStackNavigator/createStackNavigator.utils.ts
 function getInitialRoutePath(children,initialRouteName){var initialRouteElement=react_default.a.Children.toArray(children).find(function(child){if(react_default.a.isValidElement(child)){var props=child.props;var name=props.name;return name===initialRouteName;}return false;});if(react_default.a.isValidElement(initialRouteElement)){return initialRouteElement.props.path;}return undefined;}
@@ -48,10 +48,10 @@ function createStackNavigator(){return{Navigator:function Navigator(_ref){var ch
 // CONCATENATED MODULE: ../navigation/src/factories/createStackNavigator/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/styled-components/native/dist/styled-components.native.esm.js
-var styled_components_native_esm = __webpack_require__(38);
+var styled_components_native_esm = __webpack_require__(39);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-responsive/dist/react-responsive.js
-var react_responsive = __webpack_require__(103);
+var react_responsive = __webpack_require__(106);
 
 // CONCATENATED MODULE: ../components/devsupport/responsive/responsive.ts
 function useIsXSmallDevice(){return Object(react_responsive["useMediaQuery"])({maxWidth:576});}function useIsSmallDevice(){return Object(react_responsive["useMediaQuery"])({minWidth:576});}function useIsMediumDevice(){return Object(react_responsive["useMediaQuery"])({minWidth:768});}function useIsLargeDevice(){return Object(react_responsive["useMediaQuery"])({minWidth:992});}function useIsXLargeDevice(){return Object(react_responsive["useMediaQuery"])({minWidth:1200});}function useIsXXLargeDevice(){return Object(react_responsive["useMediaQuery"])({minWidth:1600});}function useResponsiveSize(){var isXSmallDevice=useIsXSmallDevice();var isSmallDevice=useIsSmallDevice();var isMediumDevice=useIsMediumDevice();var isLargeDevice=useIsLargeDevice();var isXLargeDevice=useIsXLargeDevice();var isXXLargeDevice=useIsXXLargeDevice();return{xs:isXSmallDevice,s:isSmallDevice,m:isMediumDevice,lg:isLargeDevice,xl:isXLargeDevice,xxl:isXXLargeDevice};}
@@ -60,14 +60,14 @@ var responsive_provider_Context=Object(react["createContext"])(undefined);var re
 // CONCATENATED MODULE: ../components/devsupport/responsive/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-web/dist/exports/Platform/index.js
-var Platform = __webpack_require__(18);
+var Platform = __webpack_require__(16);
 
 // CONCATENATED MODULE: ../components/theme/theme.ts
 var theme_theme={colors:{primary:{dark:"#004d80",default:"#0077b3",light:"#cde5f1",lighter:"#e6f2f8",lightest:"#f3f9fc"},secondary:{default:"#00294d"},white:{default:"#ffffff"},gray:{darker:"#657787",dark:"#909599",default:"#cfd2d4",light:"#e1e3e6",lighter:"#f5f8fa",lightest:"#ffffff"},status:{default:"#00294d",danger:"#de2362",success:"#00875a",warning:"#f7b228"}},spacing:{xxxSmall:2,xxSmall:4,xSmall:8,small:12,medium:16,large:20,xLarge:28,xxLarge:36,xxxLarge:48,xxxxLarge:72},borderRadius:{sharp:"0px",pill:Platform["a" /* default */].OS==="web"?"20rem":"50%",default:"4px",card:"8px",circle:function circle(size){return typeof size==="number"?size/2+"px":"50%";}},shadow:{tooltip:"0px 2px 10px 0px rgba(0, 41, 77, 0.07)",modal:"0px 2px 20px 0px rgba(0, 0, 0, 0.2)",card:"0px 2px 6px 0px rgba(0, 41, 77, 0.07)",default:"0px 2px 6px 0px rgba(0, 41, 77, 0.07)",hover:"0px 2px 10px 0px rgba(0, 41, 77, 0.1)"},typography:{fontSizes:{xSmall:{rem:"0.75rem",pixel:"12px"},small:{rem:"0.875rem",pixel:"14px"},medium:{rem:"1rem",pixel:"16px"},large:{rem:"1.25",pixel:"20px"},xLarge:{rem:"1.5rem",pixel:"24px"},xxLarge:{rem:"2.25rem",pixel:"36px"},xxxLarge:{rem:"3rem",pixel:"48px"},xxxxLarge:{rem:"4.5rem",pixel:"72px"}}}};/* harmony default export */ var components_theme_theme = (theme_theme);
 // CONCATENATED MODULE: ../components/theme/native.provider.tsx
 var native_provider_ThemeProvider=function ThemeProvider(_ref){var children=_ref.children;return Object(jsx_runtime["jsx"])(styled_components_native_esm["a" /* ThemeProvider */],{theme:components_theme_theme,children:Object(jsx_runtime["jsx"])(responsive_provider,{children:children})});};/* harmony default export */ var native_provider = (native_provider_ThemeProvider);
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/styled-components/dist/styled-components.browser.esm.js
-var styled_components_browser_esm = __webpack_require__(115);
+var styled_components_browser_esm = __webpack_require__(117);
 
 // CONCATENATED MODULE: ../components/theme/web.provider.tsx
 var web_provider_ThemeProvider=function ThemeProvider(_ref){var children=_ref.children;return Object(jsx_runtime["jsx"])(styled_components_browser_esm["a" /* ThemeProvider */],{theme:components_theme_theme,children:Object(jsx_runtime["jsx"])(responsive_provider,{children:children})});};/* harmony default export */ var web_provider = (web_provider_ThemeProvider);
@@ -76,7 +76,7 @@ var provider_ThemeProvider=function ThemeProvider(_ref){var children=_ref.childr
 // CONCATENATED MODULE: ../components/theme/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@babel/runtime/helpers/defineProperty.js
-var defineProperty = __webpack_require__(8);
+var defineProperty = __webpack_require__(7);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@babel/runtime/helpers/objectWithoutProperties.js
@@ -88,7 +88,7 @@ var slicedToArray = __webpack_require__(13);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/recyclerlistview/dist/reactnative/index.js
-var reactnative = __webpack_require__(174);
+var reactnative = __webpack_require__(176);
 
 // CONCATENATED MODULE: ../components/utils/createStyleProp.ts
 function createStyleProp(name,value){var suffix=arguments.length>2&&arguments[2]!==undefined?arguments[2]:"px";if(value===undefined)return"";if(typeof value=='number'){return name+": "+value+suffix+";";}return name+": "+value+";";}/* harmony default export */ var utils_createStyleProp = (createStyleProp);
@@ -129,7 +129,7 @@ var FalsyText_excluded=["component"];function FalsyText_ownKeys(object,enumerabl
 // CONCATENATED MODULE: ../components/devsupport/components/FalsyText/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-web/dist/exports/Pressable/index.js + 4 modules
-var Pressable = __webpack_require__(154);
+var Pressable = __webpack_require__(157);
 
 // CONCATENATED MODULE: ../components/ui/forms/ButtonBase/ButtonBase.styled.ts
 var ButtonBase_styled_Pressable=Object(styled_components_native_esm["b" /* default */])(Pressable["a" /* default */]).withConfig({displayName:"ButtonBasestyled__Pressable"})(["cursor:pointer;padding:",";border-radius:",";"],function(_ref){var theme=_ref.theme;return theme.spacing.small+"px "+theme.spacing.small+"px";},function(_ref2){var theme=_ref2.theme;return theme.borderRadius.default;});var ButtonBase_styled_ButtonBase=styled_components_native_esm["b" /* default */].View.withConfig({displayName:"ButtonBasestyled__ButtonBase"})(["border:0px;"]);
@@ -137,7 +137,7 @@ var ButtonBase_styled_Pressable=Object(styled_components_native_esm["b" /* defau
 var StyleSheet = __webpack_require__(14);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/ts-deepmerge/dist/index.js
-var dist = __webpack_require__(135);
+var dist = __webpack_require__(137);
 var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
 
 // CONCATENATED MODULE: ../components/ui/forms/ButtonBase/hooks/useButtonInteractionStyles.ts
@@ -162,6 +162,13 @@ var TextInput_excluded=["borderRadius","size","accessoryLeft","accessoryRight"];
 
 // CONCATENATED MODULE: ../components/ui/forms/index.ts
 
+// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@expo/vector-icons/FontAwesome.js + 10 modules
+var FontAwesome = __webpack_require__(257);
+
+// CONCATENATED MODULE: ../components/ui/global/Icon/Icon.tsx
+function Icon_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function Icon_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?Icon_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):Icon_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}var Icon_Icon=function Icon(props){return Object(jsx_runtime["jsx"])(FlexBox,{horizontal:true,children:Object(jsx_runtime["jsx"])(FontAwesome["a" /* default */],Icon_objectSpread({},props))});};/* harmony default export */ var global_Icon_Icon = (Icon_Icon);
+// CONCATENATED MODULE: ../components/ui/global/Icon/index.ts
+
 // CONCATENATED MODULE: ../components/hooks/useResponsiveProp.ts
 function useResponsiveProp(defaultValue,prop,allowUndefined){var deviceSize=useDeviceSize();return responsiveProp(defaultValue,deviceSize,prop,allowUndefined);}function canReturnProp(keyDefined,prop,allowUndefined){if(allowUndefined&&keyDefined){return true;}else if(prop===undefined){return false;}else{return true;}}function responsiveProp(defaultValue,deviceSize,prop,allowUndefined){if(prop===undefined)return defaultValue;if(deviceSize.xxl&&canReturnProp('xxl'in prop,prop==null?void 0:prop.xxl,allowUndefined))return prop.xxl;if(deviceSize.xl&&canReturnProp('xl'in prop,prop==null?void 0:prop.xl,allowUndefined))return prop.xl;if(deviceSize.lg&&canReturnProp('lg'in prop,prop==null?void 0:prop.lg,allowUndefined))return prop.lg;if(deviceSize.m&&canReturnProp('m'in prop,prop==null?void 0:prop.m,allowUndefined))return prop.m;if(deviceSize.s&&canReturnProp('s'in prop,prop==null?void 0:prop.s,allowUndefined))return prop.s;if(deviceSize.xs&&canReturnProp('xs'in prop,prop==null?void 0:prop.xs,allowUndefined))return prop.xs;return defaultValue;}/* harmony default export */ var hooks_useResponsiveProp = (useResponsiveProp);
 // CONCATENATED MODULE: ../components/ui/layout/Card/Card.styled.ts
@@ -183,11 +190,11 @@ var Row_excluded=["gutter","children","wrap","verticalAlignment","horizontalAlig
 // CONCATENATED MODULE: ../components/ui/layout/Grid/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@babel/runtime/helpers/createClass.js
-var createClass = __webpack_require__(3);
+var createClass = __webpack_require__(4);
 var createClass_default = /*#__PURE__*/__webpack_require__.n(createClass);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@babel/runtime/helpers/classCallCheck.js
-var classCallCheck = __webpack_require__(2);
+var classCallCheck = __webpack_require__(3);
 var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck);
 
 // CONCATENATED MODULE: ../components/ui/navigation/Menu/IndexPath/IndexPath.ts
@@ -195,7 +202,7 @@ var IndexPath_IndexPath=createClass_default()(function IndexPath(row,section){cl
 // CONCATENATED MODULE: ../components/ui/navigation/Menu/IndexPath/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-router-dom/index.js
-var react_router_dom = __webpack_require__(87);
+var react_router_dom = __webpack_require__(90);
 
 // CONCATENATED MODULE: ../components/ui/navigation/Link/Link.styled.web.tsx
 var Link_styled_web_Link=Object(styled_components_browser_esm["c" /* default */])(react_router_dom["c" /* Link */]).withConfig({displayName:"Linkstyledweb__Link"})(["text-decoration:none;color:",";"],function(_ref){var theme=_ref.theme;return theme.colors.secondary.default;});
@@ -244,7 +251,7 @@ var Provider_web_DocumentTitle=function DocumentTitle(){var location=Object(reac
 // CONCATENATED MODULE: ../navigation/src/hooks/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-web/dist/exports/SafeAreaView/index.js
-var SafeAreaView = __webpack_require__(153);
+var SafeAreaView = __webpack_require__(155);
 
 // CONCATENATED MODULE: ../navigation/src/components/DrawerContainer/DrawerContainer.web.tsx
 var DrawerContainer_web_DrawerContainer=function DrawerContainer(_ref){var width=_ref.width,children=_ref.children;var _useDrawerNavigation=useDrawerNavigation(),drawerState=_useDrawerNavigation.drawerState,drawerType=_useDrawerNavigation.drawerType;if(drawerState==="closed"&&drawerType!=="permanent")return null;return Object(jsx_runtime["jsx"])(SafeAreaView["a" /* default */],{style:{flexGrow:0,flexBasis:"200px"},children:Object(jsx_runtime["jsx"])(FlexBox,{flex:1,vertical:true,width:width,children:children})});};
@@ -259,7 +266,7 @@ var DrawerContainer_web_DrawerContainer=function DrawerContainer(_ref){var width
 // CONCATENATED MODULE: ./src/navigation/stacks.ts
 var DrawerStack=createDrawerNavigator();
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-web/dist/exports/ScrollView/index.js + 2 modules
-var ScrollView = __webpack_require__(62);
+var ScrollView = __webpack_require__(63);
 
 // CONCATENATED MODULE: ./src/screens/Home/Home.tsx
 var Home_LabelValueRowTable=function LabelValueRowTable(_ref){var left=_ref.left,right=_ref.right,collapseOnMobile=_ref.collapseOnMobile;var collapse=hooks_useResponsiveProp(false,{xs:collapseOnMobile},false);var width=hooks_useResponsiveProp("300px",{xs:undefined},true);return Object(jsx_runtime["jsxs"])(FlexBox,{horizontal:collapse?false:true,vertical:collapse,width:width,marginBottom:24,children:[Object(jsx_runtime["jsx"])(Box_Box,{width:collapse?undefined:200,marginBottom:collapse?24:undefined,children:left}),right&&Object(jsx_runtime["jsx"])(Box_Box,{alignSelf:"flex-start",children:right})]});};var Home_OverviewCard=function OverviewCard(){return Object(jsx_runtime["jsxs"])(layout_Card_Card,{flex:1,marginVertical:16,header:Object(jsx_runtime["jsx"])(Text_Heading3,{children:"Overview"}),children:[Object(jsx_runtime["jsx"])(Home_LabelValueRowTable,{left:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Allergy",value:"Peniccilen"}),right:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Blood Type",value:"B -"})}),Object(jsx_runtime["jsx"])(Home_LabelValueRowTable,{left:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Date of birth",value:"05/16/1995"}),right:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Conditions",value:"Asthma"})}),Object(jsx_runtime["jsx"])(Home_LabelValueRowTable,{left:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Weight",value:"165 lbs"}),right:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Height",value:"5' 7\""})}),Object(jsx_runtime["jsx"])(Home_LabelValueRowTable,{collapseOnMobile:true,left:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Phone",value:"(555) 555-5555"}),right:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Email",value:"fakeuser@email.com"})}),Object(jsx_runtime["jsx"])(Home_LabelValueRowTable,{left:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Address",value:"88 Sommer St. Los Angeles, CA"})})]});};var Home_VitalsCard=function VitalsCard(){return Object(jsx_runtime["jsxs"])(layout_Card_Card,{flex:1,marginVertical:16,header:Object(jsx_runtime["jsx"])(Text_Heading3,{children:"Vitals"}),children:[Object(jsx_runtime["jsx"])(Home_LabelValueRowTable,{left:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Blood Pressure",value:"130/90"}),right:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Pulse",value:"60 bpm"})}),Object(jsx_runtime["jsx"])(Home_LabelValueRowTable,{left:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Temperature",value:"100.4"}),right:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Respiratory Rate",value:"24"})})]});};var Home_LabResultsCards=function LabResultsCards(){return Object(jsx_runtime["jsx"])(layout_Card_Card,{flex:1,marginVertical:16,header:Object(jsx_runtime["jsx"])(Text_Heading3,{children:"Lab Results"}),children:Object(jsx_runtime["jsx"])(Home_LabelValueRowTable,{left:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Date",value:"15 June 2020"}),right:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Time",value:"10:00 AM"})})});};var Home_AssesmentCard=function AssesmentCard(){return Object(jsx_runtime["jsx"])(layout_Card_Card,{flex:1,marginVertical:16,header:Object(jsx_runtime["jsx"])(Text_Heading3,{children:"Assessment"}),children:Object(jsx_runtime["jsx"])(Home_LabelValueRowTable,{left:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Date",value:"15 June 2020"}),right:Object(jsx_runtime["jsx"])(data_LabelValue_LabelValue,{label:"Time",value:"10:00 AM"})})});};var Home_OrdersCard=function OrdersCard(){return Object(jsx_runtime["jsx"])(layout_Card_Card,{flex:2,marginVertical:16,header:Object(jsx_runtime["jsx"])(Text_Heading3,{children:"Prescriptions"}),footer:Object(jsx_runtime["jsx"])(FlexBox,{horizontal:true,alignItems:"center",justifyContent:"flex-end",children:Object(jsx_runtime["jsx"])(forms_Button_Button,{status:"success",borderRadius:"pill",size:"xSmall",children:"Add"})}),children:Object(jsx_runtime["jsx"])(FlexBox,{flex:1,children:Object(jsx_runtime["jsx"])(List_List,{data:[{id:1,name:"Presciption 1",description:"Prescribed on June 10th for chronic fatigue. Will take for 3 days and report on effects."},{id:2,name:"Presciption 2",description:"Prescribed on April 20th for you know..."}],renderItem:function renderItem(_,item){return Object(jsx_runtime["jsx"])(ListItem_ListItem,{title:item.name,description:item.description});}})})});};var Home_Home=function Home(){var columnHeight=hooks_useResponsiveProp(600,{xs:undefined},true);return Object(jsx_runtime["jsx"])(Box_Box,{flex:1,children:Object(jsx_runtime["jsx"])(ScrollView["a" /* default */],{style:{flex:1},nestedScrollEnabled:true,children:Object(jsx_runtime["jsx"])(layout_Grid_Grid,{flex:1,children:Object(jsx_runtime["jsxs"])(Grid_Row,{wrap:true,gutter:16,flex:1,children:[Object(jsx_runtime["jsx"])(Grid_Col,{xs:24,s:24,m:12,xl:10,minHeight:columnHeight,children:Object(jsx_runtime["jsx"])(Home_OverviewCard,{})}),Object(jsx_runtime["jsxs"])(Grid_Col,{xs:24,s:24,m:12,xl:8,minHeight:columnHeight,children:[Object(jsx_runtime["jsx"])(Home_VitalsCard,{}),Object(jsx_runtime["jsx"])(Home_LabResultsCards,{})]}),Object(jsx_runtime["jsxs"])(Grid_Col,{xs:24,s:24,xl:6,minHeight:columnHeight,children:[Object(jsx_runtime["jsx"])(Home_AssesmentCard,{}),Object(jsx_runtime["jsx"])(Home_OrdersCard,{})]})]})})})});};/* harmony default export */ var screens_Home_Home = (Home_Home);
@@ -272,7 +279,7 @@ var EditProfile_EditProfile=function EditProfile(){return Object(jsx_runtime["js
 // CONCATENATED MODULE: ./src/navigation/drawer.tsx
 var drawer_Drawer=function Drawer(){return Object(jsx_runtime["jsx"])(DrawerContainer_web_DrawerContainer,{width:200,children:Object(jsx_runtime["jsx"])(FlexBox,{flex:1,vertical:true,width:200,paddingVertical:8,children:Object(jsx_runtime["jsxs"])(navigation_Menu_Menu,{children:[Object(jsx_runtime["jsx"])(Menu_MenuItem_MenuItem,{title:"Home",to:"/",name:"Home"}),Object(jsx_runtime["jsx"])(Menu_MenuItem_MenuItem,{title:"Profile",to:"/profile",name:"EditProfile"})]})})});};/* harmony default export */ var drawer = (drawer_Drawer);
 // CONCATENATED MODULE: ./src/navigation/header.tsx
-var header_Header=function Header(){var theme=Object(styled_components_native_esm["c" /* useTheme */])();return Object(jsx_runtime["jsx"])(FlexBox,{height:50,backgroundColor:theme.colors.primary.dark});};/* harmony default export */ var navigation_header = (header_Header);
+var header_Header=function Header(){var theme=Object(styled_components_native_esm["c" /* useTheme */])();var _useDrawerNavigation=useDrawerNavigation(),toggleDrawer=_useDrawerNavigation.toggleDrawer;return Object(jsx_runtime["jsx"])(FlexBox,{horizontal:true,height:50,backgroundColor:theme.colors.primary.dark,alignItems:"center",padding:theme.spacing.medium,children:Object(jsx_runtime["jsx"])(global_Icon_Icon,{name:"bars",size:20,color:theme.colors.white.default,onPress:toggleDrawer})});};/* harmony default export */ var navigation_header = (header_Header);
 // CONCATENATED MODULE: ./src/App.tsx
 var GlobalStyles=Platform["a" /* default */].OS==="web"?Object(styled_components_browser_esm["b" /* createGlobalStyle */])(["*{box-sizing:border-box;}"]):function(){return null;};function App(){return Object(jsx_runtime["jsx"])(responsive_provider,{children:Object(jsx_runtime["jsx"])(Provider_web_NavigationContainer,{hashRouter:true,children:Object(jsx_runtime["jsxs"])(provider,{children:[Object(jsx_runtime["jsx"])(GlobalStyles,{}),Object(jsx_runtime["jsxs"])(FlexBox,{flex:1,horizontal:true,backgroundColor:"#F7F8FD",children:[Object(jsx_runtime["jsxs"])(DrawerStack.Navigator,{initialRouteName:"Home",drawerContent:function drawerContent(){return Object(jsx_runtime["jsx"])(drawer,{});},drawerType:{xs:"front",s:"front",m:"slide",xl:"permanent"},screenOptions:{headerShown:true,headerStyle:{backgroundColor:"#004d80"},headerTitleStyle:{color:"#ffffff"},headerTintColor:"#ffffff"},header:function header(){return Object(jsx_runtime["jsx"])(navigation_header,{});},children:[Object(jsx_runtime["jsx"])(DrawerStack.Screen,{name:"Home",component:screens_Home_Home,path:"/",options:{headerTitle:"Home"}}),Object(jsx_runtime["jsx"])(DrawerStack.Screen,{name:"EditProfile",component:screens_EditProfile_EditProfile,path:"/profile",options:{headerTitle:"Edit Profile"}})]}),Object(jsx_runtime["jsx"])(StatusBar["a" /* StatusBar */],{style:"auto"})]})]})})});}
 // CONCATENATED MODULE: ./index.js
@@ -280,5 +287,5 @@ Object(registerRootComponent["a" /* default */])(App);
 
 /***/ })
 
-},[[255,1,2]]]);
-//# sourceMappingURL=app.cb5a3500.chunk.js.map
+},[[261,1,2]]]);
+//# sourceMappingURL=app.58c4db3f.chunk.js.map

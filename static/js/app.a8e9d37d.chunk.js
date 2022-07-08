@@ -236,7 +236,7 @@ function createDrawerNavigator(){return{Navigator:function Navigator(_ref){var c
 // CONCATENATED MODULE: ../navigation/src/factories/index.ts
 
 // CONCATENATED MODULE: ../navigation/src/providers/Container/Provider.web.tsx
-var Provider_web_DocumentTitle=function DocumentTitle(){var location=Object(react_router["g" /* useLocation */])();Object(react["useEffect"])(function(){},[location.pathname]);return null;};var Provider_web_NavigationContainer=function NavigationContainer(_ref){var children=_ref.children,memoryRouter=_ref.memoryRouter;var Router=memoryRouter?react_router["a" /* MemoryRouter */]:react_router_dom["a" /* BrowserRouter */];return Object(jsx_runtime["jsxs"])(Router,{children:[Object(jsx_runtime["jsx"])(Provider_web_DocumentTitle,{}),children]});};
+var Provider_web_DocumentTitle=function DocumentTitle(){var location=Object(react_router["g" /* useLocation */])();Object(react["useEffect"])(function(){},[location.pathname]);return null;};var Provider_web_NavigationContainer=function NavigationContainer(_ref){var children=_ref.children,memoryRouter=_ref.memoryRouter,basename=_ref.basename;var Router=memoryRouter?react_router["a" /* MemoryRouter */]:react_router_dom["a" /* BrowserRouter */];return Object(jsx_runtime["jsxs"])(Router,{basename:basename,children:[Object(jsx_runtime["jsx"])(Provider_web_DocumentTitle,{}),children]});};
 // CONCATENATED MODULE: ../navigation/src/providers/Container/index.ts
 
 // CONCATENATED MODULE: ../navigation/src/providers/index.ts
@@ -274,11 +274,11 @@ var drawer_Drawer=function Drawer(){return Object(jsx_runtime["jsx"])(DrawerCont
 // CONCATENATED MODULE: ./src/navigation/header.tsx
 var header_Header=function Header(){var theme=Object(styled_components_native_esm["c" /* useTheme */])();return Object(jsx_runtime["jsx"])(FlexBox,{height:50,backgroundColor:theme.colors.primary.dark});};/* harmony default export */ var navigation_header = (header_Header);
 // CONCATENATED MODULE: ./src/App.tsx
-function App(){return Object(jsx_runtime["jsx"])(responsive_provider,{children:Object(jsx_runtime["jsx"])(Provider_web_NavigationContainer,{children:Object(jsx_runtime["jsx"])(provider,{children:Object(jsx_runtime["jsxs"])(FlexBox,{flex:1,horizontal:true,backgroundColor:"#F7F8FD",children:[Object(jsx_runtime["jsxs"])(DrawerStack.Navigator,{initialRouteName:"Home",drawerContent:function drawerContent(){return Object(jsx_runtime["jsx"])(drawer,{});},drawerType:{xs:"front",s:"front",m:"slide",xl:"permanent"},screenOptions:{headerShown:true,headerStyle:{backgroundColor:"#004d80"},headerTitleStyle:{color:"#ffffff"},headerTintColor:"#ffffff"},header:function header(){return Object(jsx_runtime["jsx"])(navigation_header,{});},children:[Object(jsx_runtime["jsx"])(DrawerStack.Screen,{name:"Home",component:screens_Home_Home,path:"/",options:{headerTitle:"Home"}}),Object(jsx_runtime["jsx"])(DrawerStack.Screen,{name:"EditProfile",component:screens_EditProfile_EditProfile,path:"/profile",options:{headerTitle:"Edit Profile"}})]}),Object(jsx_runtime["jsx"])(StatusBar["a" /* StatusBar */],{style:"auto"})]})})})});}
+function App(){return Object(jsx_runtime["jsx"])(responsive_provider,{children:Object(jsx_runtime["jsx"])(Provider_web_NavigationContainer,{basename:"/sample-ui",children:Object(jsx_runtime["jsx"])(provider,{children:Object(jsx_runtime["jsxs"])(FlexBox,{flex:1,horizontal:true,backgroundColor:"#F7F8FD",children:[Object(jsx_runtime["jsxs"])(DrawerStack.Navigator,{initialRouteName:"Home",drawerContent:function drawerContent(){return Object(jsx_runtime["jsx"])(drawer,{});},drawerType:{xs:"front",s:"front",m:"slide",xl:"permanent"},screenOptions:{headerShown:true,headerStyle:{backgroundColor:"#004d80"},headerTitleStyle:{color:"#ffffff"},headerTintColor:"#ffffff"},header:function header(){return Object(jsx_runtime["jsx"])(navigation_header,{});},children:[Object(jsx_runtime["jsx"])(DrawerStack.Screen,{name:"Home",component:screens_Home_Home,path:"/",options:{headerTitle:"Home"}}),Object(jsx_runtime["jsx"])(DrawerStack.Screen,{name:"EditProfile",component:screens_EditProfile_EditProfile,path:"/profile",options:{headerTitle:"Edit Profile"}})]}),Object(jsx_runtime["jsx"])(StatusBar["a" /* StatusBar */],{style:"auto"})]})})})});}
 // CONCATENATED MODULE: ./index.js
 Object(registerRootComponent["a" /* default */])(App);
 
 /***/ })
 
 },[[255,1,2]]]);
-//# sourceMappingURL=app.b3d95ea4.chunk.js.map
+//# sourceMappingURL=app.a8e9d37d.chunk.js.map

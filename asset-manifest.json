@@ -1,21 +1,21 @@
 {
   "files": {
-    "app.js": "/static/js/app.9fbaab2b.chunk.js",
-    "app.js.map": "/static/js/app.9fbaab2b.chunk.js.map",
-    "runtime~app.js": "/static/js/runtime~app.c09eef9e.js",
-    "runtime~app.js.map": "/static/js/runtime~app.c09eef9e.js.map",
-    "static/js/2.8e0224fa.chunk.js": "/static/js/2.8e0224fa.chunk.js",
-    "static/js/2.8e0224fa.chunk.js.map": "/static/js/2.8e0224fa.chunk.js.map",
-    "favicon-16.png": "/favicon-16.png",
-    "favicon-32.png": "/favicon-32.png",
-    "favicon.ico": "/favicon.ico",
-    "index.html": "/index.html",
-    "manifest.json": "/manifest.json",
-    "serve.json": "/serve.json"
+    "app.js": "/sample-ui/static/js/app.9fbaab2b.chunk.js",
+    "app.js.map": "/sample-ui/static/js/app.9fbaab2b.chunk.js.map",
+    "runtime~app.js": "/sample-ui/static/js/runtime~app.f391c264.js",
+    "runtime~app.js.map": "/sample-ui/static/js/runtime~app.f391c264.js.map",
+    "static/js/2.b04833fc.chunk.js": "/sample-ui/static/js/2.b04833fc.chunk.js",
+    "static/js/2.b04833fc.chunk.js.map": "/sample-ui/static/js/2.b04833fc.chunk.js.map",
+    "favicon-16.png": "/sample-ui/favicon-16.png",
+    "favicon-32.png": "/sample-ui/favicon-32.png",
+    "favicon.ico": "/sample-ui/favicon.ico",
+    "index.html": "/sample-ui/index.html",
+    "manifest.json": "/sample-ui/manifest.json",
+    "serve.json": "/sample-ui/serve.json"
   },
   "entrypoints": [
-    "static/js/runtime~app.c09eef9e.js",
-    "static/js/2.8e0224fa.chunk.js",
+    "static/js/runtime~app.f391c264.js",
+    "static/js/2.b04833fc.chunk.js",
     "static/js/app.9fbaab2b.chunk.js"
   ]
 }

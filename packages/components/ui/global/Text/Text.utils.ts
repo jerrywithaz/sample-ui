@@ -6,32 +6,38 @@ const CATEGORY_TO_PROPS: Record<TextCategory, TextCategoryProps> = {
     h1: {
         [ariaLevel]: 1,
         accessibilityRole: "header",
-        fontSize: "xxxLarge"
+        fontSize: "xxxLarge",
+        fontWeight: 500
     },
     h2: {
         [ariaLevel]: 2,
         accessibilityRole: "header",
-        fontSize: "xxLarge"
+        fontSize: "xxLarge",
+        fontWeight: 500
     },
     h3: {
         [ariaLevel]: 3,
         accessibilityRole: "header",
-        fontSize: "xLarge"
+        fontSize: "xLarge",
+        fontWeight: 500
     },
     h4: {
         [ariaLevel]: 4,
         accessibilityRole: "header",
-        fontSize: "large"
+        fontSize: "large",
+        fontWeight: 500
     },
     h5: {
         [ariaLevel]: 5,
         accessibilityRole: "header",
-        fontSize: "medium"
+        fontSize: "medium",
+        fontWeight: 500
     },
     h6: {
         [ariaLevel]: 5,
         accessibilityRole: "header",
-        fontSize: "small"
+        fontSize: "small",
+        fontWeight: 500
     },
     p1: {
         accessibilityRole: "text",

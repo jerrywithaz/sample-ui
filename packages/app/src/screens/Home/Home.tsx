@@ -15,7 +15,7 @@ import {
 } from "@zerry-ui/components";
 import { ScrollView } from "react-native";
 
-const LabelValueRowTable: React.FC<{
+const TwoColumnGrid: React.FC<{
   left: React.ReactNode;
   right?: React.ReactNode;
   collapseOnMobile?: boolean;
@@ -29,9 +29,9 @@ const LabelValueRowTable: React.FC<{
   );
 
   const width = useResponsiveProp(
-    "300px",
+    "50%",
     {
-      xs: undefined,
+      xs: "50%",
     },
     true
   );
@@ -40,16 +40,16 @@ const LabelValueRowTable: React.FC<{
     <FlexBox
       horizontal={collapse ? false : true}
       vertical={collapse}
-      width={width}
       marginBottom={24}
+      wrap
     >
       <Box
-        width={collapse ? undefined : 200}
+        width={width}
         marginBottom={collapse ? 24 : undefined}
       >
         {left}
       </Box>
-      {right && <Box alignSelf="flex-start">{right}</Box>}
+      {right && <Box width={width} alignSelf="flex-start">{right}</Box>}
     </FlexBox>
   );
 };
@@ -57,24 +57,24 @@ const LabelValueRowTable: React.FC<{
 const OverviewCard = () => {
   return (
     <Card flex={1} marginVertical={16} header={<Heading3>Overview</Heading3>}>
-      <LabelValueRowTable
+      <TwoColumnGrid
         left={<LabelValue label="Allergy" value="Peniccilen" />}
         right={<LabelValue label="Blood Type" value="B -" />}
       />
-      <LabelValueRowTable
+      <TwoColumnGrid
         left={<LabelValue label="Date of birth" value="05/16/1995" />}
         right={<LabelValue label="Conditions" value="Asthma" />}
       />
-      <LabelValueRowTable
+      <TwoColumnGrid
         left={<LabelValue label="Weight" value="165 lbs" />}
         right={<LabelValue label="Height" value={`5' 7"`} />}
       />
-      <LabelValueRowTable
+      <TwoColumnGrid
         collapseOnMobile
         left={<LabelValue label="Phone" value="(555) 555-5555" />}
         right={<LabelValue label="Email" value={`fakeuser@email.com`} />}
       />
-      <LabelValueRowTable
+      <TwoColumnGrid
         left={
           <LabelValue label="Address" value="88 Sommer St. Los Angeles, CA" />
         }
@@ -86,11 +86,11 @@ const OverviewCard = () => {
 const VitalsCard = () => {
   return (
     <Card flex={1} marginVertical={16} header={<Heading3>Vitals</Heading3>}>
-      <LabelValueRowTable
+      <TwoColumnGrid
         left={<LabelValue label="Blood Pressure" value="130/90" />}
         right={<LabelValue label="Pulse" value="60 bpm" />}
       />
-      <LabelValueRowTable
+      <TwoColumnGrid
         left={<LabelValue label="Temperature" value="100.4" />}
         right={<LabelValue label="Respiratory Rate" value="24" />}
       />
@@ -105,7 +105,7 @@ const LabResultsCards = () => {
       marginVertical={16}
       header={<Heading3>Lab Results</Heading3>}
     >
-      <LabelValueRowTable
+      <TwoColumnGrid
         left={<LabelValue label="Date" value="15 June 2020" />}
         right={<LabelValue label="Time" value="10:00 AM" />}
       />
@@ -116,7 +116,7 @@ const LabResultsCards = () => {
 const AssesmentCard = () => {
   return (
     <Card flex={1} marginVertical={16} header={<Heading3>Assessment</Heading3>}>
-      <LabelValueRowTable
+      <TwoColumnGrid
         left={<LabelValue label="Date" value="15 June 2020" />}
         right={<LabelValue label="Time" value="10:00 AM" />}
       />
@@ -169,6 +169,8 @@ const Home = () => {
     600,
     {
       xs: undefined,
+      s: undefined,
+      m: 600,
     },
     true
   );

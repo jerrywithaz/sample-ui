@@ -1,3 +1,4 @@
+import { ThemeFontWeightKey } from "../../../theme";
 import { TextProps } from "../../global/Text";
 
 export interface LinkProps {
@@ -6,5 +7,6 @@ export interface LinkProps {
     /** The name of the Screen */
     name: string;
     onPress?: () => void;
-    fontSize?: TextProps['fontSize']
+    fontSize?: TextProps['fontSize'];
+    fontWeight?: ThemeFontWeightKey;
 }

@@ -3,7 +3,7 @@ import "@expo/match-media";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@zerry-ui/navigation";
-import { FlexBox, ThemeProvider } from "@zerry-ui/components";
+import { FlexBox, ThemeProvider, useThemeFonts } from "@zerry-ui/components";
 import { DrawerStack } from "./navigation/stacks";
 import Home from "./screens/Home";
 import EditProfile from "./screens/EditProfile";
@@ -20,6 +20,10 @@ const GlobalStyles = Platform.OS === "web" ? createGlobalStyle`
 ` : () => null;
 
 export default function App() {
+  const loaded = useThemeFonts();
+
+  if (!loaded) return null;
+  
   return (
     <ResponsiveProvider>
       <NavigationContainer hashRouter>

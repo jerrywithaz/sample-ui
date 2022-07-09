@@ -54,6 +54,7 @@ export interface ThemeFontSize {
 }
 
 export interface ThemeTypography {
+  fontWeight: ThemeFontWeights;
   fontSizes: {
     xSmall: ThemeFontSize;
     small: ThemeFontSize;
@@ -66,7 +67,20 @@ export interface ThemeTypography {
   };
 }
 
-export type ThemeFontSizeKey = keyof ThemeTypography['fontSizes'];
+export interface ThemeFontWeights {
+  normal: string;
+  bold: string;
+  100: string;
+  200: string;
+  300: string;
+  400: string;
+  500: string;
+  600: string;
+  700: string;
+  800: string;
+  900: string;
+}
+export type ThemeFontSizeKey = keyof ThemeTypography["fontSizes"];
 
 // export type ThemeStatus = LiteralUnion<'basic' | 'primary' | 'success' | 'info' | 'warning' | 'danger' | 'control'>;
 export type ThemeStatus = "default" | "success" | "warning" | "danger";
@@ -94,3 +108,5 @@ export type ThemeColorKey = keyof ThemeColor;
 export type ThemeSpacingKey = keyof ThemeSpacing;
 
 export type ThemeBorderRadiusKey = keyof ThemeBorderRadius;
+
+export type ThemeFontWeightKey = keyof ThemeFontWeights;

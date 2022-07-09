@@ -5953,6 +5953,7 @@ __metadata:
     "@types/lodash.merge": ^4.6.7
     "@types/styled-components": ^5.1.25
     "@types/styled-components-react-native": ^5.1.3
+    expo-font: ^10.1.0
     lodash.merge: ^4.6.2
     react-native-gesture-handler: ^2.5.0
     react-native-reanimated: 2.8.0
@@ -10319,6 +10320,17 @@ __metadata:
   peerDependencies:
     expo: "*"
   checksum: bba54c98847a0d890a7d7fef67f8179a5905aa7fd46019de81cb7dadda1dfc4673e660e3e6b88f05e97f340c087229a5e54c7a5c1b2f28c3d51a1137c9df3b28
+  languageName: node
+  linkType: hard
+
+"expo-font@npm:^10.1.0":
+  version: 10.2.0
+  resolution: "expo-font@npm:10.2.0"
+  dependencies:
+    fontfaceobserver: ^2.1.0
+  peerDependencies:
+    expo: "*"
+  checksum: bffd3b4c2ae235eb5edd51dc3f27ca41056fc6ad9055d0473961f3b7097ad47b5f1622a51c8d62e6193bad8e195e2e9907ad776daefb1a183f9e9ddfa436c31a
   languageName: node
   linkType: hard
 

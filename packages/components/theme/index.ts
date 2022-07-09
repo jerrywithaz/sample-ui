@@ -13,6 +13,7 @@ export type {
   ThemeFontSizeKey,
   ThemeShadow,
   ThemeStatusColors,
-  ThemeTypography
+  ThemeTypography,
+  ThemeFontWeightKey
 } from "./theme.types";
 export { default } from './provider';

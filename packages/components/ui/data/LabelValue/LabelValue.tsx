@@ -13,7 +13,7 @@ const LabelValue: React.FC<LabelValueProps> = ({
             vertical={direction === "vertical"} 
             horizontal={direction === "horizontal"}
         >
-            <Styled.Label fontSize="medium">{label}</Styled.Label>
+            <Styled.Label fontSize="medium" fontWeight={500}>{label}</Styled.Label>
             <Styled.Value fontSize="medium">{value}</Styled.Value>
         </FlexBox>
     );

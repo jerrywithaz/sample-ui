@@ -8,4 +8,5 @@ export const Text = styled.Text<TextProps>`
         return theme.colors.secondary.default;
     }};
     font-size: ${({ theme, fontSize = "small" }) => theme.typography.fontSizes[fontSize].pixel};
+    font-family: ${({ theme, fontWeight }) => `${theme.typography.fontWeight[fontWeight ?? 400]}`};
 `;

@@ -33,6 +33,7 @@ export type { IconProps } from './ui/global/Icon';
 
 // Hooks
 export { default as useResponsiveProp, responsiveProp } from './hooks/useResponsiveProp';
+export { default as useThemeFonts } from './hooks/useThemeFonts';
 
 // Layout
 export { default as Box, FlexBox } from "./ui/layout/Box";

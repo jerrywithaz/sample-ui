@@ -6,7 +6,7 @@
 
 
 if (true) {
-  module.exports = __webpack_require__(273);
+  module.exports = __webpack_require__(275);
 } else {}
 
 
@@ -196,7 +196,7 @@ module.exports = _createClass, module.exports.__esModule = true, module.exports[
 
 
 if (true) {
-  module.exports = __webpack_require__(353);
+  module.exports = __webpack_require__(355);
 } else {}
 
 
@@ -405,13 +405,13 @@ module.exports = _assertThisInitialized, module.exports.__esModule = true, modul
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayWithHoles = __webpack_require__(262);
+var arrayWithHoles = __webpack_require__(264);
 
-var iterableToArrayLimit = __webpack_require__(263);
+var iterableToArrayLimit = __webpack_require__(265);
 
 var unsupportedIterableToArray = __webpack_require__(197);
 
-var nonIterableRest = __webpack_require__(264);
+var nonIterableRest = __webpack_require__(266);
 
 function _slicedToArray(arr, i) {
   return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
@@ -577,7 +577,7 @@ module.exports = invariant;
 
 // TODO(Babel 8): Remove this file.
 
-var runtime = __webpack_require__(352)();
+var runtime = __webpack_require__(354)();
 module.exports = runtime;
 
 // Copied from https://github.com/facebook/regenerator/blob/main/packages/runtime/runtime.js#L736=
@@ -596,7 +596,7 @@ try {
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var objectWithoutPropertiesLoose = __webpack_require__(268);
+var objectWithoutPropertiesLoose = __webpack_require__(270);
 
 function _objectWithoutProperties(source, excluded) {
   if (source == null) return {};
@@ -655,13 +655,13 @@ module.exports = ExecutionEnvironment;
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayWithoutHoles = __webpack_require__(265);
+var arrayWithoutHoles = __webpack_require__(267);
 
-var iterableToArray = __webpack_require__(266);
+var iterableToArray = __webpack_require__(268);
 
 var unsupportedIterableToArray = __webpack_require__(197);
 
-var nonIterableSpread = __webpack_require__(267);
+var nonIterableSpread = __webpack_require__(269);
 
 function _toConsumableArray(arr) {
   return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
@@ -851,7 +851,7 @@ function Animated_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if
 /* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var superPropBase = __webpack_require__(269);
+var superPropBase = __webpack_require__(271);
 
 function _get() {
   if (typeof Reflect !== "undefined" && Reflect.get) {
@@ -6240,7 +6240,7 @@ function _createSuper(Derived){var hasNativeReflectConstruct=_isNativeReflectCon
 /* harmony import */ var _gestureHandlerCommon__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(34);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(41);
 /* harmony import */ var _ActionType__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(87);
-/* harmony import */ var _PressabilityDebugView__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(351);
+/* harmony import */ var _PressabilityDebugView__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(353);
 var _stateToPropMappings;function _createSuper(Derived){var hasNativeReflectConstruct=_isNativeReflectConstruct();return function _createSuperInternal(){var Super=_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default()(Derived),result;if(hasNativeReflectConstruct){var NewTarget=_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default()(this).constructor;result=Reflect.construct(Super,arguments,NewTarget);}else{result=Super.apply(this,arguments);}return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5___default()(this,result);};}function _isNativeReflectConstruct(){if(typeof Reflect==="undefined"||!Reflect.construct)return false;if(Reflect.construct.sham)return false;if(typeof Proxy==="function")return true;try{Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}));return true;}catch(e){return false;}}function ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function _objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?ownKeys(Object(source),!0).forEach(function(key){_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}var _UIManagerAny$getView,_UIManagerAny$getView2,_UIManagerAny$getCons;function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var UIManagerAny=react_native_web_dist_exports_UIManager__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"];var customGHEventsConfigFabricAndroid={topOnGestureHandlerEvent:{registrationName:'onGestureHandlerEvent'},topOnGestureHandlerStateChange:{registrationName:'onGestureHandlerStateChange'}};var customGHEventsConfig=_objectSpread({onGestureHandlerEvent:{registrationName:'onGestureHandlerEvent'},onGestureHandlerStateChange:{registrationName:'onGestureHandlerStateChange'}},Object(_utils__WEBPACK_IMPORTED_MODULE_17__[/* isFabric */ "a"])()&&react_native_web_dist_exports_Platform__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"].OS==='android'&&customGHEventsConfigFabricAndroid);UIManagerAny.genericDirectEventTypes=_objectSpread(_objectSpread({},UIManagerAny.genericDirectEventTypes),customGHEventsConfig);var UIManagerConstants=(_UIManagerAny$getView=(_UIManagerAny$getView2=UIManagerAny.getViewManagerConfig)===null||_UIManagerAny$getView2===void 0?void 0:_UIManagerAny$getView2.call(UIManagerAny,'getConstants'))!==null&&_UIManagerAny$getView!==void 0?_UIManagerAny$getView:(_UIManagerAny$getCons=UIManagerAny.getConstants)===null||_UIManagerAny$getCons===void 0?void 0:_UIManagerAny$getCons.call(UIManagerAny);if(UIManagerConstants){UIManagerConstants.genericDirectEventTypes=_objectSpread(_objectSpread({},UIManagerConstants.genericDirectEventTypes),customGHEventsConfig);}var _UIManagerAny$setJSRe=UIManagerAny.setJSResponder,oldSetJSResponder=_UIManagerAny$setJSRe===void 0?function(){}:_UIManagerAny$setJSRe,_UIManagerAny$clearJS=UIManagerAny.clearJSResponder,oldClearJSResponder=_UIManagerAny$clearJS===void 0?function(){}:_UIManagerAny$clearJS;UIManagerAny.setJSResponder=function(tag,blockNativeResponder){_RNGestureHandlerModule__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"].handleSetJSResponder(tag,blockNativeResponder);oldSetJSResponder(tag,blockNativeResponder);};UIManagerAny.clearJSResponder=function(){_RNGestureHandlerModule__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"].handleClearJSResponder();oldClearJSResponder();};var allowTouches=true;var DEV_ON_ANDROID= false&&false;if(DEV_ON_ANDROID){react_native_web_dist_exports_DeviceEventEmitter__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"].addListener('toggleElementInspector',function(){allowTouches=!allowTouches;});}function hasUnresolvedRefs(props){var extract=function extract(refs){if(!Array.isArray(refs)){return refs&&refs.current===null;}return refs.some(function(r){return r&&r.current===null;});};return extract(props['simultaneousHandlers'])||extract(props['waitFor']);}var stateToPropMappings=(_stateToPropMappings={},_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(_stateToPropMappings,_State__WEBPACK_IMPORTED_MODULE_14__[/* State */ "a"].UNDETERMINED,undefined),_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(_stateToPropMappings,_State__WEBPACK_IMPORTED_MODULE_14__[/* State */ "a"].BEGAN,'onBegan'),_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(_stateToPropMappings,_State__WEBPACK_IMPORTED_MODULE_14__[/* State */ "a"].FAILED,'onFailed'),_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(_stateToPropMappings,_State__WEBPACK_IMPORTED_MODULE_14__[/* State */ "a"].CANCELLED,'onCancelled'),_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(_stateToPropMappings,_State__WEBPACK_IMPORTED_MODULE_14__[/* State */ "a"].ACTIVE,'onActivated'),_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(_stateToPropMappings,_State__WEBPACK_IMPORTED_MODULE_14__[/* State */ "a"].END,'onEnded'),_stateToPropMappings);var UNRESOLVED_REFS_RETRY_LIMIT=1;function createHandler(_ref){var name=_ref.name,_ref$allowedProps=_ref.allowedProps,allowedProps=_ref$allowedProps===void 0?[]:_ref$allowedProps,_ref$config=_ref.config,config=_ref$config===void 0?{}:_ref$config,transformProps=_ref.transformProps,_ref$customNativeProp=_ref.customNativeProps,customNativeProps=_ref$customNativeProp===void 0?[]:_ref$customNativeProp;var Handler=function(_React$Component){_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(Handler,_React$Component);var _super=_createSuper(Handler);function Handler(props){var _this;_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1___default()(this,Handler);_this=_super.call(this,props);_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"handlerTag",void 0);_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"config",void 0);_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"propsRef",void 0);_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"viewNode",void 0);_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"viewTag",void 0);_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"updateEnqueued",null);_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"inspectorToggleListener",void 0);_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"onGestureHandlerEvent",function(event){if(event.nativeEvent.handlerTag===_this.handlerTag){if(typeof _this.props.onGestureEvent==='function'){var _this$props$onGesture,_this$props;(_this$props$onGesture=(_this$props=_this.props).onGestureEvent)===null||_this$props$onGesture===void 0?void 0:_this$props$onGesture.call(_this$props,event);}}else{var _this$props$onGesture2,_this$props2;(_this$props$onGesture2=(_this$props2=_this.props).onGestureHandlerEvent)===null||_this$props$onGesture2===void 0?void 0:_this$props$onGesture2.call(_this$props2,event);}});_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"onGestureHandlerStateChange",function(event){if(event.nativeEvent.handlerTag===_this.handlerTag){if(typeof _this.props.onHandlerStateChange==='function'){var _this$props$onHandler,_this$props3;(_this$props$onHandler=(_this$props3=_this.props).onHandlerStateChange)===null||_this$props$onHandler===void 0?void 0:_this$props$onHandler.call(_this$props3,event);}var state=event.nativeEvent.state;var stateEventName=stateToPropMappings[state];var eventHandler=stateEventName&&_this.props[stateEventName];if(eventHandler&&typeof eventHandler==='function'){eventHandler(event);}}else{var _this$props$onGesture3,_this$props4;(_this$props$onGesture3=(_this$props4=_this.props).onGestureHandlerStateChange)===null||_this$props$onGesture3===void 0?void 0:_this$props$onGesture3.call(_this$props4,event);}});_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"refHandler",function(node){_this.viewNode=node;var child=react__WEBPACK_IMPORTED_MODULE_8__["Children"].only(_this.props.children);var ref=child.ref;if(ref!==null){if(typeof ref==='function'){ref(node);}else{ref.current=node;}}});_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"createGestureHandler",function(newConfig){_this.config=newConfig;_RNGestureHandlerModule__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"].createGestureHandler(name,_this.handlerTag,newConfig);});_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"attachGestureHandler",function(newViewTag){_this.viewTag=newViewTag;if(react_native_web_dist_exports_Platform__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"].OS==='web'){_RNGestureHandlerModule__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"].attachGestureHandler(_this.handlerTag,newViewTag,_ActionType__WEBPACK_IMPORTED_MODULE_18__[/* ActionType */ "a"].JS_FUNCTION_OLD_API,_this.propsRef);}else{Object(_handlersRegistry__WEBPACK_IMPORTED_MODULE_15__[/* registerOldGestureHandler */ "f"])(_this.handlerTag,{onGestureEvent:_this.onGestureHandlerEvent,onGestureStateChange:_this.onGestureHandlerStateChange});var actionType=function(){var _this$props5,_this$props6;if((_this$props5=_this.props)!==null&&_this$props5!==void 0&&_this$props5.onGestureEvent&&'current'in _this.props.onGestureEvent){return _ActionType__WEBPACK_IMPORTED_MODULE_18__[/* ActionType */ "a"].REANIMATED_WORKLET;}else if((_this$props6=_this.props)!==null&&_this$props6!==void 0&&_this$props6.onGestureEvent&&'__isNative'in _this.props.onGestureEvent){return _ActionType__WEBPACK_IMPORTED_MODULE_18__[/* ActionType */ "a"].NATIVE_ANIMATED_EVENT;}else{return _ActionType__WEBPACK_IMPORTED_MODULE_18__[/* ActionType */ "a"].JS_FUNCTION_OLD_API;}}();_RNGestureHandlerModule__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"].attachGestureHandler(_this.handlerTag,newViewTag,actionType);}Object(_gestureHandlerCommon__WEBPACK_IMPORTED_MODULE_16__[/* scheduleFlushOperations */ "e"])();});_defineProperty(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this),"updateGestureHandler",function(newConfig){_this.config=newConfig;_RNGestureHandlerModule__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"].updateGestureHandler(_this.handlerTag,newConfig);Object(_gestureHandlerCommon__WEBPACK_IMPORTED_MODULE_16__[/* scheduleFlushOperations */ "e"])();});_this.handlerTag=Object(_handlersRegistry__WEBPACK_IMPORTED_MODULE_15__[/* getNextHandlerTag */ "c"])();_this.config={};_this.propsRef=react__WEBPACK_IMPORTED_MODULE_8__["createRef"]();_this.state={allowTouches:allowTouches};if(props.id){if(_handlersRegistry__WEBPACK_IMPORTED_MODULE_15__[/* handlerIDToTag */ "d"][props.id]!==undefined){throw new Error("Handler with ID \""+props.id+"\" already registered");}_handlersRegistry__WEBPACK_IMPORTED_MODULE_15__[/* handlerIDToTag */ "d"][props.id]=_this.handlerTag;}return _this;}_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2___default()(Handler,[{key:"componentDidMount",value:function componentDidMount(){var _this2=this;var props=this.props;if(DEV_ON_ANDROID){this.inspectorToggleListener=react_native_web_dist_exports_DeviceEventEmitter__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"].addListener('toggleElementInspector',function(){_this2.setState(function(_){return{allowTouches:allowTouches};});_this2.update(UNRESOLVED_REFS_RETRY_LIMIT);});}if(hasUnresolvedRefs(props)){this.updateEnqueued=setImmediate(function(){_this2.updateEnqueued=null;_this2.update(UNRESOLVED_REFS_RETRY_LIMIT);});}this.createGestureHandler(Object(_gestureHandlerCommon__WEBPACK_IMPORTED_MODULE_16__[/* filterConfig */ "c"])(transformProps?transformProps(this.props):this.props,[].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(allowedProps),_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(customNativeProps)),config));this.attachGestureHandler(Object(_gestureHandlerCommon__WEBPACK_IMPORTED_MODULE_16__[/* findNodeHandle */ "d"])(this.viewNode));}},{key:"componentDidUpdate",value:function componentDidUpdate(){var viewTag=Object(_gestureHandlerCommon__WEBPACK_IMPORTED_MODULE_16__[/* findNodeHandle */ "d"])(this.viewNode);if(this.viewTag!==viewTag){this.attachGestureHandler(viewTag);}this.update(UNRESOLVED_REFS_RETRY_LIMIT);}},{key:"componentWillUnmount",value:function componentWillUnmount(){var _this$inspectorToggle;(_this$inspectorToggle=this.inspectorToggleListener)===null||_this$inspectorToggle===void 0?void 0:_this$inspectorToggle.remove();_RNGestureHandlerModule__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"].dropGestureHandler(this.handlerTag);Object(_gestureHandlerCommon__WEBPACK_IMPORTED_MODULE_16__[/* scheduleFlushOperations */ "e"])();if(this.updateEnqueued){clearImmediate(this.updateEnqueued);}var handlerID=this.props.id;if(handlerID){delete _handlersRegistry__WEBPACK_IMPORTED_MODULE_15__[/* handlerIDToTag */ "d"][handlerID];}}},{key:"update",value:function update(remainingTries){var _this3=this;var props=this.props;if(hasUnresolvedRefs(props)&&remainingTries>0){this.updateEnqueued=setImmediate(function(){_this3.updateEnqueued=null;_this3.update(remainingTries-1);});}else{var newConfig=Object(_gestureHandlerCommon__WEBPACK_IMPORTED_MODULE_16__[/* filterConfig */ "c"])(transformProps?transformProps(this.props):this.props,[].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(allowedProps),_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(customNativeProps)),config);if(!lodash_isEqual__WEBPACK_IMPORTED_MODULE_12___default()(this.config,newConfig)){this.updateGestureHandler(newConfig);}}}},{key:"setNativeProps",value:function setNativeProps(updates){var mergedProps=_objectSpread(_objectSpread({},this.props),updates);var newConfig=Object(_gestureHandlerCommon__WEBPACK_IMPORTED_MODULE_16__[/* filterConfig */ "c"])(transformProps?transformProps(mergedProps):mergedProps,[].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(allowedProps),_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(customNativeProps)),config);this.updateGestureHandler(newConfig);}},{key:"render",value:function render(){var _this$props$testID;var gestureEventHandler=this.onGestureHandlerEvent;var _this$props7=this.props,onGestureEvent=_this$props7.onGestureEvent,onGestureHandlerEvent=_this$props7.onGestureHandlerEvent;if(onGestureEvent&&typeof onGestureEvent!=='function'){if(onGestureHandlerEvent){throw new Error('Nesting touch handlers with native animated driver is not supported yet');}gestureEventHandler=onGestureEvent;}else{if(onGestureHandlerEvent&&typeof onGestureHandlerEvent!=='function'){throw new Error('Nesting touch handlers with native animated driver is not supported yet');}}var gestureStateEventHandler=this.onGestureHandlerStateChange;var _this$props8=this.props,onHandlerStateChange=_this$props8.onHandlerStateChange,onGestureHandlerStateChange=_this$props8.onGestureHandlerStateChange;if(onHandlerStateChange&&typeof onHandlerStateChange!=='function'){if(onGestureHandlerStateChange){throw new Error('Nesting touch handlers with native animated driver is not supported yet');}gestureStateEventHandler=onHandlerStateChange;}else{if(onGestureHandlerStateChange&&typeof onGestureHandlerStateChange!=='function'){throw new Error('Nesting touch handlers with native animated driver is not supported yet');}}var events={onGestureHandlerEvent:this.state.allowTouches?gestureEventHandler:undefined,onGestureHandlerStateChange:this.state.allowTouches?gestureStateEventHandler:undefined};this.propsRef.current=events;var child=react__WEBPACK_IMPORTED_MODULE_8__["Children"].only(this.props.children);var grandChildren=child.props.children;if(false){}return react__WEBPACK_IMPORTED_MODULE_8__["cloneElement"](child,_objectSpread(_objectSpread({ref:this.refHandler,collapsable:false},Object(_utils__WEBPACK_IMPORTED_MODULE_17__[/* isJestEnv */ "b"])()?{handlerType:name,handlerTag:this.handlerTag}:{}),{},{testID:(_this$props$testID=this.props.testID)!==null&&_this$props$testID!==void 0?_this$props$testID:child.props.testID},events),grandChildren);}}]);return Handler;}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);_defineProperty(Handler,"displayName",name);return Handler;}
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(128).setImmediate, __webpack_require__(128).clearImmediate))
 
@@ -6414,7 +6414,7 @@ var emptyFunction=function emptyFunction(){};function StatusBar(){return null;}S
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Reanimated; });
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(41);
-var Reanimated;try{Reanimated=__webpack_require__(388);if(!Reanimated.setGestureState){Reanimated.setGestureState=function(){var _f=function _f(){console.warn(Object(_utils__WEBPACK_IMPORTED_MODULE_0__[/* tagMessage */ "d"])('Please use newer version of react-native-reanimated in order to control state of the gestures.'));};_f._closure={tagMessage:_utils__WEBPACK_IMPORTED_MODULE_0__[/* tagMessage */ "d"]};_f.asString="function _f(){const{tagMessage}=jsThis._closure;{console.warn(tagMessage('Please use newer version of react-native-reanimated in order to control state of the gestures.'));}}";_f.__workletHash=7202219436890;_f.__location="/Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-gesture-handler/lib/module/handlers/gestures/reanimatedWrapper.js (8:33)";return _f;}();}}catch(e){}
+var Reanimated;try{Reanimated=__webpack_require__(396);if(!Reanimated.setGestureState){Reanimated.setGestureState=function(){var _f=function _f(){console.warn(Object(_utils__WEBPACK_IMPORTED_MODULE_0__[/* tagMessage */ "d"])('Please use newer version of react-native-reanimated in order to control state of the gestures.'));};_f._closure={tagMessage:_utils__WEBPACK_IMPORTED_MODULE_0__[/* tagMessage */ "d"]};_f.asString="function _f(){const{tagMessage}=jsThis._closure;{console.warn(tagMessage('Please use newer version of react-native-reanimated in order to control state of the gestures.'));}}";_f.__workletHash=7202219436890;_f.__location="/Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-gesture-handler/lib/module/handlers/gestures/reanimatedWrapper.js (8:33)";return _f;}();}}catch(e){}
 
 /***/ }),
 /* 66 */
@@ -6714,7 +6714,7 @@ if (true) {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(272);
+  module.exports = __webpack_require__(274);
 } else {}
 
 
@@ -6785,7 +6785,7 @@ var useLayoutEffectImpl=fbjs_lib_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_0
 /* harmony import */ var _reanimated1_core_AnimatedEvent__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(71);
 /* harmony import */ var _reanimated1_core_AnimatedNode__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(18);
 /* harmony import */ var _reanimated1_core_AnimatedValue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(78);
-/* harmony import */ var _reanimated1_core_AnimatedProps__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(260);
+/* harmony import */ var _reanimated1_core_AnimatedProps__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(261);
 /* harmony import */ var _reanimated2_WorkletEventHandler__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(88);
 /* harmony import */ var _setAndForwardRef__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(243);
 /* harmony import */ var _reanimated2_layoutReanimation_LayoutAnimationRepository__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(212);
@@ -7347,7 +7347,7 @@ function usePressEvents(hostRef,config){var pressResponderRef=Object(react["useR
 "use strict";
 
 
-var reactIs = __webpack_require__(276);
+var reactIs = __webpack_require__(278);
 
 /**
  * Copyright 2015, Yahoo! Inc.
@@ -7581,7 +7581,7 @@ function ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.g
 
 var setPrototypeOf = __webpack_require__(177);
 
-var isNativeReflectConstruct = __webpack_require__(271);
+var isNativeReflectConstruct = __webpack_require__(273);
 
 function _construct(Parent, args, Class) {
   if (isNativeReflectConstruct()) {
@@ -9499,8 +9499,8 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 /* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsNative = __webpack_require__(297),
-    getValue = __webpack_require__(302);
+var baseIsNative = __webpack_require__(299),
+    getValue = __webpack_require__(304);
 
 /**
  * Gets the native function at `key` of `object`.
@@ -12113,7 +12113,7 @@ var CSS_UNIT_RE=/^[+-]?\d*(?:\.\d+)?(?:[Ee][+-]?\d+)?(%|\w*)/;var getUnit=functi
 
 
 if (true) {
-  module.exports = __webpack_require__(365);
+  module.exports = __webpack_require__(367);
 } else {}
 
 
@@ -12145,7 +12145,7 @@ module.exports = exports['default'];
 /* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {var scope=typeof global!=="undefined"&&global||typeof self!=="undefined"&&self||window;var apply=Function.prototype.apply;exports.setTimeout=function(){return new Timeout(apply.call(setTimeout,scope,arguments),clearTimeout);};exports.setInterval=function(){return new Timeout(apply.call(setInterval,scope,arguments),clearInterval);};exports.clearTimeout=exports.clearInterval=function(timeout){if(timeout){timeout.close();}};function Timeout(id,clearFn){this._id=id;this._clearFn=clearFn;}Timeout.prototype.unref=Timeout.prototype.ref=function(){};Timeout.prototype.close=function(){this._clearFn.call(scope,this._id);};exports.enroll=function(item,msecs){clearTimeout(item._idleTimeoutId);item._idleTimeout=msecs;};exports.unenroll=function(item){clearTimeout(item._idleTimeoutId);item._idleTimeout=-1;};exports._unrefActive=exports.active=function(item){clearTimeout(item._idleTimeoutId);var msecs=item._idleTimeout;if(msecs>=0){item._idleTimeoutId=setTimeout(function onTimeout(){if(item._onTimeout)item._onTimeout();},msecs);}};__webpack_require__(283);exports.setImmediate=typeof self!=="undefined"&&self.setImmediate||typeof global!=="undefined"&&global.setImmediate||this&&this.setImmediate;exports.clearImmediate=typeof self!=="undefined"&&self.clearImmediate||typeof global!=="undefined"&&global.clearImmediate||this&&this.clearImmediate;
+/* WEBPACK VAR INJECTION */(function(global) {var scope=typeof global!=="undefined"&&global||typeof self!=="undefined"&&self||window;var apply=Function.prototype.apply;exports.setTimeout=function(){return new Timeout(apply.call(setTimeout,scope,arguments),clearTimeout);};exports.setInterval=function(){return new Timeout(apply.call(setInterval,scope,arguments),clearInterval);};exports.clearTimeout=exports.clearInterval=function(timeout){if(timeout){timeout.close();}};function Timeout(id,clearFn){this._id=id;this._clearFn=clearFn;}Timeout.prototype.unref=Timeout.prototype.ref=function(){};Timeout.prototype.close=function(){this._clearFn.call(scope,this._id);};exports.enroll=function(item,msecs){clearTimeout(item._idleTimeoutId);item._idleTimeout=msecs;};exports.unenroll=function(item){clearTimeout(item._idleTimeoutId);item._idleTimeout=-1;};exports._unrefActive=exports.active=function(item){clearTimeout(item._idleTimeoutId);var msecs=item._idleTimeout;if(msecs>=0){item._idleTimeoutId=setTimeout(function onTimeout(){if(item._onTimeout)item._onTimeout();},msecs);}};__webpack_require__(285);exports.setImmediate=typeof self!=="undefined"&&self.setImmediate||typeof global!=="undefined"&&global.setImmediate||this&&this.setImmediate;exports.clearImmediate=typeof self!=="undefined"&&self.clearImmediate||typeof global!=="undefined"&&global.clearImmediate||this&&this.clearImmediate;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(50)))
 
 /***/ }),
@@ -12442,11 +12442,11 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var listCacheClear = __webpack_require__(287),
-    listCacheDelete = __webpack_require__(288),
-    listCacheGet = __webpack_require__(289),
-    listCacheHas = __webpack_require__(290),
-    listCacheSet = __webpack_require__(291);
+var listCacheClear = __webpack_require__(289),
+    listCacheDelete = __webpack_require__(290),
+    listCacheGet = __webpack_require__(291),
+    listCacheHas = __webpack_require__(292),
+    listCacheSet = __webpack_require__(293);
 
 /**
  * Creates an list cache object.
@@ -12508,8 +12508,8 @@ module.exports = assocIndexOf;
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(180),
-    getRawTag = __webpack_require__(298),
-    objectToString = __webpack_require__(299);
+    getRawTag = __webpack_require__(300),
+    objectToString = __webpack_require__(301);
 
 /** `Object#toString` result references. */
 var nullTag = '[object Null]',
@@ -12553,7 +12553,7 @@ module.exports = nativeCreate;
 /* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isKeyable = __webpack_require__(311);
+var isKeyable = __webpack_require__(313);
 
 /**
  * Gets the data for `map`.
@@ -12975,7 +12975,7 @@ var getPrototypeOf = __webpack_require__(2);
 
 var setPrototypeOf = __webpack_require__(177);
 
-var isNativeFunction = __webpack_require__(270);
+var isNativeFunction = __webpack_require__(272);
 
 var construct = __webpack_require__(102);
 
@@ -13839,22 +13839,22 @@ exports.BaseDataProvider = DataProvider_1.BaseDataProvider;
 var LayoutProvider_1 = __webpack_require__(184);
 exports.BaseLayoutProvider = LayoutProvider_1.BaseLayoutProvider;
 exports.LayoutProvider = LayoutProvider_1.LayoutProvider;
-var GridLayoutProvider_1 = __webpack_require__(367);
+var GridLayoutProvider_1 = __webpack_require__(369);
 exports.GridLayoutProvider = GridLayoutProvider_1.GridLayoutProvider;
 var RecyclerListView_1 = __webpack_require__(218);
 exports.RecyclerListView = RecyclerListView_1.default;
-var BaseScrollView_1 = __webpack_require__(384);
+var BaseScrollView_1 = __webpack_require__(386);
 exports.BaseScrollView = BaseScrollView_1.default;
 var ItemAnimator_1 = __webpack_require__(221);
 exports.BaseItemAnimator = ItemAnimator_1.BaseItemAnimator;
-var AutoScroll_1 = __webpack_require__(385);
+var AutoScroll_1 = __webpack_require__(387);
 exports.AutoScroll = AutoScroll_1.AutoScroll;
 var LayoutManager_1 = __webpack_require__(185);
 exports.LayoutManager = LayoutManager_1.LayoutManager;
 exports.WrapGridLayoutManager = LayoutManager_1.WrapGridLayoutManager;
 var GridLayoutManager_1 = __webpack_require__(217);
 exports.GridLayoutManager = GridLayoutManager_1.GridLayoutManager;
-var ProgressiveListView_1 = __webpack_require__(386);
+var ProgressiveListView_1 = __webpack_require__(388);
 exports.ProgressiveListView = ProgressiveListView_1.default;
 var ComponentCompat_1 = __webpack_require__(186);
 exports.ComponentCompat = ComponentCompat_1.ComponentCompat;
@@ -13952,7 +13952,7 @@ module.exports=function(module){if(!module.webpackPolyfill){module.deprecate=fun
 Object.defineProperty(exports, "__esModule", { value: true });
 var ObjectUtil_1 = __webpack_require__(216);
 exports.ObjectUtil = ObjectUtil_1.ObjectUtil;
-var Default_1 = __webpack_require__(366);
+var Default_1 = __webpack_require__(368);
 exports.Default = Default_1.Default;
 //# sourceMappingURL=index.js.map
 
@@ -14673,7 +14673,7 @@ function hyphenateStyleName(name) {
  */
 
 
-var emptyFunction = __webpack_require__(355);
+var emptyFunction = __webpack_require__(357);
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
  * This can be used to log issues in development environments in critical
@@ -15060,11 +15060,11 @@ module.exports = toSource;
 /* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var mapCacheClear = __webpack_require__(303),
-    mapCacheDelete = __webpack_require__(310),
-    mapCacheGet = __webpack_require__(312),
-    mapCacheHas = __webpack_require__(313),
-    mapCacheSet = __webpack_require__(314);
+var mapCacheClear = __webpack_require__(305),
+    mapCacheDelete = __webpack_require__(312),
+    mapCacheGet = __webpack_require__(314),
+    mapCacheHas = __webpack_require__(315),
+    mapCacheSet = __webpack_require__(316);
 
 /**
  * Creates a map cache object to store key-value pairs.
@@ -15098,9 +15098,9 @@ module.exports = MapCache;
 /* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var SetCache = __webpack_require__(315),
-    arraySome = __webpack_require__(318),
-    cacheHas = __webpack_require__(319);
+var SetCache = __webpack_require__(317),
+    arraySome = __webpack_require__(320),
+    cacheHas = __webpack_require__(321);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -15189,7 +15189,7 @@ module.exports = equalArrays;
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(81),
-    stubFalse = __webpack_require__(336);
+    stubFalse = __webpack_require__(338);
 
 /** Detect free variable `exports`. */
 var freeExports =  true && exports && !exports.nodeType && exports;
@@ -15233,9 +15233,9 @@ module.exports = isBuffer;
 /* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsTypedArray = __webpack_require__(338),
-    baseUnary = __webpack_require__(339),
-    nodeUtil = __webpack_require__(340);
+var baseIsTypedArray = __webpack_require__(340),
+    baseUnary = __webpack_require__(341),
+    nodeUtil = __webpack_require__(342);
 
 /* Node.js helper references. */
 var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
@@ -15363,7 +15363,7 @@ Object(_core__WEBPACK_IMPORTED_MODULE_1__[/* runOnUI */ "n"])(function(){var _f=
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports,"__esModule",{value:true});__webpack_require__(356);
+Object.defineProperty(exports,"__esModule",{value:true});__webpack_require__(358);
 
 /***/ }),
 /* 214 */
@@ -15658,8 +15658,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * TODO: Observe size changes on web to optimize for reflowability
  * TODO: Solve //TSI
  */
-var debounce = __webpack_require__(368);
-var PropTypes = __webpack_require__(369);
+var debounce = __webpack_require__(370);
+var PropTypes = __webpack_require__(371);
 var React = __webpack_require__(0);
 var ts_object_utils_1 = __webpack_require__(183);
 var ContextProvider_1 = __webpack_require__(214);
@@ -15667,14 +15667,14 @@ var DataProvider_1 = __webpack_require__(215);
 var LayoutProvider_1 = __webpack_require__(184);
 var CustomError_1 = __webpack_require__(145);
 var RecyclerListViewExceptions_1 = __webpack_require__(219);
-var Constants_1 = __webpack_require__(373);
-var Messages_1 = __webpack_require__(374);
-var VirtualRenderer_1 = __webpack_require__(375);
+var Constants_1 = __webpack_require__(375);
+var Messages_1 = __webpack_require__(376);
+var VirtualRenderer_1 = __webpack_require__(377);
 var ItemAnimator_1 = __webpack_require__(221);
 var ComponentCompat_1 = __webpack_require__(186);
 //#if [REACT-NATIVE]
-var ScrollComponent_1 = __webpack_require__(379);
-var ViewRenderer_1 = __webpack_require__(381);
+var ScrollComponent_1 = __webpack_require__(381);
+var ViewRenderer_1 = __webpack_require__(383);
 var react_native_1 = __webpack_require__(187);
 var IS_WEB = !react_native_1.Platform || react_native_1.Platform.OS === "web";
 var RecyclerListView = /** @class */ (function (_super) {
@@ -16495,19 +16495,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = createPrefixer;
 
-var _prefixProperty = __webpack_require__(278);
+var _prefixProperty = __webpack_require__(280);
 
 var _prefixProperty2 = _interopRequireDefault(_prefixProperty);
 
-var _prefixValue = __webpack_require__(279);
+var _prefixValue = __webpack_require__(281);
 
 var _prefixValue2 = _interopRequireDefault(_prefixValue);
 
-var _addNewValuesOnly = __webpack_require__(280);
+var _addNewValuesOnly = __webpack_require__(282);
 
 var _addNewValuesOnly2 = _interopRequireDefault(_addNewValuesOnly);
 
-var _isObject = __webpack_require__(281);
+var _isObject = __webpack_require__(283);
 
 var _isObject2 = _interopRequireDefault(_isObject);
 
@@ -17132,7 +17132,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = transition;
 
-var _hyphenateProperty = __webpack_require__(282);
+var _hyphenateProperty = __webpack_require__(284);
 
 var _hyphenateProperty2 = _interopRequireDefault(_hyphenateProperty);
 
@@ -17222,7 +17222,7 @@ function transition(property, value, style, propertyPrefixMap) {
 /* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqual = __webpack_require__(284);
+var baseIsEqual = __webpack_require__(286);
 
 /**
  * Performs a deep comparison between two values to determine if they are
@@ -17346,7 +17346,7 @@ module.exports=null;
 
 
 var React = __webpack_require__(0);
-var factory = __webpack_require__(354);
+var factory = __webpack_require__(356);
 
 if (typeof React === 'undefined') {
   throw Error(
@@ -17422,13 +17422,13 @@ function _interopDefault(ex) {
   return ex && typeof ex === 'object' && 'default' in ex ? ex['default'] : ex;
 }
 
-var parse = __webpack_require__(357);
+var parse = __webpack_require__(359);
 
 var parse__default = _interopDefault(parse);
 
-var camelizeStyleName = _interopDefault(__webpack_require__(362));
+var camelizeStyleName = _interopDefault(__webpack_require__(364));
 
-var cssColorKeywords = _interopDefault(__webpack_require__(363));
+var cssColorKeywords = _interopDefault(__webpack_require__(365));
 
 var matchString = function matchString(node) {
   if (node.type !== 'string') return null;
@@ -18416,6 +18416,39 @@ module.exports = __webpack_require__.p + "./fonts/FontAwesome.ttf";
 
 "use strict";
 
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "a", function() { return /* reexport */ ExpoStatusBar; });
+
+// UNUSED EXPORTS: setStatusBarBackgroundColor, setStatusBarNetworkActivityIndicatorVisible, setStatusBarHidden, setStatusBarStyle, setStatusBarTranslucent
+
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/StatusBar.types.js
+
+// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-web/dist/exports/StatusBar/index.js
+var StatusBar = __webpack_require__(64);
+
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/setStatusBarBackgroundColor.js
+function setStatusBarBackgroundColor(backgroundColor,animated){StatusBar["a" /* default */].setBackgroundColor(backgroundColor,animated);}
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/setStatusBarNetworkActivityIndicatorVisible.js
+function setStatusBarNetworkActivityIndicatorVisible(visible){StatusBar["a" /* default */].setNetworkActivityIndicatorVisible(visible);}
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/setStatusBarHidden.js
+function setStatusBarHidden(hidden,animation){StatusBar["a" /* default */].setHidden(hidden,animation);}
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/styleToBarStyle.web.js
+function styleToBarStyle(){var style=arguments.length>0&&arguments[0]!==undefined?arguments[0]:'auto';var colorScheme=arguments.length>1?arguments[1]:undefined;if(!colorScheme){colorScheme='light';}var resolvedStyle=style;if(style==='auto'){resolvedStyle=colorScheme==='light'?'dark':'light';}else if(style==='inverted'){resolvedStyle=colorScheme==='light'?'light':'dark';}return resolvedStyle==='light'?'light-content':'dark-content';}
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/setStatusBarStyle.js
+function setStatusBarStyle(style){StatusBar["a" /* default */].setBarStyle(styleToBarStyle(style));}
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/setStatusBarTranslucent.js
+function setStatusBarTranslucent(translucent){StatusBar["a" /* default */].setTranslucent(translucent);}
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/ExpoStatusBar.js
+function ExpoStatusBar(props){return null;}
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/StatusBar.js
+
+
+/***/ }),
+/* 258 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@babel/runtime/helpers/classCallCheck.js
 var classCallCheck = __webpack_require__(3);
 var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck);
@@ -18444,31 +18477,19 @@ var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
 var regenerator = __webpack_require__(21);
 var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);
 
-// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-modules-core/build/index.js + 12 modules
-var build = __webpack_require__(52);
+// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-font/build/Font.js + 3 modules
+var Font = __webpack_require__(260);
 
-// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@babel/runtime/helpers/toConsumableArray.js
-var toConsumableArray = __webpack_require__(24);
-var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableArray);
-
-// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/fontfaceobserver/fontfaceobserver.standalone.js
-var fontfaceobserver_standalone = __webpack_require__(254);
-var fontfaceobserver_standalone_default = /*#__PURE__*/__webpack_require__.n(fontfaceobserver_standalone);
-
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-font/build/Font.types.js
-var FontDisplay;(function(FontDisplay){FontDisplay["AUTO"]="auto";FontDisplay["SWAP"]="swap";FontDisplay["BLOCK"]="block";FontDisplay["FALLBACK"]="fallback";FontDisplay["OPTIONAL"]="optional";})(FontDisplay||(FontDisplay={}));
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-font/build/ExpoFontLoader.web.js
-function _createForOfIteratorHelperLoose(o,allowArrayLike){var it=typeof Symbol!=="undefined"&&o[Symbol.iterator]||o["@@iterator"];if(it)return(it=it.call(o)).next.bind(it);if(Array.isArray(o)||(it=_unsupportedIterableToArray(o))||allowArrayLike&&o&&typeof o.length==="number"){if(it)o=it;var i=0;return function(){if(i>=o.length)return{done:true};return{done:false,value:o[i++]};};}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o,minLen){if(!o)return;if(typeof o==="string")return _arrayLikeToArray(o,minLen);var n=Object.prototype.toString.call(o).slice(8,-1);if(n==="Object"&&o.constructor)n=o.constructor.name;if(n==="Map"||n==="Set")return Array.from(o);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return _arrayLikeToArray(o,minLen);}function _arrayLikeToArray(arr,len){if(len==null||len>arr.length)len=arr.length;for(var i=0,arr2=new Array(len);i<len;i++){arr2[i]=arr[i];}return arr2;}function getFontFaceStyleSheet(){if(!build["b" /* Platform */].isDOMAvailable){return null;}var styleSheet=getStyleElement();return styleSheet.sheet?styleSheet.sheet:null;}function getFontFaceRules(){var sheet=getFontFaceStyleSheet();if(sheet){var rules=toConsumableArray_default()(sheet.cssRules);var items=[];for(var i=0;i<rules.length;i++){var rule=rules[i];if(rule instanceof CSSFontFaceRule){items.push({rule:rule,index:i});}}return items;}return[];}function getFontFaceRulesMatchingResource(fontFamilyName,options){var rules=getFontFaceRules();return rules.filter(function(_ref){var rule=_ref.rule;return rule.style.fontFamily===fontFamilyName&&(options&&options.display?options.display===rule.style.fontDisplay:true);});}/* harmony default export */ var ExpoFontLoader_web = ({get name(){return'ExpoFontLoader';},unloadAllAsync:function unloadAllAsync(){return function _callee(){var element;return regenerator_default.a.async(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:if(build["b" /* Platform */].isDOMAvailable){_context.next=2;break;}return _context.abrupt("return");case 2:element=document.getElementById(ID);if(element&&element instanceof HTMLStyleElement){document.removeChild(element);}case 4:case"end":return _context.stop();}}},null,null,null,Promise);}();},unloadAsync:function unloadAsync(fontFamilyName,options){return function _callee2(){var sheet,items,_iterator,_step,item;return regenerator_default.a.async(function _callee2$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:sheet=getFontFaceStyleSheet();if(sheet){_context2.next=3;break;}return _context2.abrupt("return");case 3:items=getFontFaceRulesMatchingResource(fontFamilyName,options);for(_iterator=_createForOfIteratorHelperLoose(items);!(_step=_iterator()).done;){item=_step.value;sheet.deleteRule(item.index);}case 5:case"end":return _context2.stop();}}},null,null,null,Promise);}();},loadAsync:function loadAsync(fontFamilyName,resource){return function _callee3(){var canInjectStyle,style;return regenerator_default.a.async(function _callee3$(_context3){while(1){switch(_context3.prev=_context3.next){case 0:if(build["b" /* Platform */].isDOMAvailable){_context3.next=2;break;}return _context3.abrupt("return");case 2:canInjectStyle=document.head&&typeof document.head.appendChild==='function';if(canInjectStyle){_context3.next=5;break;}throw new build["a" /* CodedError */]('ERR_WEB_ENVIRONMENT',"The browser's `document.head` element doesn't support injecting fonts.");case 5:style=_createWebStyle(fontFamilyName,resource);document.head.appendChild(style);if(isFontLoadingListenerSupported()){_context3.next=9;break;}return _context3.abrupt("return");case 9:return _context3.abrupt("return",new fontfaceobserver_standalone_default.a(fontFamilyName,{display:resource.display}).load());case 10:case"end":return _context3.stop();}}},null,null,null,Promise);}();}});var ID='expo-generated-fonts';function getStyleElement(){var element=document.getElementById(ID);if(element&&element instanceof HTMLStyleElement){return element;}var styleElement=document.createElement('style');styleElement.id=ID;styleElement.type='text/css';return styleElement;}function _createWebStyle(fontFamily,resource){var fontStyle="@font-face {\n    font-family: "+fontFamily+";\n    src: url("+resource.uri+");\n    font-display: "+(resource.display||FontDisplay.AUTO)+";\n  }";var styleElement=getStyleElement();if(styleElement.styleSheet){var styleElementIE=styleElement;styleElementIE.styleSheet.cssText=styleElementIE.styleSheet.cssText?styleElementIE.styleSheet.cssText+fontStyle:fontStyle;}else{var textNode=document.createTextNode(fontStyle);styleElement.appendChild(textNode);}return styleElement;}function isFontLoadingListenerSupported(){var userAgent=window.navigator.userAgent;var isIOS=!!userAgent.match(/iPad|iPhone/i);var isSafari=/^((?!chrome|android).)*safari/i.test(navigator.userAgent);var isEdge=userAgent.includes('Edge');var isIE=userAgent.includes('Trident');var isFirefox=userAgent.includes('Firefox');return!isSafari&&!isIOS&&!isEdge&&!isIE&&!isFirefox;}
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-font/build/FontLoader.web.js
-function uriFromFontSource(asset){if(typeof asset==='string'){return asset||null;}else if(typeof asset==='object'){return asset.uri||asset.localUri||null;}return null;}function displayFromFontSource(asset){return asset.display||FontDisplay.AUTO;}function fontFamilyNeedsScoping(name){return false;}function getAssetForSource(source){var uri=uriFromFontSource(source);var display=displayFromFontSource(source);if(!uri||typeof uri!=='string'){throwInvalidSourceError(uri);}return{uri:uri,display:display};}function throwInvalidSourceError(source){var type=typeof source;if(type==='object')type=JSON.stringify(source,null,2);throw new build["a" /* CodedError */]("ERR_FONT_SOURCE","Expected font asset of type `string | FontResource | Asset` (number is not supported on web) instead got: "+type);}function loadSingleFontAsync(name,input){return regenerator_default.a.async(function loadSingleFontAsync$(_context){while(1){switch(_context.prev=_context.next){case 0:if(typeof input!=='object'||typeof input.uri!=='string'||input.downloadAsync){throwInvalidSourceError(input);}_context.next=3;return regenerator_default.a.awrap(ExpoFontLoader_web.loadAsync(name,input));case 3:case"end":return _context.stop();}}},null,null,null,Promise);}function getNativeFontName(name){return name;}
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-font/build/Font.js
-var loaded={};var loadPromises={};function processFontFamily(fontFamily){if(!fontFamily||!fontFamilyNeedsScoping(fontFamily)){return fontFamily;}if(!isLoaded(fontFamily)){if(false){}return'System';}return"ExpoFont-"+getNativeFontName(fontFamily);}function isLoaded(fontFamily){return fontFamily in loaded;}function isLoading(fontFamily){return fontFamily in loadPromises;}function Font_loadAsync(fontFamilyOrFontMap,source){var fontMap,names;return regenerator_default.a.async(function loadAsync$(_context){while(1){switch(_context.prev=_context.next){case 0:if(!(typeof fontFamilyOrFontMap==='object')){_context.next=8;break;}if(!source){_context.next=3;break;}throw new build["a" /* CodedError */]("ERR_FONT_API","No fontFamily can be used for the provided source: "+source+". The second argument of `loadAsync()` can only be used with a `string` value as the first argument.");case 3:fontMap=fontFamilyOrFontMap;names=Object.keys(fontMap);_context.next=7;return regenerator_default.a.awrap(Promise.all(names.map(function(name){return loadFontInNamespaceAsync(name,fontMap[name]);})));case 7:return _context.abrupt("return");case 8:_context.next=10;return regenerator_default.a.awrap(loadFontInNamespaceAsync(fontFamilyOrFontMap,source));case 10:return _context.abrupt("return",_context.sent);case 11:case"end":return _context.stop();}}},null,null,null,Promise);}function loadFontInNamespaceAsync(fontFamily,source){var asset;return regenerator_default.a.async(function loadFontInNamespaceAsync$(_context3){while(1){switch(_context3.prev=_context3.next){case 0:if(source){_context3.next=2;break;}throw new build["a" /* CodedError */]("ERR_FONT_SOURCE","Cannot load null or undefined font source: { \""+fontFamily+"\": "+source+" }. Expected asset of type `FontSource` for fontFamily of name: \""+fontFamily+"\"");case 2:if(!loaded[fontFamily]){_context3.next=4;break;}return _context3.abrupt("return");case 4:if(!loadPromises.hasOwnProperty(fontFamily)){_context3.next=6;break;}return _context3.abrupt("return",loadPromises[fontFamily]);case 6:asset=getAssetForSource(source);loadPromises[fontFamily]=function _callee(){return regenerator_default.a.async(function _callee$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:_context2.prev=0;_context2.next=3;return regenerator_default.a.awrap(loadSingleFontAsync(fontFamily,asset));case 3:loaded[fontFamily]=true;case 4:_context2.prev=4;delete loadPromises[fontFamily];return _context2.finish(4);case 7:case"end":return _context2.stop();}}},null,null,[[0,,4,7]],Promise);}();_context3.next=10;return regenerator_default.a.awrap(loadPromises[fontFamily]);case 10:case"end":return _context3.stop();}}},null,null,null,Promise);}function Font_unloadAllAsync(){var _i,_Object$keys,fontFamily;return regenerator_default.a.async(function unloadAllAsync$(_context4){while(1){switch(_context4.prev=_context4.next){case 0:if(ExpoFontLoader_web.unloadAllAsync){_context4.next=2;break;}throw new build["c" /* UnavailabilityError */]('expo-font','unloadAllAsync');case 2:if(!Object.keys(loadPromises).length){_context4.next=4;break;}throw new build["a" /* CodedError */]("ERR_UNLOAD","Cannot unload fonts while they're still loading: "+Object.keys(loadPromises).join(', '));case 4:for(_i=0,_Object$keys=Object.keys(loaded);_i<_Object$keys.length;_i++){fontFamily=_Object$keys[_i];delete loaded[fontFamily];}_context4.next=7;return regenerator_default.a.awrap(ExpoFontLoader_web.unloadAllAsync());case 7:case"end":return _context4.stop();}}},null,null,null,Promise);}function Font_unloadAsync(fontFamilyOrFontMap,options){var fontMap,names;return regenerator_default.a.async(function unloadAsync$(_context5){while(1){switch(_context5.prev=_context5.next){case 0:if(ExpoFontLoader_web.unloadAsync){_context5.next=2;break;}throw new build["c" /* UnavailabilityError */]('expo-font','unloadAsync');case 2:if(!(typeof fontFamilyOrFontMap==='object')){_context5.next=10;break;}if(!options){_context5.next=5;break;}throw new build["a" /* CodedError */]("ERR_FONT_API","No fontFamily can be used for the provided options: "+options+". The second argument of `unloadAsync()` can only be used with a `string` value as the first argument.");case 5:fontMap=fontFamilyOrFontMap;names=Object.keys(fontMap);_context5.next=9;return regenerator_default.a.awrap(Promise.all(names.map(function(name){return unloadFontInNamespaceAsync(name,fontMap[name]);})));case 9:return _context5.abrupt("return");case 10:_context5.next=12;return regenerator_default.a.awrap(unloadFontInNamespaceAsync(fontFamilyOrFontMap,options));case 12:return _context5.abrupt("return",_context5.sent);case 13:case"end":return _context5.stop();}}},null,null,null,Promise);}function unloadFontInNamespaceAsync(fontFamily,options){var nativeFontName;return regenerator_default.a.async(function unloadFontInNamespaceAsync$(_context6){while(1){switch(_context6.prev=_context6.next){case 0:if(loaded[fontFamily]){_context6.next=4;break;}return _context6.abrupt("return");case 4:delete loaded[fontFamily];case 5:nativeFontName=getNativeFontName(fontFamily);if(nativeFontName){_context6.next=8;break;}throw new build["a" /* CodedError */]("ERR_FONT_FAMILY","Cannot unload an empty name");case 8:_context6.next=10;return regenerator_default.a.awrap(ExpoFontLoader_web.unloadAsync(nativeFontName,options));case 10:case"end":return _context6.stop();}}},null,null,null,Promise);}
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react/index.js
 var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-web/dist/exports/Text/index.js
 var Text = __webpack_require__(66);
+
+// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@babel/runtime/helpers/toConsumableArray.js
+var toConsumableArray = __webpack_require__(24);
+var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableArray);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@babel/runtime/helpers/objectWithoutProperties.js
 var objectWithoutProperties = __webpack_require__(22);
@@ -18510,7 +18531,7 @@ var _excluded=["style","iconStyle","children"];function ownKeys(object,enumerabl
 // CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/lib/create-icon-set.js
 var create_icon_set_excluded=["name","size","color","style","children"];function create_icon_set_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function create_icon_set_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?create_icon_set_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):create_icon_set_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}function create_icon_set_createSuper(Derived){var hasNativeReflectConstruct=create_icon_set_isNativeReflectConstruct();return function _createSuperInternal(){var Super=getPrototypeOf_default()(Derived),result;if(hasNativeReflectConstruct){var NewTarget=getPrototypeOf_default()(this).constructor;result=Reflect.construct(Super,arguments,NewTarget);}else{result=Super.apply(this,arguments);}return possibleConstructorReturn_default()(this,result);};}function create_icon_set_isNativeReflectConstruct(){if(typeof Reflect==="undefined"||!Reflect.construct)return false;if(Reflect.construct.sham)return false;if(typeof Proxy==="function")return true;try{Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}));return true;}catch(e){return false;}}var create_icon_set_NativeIconAPI=NativeModules["a" /* default */].RNVectorIconsManager||NativeModules["a" /* default */].RNVectorIconsModule;var DEFAULT_ICON_SIZE=12;var DEFAULT_ICON_COLOR='black';function createIconSet(glyphMap,fontFamily,fontFile,fontStyle){var fontBasename=fontFile?fontFile.replace(/\.(otf|ttf)$/,''):fontFamily;var fontReference=Platform["a" /* default */].select({windows:"/Assets/"+fontFile+"#"+fontFamily,android:fontBasename,web:fontBasename,default:fontFamily});var Icon=function(_PureComponent){inherits_default()(Icon,_PureComponent);var _super=create_icon_set_createSuper(Icon);function Icon(){var _this;classCallCheck_default()(this,Icon);for(var _len=arguments.length,args=new Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}_this=_super.call.apply(_super,[this].concat(args));_this.root=null;_this.handleRef=function(ref){_this.root=ref;};return _this;}createClass_default()(Icon,[{key:"setNativeProps",value:function setNativeProps(nativeProps){if(this.root){this.root.setNativeProps(nativeProps);}}},{key:"render",value:function render(){var _this$props=this.props,name=_this$props.name,size=_this$props.size,color=_this$props.color,style=_this$props.style,children=_this$props.children,props=objectWithoutProperties_default()(_this$props,create_icon_set_excluded);var glyph=name?glyphMap[name]||'?':'';if(typeof glyph==='number'){glyph=String.fromCodePoint(glyph);}var styleDefaults={fontSize:size,color:color};var styleOverrides={fontFamily:fontReference,fontWeight:'normal',fontStyle:'normal'};props.style=[styleDefaults,style,styleOverrides,fontStyle||{}];props.ref=this.handleRef;return Object(jsx_runtime["jsxs"])(Text["a" /* default */],create_icon_set_objectSpread(create_icon_set_objectSpread({selectable:false},props),{},{children:[glyph,children]}));}}]);return Icon;}(react["PureComponent"]);Icon.defaultProps={size:DEFAULT_ICON_SIZE,allowFontScaling:false};var imageSourceCache=createIconSourceCache();function resolveGlyph(name){var glyph=glyphMap[name]||'?';if(typeof glyph==='number'){return String.fromCodePoint(glyph);}return glyph;}function getImageSourceSync(name){var size=arguments.length>1&&arguments[1]!==undefined?arguments[1]:DEFAULT_ICON_SIZE;var color=arguments.length>2&&arguments[2]!==undefined?arguments[2]:DEFAULT_ICON_COLOR;ensureNativeModuleAvailable();var glyph=resolveGlyph(name);var processedColor=Object(processColor["a" /* default */])(color);var cacheKey=glyph+":"+size+":"+processedColor;if(imageSourceCache.has(cacheKey)){return imageSourceCache.get(cacheKey);}try{var imagePath=create_icon_set_NativeIconAPI.getImageForFontSync(fontReference,glyph,size,processedColor);var value={uri:imagePath,scale:PixelRatio["a" /* default */].get()};imageSourceCache.setValue(cacheKey,value);return value;}catch(error){imageSourceCache.setError(cacheKey,error);throw error;}}function getImageSource(name){var size,color,glyph,processedColor,cacheKey,imagePath,value,_args=arguments;return regenerator_default.a.async(function getImageSource$(_context){while(1){switch(_context.prev=_context.next){case 0:size=_args.length>1&&_args[1]!==undefined?_args[1]:DEFAULT_ICON_SIZE;color=_args.length>2&&_args[2]!==undefined?_args[2]:DEFAULT_ICON_COLOR;ensureNativeModuleAvailable();glyph=resolveGlyph(name);processedColor=Object(processColor["a" /* default */])(color);cacheKey=glyph+":"+size+":"+processedColor;if(!imageSourceCache.has(cacheKey)){_context.next=8;break;}return _context.abrupt("return",imageSourceCache.get(cacheKey));case 8:_context.prev=8;_context.next=11;return regenerator_default.a.awrap(create_icon_set_NativeIconAPI.getImageForFont(fontReference,glyph,size,processedColor));case 11:imagePath=_context.sent;value={uri:imagePath,scale:PixelRatio["a" /* default */].get()};imageSourceCache.setValue(cacheKey,value);return _context.abrupt("return",value);case 17:_context.prev=17;_context.t0=_context["catch"](8);imageSourceCache.setError(cacheKey,_context.t0);throw _context.t0;case 21:case"end":return _context.stop();}}},null,null,[[8,17]],Promise);}function loadFont(){var file,_args2=arguments;return regenerator_default.a.async(function loadFont$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:file=_args2.length>0&&_args2[0]!==undefined?_args2[0]:fontFile;if(!(Platform["a" /* default */].OS==='ios')){_context2.next=7;break;}ensureNativeModuleAvailable();if(file){_context2.next=5;break;}throw new Error('Unable to load font, because no file was specified. ');case 5:_context2.next=7;return regenerator_default.a.awrap(create_icon_set_NativeIconAPI.loadFontWithFileName.apply(create_icon_set_NativeIconAPI,toConsumableArray_default()(file.split('.'))));case 7:case"end":return _context2.stop();}}},null,null,null,Promise);}function hasIcon(name){return Object.prototype.hasOwnProperty.call(glyphMap,name);}function getRawGlyphMap(){return glyphMap;}function getFontFamily(){return fontReference;}Icon.Button=createIconButtonComponent(Icon);Icon.getImageSource=getImageSource;Icon.getImageSourceSync=getImageSourceSync;Icon.loadFont=loadFont;Icon.hasIcon=hasIcon;Icon.getRawGlyphMap=getRawGlyphMap;Icon.getFontFamily=getFontFamily;return Icon;}
 // CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@expo/vector-icons/build/createIconSet.js
-function createIconSet_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function createIconSet_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?createIconSet_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):createIconSet_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}function createIconSet_createSuper(Derived){var hasNativeReflectConstruct=createIconSet_isNativeReflectConstruct();return function _createSuperInternal(){var Super=getPrototypeOf_default()(Derived),result;if(hasNativeReflectConstruct){var NewTarget=getPrototypeOf_default()(this).constructor;result=Reflect.construct(Super,arguments,NewTarget);}else{result=Super.apply(this,arguments);}return possibleConstructorReturn_default()(this,result);};}function createIconSet_isNativeReflectConstruct(){if(typeof Reflect==="undefined"||!Reflect.construct)return false;if(Reflect.construct.sham)return false;if(typeof Proxy==="function")return true;try{Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}));return true;}catch(e){return false;}}/* harmony default export */ var build_createIconSet = (function(glyphMap,fontName,expoAssetId,fontStyle){var _a;var font=defineProperty_default()({},fontName,expoAssetId);var RNVIconComponent=createIconSet(glyphMap,fontName,null,fontStyle);return _a=function(_React$Component){inherits_default()(Icon,_React$Component);var _super=createIconSet_createSuper(Icon);function Icon(){var _this;classCallCheck_default()(this,Icon);_this=_super.apply(this,arguments);_this._mounted=false;_this.state={fontIsLoaded:isLoaded(fontName)};return _this;}createClass_default()(Icon,[{key:"componentDidMount",value:function componentDidMount(){return regenerator_default.a.async(function componentDidMount$(_context){while(1){switch(_context.prev=_context.next){case 0:this._mounted=true;if(this.state.fontIsLoaded){_context.next=5;break;}_context.next=4;return regenerator_default.a.awrap(Font_loadAsync(font));case 4:this._mounted&&this.setState({fontIsLoaded:true});case 5:case"end":return _context.stop();}}},null,this,null,Promise);}},{key:"componentWillUnmount",value:function componentWillUnmount(){this._mounted=false;}},{key:"setNativeProps",value:function setNativeProps(props){if(this._icon){this._icon.setNativeProps(props);}}},{key:"render",value:function render(){var _this2=this;if(false){}if(!this.state.fontIsLoaded){return Object(jsx_runtime["jsx"])(Text["a" /* default */],{});}return Object(jsx_runtime["jsx"])(RNVIconComponent,createIconSet_objectSpread({ref:function ref(view){_this2._icon=view;}},this.props));}}]);return Icon;}(react_default.a.Component),_a.defaultProps=RNVIconComponent.defaultProps,_a.Button=createIconButtonComponent(_a),_a.glyphMap=glyphMap,_a.getRawGlyphMap=function(){return glyphMap;},_a.getFontFamily=function(){return fontName;},_a.loadFont=function(){return Font_loadAsync(font);},_a.font=font,_a;});
+function createIconSet_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function createIconSet_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?createIconSet_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):createIconSet_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}function createIconSet_createSuper(Derived){var hasNativeReflectConstruct=createIconSet_isNativeReflectConstruct();return function _createSuperInternal(){var Super=getPrototypeOf_default()(Derived),result;if(hasNativeReflectConstruct){var NewTarget=getPrototypeOf_default()(this).constructor;result=Reflect.construct(Super,arguments,NewTarget);}else{result=Super.apply(this,arguments);}return possibleConstructorReturn_default()(this,result);};}function createIconSet_isNativeReflectConstruct(){if(typeof Reflect==="undefined"||!Reflect.construct)return false;if(Reflect.construct.sham)return false;if(typeof Proxy==="function")return true;try{Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}));return true;}catch(e){return false;}}/* harmony default export */ var build_createIconSet = (function(glyphMap,fontName,expoAssetId,fontStyle){var _a;var font=defineProperty_default()({},fontName,expoAssetId);var RNVIconComponent=createIconSet(glyphMap,fontName,null,fontStyle);return _a=function(_React$Component){inherits_default()(Icon,_React$Component);var _super=createIconSet_createSuper(Icon);function Icon(){var _this;classCallCheck_default()(this,Icon);_this=_super.apply(this,arguments);_this._mounted=false;_this.state={fontIsLoaded:Font["a" /* isLoaded */](fontName)};return _this;}createClass_default()(Icon,[{key:"componentDidMount",value:function componentDidMount(){return regenerator_default.a.async(function componentDidMount$(_context){while(1){switch(_context.prev=_context.next){case 0:this._mounted=true;if(this.state.fontIsLoaded){_context.next=5;break;}_context.next=4;return regenerator_default.a.awrap(Font["b" /* loadAsync */](font));case 4:this._mounted&&this.setState({fontIsLoaded:true});case 5:case"end":return _context.stop();}}},null,this,null,Promise);}},{key:"componentWillUnmount",value:function componentWillUnmount(){this._mounted=false;}},{key:"setNativeProps",value:function setNativeProps(props){if(this._icon){this._icon.setNativeProps(props);}}},{key:"render",value:function render(){var _this2=this;if(false){}if(!this.state.fontIsLoaded){return Object(jsx_runtime["jsx"])(Text["a" /* default */],{});}return Object(jsx_runtime["jsx"])(RNVIconComponent,createIconSet_objectSpread({ref:function ref(view){_this2._icon=view;}},this.props));}}]);return Icon;}(react_default.a.Component),_a.defaultProps=RNVIconComponent.defaultProps,_a.Button=createIconButtonComponent(_a),_a.glyphMap=glyphMap,_a.getRawGlyphMap=function(){return glyphMap;},_a.getFontFamily=function(){return fontName;},_a.loadFont=function(){return Font["b" /* loadAsync */](font);},_a.font=font,_a;});
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome.ttf
 var FontAwesome = __webpack_require__(256);
 var FontAwesome_default = /*#__PURE__*/__webpack_require__.n(FontAwesome);
@@ -18522,39 +18543,6 @@ var glyphmaps_FontAwesome = __webpack_require__(255);
 /* harmony default export */ var build_FontAwesome = (build_createIconSet(glyphmaps_FontAwesome,'FontAwesome',FontAwesome_default.a));
 // CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@expo/vector-icons/FontAwesome.js
 /* harmony default export */ var vector_icons_FontAwesome = __webpack_exports__["a"] = (build_FontAwesome);
-
-/***/ }),
-/* 258 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, "a", function() { return /* reexport */ ExpoStatusBar; });
-
-// UNUSED EXPORTS: setStatusBarBackgroundColor, setStatusBarNetworkActivityIndicatorVisible, setStatusBarHidden, setStatusBarStyle, setStatusBarTranslucent
-
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/StatusBar.types.js
-
-// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-web/dist/exports/StatusBar/index.js
-var StatusBar = __webpack_require__(64);
-
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/setStatusBarBackgroundColor.js
-function setStatusBarBackgroundColor(backgroundColor,animated){StatusBar["a" /* default */].setBackgroundColor(backgroundColor,animated);}
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/setStatusBarNetworkActivityIndicatorVisible.js
-function setStatusBarNetworkActivityIndicatorVisible(visible){StatusBar["a" /* default */].setNetworkActivityIndicatorVisible(visible);}
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/setStatusBarHidden.js
-function setStatusBarHidden(hidden,animation){StatusBar["a" /* default */].setHidden(hidden,animation);}
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/styleToBarStyle.web.js
-function styleToBarStyle(){var style=arguments.length>0&&arguments[0]!==undefined?arguments[0]:'auto';var colorScheme=arguments.length>1?arguments[1]:undefined;if(!colorScheme){colorScheme='light';}var resolvedStyle=style;if(style==='auto'){resolvedStyle=colorScheme==='light'?'dark':'light';}else if(style==='inverted'){resolvedStyle=colorScheme==='light'?'light':'dark';}return resolvedStyle==='light'?'light-content':'dark-content';}
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/setStatusBarStyle.js
-function setStatusBarStyle(style){StatusBar["a" /* default */].setBarStyle(styleToBarStyle(style));}
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/setStatusBarTranslucent.js
-function setStatusBarTranslucent(translucent){StatusBar["a" /* default */].setTranslucent(translucent);}
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/ExpoStatusBar.js
-function ExpoStatusBar(props){return null;}
-// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/StatusBar.js
-
 
 /***/ }),
 /* 259 */
@@ -18606,7 +18594,7 @@ var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf);
 var react = __webpack_require__(0);
 
 // CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo/build/launch/RecoveryProps.js
-function ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function _objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}var attachRecoveredProps=function attachRecoveredProps(props){try{var _require=__webpack_require__(390),recoveredProps=_require.recoveredProps;return _objectSpread(_objectSpread({},props),{},{exp:_objectSpread(_objectSpread({},props.exp),{},{errorRecovery:recoveredProps})});}catch(_unused){}return props;};
+function ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function _objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}var attachRecoveredProps=function attachRecoveredProps(props){try{var _require=__webpack_require__(398),recoveredProps=_require.recoveredProps;return _objectSpread(_objectSpread({},props),{},{exp:_objectSpread(_objectSpread({},props.exp),{},{errorRecovery:recoveredProps})});}catch(_unused){}return props;};
 // CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo/build/launch/withExpoRoot.web.js
 function withExpoRoot_web_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function withExpoRoot_web_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?withExpoRoot_web_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):withExpoRoot_web_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}function _createSuper(Derived){var hasNativeReflectConstruct=_isNativeReflectConstruct();return function _createSuperInternal(){var Super=getPrototypeOf_default()(Derived),result;if(hasNativeReflectConstruct){var NewTarget=getPrototypeOf_default()(this).constructor;result=Reflect.construct(Super,arguments,NewTarget);}else{result=Super.apply(this,arguments);}return possibleConstructorReturn_default()(this,result);};}function _isNativeReflectConstruct(){if(typeof Reflect==="undefined"||!Reflect.construct)return false;if(Reflect.construct.sham)return false;if(typeof Proxy==="function")return true;try{Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}));return true;}catch(e){return false;}}function withExpoRoot(AppRootComponent){return function(_React$Component){inherits_default()(ExpoRootComponent,_React$Component);var _super=_createSuper(ExpoRootComponent);function ExpoRootComponent(){classCallCheck_default()(this,ExpoRootComponent);return _super.apply(this,arguments);}createClass_default()(ExpoRootComponent,[{key:"render",value:function render(){var combinedProps=attachRecoveredProps(this.props);return react["createElement"](AppRootComponent,withExpoRoot_web_objectSpread({},combinedProps));}}]);return ExpoRootComponent;}(react["Component"]);}
 // CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo/build/launch/registerRootComponent.js
@@ -18614,6 +18602,42 @@ function registerRootComponent(component){AppRegistry["a" /* default */].registe
 
 /***/ }),
 /* 260 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ isLoaded; });
+__webpack_require__.d(__webpack_exports__, "b", function() { return /* binding */ Font_loadAsync; });
+
+// UNUSED EXPORTS: processFontFamily, isLoading, unloadAllAsync, unloadAsync, FontDisplay
+
+// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@babel/runtime/regenerator/index.js
+var regenerator = __webpack_require__(21);
+var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);
+
+// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-modules-core/build/index.js + 12 modules
+var build = __webpack_require__(52);
+
+// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@babel/runtime/helpers/toConsumableArray.js
+var toConsumableArray = __webpack_require__(24);
+var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableArray);
+
+// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/fontfaceobserver/fontfaceobserver.standalone.js
+var fontfaceobserver_standalone = __webpack_require__(254);
+var fontfaceobserver_standalone_default = /*#__PURE__*/__webpack_require__.n(fontfaceobserver_standalone);
+
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-font/build/Font.types.js
+var FontDisplay;(function(FontDisplay){FontDisplay["AUTO"]="auto";FontDisplay["SWAP"]="swap";FontDisplay["BLOCK"]="block";FontDisplay["FALLBACK"]="fallback";FontDisplay["OPTIONAL"]="optional";})(FontDisplay||(FontDisplay={}));
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-font/build/ExpoFontLoader.web.js
+function _createForOfIteratorHelperLoose(o,allowArrayLike){var it=typeof Symbol!=="undefined"&&o[Symbol.iterator]||o["@@iterator"];if(it)return(it=it.call(o)).next.bind(it);if(Array.isArray(o)||(it=_unsupportedIterableToArray(o))||allowArrayLike&&o&&typeof o.length==="number"){if(it)o=it;var i=0;return function(){if(i>=o.length)return{done:true};return{done:false,value:o[i++]};};}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o,minLen){if(!o)return;if(typeof o==="string")return _arrayLikeToArray(o,minLen);var n=Object.prototype.toString.call(o).slice(8,-1);if(n==="Object"&&o.constructor)n=o.constructor.name;if(n==="Map"||n==="Set")return Array.from(o);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return _arrayLikeToArray(o,minLen);}function _arrayLikeToArray(arr,len){if(len==null||len>arr.length)len=arr.length;for(var i=0,arr2=new Array(len);i<len;i++){arr2[i]=arr[i];}return arr2;}function getFontFaceStyleSheet(){if(!build["b" /* Platform */].isDOMAvailable){return null;}var styleSheet=getStyleElement();return styleSheet.sheet?styleSheet.sheet:null;}function getFontFaceRules(){var sheet=getFontFaceStyleSheet();if(sheet){var rules=toConsumableArray_default()(sheet.cssRules);var items=[];for(var i=0;i<rules.length;i++){var rule=rules[i];if(rule instanceof CSSFontFaceRule){items.push({rule:rule,index:i});}}return items;}return[];}function getFontFaceRulesMatchingResource(fontFamilyName,options){var rules=getFontFaceRules();return rules.filter(function(_ref){var rule=_ref.rule;return rule.style.fontFamily===fontFamilyName&&(options&&options.display?options.display===rule.style.fontDisplay:true);});}/* harmony default export */ var ExpoFontLoader_web = ({get name(){return'ExpoFontLoader';},unloadAllAsync:function unloadAllAsync(){return function _callee(){var element;return regenerator_default.a.async(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:if(build["b" /* Platform */].isDOMAvailable){_context.next=2;break;}return _context.abrupt("return");case 2:element=document.getElementById(ID);if(element&&element instanceof HTMLStyleElement){document.removeChild(element);}case 4:case"end":return _context.stop();}}},null,null,null,Promise);}();},unloadAsync:function unloadAsync(fontFamilyName,options){return function _callee2(){var sheet,items,_iterator,_step,item;return regenerator_default.a.async(function _callee2$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:sheet=getFontFaceStyleSheet();if(sheet){_context2.next=3;break;}return _context2.abrupt("return");case 3:items=getFontFaceRulesMatchingResource(fontFamilyName,options);for(_iterator=_createForOfIteratorHelperLoose(items);!(_step=_iterator()).done;){item=_step.value;sheet.deleteRule(item.index);}case 5:case"end":return _context2.stop();}}},null,null,null,Promise);}();},loadAsync:function loadAsync(fontFamilyName,resource){return function _callee3(){var canInjectStyle,style;return regenerator_default.a.async(function _callee3$(_context3){while(1){switch(_context3.prev=_context3.next){case 0:if(build["b" /* Platform */].isDOMAvailable){_context3.next=2;break;}return _context3.abrupt("return");case 2:canInjectStyle=document.head&&typeof document.head.appendChild==='function';if(canInjectStyle){_context3.next=5;break;}throw new build["a" /* CodedError */]('ERR_WEB_ENVIRONMENT',"The browser's `document.head` element doesn't support injecting fonts.");case 5:style=_createWebStyle(fontFamilyName,resource);document.head.appendChild(style);if(isFontLoadingListenerSupported()){_context3.next=9;break;}return _context3.abrupt("return");case 9:return _context3.abrupt("return",new fontfaceobserver_standalone_default.a(fontFamilyName,{display:resource.display}).load());case 10:case"end":return _context3.stop();}}},null,null,null,Promise);}();}});var ID='expo-generated-fonts';function getStyleElement(){var element=document.getElementById(ID);if(element&&element instanceof HTMLStyleElement){return element;}var styleElement=document.createElement('style');styleElement.id=ID;styleElement.type='text/css';return styleElement;}function _createWebStyle(fontFamily,resource){var fontStyle="@font-face {\n    font-family: "+fontFamily+";\n    src: url("+resource.uri+");\n    font-display: "+(resource.display||FontDisplay.AUTO)+";\n  }";var styleElement=getStyleElement();if(styleElement.styleSheet){var styleElementIE=styleElement;styleElementIE.styleSheet.cssText=styleElementIE.styleSheet.cssText?styleElementIE.styleSheet.cssText+fontStyle:fontStyle;}else{var textNode=document.createTextNode(fontStyle);styleElement.appendChild(textNode);}return styleElement;}function isFontLoadingListenerSupported(){var userAgent=window.navigator.userAgent;var isIOS=!!userAgent.match(/iPad|iPhone/i);var isSafari=/^((?!chrome|android).)*safari/i.test(navigator.userAgent);var isEdge=userAgent.includes('Edge');var isIE=userAgent.includes('Trident');var isFirefox=userAgent.includes('Firefox');return!isSafari&&!isIOS&&!isEdge&&!isIE&&!isFirefox;}
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-font/build/FontLoader.web.js
+function uriFromFontSource(asset){if(typeof asset==='string'){return asset||null;}else if(typeof asset==='object'){return asset.uri||asset.localUri||null;}return null;}function displayFromFontSource(asset){return asset.display||FontDisplay.AUTO;}function fontFamilyNeedsScoping(name){return false;}function getAssetForSource(source){var uri=uriFromFontSource(source);var display=displayFromFontSource(source);if(!uri||typeof uri!=='string'){throwInvalidSourceError(uri);}return{uri:uri,display:display};}function throwInvalidSourceError(source){var type=typeof source;if(type==='object')type=JSON.stringify(source,null,2);throw new build["a" /* CodedError */]("ERR_FONT_SOURCE","Expected font asset of type `string | FontResource | Asset` (number is not supported on web) instead got: "+type);}function loadSingleFontAsync(name,input){return regenerator_default.a.async(function loadSingleFontAsync$(_context){while(1){switch(_context.prev=_context.next){case 0:if(typeof input!=='object'||typeof input.uri!=='string'||input.downloadAsync){throwInvalidSourceError(input);}_context.next=3;return regenerator_default.a.awrap(ExpoFontLoader_web.loadAsync(name,input));case 3:case"end":return _context.stop();}}},null,null,null,Promise);}function getNativeFontName(name){return name;}
+// CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-font/build/Font.js
+var loaded={};var loadPromises={};function processFontFamily(fontFamily){if(!fontFamily||!fontFamilyNeedsScoping(fontFamily)){return fontFamily;}if(!isLoaded(fontFamily)){if(false){}return'System';}return"ExpoFont-"+getNativeFontName(fontFamily);}function isLoaded(fontFamily){return fontFamily in loaded;}function isLoading(fontFamily){return fontFamily in loadPromises;}function Font_loadAsync(fontFamilyOrFontMap,source){var fontMap,names;return regenerator_default.a.async(function loadAsync$(_context){while(1){switch(_context.prev=_context.next){case 0:if(!(typeof fontFamilyOrFontMap==='object')){_context.next=8;break;}if(!source){_context.next=3;break;}throw new build["a" /* CodedError */]("ERR_FONT_API","No fontFamily can be used for the provided source: "+source+". The second argument of `loadAsync()` can only be used with a `string` value as the first argument.");case 3:fontMap=fontFamilyOrFontMap;names=Object.keys(fontMap);_context.next=7;return regenerator_default.a.awrap(Promise.all(names.map(function(name){return loadFontInNamespaceAsync(name,fontMap[name]);})));case 7:return _context.abrupt("return");case 8:_context.next=10;return regenerator_default.a.awrap(loadFontInNamespaceAsync(fontFamilyOrFontMap,source));case 10:return _context.abrupt("return",_context.sent);case 11:case"end":return _context.stop();}}},null,null,null,Promise);}function loadFontInNamespaceAsync(fontFamily,source){var asset;return regenerator_default.a.async(function loadFontInNamespaceAsync$(_context3){while(1){switch(_context3.prev=_context3.next){case 0:if(source){_context3.next=2;break;}throw new build["a" /* CodedError */]("ERR_FONT_SOURCE","Cannot load null or undefined font source: { \""+fontFamily+"\": "+source+" }. Expected asset of type `FontSource` for fontFamily of name: \""+fontFamily+"\"");case 2:if(!loaded[fontFamily]){_context3.next=4;break;}return _context3.abrupt("return");case 4:if(!loadPromises.hasOwnProperty(fontFamily)){_context3.next=6;break;}return _context3.abrupt("return",loadPromises[fontFamily]);case 6:asset=getAssetForSource(source);loadPromises[fontFamily]=function _callee(){return regenerator_default.a.async(function _callee$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:_context2.prev=0;_context2.next=3;return regenerator_default.a.awrap(loadSingleFontAsync(fontFamily,asset));case 3:loaded[fontFamily]=true;case 4:_context2.prev=4;delete loadPromises[fontFamily];return _context2.finish(4);case 7:case"end":return _context2.stop();}}},null,null,[[0,,4,7]],Promise);}();_context3.next=10;return regenerator_default.a.awrap(loadPromises[fontFamily]);case 10:case"end":return _context3.stop();}}},null,null,null,Promise);}function Font_unloadAllAsync(){var _i,_Object$keys,fontFamily;return regenerator_default.a.async(function unloadAllAsync$(_context4){while(1){switch(_context4.prev=_context4.next){case 0:if(ExpoFontLoader_web.unloadAllAsync){_context4.next=2;break;}throw new build["c" /* UnavailabilityError */]('expo-font','unloadAllAsync');case 2:if(!Object.keys(loadPromises).length){_context4.next=4;break;}throw new build["a" /* CodedError */]("ERR_UNLOAD","Cannot unload fonts while they're still loading: "+Object.keys(loadPromises).join(', '));case 4:for(_i=0,_Object$keys=Object.keys(loaded);_i<_Object$keys.length;_i++){fontFamily=_Object$keys[_i];delete loaded[fontFamily];}_context4.next=7;return regenerator_default.a.awrap(ExpoFontLoader_web.unloadAllAsync());case 7:case"end":return _context4.stop();}}},null,null,null,Promise);}function Font_unloadAsync(fontFamilyOrFontMap,options){var fontMap,names;return regenerator_default.a.async(function unloadAsync$(_context5){while(1){switch(_context5.prev=_context5.next){case 0:if(ExpoFontLoader_web.unloadAsync){_context5.next=2;break;}throw new build["c" /* UnavailabilityError */]('expo-font','unloadAsync');case 2:if(!(typeof fontFamilyOrFontMap==='object')){_context5.next=10;break;}if(!options){_context5.next=5;break;}throw new build["a" /* CodedError */]("ERR_FONT_API","No fontFamily can be used for the provided options: "+options+". The second argument of `unloadAsync()` can only be used with a `string` value as the first argument.");case 5:fontMap=fontFamilyOrFontMap;names=Object.keys(fontMap);_context5.next=9;return regenerator_default.a.awrap(Promise.all(names.map(function(name){return unloadFontInNamespaceAsync(name,fontMap[name]);})));case 9:return _context5.abrupt("return");case 10:_context5.next=12;return regenerator_default.a.awrap(unloadFontInNamespaceAsync(fontFamilyOrFontMap,options));case 12:return _context5.abrupt("return",_context5.sent);case 13:case"end":return _context5.stop();}}},null,null,null,Promise);}function unloadFontInNamespaceAsync(fontFamily,options){var nativeFontName;return regenerator_default.a.async(function unloadFontInNamespaceAsync$(_context6){while(1){switch(_context6.prev=_context6.next){case 0:if(loaded[fontFamily]){_context6.next=4;break;}return _context6.abrupt("return");case 4:delete loaded[fontFamily];case 5:nativeFontName=getNativeFontName(fontFamily);if(nativeFontName){_context6.next=8;break;}throw new build["a" /* CodedError */]("ERR_FONT_FAMILY","Cannot unload an empty name");case 8:_context6.next=10;return regenerator_default.a.awrap(ExpoFontLoader_web.unloadAsync(nativeFontName,options));case 10:case"end":return _context6.stop();}}},null,null,null,Promise);}
+
+/***/ }),
+/* 261 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18680,8 +18704,9 @@ var val = __webpack_require__(30);
 function AnimatedProps_createSuper(Derived){var hasNativeReflectConstruct=AnimatedProps_isNativeReflectConstruct();return function _createSuperInternal(){var Super=getPrototypeOf_default()(Derived),result;if(hasNativeReflectConstruct){var NewTarget=getPrototypeOf_default()(this).constructor;result=Reflect.construct(Super,arguments,NewTarget);}else{result=Super.apply(this,arguments);}return possibleConstructorReturn_default()(this,result);};}function AnimatedProps_isNativeReflectConstruct(){if(typeof Reflect==="undefined"||!Reflect.construct)return false;if(Reflect.construct.sham)return false;if(typeof Proxy==="function")return true;try{Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}));return true;}catch(e){return false;}}function AnimatedProps_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function AnimatedProps_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?AnimatedProps_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):AnimatedProps_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}function sanitizeProps(inputProps){var props;for(var key in inputProps){var value=inputProps[key];if(value instanceof AnimatedNode["a" /* default */]&&!(value instanceof AnimatedEvent["b" /* default */])){if(props===undefined){props={};}props[key]=value.__nodeID;}}return props;}function createOrReusePropsNode(props,callback,oldNode){if(props.style){var style=createOrReuseStyleNode(props.style,oldNode&&oldNode._props.style);if(style){props=AnimatedProps_objectSpread(AnimatedProps_objectSpread({},props),{},{style:style});}}var config=sanitizeProps(props);if(config===undefined){return undefined;}if(oldNode&&lodash_isequal_default()(config,oldNode._config)){return oldNode;}return new AnimatedProps_AnimatedProps(props,config,callback);}var AnimatedProps_AnimatedProps=function(_AnimatedNode){inherits_default()(AnimatedProps,_AnimatedNode);var _super=AnimatedProps_createSuper(AnimatedProps);function AnimatedProps(props,config,callback){var _this;classCallCheck_default()(this,AnimatedProps);_this=_super.call(this,{type:'props',props:config},Object.values(props).filter(function(n){return!(n instanceof AnimatedEvent["b" /* default */]);}));_this._config=config;_this._props=props;_this._callback=callback;_this.__attach();return _this;}createClass_default()(AnimatedProps,[{key:"toString",value:function toString(){return"AnimatedProps, id: "+this.__nodeID;}},{key:"__onEvaluate",value:function __onEvaluate(){var props={};for(var key in this._props){var value=this._props[key];if(value instanceof AnimatedNode["a" /* default */]){props[key]=value.__getValue();}}return props;}},{key:"__detach",value:function __detach(){var nativeViewTag=Object(findNodeHandle["a" /* default */])(this._animatedView);browser_default()(nativeViewTag!=null,'Unable to locate attached view in the native tree');this._disconnectAnimatedView(nativeViewTag);get_default()(getPrototypeOf_default()(AnimatedProps.prototype),"__detach",this).call(this);}},{key:"update",value:function update(){this._callback();if(!this._animatedView){return;}Object(val["a" /* val */])(this);}},{key:"setNativeView",value:function setNativeView(animatedView){if(this._animatedView===animatedView){return;}this._animatedView=animatedView;var nativeViewTag=Object(findNodeHandle["a" /* default */])(this._animatedView);browser_default()(nativeViewTag!=null,'Unable to locate attached view in the native tree');this._connectAnimatedView(nativeViewTag);}}]);return AnimatedProps;}(AnimatedNode["a" /* default */]);
 
 /***/ }),
-/* 261 */,
-/* 262 */
+/* 262 */,
+/* 263 */,
+/* 264 */
 /***/ (function(module, exports) {
 
 function _arrayWithHoles(arr) {
@@ -18691,7 +18716,7 @@ function _arrayWithHoles(arr) {
 module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 263 */
+/* 265 */
 /***/ (function(module, exports) {
 
 function _iterableToArrayLimit(arr, i) {
@@ -18727,7 +18752,7 @@ function _iterableToArrayLimit(arr, i) {
 module.exports = _iterableToArrayLimit, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 264 */
+/* 266 */
 /***/ (function(module, exports) {
 
 function _nonIterableRest() {
@@ -18737,7 +18762,7 @@ function _nonIterableRest() {
 module.exports = _nonIterableRest, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 265 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayLikeToArray = __webpack_require__(198);
@@ -18749,7 +18774,7 @@ function _arrayWithoutHoles(arr) {
 module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 266 */
+/* 268 */
 /***/ (function(module, exports) {
 
 function _iterableToArray(iter) {
@@ -18759,7 +18784,7 @@ function _iterableToArray(iter) {
 module.exports = _iterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 267 */
+/* 269 */
 /***/ (function(module, exports) {
 
 function _nonIterableSpread() {
@@ -18769,7 +18794,7 @@ function _nonIterableSpread() {
 module.exports = _nonIterableSpread, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 268 */
+/* 270 */
 /***/ (function(module, exports) {
 
 function _objectWithoutPropertiesLoose(source, excluded) {
@@ -18790,7 +18815,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 269 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getPrototypeOf = __webpack_require__(2);
@@ -18807,7 +18832,7 @@ function _superPropBase(object, property) {
 module.exports = _superPropBase, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 270 */
+/* 272 */
 /***/ (function(module, exports) {
 
 function _isNativeFunction(fn) {
@@ -18817,7 +18842,7 @@ function _isNativeFunction(fn) {
 module.exports = _isNativeFunction, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 271 */
+/* 273 */
 /***/ (function(module, exports) {
 
 function _isNativeReflectConstruct() {
@@ -18836,7 +18861,7 @@ function _isNativeReflectConstruct() {
 module.exports = _isNativeReflectConstruct, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 272 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18851,7 +18876,7 @@ module.exports = _isNativeReflectConstruct, module.exports.__esModule = true, mo
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),m=__webpack_require__(138),r=__webpack_require__(274);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
+var aa=__webpack_require__(0),m=__webpack_require__(138),r=__webpack_require__(276);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
 function ea(a,b){ca[a]=b;for(a=0;a<b.length;a++)ba.add(b[a])}
 var fa=!("undefined"===typeof window||"undefined"===typeof window.document||"undefined"===typeof window.document.createElement),ha=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,ia=Object.prototype.hasOwnProperty,
 ja={},ka={};function la(a){if(ia.call(ka,a))return!0;if(ia.call(ja,a))return!1;if(ha.test(a))return ka[a]=!0;ja[a]=!0;return!1}function ma(a,b,c,d){if(null!==c&&0===c.type)return!1;switch(typeof b){case "function":case "symbol":return!0;case "boolean":if(d)return!1;if(null!==c)return!c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return"data-"!==a&&"aria-"!==a;default:return!1}}
@@ -19140,7 +19165,7 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!rk(c))throw Er
 
 
 /***/ }),
-/* 273 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19170,19 +19195,19 @@ exports.useLayoutEffect=function(a,b){return S().useLayoutEffect(a,b)};exports.u
 
 
 /***/ }),
-/* 274 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 if (true) {
-  module.exports = __webpack_require__(275);
+  module.exports = __webpack_require__(277);
 } else {}
 
 
 /***/ }),
-/* 275 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19209,19 +19234,19 @@ exports.unstable_wrapCallback=function(a){var b=P;return function(){var c=P;P=b;
 
 
 /***/ }),
-/* 276 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 if (true) {
-  module.exports = __webpack_require__(277);
+  module.exports = __webpack_require__(279);
 } else {}
 
 
 /***/ }),
-/* 277 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19243,7 +19268,7 @@ exports.isValidElementType=function(a){return"string"===typeof a||"function"===t
 
 
 /***/ }),
-/* 278 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19281,7 +19306,7 @@ function prefixProperty(prefixProperties, property, style) {
 }
 
 /***/ }),
-/* 279 */
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19304,7 +19329,7 @@ function prefixValue(plugins, property, value, style, metaData) {
 }
 
 /***/ }),
-/* 280 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19331,7 +19356,7 @@ function addNewValuesOnly(list, values) {
 }
 
 /***/ }),
-/* 281 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19346,7 +19371,7 @@ function isObject(value) {
 }
 
 /***/ }),
-/* 282 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19369,17 +19394,17 @@ function hyphenateProperty(property) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 283 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function(global,undefined){"use strict";if(global.setImmediate){return;}var nextHandle=1;var tasksByHandle={};var currentlyRunningATask=false;var doc=global.document;var registerImmediate;function setImmediate(callback){if(typeof callback!=="function"){callback=new Function(""+callback);}var args=new Array(arguments.length-1);for(var i=0;i<args.length;i++){args[i]=arguments[i+1];}var task={callback:callback,args:args};tasksByHandle[nextHandle]=task;registerImmediate(nextHandle);return nextHandle++;}function clearImmediate(handle){delete tasksByHandle[handle];}function run(task){var callback=task.callback;var args=task.args;switch(args.length){case 0:callback();break;case 1:callback(args[0]);break;case 2:callback(args[0],args[1]);break;case 3:callback(args[0],args[1],args[2]);break;default:callback.apply(undefined,args);break;}}function runIfPresent(handle){if(currentlyRunningATask){setTimeout(runIfPresent,0,handle);}else{var task=tasksByHandle[handle];if(task){currentlyRunningATask=true;try{run(task);}finally{clearImmediate(handle);currentlyRunningATask=false;}}}}function installNextTickImplementation(){registerImmediate=function registerImmediate(handle){process.nextTick(function(){runIfPresent(handle);});};}function canUsePostMessage(){if(global.postMessage&&!global.importScripts){var postMessageIsAsynchronous=true;var oldOnMessage=global.onmessage;global.onmessage=function(){postMessageIsAsynchronous=false;};global.postMessage("","*");global.onmessage=oldOnMessage;return postMessageIsAsynchronous;}}function installPostMessageImplementation(){var messagePrefix="setImmediate$"+Math.random()+"$";var onGlobalMessage=function onGlobalMessage(event){if(event.source===global&&typeof event.data==="string"&&event.data.indexOf(messagePrefix)===0){runIfPresent(+event.data.slice(messagePrefix.length));}};if(global.addEventListener){global.addEventListener("message",onGlobalMessage,false);}else{global.attachEvent("onmessage",onGlobalMessage);}registerImmediate=function registerImmediate(handle){global.postMessage(messagePrefix+handle,"*");};}function installMessageChannelImplementation(){var channel=new MessageChannel();channel.port1.onmessage=function(event){var handle=event.data;runIfPresent(handle);};registerImmediate=function registerImmediate(handle){channel.port2.postMessage(handle);};}function installReadyStateChangeImplementation(){var html=doc.documentElement;registerImmediate=function registerImmediate(handle){var script=doc.createElement("script");script.onreadystatechange=function(){runIfPresent(handle);script.onreadystatechange=null;html.removeChild(script);script=null;};html.appendChild(script);};}function installSetTimeoutImplementation(){registerImmediate=function registerImmediate(handle){setTimeout(runIfPresent,0,handle);};}var attachTo=Object.getPrototypeOf&&Object.getPrototypeOf(global);attachTo=attachTo&&attachTo.setTimeout?attachTo:global;if({}.toString.call(global.process)==="[object process]"){installNextTickImplementation();}else if(canUsePostMessage()){installPostMessageImplementation();}else if(global.MessageChannel){installMessageChannelImplementation();}else if(doc&&"onreadystatechange"in doc.createElement("script")){installReadyStateChangeImplementation();}else{installSetTimeoutImplementation();}attachTo.setImmediate=setImmediate;attachTo.clearImmediate=clearImmediate;})(typeof self==="undefined"?typeof global==="undefined"?this:global:self);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(50), __webpack_require__(178)))
 
 /***/ }),
-/* 284 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqualDeep = __webpack_require__(285),
+var baseIsEqualDeep = __webpack_require__(287),
     isObjectLike = __webpack_require__(144);
 
 /**
@@ -19410,14 +19435,14 @@ module.exports = baseIsEqual;
 
 
 /***/ }),
-/* 285 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(286),
+var Stack = __webpack_require__(288),
     equalArrays = __webpack_require__(207),
-    equalByTag = __webpack_require__(320),
-    equalObjects = __webpack_require__(324),
-    getTag = __webpack_require__(346),
+    equalByTag = __webpack_require__(322),
+    equalObjects = __webpack_require__(326),
+    getTag = __webpack_require__(348),
     isArray = __webpack_require__(181),
     isBuffer = __webpack_require__(208),
     isTypedArray = __webpack_require__(209);
@@ -19499,15 +19524,15 @@ module.exports = baseIsEqualDeep;
 
 
 /***/ }),
-/* 286 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(139),
-    stackClear = __webpack_require__(292),
-    stackDelete = __webpack_require__(293),
-    stackGet = __webpack_require__(294),
-    stackHas = __webpack_require__(295),
-    stackSet = __webpack_require__(296);
+    stackClear = __webpack_require__(294),
+    stackDelete = __webpack_require__(295),
+    stackGet = __webpack_require__(296),
+    stackHas = __webpack_require__(297),
+    stackSet = __webpack_require__(298);
 
 /**
  * Creates a stack cache object to store key-value pairs.
@@ -19532,7 +19557,7 @@ module.exports = Stack;
 
 
 /***/ }),
-/* 287 */
+/* 289 */
 /***/ (function(module, exports) {
 
 /**
@@ -19551,7 +19576,7 @@ module.exports = listCacheClear;
 
 
 /***/ }),
-/* 288 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(140);
@@ -19592,7 +19617,7 @@ module.exports = listCacheDelete;
 
 
 /***/ }),
-/* 289 */
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(140);
@@ -19617,7 +19642,7 @@ module.exports = listCacheGet;
 
 
 /***/ }),
-/* 290 */
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(140);
@@ -19639,7 +19664,7 @@ module.exports = listCacheHas;
 
 
 /***/ }),
-/* 291 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(140);
@@ -19671,7 +19696,7 @@ module.exports = listCacheSet;
 
 
 /***/ }),
-/* 292 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(139);
@@ -19692,7 +19717,7 @@ module.exports = stackClear;
 
 
 /***/ }),
-/* 293 */
+/* 295 */
 /***/ (function(module, exports) {
 
 /**
@@ -19716,7 +19741,7 @@ module.exports = stackDelete;
 
 
 /***/ }),
-/* 294 */
+/* 296 */
 /***/ (function(module, exports) {
 
 /**
@@ -19736,7 +19761,7 @@ module.exports = stackGet;
 
 
 /***/ }),
-/* 295 */
+/* 297 */
 /***/ (function(module, exports) {
 
 /**
@@ -19756,7 +19781,7 @@ module.exports = stackHas;
 
 
 /***/ }),
-/* 296 */
+/* 298 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(139),
@@ -19796,11 +19821,11 @@ module.exports = stackSet;
 
 
 /***/ }),
-/* 297 */
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isFunction = __webpack_require__(202),
-    isMasked = __webpack_require__(300),
+    isMasked = __webpack_require__(302),
     isObject = __webpack_require__(204),
     toSource = __webpack_require__(205);
 
@@ -19849,7 +19874,7 @@ module.exports = baseIsNative;
 
 
 /***/ }),
-/* 298 */
+/* 300 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(180);
@@ -19901,7 +19926,7 @@ module.exports = getRawTag;
 
 
 /***/ }),
-/* 299 */
+/* 301 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -19929,10 +19954,10 @@ module.exports = objectToString;
 
 
 /***/ }),
-/* 300 */
+/* 302 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var coreJsData = __webpack_require__(301);
+var coreJsData = __webpack_require__(303);
 
 /** Used to detect methods masquerading as native. */
 var maskSrcKey = (function() {
@@ -19955,7 +19980,7 @@ module.exports = isMasked;
 
 
 /***/ }),
-/* 301 */
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(81);
@@ -19967,7 +19992,7 @@ module.exports = coreJsData;
 
 
 /***/ }),
-/* 302 */
+/* 304 */
 /***/ (function(module, exports) {
 
 /**
@@ -19986,10 +20011,10 @@ module.exports = getValue;
 
 
 /***/ }),
-/* 303 */
+/* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Hash = __webpack_require__(304),
+var Hash = __webpack_require__(306),
     ListCache = __webpack_require__(139),
     Map = __webpack_require__(179);
 
@@ -20013,14 +20038,14 @@ module.exports = mapCacheClear;
 
 
 /***/ }),
-/* 304 */
+/* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hashClear = __webpack_require__(305),
-    hashDelete = __webpack_require__(306),
-    hashGet = __webpack_require__(307),
-    hashHas = __webpack_require__(308),
-    hashSet = __webpack_require__(309);
+var hashClear = __webpack_require__(307),
+    hashDelete = __webpack_require__(308),
+    hashGet = __webpack_require__(309),
+    hashHas = __webpack_require__(310),
+    hashSet = __webpack_require__(311);
 
 /**
  * Creates a hash object.
@@ -20051,7 +20076,7 @@ module.exports = Hash;
 
 
 /***/ }),
-/* 305 */
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(142);
@@ -20072,7 +20097,7 @@ module.exports = hashClear;
 
 
 /***/ }),
-/* 306 */
+/* 308 */
 /***/ (function(module, exports) {
 
 /**
@@ -20095,7 +20120,7 @@ module.exports = hashDelete;
 
 
 /***/ }),
-/* 307 */
+/* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(142);
@@ -20131,7 +20156,7 @@ module.exports = hashGet;
 
 
 /***/ }),
-/* 308 */
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(142);
@@ -20160,7 +20185,7 @@ module.exports = hashHas;
 
 
 /***/ }),
-/* 309 */
+/* 311 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(142);
@@ -20189,7 +20214,7 @@ module.exports = hashSet;
 
 
 /***/ }),
-/* 310 */
+/* 312 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(143);
@@ -20213,7 +20238,7 @@ module.exports = mapCacheDelete;
 
 
 /***/ }),
-/* 311 */
+/* 313 */
 /***/ (function(module, exports) {
 
 /**
@@ -20234,7 +20259,7 @@ module.exports = isKeyable;
 
 
 /***/ }),
-/* 312 */
+/* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(143);
@@ -20256,7 +20281,7 @@ module.exports = mapCacheGet;
 
 
 /***/ }),
-/* 313 */
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(143);
@@ -20278,7 +20303,7 @@ module.exports = mapCacheHas;
 
 
 /***/ }),
-/* 314 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(143);
@@ -20306,12 +20331,12 @@ module.exports = mapCacheSet;
 
 
 /***/ }),
-/* 315 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var MapCache = __webpack_require__(206),
-    setCacheAdd = __webpack_require__(316),
-    setCacheHas = __webpack_require__(317);
+    setCacheAdd = __webpack_require__(318),
+    setCacheHas = __webpack_require__(319);
 
 /**
  *
@@ -20339,7 +20364,7 @@ module.exports = SetCache;
 
 
 /***/ }),
-/* 316 */
+/* 318 */
 /***/ (function(module, exports) {
 
 /** Used to stand-in for `undefined` hash values. */
@@ -20364,7 +20389,7 @@ module.exports = setCacheAdd;
 
 
 /***/ }),
-/* 317 */
+/* 319 */
 /***/ (function(module, exports) {
 
 /**
@@ -20384,7 +20409,7 @@ module.exports = setCacheHas;
 
 
 /***/ }),
-/* 318 */
+/* 320 */
 /***/ (function(module, exports) {
 
 /**
@@ -20413,7 +20438,7 @@ module.exports = arraySome;
 
 
 /***/ }),
-/* 319 */
+/* 321 */
 /***/ (function(module, exports) {
 
 /**
@@ -20432,15 +20457,15 @@ module.exports = cacheHas;
 
 
 /***/ }),
-/* 320 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(180),
-    Uint8Array = __webpack_require__(321),
+    Uint8Array = __webpack_require__(323),
     eq = __webpack_require__(201),
     equalArrays = __webpack_require__(207),
-    mapToArray = __webpack_require__(322),
-    setToArray = __webpack_require__(323);
+    mapToArray = __webpack_require__(324),
+    setToArray = __webpack_require__(325);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -20550,7 +20575,7 @@ module.exports = equalByTag;
 
 
 /***/ }),
-/* 321 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(81);
@@ -20562,7 +20587,7 @@ module.exports = Uint8Array;
 
 
 /***/ }),
-/* 322 */
+/* 324 */
 /***/ (function(module, exports) {
 
 /**
@@ -20586,7 +20611,7 @@ module.exports = mapToArray;
 
 
 /***/ }),
-/* 323 */
+/* 325 */
 /***/ (function(module, exports) {
 
 /**
@@ -20610,10 +20635,10 @@ module.exports = setToArray;
 
 
 /***/ }),
-/* 324 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getAllKeys = __webpack_require__(325);
+var getAllKeys = __webpack_require__(327);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1;
@@ -20706,12 +20731,12 @@ module.exports = equalObjects;
 
 
 /***/ }),
-/* 325 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetAllKeys = __webpack_require__(326),
-    getSymbols = __webpack_require__(328),
-    keys = __webpack_require__(331);
+var baseGetAllKeys = __webpack_require__(328),
+    getSymbols = __webpack_require__(330),
+    keys = __webpack_require__(333);
 
 /**
  * Creates an array of own enumerable property names and symbols of `object`.
@@ -20728,10 +20753,10 @@ module.exports = getAllKeys;
 
 
 /***/ }),
-/* 326 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayPush = __webpack_require__(327),
+var arrayPush = __webpack_require__(329),
     isArray = __webpack_require__(181);
 
 /**
@@ -20754,7 +20779,7 @@ module.exports = baseGetAllKeys;
 
 
 /***/ }),
-/* 327 */
+/* 329 */
 /***/ (function(module, exports) {
 
 /**
@@ -20780,11 +20805,11 @@ module.exports = arrayPush;
 
 
 /***/ }),
-/* 328 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayFilter = __webpack_require__(329),
-    stubArray = __webpack_require__(330);
+var arrayFilter = __webpack_require__(331),
+    stubArray = __webpack_require__(332);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -20816,7 +20841,7 @@ module.exports = getSymbols;
 
 
 /***/ }),
-/* 329 */
+/* 331 */
 /***/ (function(module, exports) {
 
 /**
@@ -20847,7 +20872,7 @@ module.exports = arrayFilter;
 
 
 /***/ }),
-/* 330 */
+/* 332 */
 /***/ (function(module, exports) {
 
 /**
@@ -20876,12 +20901,12 @@ module.exports = stubArray;
 
 
 /***/ }),
-/* 331 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeKeys = __webpack_require__(332),
-    baseKeys = __webpack_require__(341),
-    isArrayLike = __webpack_require__(345);
+var arrayLikeKeys = __webpack_require__(334),
+    baseKeys = __webpack_require__(343),
+    isArrayLike = __webpack_require__(347);
 
 /**
  * Creates an array of the own enumerable property names of `object`.
@@ -20919,14 +20944,14 @@ module.exports = keys;
 
 
 /***/ }),
-/* 332 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseTimes = __webpack_require__(333),
-    isArguments = __webpack_require__(334),
+var baseTimes = __webpack_require__(335),
+    isArguments = __webpack_require__(336),
     isArray = __webpack_require__(181),
     isBuffer = __webpack_require__(208),
-    isIndex = __webpack_require__(337),
+    isIndex = __webpack_require__(339),
     isTypedArray = __webpack_require__(209);
 
 /** Used for built-in method references. */
@@ -20974,7 +20999,7 @@ module.exports = arrayLikeKeys;
 
 
 /***/ }),
-/* 333 */
+/* 335 */
 /***/ (function(module, exports) {
 
 /**
@@ -21000,10 +21025,10 @@ module.exports = baseTimes;
 
 
 /***/ }),
-/* 334 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsArguments = __webpack_require__(335),
+var baseIsArguments = __webpack_require__(337),
     isObjectLike = __webpack_require__(144);
 
 /** Used for built-in method references. */
@@ -21042,7 +21067,7 @@ module.exports = isArguments;
 
 
 /***/ }),
-/* 335 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(141),
@@ -21066,7 +21091,7 @@ module.exports = baseIsArguments;
 
 
 /***/ }),
-/* 336 */
+/* 338 */
 /***/ (function(module, exports) {
 
 /**
@@ -21090,7 +21115,7 @@ module.exports = stubFalse;
 
 
 /***/ }),
-/* 337 */
+/* 339 */
 /***/ (function(module, exports) {
 
 /** Used as references for various `Number` constants. */
@@ -21121,7 +21146,7 @@ module.exports = isIndex;
 
 
 /***/ }),
-/* 338 */
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(141),
@@ -21187,7 +21212,7 @@ module.exports = baseIsTypedArray;
 
 
 /***/ }),
-/* 339 */
+/* 341 */
 /***/ (function(module, exports) {
 
 /**
@@ -21207,7 +21232,7 @@ module.exports = baseUnary;
 
 
 /***/ }),
-/* 340 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(203);
@@ -21244,11 +21269,11 @@ module.exports = nodeUtil;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(182)(module)))
 
 /***/ }),
-/* 341 */
+/* 343 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isPrototype = __webpack_require__(342),
-    nativeKeys = __webpack_require__(343);
+var isPrototype = __webpack_require__(344),
+    nativeKeys = __webpack_require__(345);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -21280,7 +21305,7 @@ module.exports = baseKeys;
 
 
 /***/ }),
-/* 342 */
+/* 344 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -21304,10 +21329,10 @@ module.exports = isPrototype;
 
 
 /***/ }),
-/* 343 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var overArg = __webpack_require__(344);
+var overArg = __webpack_require__(346);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeKeys = overArg(Object.keys, Object);
@@ -21316,7 +21341,7 @@ module.exports = nativeKeys;
 
 
 /***/ }),
-/* 344 */
+/* 346 */
 /***/ (function(module, exports) {
 
 /**
@@ -21337,7 +21362,7 @@ module.exports = overArg;
 
 
 /***/ }),
-/* 345 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isFunction = __webpack_require__(202),
@@ -21376,14 +21401,14 @@ module.exports = isArrayLike;
 
 
 /***/ }),
-/* 346 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var DataView = __webpack_require__(347),
+var DataView = __webpack_require__(349),
     Map = __webpack_require__(179),
-    Promise = __webpack_require__(348),
-    Set = __webpack_require__(349),
-    WeakMap = __webpack_require__(350),
+    Promise = __webpack_require__(350),
+    Set = __webpack_require__(351),
+    WeakMap = __webpack_require__(352),
     baseGetTag = __webpack_require__(141),
     toSource = __webpack_require__(205);
 
@@ -21440,7 +21465,7 @@ module.exports = getTag;
 
 
 /***/ }),
-/* 347 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(107),
@@ -21453,7 +21478,7 @@ module.exports = DataView;
 
 
 /***/ }),
-/* 348 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(107),
@@ -21466,7 +21491,7 @@ module.exports = Promise;
 
 
 /***/ }),
-/* 349 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(107),
@@ -21479,7 +21504,7 @@ module.exports = Set;
 
 
 /***/ }),
-/* 350 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(107),
@@ -21492,7 +21517,7 @@ module.exports = WeakMap;
 
 
 /***/ }),
-/* 351 */
+/* 353 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21500,7 +21525,7 @@ module.exports = WeakMap;
 function PressabilityDebugView(){return null;}
 
 /***/ }),
-/* 352 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _typeof = __webpack_require__(199)["default"];
@@ -21859,7 +21884,7 @@ function _regeneratorRuntime() {
 module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 353 */
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21876,7 +21901,7 @@ function q(c,a,k){var b,d={},e=null,l=null;void 0!==k&&(e=""+k);void 0!==a.key&&
 
 
 /***/ }),
-/* 354 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22691,7 +22716,7 @@ module.exports = factory;
 
 
 /***/ }),
-/* 355 */
+/* 357 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22735,18 +22760,18 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 356 */
+/* 358 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 357 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var parse = __webpack_require__(358);
-var walk = __webpack_require__(359);
-var stringify = __webpack_require__(360);
+var parse = __webpack_require__(360);
+var walk = __webpack_require__(361);
+var stringify = __webpack_require__(362);
 
 function ValueParser(value) {
   if (this instanceof ValueParser) {
@@ -22765,7 +22790,7 @@ ValueParser.prototype.walk = function(cb, bubble) {
   return this;
 };
 
-ValueParser.unit = __webpack_require__(361);
+ValueParser.unit = __webpack_require__(363);
 
 ValueParser.walk = walk;
 
@@ -22775,7 +22800,7 @@ module.exports = ValueParser;
 
 
 /***/ }),
-/* 358 */
+/* 360 */
 /***/ (function(module, exports) {
 
 var openParentheses = "(".charCodeAt(0);
@@ -23102,7 +23127,7 @@ module.exports = function(input) {
 
 
 /***/ }),
-/* 359 */
+/* 361 */
 /***/ (function(module, exports) {
 
 module.exports = function walk(nodes, cb, bubble) {
@@ -23130,7 +23155,7 @@ module.exports = function walk(nodes, cb, bubble) {
 
 
 /***/ }),
-/* 360 */
+/* 362 */
 /***/ (function(module, exports) {
 
 function stringifyNode(node, custom) {
@@ -23184,7 +23209,7 @@ module.exports = stringify;
 
 
 /***/ }),
-/* 361 */
+/* 363 */
 /***/ (function(module, exports) {
 
 var minus = "-".charCodeAt(0);
@@ -23310,7 +23335,7 @@ module.exports = function(value) {
 
 
 /***/ }),
-/* 362 */
+/* 364 */
 /***/ (function(module, exports) {
 
 module.exports = function(obj) {
@@ -23375,23 +23400,23 @@ function reduce (xs, f, acc) {
 
 
 /***/ }),
-/* 363 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(364)
+module.exports = __webpack_require__(366)
 
 
 /***/ }),
-/* 364 */
+/* 366 */
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"black\":\"#000000\",\"silver\":\"#c0c0c0\",\"gray\":\"#808080\",\"white\":\"#ffffff\",\"maroon\":\"#800000\",\"red\":\"#ff0000\",\"purple\":\"#800080\",\"fuchsia\":\"#ff00ff\",\"green\":\"#008000\",\"lime\":\"#00ff00\",\"olive\":\"#808000\",\"yellow\":\"#ffff00\",\"navy\":\"#000080\",\"blue\":\"#0000ff\",\"teal\":\"#008080\",\"aqua\":\"#00ffff\",\"orange\":\"#ffa500\",\"aliceblue\":\"#f0f8ff\",\"antiquewhite\":\"#faebd7\",\"aquamarine\":\"#7fffd4\",\"azure\":\"#f0ffff\",\"beige\":\"#f5f5dc\",\"bisque\":\"#ffe4c4\",\"blanchedalmond\":\"#ffebcd\",\"blueviolet\":\"#8a2be2\",\"brown\":\"#a52a2a\",\"burlywood\":\"#deb887\",\"cadetblue\":\"#5f9ea0\",\"chartreuse\":\"#7fff00\",\"chocolate\":\"#d2691e\",\"coral\":\"#ff7f50\",\"cornflowerblue\":\"#6495ed\",\"cornsilk\":\"#fff8dc\",\"crimson\":\"#dc143c\",\"darkblue\":\"#00008b\",\"darkcyan\":\"#008b8b\",\"darkgoldenrod\":\"#b8860b\",\"darkgray\":\"#a9a9a9\",\"darkgreen\":\"#006400\",\"darkgrey\":\"#a9a9a9\",\"darkkhaki\":\"#bdb76b\",\"darkmagenta\":\"#8b008b\",\"darkolivegreen\":\"#556b2f\",\"darkorange\":\"#ff8c00\",\"darkorchid\":\"#9932cc\",\"darkred\":\"#8b0000\",\"darksalmon\":\"#e9967a\",\"darkseagreen\":\"#8fbc8f\",\"darkslateblue\":\"#483d8b\",\"darkslategray\":\"#2f4f4f\",\"darkslategrey\":\"#2f4f4f\",\"darkturquoise\":\"#00ced1\",\"darkviolet\":\"#9400d3\",\"deeppink\":\"#ff1493\",\"deepskyblue\":\"#00bfff\",\"dimgray\":\"#696969\",\"dimgrey\":\"#696969\",\"dodgerblue\":\"#1e90ff\",\"firebrick\":\"#b22222\",\"floralwhite\":\"#fffaf0\",\"forestgreen\":\"#228b22\",\"gainsboro\":\"#dcdcdc\",\"ghostwhite\":\"#f8f8ff\",\"gold\":\"#ffd700\",\"goldenrod\":\"#daa520\",\"greenyellow\":\"#adff2f\",\"grey\":\"#808080\",\"honeydew\":\"#f0fff0\",\"hotpink\":\"#ff69b4\",\"indianred\":\"#cd5c5c\",\"indigo\":\"#4b0082\",\"ivory\":\"#fffff0\",\"khaki\":\"#f0e68c\",\"lavender\":\"#e6e6fa\",\"lavenderblush\":\"#fff0f5\",\"lawngreen\":\"#7cfc00\",\"lemonchiffon\":\"#fffacd\",\"lightblue\":\"#add8e6\",\"lightcoral\":\"#f08080\",\"lightcyan\":\"#e0ffff\",\"lightgoldenrodyellow\":\"#fafad2\",\"lightgray\":\"#d3d3d3\",\"lightgreen\":\"#90ee90\",\"lightgrey\":\"#d3d3d3\",\"lightpink\":\"#ffb6c1\",\"lightsalmon\":\"#ffa07a\",\"lightseagreen\":\"#20b2aa\",\"lightskyblue\":\"#87cefa\",\"lightslategray\":\"#778899\",\"lightslategrey\":\"#778899\",\"lightsteelblue\":\"#b0c4de\",\"lightyellow\":\"#ffffe0\",\"limegreen\":\"#32cd32\",\"linen\":\"#faf0e6\",\"mediumaquamarine\":\"#66cdaa\",\"mediumblue\":\"#0000cd\",\"mediumorchid\":\"#ba55d3\",\"mediumpurple\":\"#9370db\",\"mediumseagreen\":\"#3cb371\",\"mediumslateblue\":\"#7b68ee\",\"mediumspringgreen\":\"#00fa9a\",\"mediumturquoise\":\"#48d1cc\",\"mediumvioletred\":\"#c71585\",\"midnightblue\":\"#191970\",\"mintcream\":\"#f5fffa\",\"mistyrose\":\"#ffe4e1\",\"moccasin\":\"#ffe4b5\",\"navajowhite\":\"#ffdead\",\"oldlace\":\"#fdf5e6\",\"olivedrab\":\"#6b8e23\",\"orangered\":\"#ff4500\",\"orchid\":\"#da70d6\",\"palegoldenrod\":\"#eee8aa\",\"palegreen\":\"#98fb98\",\"paleturquoise\":\"#afeeee\",\"palevioletred\":\"#db7093\",\"papayawhip\":\"#ffefd5\",\"peachpuff\":\"#ffdab9\",\"peru\":\"#cd853f\",\"pink\":\"#ffc0cb\",\"plum\":\"#dda0dd\",\"powderblue\":\"#b0e0e6\",\"rosybrown\":\"#bc8f8f\",\"royalblue\":\"#4169e1\",\"saddlebrown\":\"#8b4513\",\"salmon\":\"#fa8072\",\"sandybrown\":\"#f4a460\",\"seagreen\":\"#2e8b57\",\"seashell\":\"#fff5ee\",\"sienna\":\"#a0522d\",\"skyblue\":\"#87ceeb\",\"slateblue\":\"#6a5acd\",\"slategray\":\"#708090\",\"slategrey\":\"#708090\",\"snow\":\"#fffafa\",\"springgreen\":\"#00ff7f\",\"steelblue\":\"#4682b4\",\"tan\":\"#d2b48c\",\"thistle\":\"#d8bfd8\",\"tomato\":\"#ff6347\",\"turquoise\":\"#40e0d0\",\"violet\":\"#ee82ee\",\"wheat\":\"#f5deb3\",\"whitesmoke\":\"#f5f5f5\",\"yellowgreen\":\"#9acd32\",\"rebeccapurple\":\"#663399\"}");
 
 /***/ }),
-/* 365 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23412,7 +23437,7 @@ exports.typeOf=y;
 
 
 /***/ }),
-/* 366 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23431,7 +23456,7 @@ exports.Default = Default;
 //# sourceMappingURL=Default.js.map
 
 /***/ }),
-/* 367 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23497,7 +23522,7 @@ exports.GridLayoutProvider = GridLayoutProvider;
 //# sourceMappingURL=GridLayoutProvider.js.map
 
 /***/ }),
-/* 368 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -23881,7 +23906,7 @@ module.exports = debounce;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(50)))
 
 /***/ }),
-/* 369 */
+/* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -23896,12 +23921,12 @@ module.exports = debounce;
 if (false) { var throwOnDirectAccess, isValidElement, REACT_ELEMENT_TYPE; } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(370)();
+  module.exports = __webpack_require__(372)();
 }
 
 
 /***/ }),
-/* 370 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23916,8 +23941,8 @@ if (false) { var throwOnDirectAccess, isValidElement, REACT_ELEMENT_TYPE; } else
 
 
 
-var emptyFunction = __webpack_require__(371);
-var invariant = __webpack_require__(372);
+var emptyFunction = __webpack_require__(373);
+var invariant = __webpack_require__(374);
 
 module.exports = function() {
   // Important!
@@ -23962,7 +23987,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 371 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24004,7 +24029,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 372 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24057,7 +24082,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 module.exports = invariant;
 
 /***/ }),
-/* 373 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24070,7 +24095,7 @@ exports.Constants = {
 //# sourceMappingURL=Constants.js.map
 
 /***/ }),
-/* 374 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24086,16 +24111,16 @@ exports.Messages = {
 //# sourceMappingURL=Messages.js.map
 
 /***/ }),
-/* 375 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var RecycleItemPool_1 = __webpack_require__(376);
+var RecycleItemPool_1 = __webpack_require__(378);
 var CustomError_1 = __webpack_require__(145);
 var RecyclerListViewExceptions_1 = __webpack_require__(219);
-var ViewabilityTracker_1 = __webpack_require__(377);
+var ViewabilityTracker_1 = __webpack_require__(379);
 var ts_object_utils_1 = __webpack_require__(183);
 var TSCast_1 = __webpack_require__(220);
 var VirtualRenderer = /** @class */ (function () {
@@ -24439,7 +24464,7 @@ exports.default = VirtualRenderer;
 //# sourceMappingURL=VirtualRenderer.js.map
 
 /***/ }),
-/* 376 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24510,13 +24535,13 @@ exports.default = RecycleItemPool;
 //# sourceMappingURL=RecycleItemPool.js.map
 
 /***/ }),
-/* 377 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var BinarySearch_1 = __webpack_require__(378);
+var BinarySearch_1 = __webpack_require__(380);
 var ViewabilityTracker = /** @class */ (function () {
     function ViewabilityTracker(renderAheadOffset, initialOffset) {
         var _this = this;
@@ -24796,7 +24821,7 @@ exports.default = ViewabilityTracker;
 //# sourceMappingURL=ViewabilityTracker.js.map
 
 /***/ }),
-/* 378 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24956,7 +24981,7 @@ exports.default = BinarySearch;
 //# sourceMappingURL=BinarySearch.js.map
 
 /***/ }),
-/* 379 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24988,7 +25013,7 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var react_native_1 = __webpack_require__(187);
-var BaseScrollComponent_1 = __webpack_require__(380);
+var BaseScrollComponent_1 = __webpack_require__(382);
 var TSCast_1 = __webpack_require__(220);
 /***
  * The responsibility of a scroll component is to report its size, scroll events and provide a way to scroll to a given offset.
@@ -25084,7 +25109,7 @@ exports.default = ScrollComponent;
 //# sourceMappingURL=ScrollComponent.js.map
 
 /***/ }),
-/* 380 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25119,18 +25144,18 @@ exports.default = BaseScrollComponent;
 //# sourceMappingURL=BaseScrollComponent.js.map
 
 /***/ }),
-/* 381 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var ViewRenderer_1 = __webpack_require__(382);
+var ViewRenderer_1 = __webpack_require__(384);
 exports.default = ViewRenderer_1.default;
 //# sourceMappingURL=ViewRenderer.web.js.map
 
 /***/ }),
-/* 382 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25161,7 +25186,7 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var BaseViewRenderer_1 = __webpack_require__(383);
+var BaseViewRenderer_1 = __webpack_require__(385);
 /***
  * View renderer is responsible for creating a container of size provided by LayoutProvider and render content inside it.
  * Also enforces a logic to prevent re renders. RecyclerListView keeps moving these ViewRendereres around using transforms to enable recycling.
@@ -25268,7 +25293,7 @@ var styles = {
 //# sourceMappingURL=ViewRenderer.js.map
 
 /***/ }),
-/* 383 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25335,7 +25360,7 @@ exports.default = BaseViewRenderer;
 //# sourceMappingURL=BaseViewRenderer.js.map
 
 /***/ }),
-/* 384 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25366,7 +25391,7 @@ exports.default = BaseScrollView;
 //# sourceMappingURL=BaseScrollView.js.map
 
 /***/ }),
-/* 385 */
+/* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25408,7 +25433,7 @@ exports.AutoScroll = AutoScroll;
 //# sourceMappingURL=AutoScroll.js.map
 
 /***/ }),
-/* 386 */
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25522,8 +25547,14 @@ exports.default = ProgressiveListView;
 //# sourceMappingURL=ProgressiveListView.js.map
 
 /***/ }),
-/* 387 */,
-/* 388 */
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26088,7 +26119,7 @@ var getRelativeCoords=function(){var _f=function _f(parentRef,x,y){var parentCoo
 function Animated_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function Animated_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?Animated_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):Animated_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}var Animated=Animated_objectSpread(Animated_objectSpread({},reanimated2_component),{},{createAnimatedComponent:createAnimatedComponent["a" /* default */],addWhitelistedNativeProps:ConfigHelper["b" /* addWhitelistedNativeProps */],addWhitelistedUIProps:ConfigHelper["c" /* addWhitelistedUIProps */]},reanimated1_namespaceObject);/* harmony default export */ var lib_Animated = __webpack_exports__["default"] = (Animated);
 
 /***/ }),
-/* 389 */
+/* 397 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26298,7 +26329,7 @@ function DrawerLayout_ownKeys(object,enumerableOnly){var keys=Object.keys(object
 initialize();
 
 /***/ }),
-/* 390 */
+/* 398 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26319,6 +26350,22 @@ var LOCAL_STORAGE_KEY='EXPO_ERROR_RECOVERY_STORAGE';function _consumeRecoveryPro
 // CONCATENATED MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-error-recovery/build/ErrorRecovery.js
 var recoveredProps=_getRecoveredProps();function setRecoveryProps(props){setRecoveryPropsToSave(props);}function _getRecoveredProps(){if(ExpoErrorRecovery_web.recoveredProps){return JSON.parse(ExpoErrorRecovery_web.recoveredProps);}return null;}
 
+/***/ }),
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return useFonts; });
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Font__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(260);
+function useFonts(map){var _useState=Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),_useState2=_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState,2),loaded=_useState2[0],setLoaded=_useState2[1];var _useState3=Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),_useState4=_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState3,2),error=_useState4[0],setError=_useState4[1];Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function(){Object(_Font__WEBPACK_IMPORTED_MODULE_2__[/* loadAsync */ "b"])(map).then(function(){return setLoaded(true);}).catch(setError);},[]);return[loaded,error];}
+
 /***/ })
 ]]);
-//# sourceMappingURL=2.f5858af5.chunk.js.map
+//# sourceMappingURL=2.07f4c02f.chunk.js.map

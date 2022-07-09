@@ -1,22 +1,28 @@
 {
   "files": {
-    "app.js": "/sample-ui/static/js/app.58c4db3f.chunk.js",
-    "app.js.map": "/sample-ui/static/js/app.58c4db3f.chunk.js.map",
+    "app.js": "/sample-ui/static/js/app.311cc37c.chunk.js",
+    "app.js.map": "/sample-ui/static/js/app.311cc37c.chunk.js.map",
     "runtime~app.js": "/sample-ui/static/js/runtime~app.f391c264.js",
     "runtime~app.js.map": "/sample-ui/static/js/runtime~app.f391c264.js.map",
-    "static/js/2.f5858af5.chunk.js": "/sample-ui/static/js/2.f5858af5.chunk.js",
-    "static/js/2.f5858af5.chunk.js.map": "/sample-ui/static/js/2.f5858af5.chunk.js.map",
+    "static/js/2.07f4c02f.chunk.js": "/sample-ui/static/js/2.07f4c02f.chunk.js",
+    "static/js/2.07f4c02f.chunk.js.map": "/sample-ui/static/js/2.07f4c02f.chunk.js.map",
     "fonts/FontAwesome.ttf": "/sample-ui/./fonts/FontAwesome.ttf",
     "favicon-16.png": "/sample-ui/favicon-16.png",
     "favicon-32.png": "/sample-ui/favicon-32.png",
     "favicon.ico": "/sample-ui/favicon.ico",
     "index.html": "/sample-ui/index.html",
     "manifest.json": "/sample-ui/manifest.json",
-    "serve.json": "/sample-ui/serve.json"
+    "serve.json": "/sample-ui/serve.json",
+    "static/media/OpenSans-Bold.ttf": "/sample-ui/static/media/OpenSans-Bold.a0fe34be.ttf",
+    "static/media/OpenSans-ExtraBold.ttf": "/sample-ui/static/media/OpenSans-ExtraBold.f3f77b66.ttf",
+    "static/media/OpenSans-Light.ttf": "/sample-ui/static/media/OpenSans-Light.8ed223d6.ttf",
+    "static/media/OpenSans-Medium.ttf": "/sample-ui/static/media/OpenSans-Medium.65529e6c.ttf",
+    "static/media/OpenSans-Regular.ttf": "/sample-ui/static/media/OpenSans-Regular.57cd57a6.ttf",
+    "static/media/OpenSans-SemiBold.ttf": "/sample-ui/static/media/OpenSans-SemiBold.2b370b19.ttf"
   },
   "entrypoints": [
     "static/js/runtime~app.f391c264.js",
-    "static/js/2.f5858af5.chunk.js",
-    "static/js/app.58c4db3f.chunk.js"
+    "static/js/2.07f4c02f.chunk.js",
+    "static/js/app.311cc37c.chunk.js"
   ]
 }

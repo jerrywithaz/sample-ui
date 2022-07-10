@@ -9,7 +9,7 @@ function TableRowWrapper({ children }: React.PropsWithChildren<{}>) {
   if (isSmallDevice) {
     return <>{children}</>;
   } else {
-    return <Card marginBottom={16}>{children}</Card>;
+    return <Card marginBottom={16} marginHorizontal={16}>{children}</Card>;
   }
 }
 
@@ -18,7 +18,7 @@ function TableRow({ children }: React.PropsWithChildren<{}>) {
 
   return (
     <TableRowWrapper>
-      <FlexBox horizontal={isSmallDevice} vertical={!isSmallDevice}>
+      <FlexBox horizontal={isSmallDevice} vertical={!isSmallDevice} flex={!isSmallDevice ? 1 : undefined}>
         {children}
       </FlexBox>
     </TableRowWrapper>

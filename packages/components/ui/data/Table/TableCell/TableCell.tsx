@@ -8,7 +8,7 @@ import { flexRender } from "@tanstack/react-table";
 import * as Styled from "./TableCell.styled";
 import Text from "../../../global/Text";
 import TableCellText from "./variations/TableCellText";
-import { useIsSmallDevice } from "@zerry-ui/components/devsupport/responsive";
+import { useIsSmallDevice } from "../../../../devsupport/responsive";
 
 function getTableCellProps<Data extends any, Value extends any>(
   props: TableCellProps<Data, Value>
@@ -51,8 +51,6 @@ function TableCell<Data extends any, Value extends any>(
 
   const Component = type ? TABLE_CELL_MAPPING[type] : null;
 
-  console.log(name);
-
   return (
     <Styled.TableCell
       flexShrink={0}
@@ -62,7 +60,7 @@ function TableCell<Data extends any, Value extends any>(
       justifyContent={!isSmallDevice ? "space-between" : undefined}
     >
         {!isSmallDevice && (
-            <Text>{name}</Text>
+            <Text fontWeight={600}>{name}</Text>
         )}
       <>
         {cellType === "cell" && Component !== null && (
@@ -71,7 +69,7 @@ function TableCell<Data extends any, Value extends any>(
         {cellType === "cell" && Component === null && (
           <TableCellText {...context}>{children}</TableCellText>
         )}
-        {cellType === "header" && <Text>{children}</Text>}
+        {cellType === "header" && <Text fontWeight={600}>{children}</Text>}
       </>
     </Styled.TableCell>
   );

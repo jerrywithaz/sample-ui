@@ -10,25 +10,17 @@ import EditProfile from "./screens/EditProfile";
 import Drawer from "./navigation/drawer";
 import Header from "./navigation/header";
 import { ResponsiveProvider } from "@zerry-ui/components/devsupport/responsive";
-import { createGlobalStyle } from "styled-components";
-import { Platform } from "react-native";
-
-const GlobalStyles = Platform.OS === "web" ? createGlobalStyle`
-  * {
-    box-sizing: border-box;
-  }
-` : () => null;
+import PatientHistory from "./screens/PatientHistory";
 
 export default function App() {
   const loaded = useThemeFonts();
 
   if (!loaded) return null;
-  
+
   return (
     <ResponsiveProvider>
       <NavigationContainer hashRouter>
         <ThemeProvider>
-          <GlobalStyles />
           <FlexBox flex={1} horizontal backgroundColor="#F7F8FD">
             <DrawerStack.Navigator
               initialRouteName="Home"
@@ -62,6 +54,12 @@ export default function App() {
                 component={EditProfile}
                 path="/profile"
                 options={{ headerTitle: "Edit Profile" }}
+              />
+              <DrawerStack.Screen
+                name="PatientHistory"
+                component={PatientHistory}
+                path="/history"
+                options={{ headerTitle: "Patient History" }}
               />
             </DrawerStack.Navigator>
             <StatusBar style="auto" />

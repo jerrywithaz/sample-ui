@@ -9,6 +9,7 @@ const Drawer = () => {
         <Menu>
           <MenuItem title="Home" to="/" name="Home" />
           <MenuItem title="Profile" to="/profile" name="EditProfile" />
+          <MenuItem title="Patient History" to="/history" name="PatientHistory" />
         </Menu>
       </FlexBox>
     </DrawerContainer>

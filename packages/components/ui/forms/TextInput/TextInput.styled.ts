@@ -9,10 +9,16 @@ export const TextInputContainer = styled(FlexBox)<TextInputStyleProps>`
     border-width: 0.5px;
     border-color: ${({ theme }) => theme.colors.gray.dark};
     border-radius: ${({ theme, borderRadius = "pill" }) => theme.borderRadius[borderRadius]};
+    padding: ${({ theme, size = "small" }) => `${theme.spacing[size]}px ${theme.spacing.large}px`};
 `;
 
 export const TextInput = styled.TextInput<TextInputProps>`
     ${() => Platform.OS === "web" ? "outline-width: 0px;": ""}
     border-width: 0px;
-    padding: ${({ theme, size = "small" }) => `${theme.spacing[size]}px ${theme.spacing.large}px`};
+    flex: 1;
+    padding: 0px;
+`;
+
+export const TextInputAccessory = styled(FlexBox)`
+    flex-shrink: 0;
 `;

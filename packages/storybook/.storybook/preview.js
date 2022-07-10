@@ -1,4 +1,4 @@
-import { ThemeProvider, FlexBox } from "@zerry-ui/components";
+import { ThemeProvider, FlexBox, useThemeFonts } from "@zerry-ui/components";
 import { createGlobalStyle } from "styled-components";
 
 export const parameters = {
@@ -24,9 +24,15 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const LoadFonts = () => {
+  useThemeFonts();
+  return null;
+}
+
 const withTheme = (Story) => (
   <ThemeProvider>
     <GlobalStyle />
+    <LoadFonts />
     <FlexBox height="100%" width="100%">
       <Story />
     </FlexBox>

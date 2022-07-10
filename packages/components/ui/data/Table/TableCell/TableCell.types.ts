@@ -25,7 +25,7 @@ Value extends unknown = any
     children: React.ReactNode | JSX.Element;
     size: number;
     context: ReturnType<Header<Data, Value>['getContext']>;
-
+    name: string;
 };
 
 type GetTableCellCellProps<
@@ -36,7 +36,8 @@ Value extends unknown = any
     type: TableCellType;
     children: React.ReactNode | JSX.Element;
     size: number;
-    context: ReturnType<Cell<Data, Value>['getContext']>
+    context: ReturnType<Cell<Data, Value>['getContext']>;
+    name: string;
 };
 
 export type GetTableCellProps<
@@ -51,4 +52,5 @@ export type TableCellProps<
 
 export type TableCellVariationProps<Data extends any, Type extends string = string> = ColumnDef<Data> & {
     type: Type;
+    name: string;
 }

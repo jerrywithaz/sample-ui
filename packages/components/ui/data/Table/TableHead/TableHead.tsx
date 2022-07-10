@@ -3,8 +3,13 @@ import React from "react";
 import TableCell from "../TableCell";
 import TableRow from "../TableRow";
 import { TableHeadProps } from "./TableHead.types";
+import { useIsSmallDevice } from "@zerry-ui/components/devsupport/responsive";
 
 function TableHead<Data extends any>({ table }: TableHeadProps<Data>) {
+  const isSmallDevice = useIsSmallDevice();
+
+  if (!isSmallDevice) return null;
+
   return (
     <FlexBox vertical>
       {table.getHeaderGroups().map((headerGroup) => {

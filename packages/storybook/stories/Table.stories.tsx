@@ -50,38 +50,44 @@ const columns: ColumnDef<Person>[] = [
     header: () => "First Name",
     footer: info => info.column.id,
     type: "text",
-    cell: (info) => info.getValue()
+    cell: (info) => info.getValue(),
+    name: "First Name",
   },
   {
     accessorFn: row => row.lastName,
     id: 'lastName',
     header: () => "Last Name",
     footer: info => info.column.id,
-    type: "text"
+    type: "text",
+    name: "Last Name",
   },
   {
     accessorKey: 'age',
     header: () => 'Age',
     footer: info => info.column.id,
-    type: "text"
+    type: "text",
+    name: "Age",
   },
   {
     accessorKey: 'visits',
     header: () => "Visits",
     footer: info => info.column.id,
-    type: "text"
+    type: "text",
+    name: "Visits",
   },
   {
     accessorKey: 'status',
     header: 'Status',
     footer: info => info.column.id,
-    type: "text"
+    type: "text",
+    name: "Status",
   },
   {
     accessorKey: 'progress',
     header: 'Profile Progress',
     footer: info => info.column.id,
-    type: "text"
+    type: "text",
+    name: "Profile Progress",
   },
 ]
 

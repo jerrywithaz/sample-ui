@@ -12,11 +12,11 @@ const Template: ComponentStory<typeof Menu> = (args) => (
   <NavigationContainer memoryRouter>
     <FlexBox flex={1} vertical width={300}>
       <Menu>
-        <MenuItem title="Home" to="/" name="Home" />
-        <MenuItem title="Dashboard" to="/dashboard" name="Dashboard" />
-        <MenuItem title="Profile" to="/profile" name="Home" />
-        <MenuGroup title="Analytics" to="/analytics" name="Analytics">
-          <MenuItem title="Profile" to="/profile" name="Home" />
+        <MenuItem title="Home" to="/" name="Home" icon="home" />
+        <MenuItem title="Dashboard" to="/dashboard" name="Dashboard" icon="dashboard" />
+        <MenuItem title="Profile" to="/profile" name="Home" icon="user" />
+        <MenuGroup title="Analytics" to="/analytics" name="Analytics" icon="bar-chart">
+          <MenuItem title="Profile" to="/profile" name="Home" icon="users" />
         </MenuGroup>
       </Menu>
     </FlexBox>

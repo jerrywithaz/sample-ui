@@ -4,7 +4,7 @@ import MenuItemLink from "../MenuItemLink";
 import { MenuGroupProps } from "./MenuGroup.types";
 import Menu from "../Menu";
 
-const MenuGroup: React.FC<MenuGroupProps> = ({ children, title, to, name }) => {
+const MenuGroup: React.FC<MenuGroupProps> = ({ children, title, to, name, icon }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
 
   return (
@@ -16,6 +16,7 @@ const MenuGroup: React.FC<MenuGroupProps> = ({ children, title, to, name }) => {
         paddingVertical={4}
         paddingHorizontal={4}
         onPress={() => setSubmenuOpen((submenuOpen) => submenuOpen ? false : true)}
+        icon={icon}
       />
       <Menu
         paddingHorizontal={4}

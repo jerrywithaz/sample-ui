@@ -2,23 +2,30 @@ import React from "react";
 import { View, ScrollView } from "react-native";
 import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
 import ThemeProvider from "@zerry-ui/components/theme/provider";
+import { useThemeFonts } from "@zerry-ui/components";
+
+const LoadFonts = ({ children }) => {
+  const loaded = useThemeFonts();
+
+  if (!loaded) return null;
+
+  return <>{children}</>;
+};
 
 const StoryContainer = ({ children }) => {
-  return (
-    <View style={{ padding: 12, flex: 1 }}>
-        {children}
-    </View>
-  );
+  return <View style={{ padding: 12, flex: 1 }}>{children}</View>;
 };
 
 const withTheme = (Story) => {
   return (
     <ThemeProvider>
       <StoryContainer>
-        <Story />
+        <LoadFonts>
+          <Story />
+        </LoadFonts>
       </StoryContainer>
     </ThemeProvider>
-  )
+  );
 };
 
 export const decorators = [withBackgrounds, withTheme];

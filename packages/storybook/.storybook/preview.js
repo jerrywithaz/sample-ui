@@ -24,18 +24,22 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const LoadFonts = () => {
-  useThemeFonts();
-  return null;
-}
+const LoadFonts = ({ children }) => {
+  const loaded = useThemeFonts();
+
+  if (!loaded) return null;
+
+  return <>{children}</>;
+};
 
 const withTheme = (Story) => (
   <ThemeProvider>
     <GlobalStyle />
-    <LoadFonts />
-    <FlexBox height="100%" width="100%">
-      <Story />
-    </FlexBox>
+    <LoadFonts>
+      <FlexBox height="100%" width="100%">
+        <Story />
+      </FlexBox>
+    </LoadFonts>
   </ThemeProvider>
 );
 

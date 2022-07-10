@@ -5018,6 +5018,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/react-table@npm:^8.2.2":
+  version: 8.2.2
+  resolution: "@tanstack/react-table@npm:8.2.2"
+  dependencies:
+    "@tanstack/table-core": 8.2.2
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: 711c4cecb5216037afdf97808f5a373d05a6d3bb72d2b51d845a9467013ed1baebf17c4be4becb1325437a7bd78101521363abe427d933789e5426bc9d4fb765
+  languageName: node
+  linkType: hard
+
+"@tanstack/table-core@npm:8.2.2":
+  version: 8.2.2
+  resolution: "@tanstack/table-core@npm:8.2.2"
+  checksum: da7083c23e1ac808d3a982d32291641db829769b96a37a6ddcc3ef59e7ef922909b92d75ef0372c7a673d94be08f30f77598cd291a5a1cd3c6e54f887c07d5c4
+  languageName: node
+  linkType: hard
+
 "@testing-library/dom@npm:^8.3.0":
   version: 8.14.0
   resolution: "@testing-library/dom@npm:8.14.0"
@@ -5950,6 +5969,7 @@ __metadata:
   dependencies:
     "@expo/vector-icons": ^13.0.0
     "@react-navigation/native": ^6.0.10
+    "@tanstack/react-table": ^8.2.2
     "@types/lodash.merge": ^4.6.7
     "@types/styled-components": ^5.1.25
     "@types/styled-components-react-native": ^5.1.3

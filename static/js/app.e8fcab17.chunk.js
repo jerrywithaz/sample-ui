@@ -1,56 +1,56 @@
 (this["webpackJsonp"] = this["webpackJsonp"] || []).push([[0],{
 
-/***/ 264:
+/***/ 266:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(396);
+module.exports = __webpack_require__(398);
 
-
-/***/ }),
-
-/***/ 390:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/media/OpenSans-ExtraBold.f3f77b66.ttf";
-
-/***/ }),
-
-/***/ 391:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/media/OpenSans-Bold.a0fe34be.ttf";
 
 /***/ }),
 
 /***/ 392:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/OpenSans-SemiBold.2b370b19.ttf";
+module.exports = __webpack_require__.p + "static/media/OpenSans-ExtraBold.f3f77b66.ttf";
 
 /***/ }),
 
 /***/ 393:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/OpenSans-Medium.65529e6c.ttf";
+module.exports = __webpack_require__.p + "static/media/OpenSans-Bold.a0fe34be.ttf";
 
 /***/ }),
 
 /***/ 394:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/OpenSans-Regular.57cd57a6.ttf";
+module.exports = __webpack_require__.p + "static/media/OpenSans-SemiBold.2b370b19.ttf";
 
 /***/ }),
 
 /***/ 395:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/OpenSans-Light.8ed223d6.ttf";
+module.exports = __webpack_require__.p + "static/media/OpenSans-Medium.65529e6c.ttf";
 
 /***/ }),
 
 /***/ 396:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/OpenSans-Regular.57cd57a6.ttf";
+
+/***/ }),
+
+/***/ 397:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/OpenSans-Light.8ed223d6.ttf";
+
+/***/ }),
+
+/***/ 398:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58,16 +58,16 @@ module.exports = __webpack_require__.p + "static/media/OpenSans-Light.8ed223d6.t
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-gesture-handler/lib/module/index.js + 30 modules
-var lib_module = __webpack_require__(398);
+var lib_module = __webpack_require__(400);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo/build/launch/registerRootComponent.js + 4 modules
-var registerRootComponent = __webpack_require__(260);
+var registerRootComponent = __webpack_require__(262);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@expo/match-media/build/index.js
-var build = __webpack_require__(214);
+var build = __webpack_require__(215);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-status-bar/build/StatusBar.js + 8 modules
-var StatusBar = __webpack_require__(258);
+var StatusBar = __webpack_require__(259);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react/index.js
 var react = __webpack_require__(0);
@@ -90,10 +90,10 @@ function createStackNavigator(){return{Navigator:function Navigator(_ref){var ch
 // CONCATENATED MODULE: ../navigation/src/factories/createStackNavigator/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/styled-components/native/dist/styled-components.native.esm.js
-var styled_components_native_esm = __webpack_require__(36);
+var styled_components_native_esm = __webpack_require__(33);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-responsive/dist/react-responsive.js
-var react_responsive = __webpack_require__(106);
+var react_responsive = __webpack_require__(107);
 
 // CONCATENATED MODULE: ../components/devsupport/responsive/responsive.ts
 function useIsXSmallDevice(){return Object(react_responsive["useMediaQuery"])({maxWidth:576});}function useIsSmallDevice(){return Object(react_responsive["useMediaQuery"])({minWidth:576});}function useIsMediumDevice(){return Object(react_responsive["useMediaQuery"])({minWidth:768});}function useIsLargeDevice(){return Object(react_responsive["useMediaQuery"])({minWidth:992});}function useIsXLargeDevice(){return Object(react_responsive["useMediaQuery"])({minWidth:1200});}function useIsXXLargeDevice(){return Object(react_responsive["useMediaQuery"])({minWidth:1600});}function useResponsiveSize(){var isXSmallDevice=useIsXSmallDevice();var isSmallDevice=useIsSmallDevice();var isMediumDevice=useIsMediumDevice();var isLargeDevice=useIsLargeDevice();var isXLargeDevice=useIsXLargeDevice();var isXXLargeDevice=useIsXXLargeDevice();return{xs:isXSmallDevice,s:isSmallDevice,m:isMediumDevice,lg:isLargeDevice,xl:isXLargeDevice,xxl:isXXLargeDevice};}
@@ -109,7 +109,7 @@ var theme_theme={colors:{primary:{dark:"#004d80",default:"#0077b3",light:"#cde5f
 // CONCATENATED MODULE: ../components/theme/native.provider.tsx
 var native_provider_ThemeProvider=function ThemeProvider(_ref){var children=_ref.children;return Object(jsx_runtime["jsx"])(styled_components_native_esm["a" /* ThemeProvider */],{theme:components_theme_theme,children:Object(jsx_runtime["jsx"])(responsive_provider,{children:children})});};/* harmony default export */ var native_provider = (native_provider_ThemeProvider);
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/styled-components/dist/styled-components.browser.esm.js
-var styled_components_browser_esm = __webpack_require__(173);
+var styled_components_browser_esm = __webpack_require__(174);
 
 // CONCATENATED MODULE: ../components/theme/web.provider.tsx
 var web_provider_ThemeProvider=function ThemeProvider(_ref){var children=_ref.children;return Object(jsx_runtime["jsx"])(styled_components_browser_esm["a" /* ThemeProvider */],{theme:components_theme_theme,children:Object(jsx_runtime["jsx"])(responsive_provider,{children:children})});};/* harmony default export */ var web_provider = (web_provider_ThemeProvider);
@@ -130,12 +130,12 @@ var slicedToArray = __webpack_require__(13);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/recyclerlistview/dist/reactnative/index.js
-var reactnative = __webpack_require__(177);
+var reactnative = __webpack_require__(178);
 
 // CONCATENATED MODULE: ../components/utils/createStyleProp.ts
 function createStyleProp(name,value){var suffix=arguments.length>2&&arguments[2]!==undefined?arguments[2]:"px";if(value===undefined)return"";if(typeof value=='number'){return name+": "+value+suffix+";";}return name+": "+value+";";}/* harmony default export */ var utils_createStyleProp = (createStyleProp);
 // CONCATENATED MODULE: ../components/ui/layout/Box/Box.ts
-var Box=styled_components_native_esm["b" /* default */].View.withConfig({displayName:"Box"})(["",""],function(_ref){var flex=_ref.flex,alignItems=_ref.alignItems,justifyContent=_ref.justifyContent,horizontal=_ref.horizontal,vertical=_ref.vertical,flexDirection=_ref.flexDirection,paddingVertical=_ref.paddingVertical,paddingHorizontal=_ref.paddingHorizontal,marginLeft=_ref.marginLeft,marginTop=_ref.marginTop,marginBottom=_ref.marginBottom,marginHorizontal=_ref.marginHorizontal,marginVertical=_ref.marginVertical,flexWrap=_ref.flexWrap,wrap=_ref.wrap,overflow=_ref.overflow,height=_ref.height,maxHeight=_ref.maxHeight,width=_ref.width,display=_ref.display,marginRight=_ref.marginRight,position=_ref.position,alignSelf=_ref.alignSelf,backgroundColor=_ref.backgroundColor,borderRadius=_ref.borderRadius,padding=_ref.padding,margin=_ref.margin,flexGrow=_ref.flexGrow,flexShrink=_ref.flexShrink,flexBasis=_ref.flexBasis,fullWidth=_ref.fullWidth,minHeight=_ref.minHeight,minWidth=_ref.minWidth,maxWidth=_ref.maxWidth,wrapText=_ref.wrapText,paddingLeft=_ref.paddingLeft,paddingRight=_ref.paddingRight,paddingTop=_ref.paddingTop,paddingBottom=_ref.paddingBottom;return"\n        "+utils_createStyleProp("padding-top",paddingVertical!=null?paddingVertical:paddingTop)+"\n        "+utils_createStyleProp("padding-bottom",paddingVertical!=null?paddingVertical:paddingBottom)+"\n        "+utils_createStyleProp("padding-left",paddingHorizontal!=null?paddingHorizontal:paddingLeft)+"\n        "+utils_createStyleProp("padding-right",paddingHorizontal!=null?paddingHorizontal:paddingRight)+"\n        "+utils_createStyleProp("margin-top",marginVertical)+"\n        "+utils_createStyleProp("margin-bottom",marginVertical)+"\n        "+utils_createStyleProp("margin-left",marginHorizontal)+"\n        "+utils_createStyleProp("margin-right",marginHorizontal)+"\n        "+utils_createStyleProp("display",display)+"\n        "+utils_createStyleProp("flex",fullWidth?1:flex,"")+"\n        "+utils_createStyleProp("flex-grow",flexGrow,"")+"\n        "+utils_createStyleProp("flex-shrink",flexShrink,"")+"\n        "+utils_createStyleProp("flex-basis",fullWidth?"100%":flexBasis!=null?flexBasis:"auto","")+"\n        "+utils_createStyleProp("flex-direction",horizontal?"row":vertical?"column":flexDirection)+"\n        "+utils_createStyleProp("justify-content",justifyContent)+"\n        "+utils_createStyleProp("align-items",alignItems)+"\n        "+utils_createStyleProp("margin",margin)+"\n        "+utils_createStyleProp("padding",padding)+"\n        "+utils_createStyleProp("margin-left",marginLeft)+"\n        "+utils_createStyleProp("margin-top",marginTop)+"\n        "+utils_createStyleProp("margin-bottom",marginBottom)+"\n        "+utils_createStyleProp("margin-right",marginRight)+"\n        "+utils_createStyleProp("flex-wrap",wrap?'wrap':flexWrap)+"\n        "+utils_createStyleProp("overflow",overflow)+"\n        "+utils_createStyleProp("height",height)+"\n        "+utils_createStyleProp("width",width)+"\n        "+utils_createStyleProp("max-width",wrapText?"100%":maxWidth)+"\n        "+utils_createStyleProp("max-height",maxHeight)+"\n        "+utils_createStyleProp("min-height",minHeight!=null?minHeight:"auto")+"\n        "+utils_createStyleProp("min-width",minWidth)+"\n        "+utils_createStyleProp("position",position)+"\n        "+utils_createStyleProp("align-self",alignSelf)+"\n        "+utils_createStyleProp("background-color",backgroundColor,"")+"\n        "+utils_createStyleProp("border-radius",borderRadius)+"\n    ";});var FlexBox=Object(styled_components_native_esm["b" /* default */])(Box).withConfig({displayName:"Box__FlexBox"})(["display:flex;"]);/* harmony default export */ var Box_Box = (Box);
+var Box=styled_components_native_esm["b" /* default */].View.withConfig({displayName:"Box"})(["",""],function(_ref){var flex=_ref.flex,alignItems=_ref.alignItems,justifyContent=_ref.justifyContent,horizontal=_ref.horizontal,vertical=_ref.vertical,flexDirection=_ref.flexDirection,paddingVertical=_ref.paddingVertical,paddingHorizontal=_ref.paddingHorizontal,marginLeft=_ref.marginLeft,marginTop=_ref.marginTop,marginBottom=_ref.marginBottom,marginHorizontal=_ref.marginHorizontal,marginVertical=_ref.marginVertical,flexWrap=_ref.flexWrap,wrap=_ref.wrap,overflow=_ref.overflow,height=_ref.height,maxHeight=_ref.maxHeight,width=_ref.width,display=_ref.display,marginRight=_ref.marginRight,position=_ref.position,alignSelf=_ref.alignSelf,backgroundColor=_ref.backgroundColor,borderRadius=_ref.borderRadius,padding=_ref.padding,margin=_ref.margin,flexGrow=_ref.flexGrow,flexShrink=_ref.flexShrink,flexBasis=_ref.flexBasis,fullWidth=_ref.fullWidth,minHeight=_ref.minHeight,minWidth=_ref.minWidth,maxWidth=_ref.maxWidth,wrapText=_ref.wrapText,paddingLeft=_ref.paddingLeft,paddingRight=_ref.paddingRight,paddingTop=_ref.paddingTop,paddingBottom=_ref.paddingBottom,left=_ref.left,right=_ref.right,top=_ref.top,bottom=_ref.bottom;return"\n        "+utils_createStyleProp("padding-top",paddingVertical!=null?paddingVertical:paddingTop)+"\n        "+utils_createStyleProp("padding-bottom",paddingVertical!=null?paddingVertical:paddingBottom)+"\n        "+utils_createStyleProp("padding-left",paddingHorizontal!=null?paddingHorizontal:paddingLeft)+"\n        "+utils_createStyleProp("padding-right",paddingHorizontal!=null?paddingHorizontal:paddingRight)+"\n        "+utils_createStyleProp("margin-top",marginVertical)+"\n        "+utils_createStyleProp("margin-bottom",marginVertical)+"\n        "+utils_createStyleProp("margin-left",marginHorizontal)+"\n        "+utils_createStyleProp("margin-right",marginHorizontal)+"\n        "+utils_createStyleProp("display",display)+"\n        "+utils_createStyleProp("flex",fullWidth?1:flex,"")+"\n        "+utils_createStyleProp("flex-grow",flexGrow,"")+"\n        "+utils_createStyleProp("flex-shrink",flexShrink,"")+"\n        "+utils_createStyleProp("flex-basis",fullWidth?"100%":flexBasis!=null?flexBasis:"auto","")+"\n        "+utils_createStyleProp("flex-direction",horizontal?"row":vertical?"column":flexDirection)+"\n        "+utils_createStyleProp("justify-content",justifyContent)+"\n        "+utils_createStyleProp("align-items",alignItems)+"\n        "+utils_createStyleProp("margin",margin)+"\n        "+utils_createStyleProp("padding",padding)+"\n        "+utils_createStyleProp("margin-left",marginLeft)+"\n        "+utils_createStyleProp("margin-top",marginTop)+"\n        "+utils_createStyleProp("margin-bottom",marginBottom)+"\n        "+utils_createStyleProp("margin-right",marginRight)+"\n        "+utils_createStyleProp("flex-wrap",wrap?'wrap':flexWrap)+"\n        "+utils_createStyleProp("overflow",overflow)+"\n        "+utils_createStyleProp("height",height)+"\n        "+utils_createStyleProp("width",width)+"\n        "+utils_createStyleProp("max-width",wrapText?"100%":maxWidth)+"\n        "+utils_createStyleProp("max-height",maxHeight)+"\n        "+utils_createStyleProp("min-height",minHeight!=null?minHeight:"auto")+"\n        "+utils_createStyleProp("min-width",minWidth)+"\n        "+utils_createStyleProp("position",position)+"\n        "+utils_createStyleProp("align-self",alignSelf)+"\n        "+utils_createStyleProp("background-color",backgroundColor,"")+"\n        "+utils_createStyleProp("border-radius",borderRadius)+"\n        "+utils_createStyleProp("left",left)+"\n        "+utils_createStyleProp("right",right)+"\n        "+utils_createStyleProp("top",top)+"\n        "+utils_createStyleProp("bottom",bottom)+"\n    ";});var FlexBox=Object(styled_components_native_esm["b" /* default */])(Box).withConfig({displayName:"Box__FlexBox"})(["display:flex;"]);/* harmony default export */ var Box_Box = (Box);
 // CONCATENATED MODULE: ../components/ui/layout/Box/index.ts
 
 // CONCATENATED MODULE: ../components/ui/global/Text/Text.styled.ts
@@ -151,7 +151,7 @@ var ListItem_excluded=["children","title","description","accessibilityRole","for
 // CONCATENATED MODULE: ../components/ui/data/ListItem/index.ts
 
 // CONCATENATED MODULE: ../components/ui/data/List/List.tsx
-var List_excluded=["style"];function List_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function List_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?List_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):List_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}function List(_ref){var data=_ref.data,renderItem=_ref.renderItem,_ref$rowHasChanged=_ref.rowHasChanged,rowHasChanged=_ref$rowHasChanged===void 0?function(r1,r2){return r1!==r2;}:_ref$rowHasChanged,_ref$rowHeight=_ref.rowHeight,rowHeight=_ref$rowHeight===void 0?50:_ref$rowHeight,_ref$variableHeight=_ref.variableHeight,variableHeight=_ref$variableHeight===void 0?true:_ref$variableHeight,_ref$listAccessibilit=_ref.listAccessibilityRole,listAccessibilityRole=_ref$listAccessibilit===void 0?"list":_ref$listAccessibilit,_ref$listItemAccessib=_ref.listItemAccessibilityRole,listItemAccessibilityRole=_ref$listItemAccessib===void 0?"listitem":_ref$listItemAccessib;var _useState=Object(react["useState"])(300),_useState2=slicedToArray_default()(_useState,2),containerWidth=_useState2[0],setContainerWidth=_useState2[1];var dataProvider=Object(react["useMemo"])(function(){return new reactnative["DataProvider"](rowHasChanged).cloneWithRows(data);},[data]);var layoutProvider=Object(react["useMemo"])(function(){return new reactnative["LayoutProvider"](function(){return"default";},function(_,dimensions){dimensions.width=containerWidth;dimensions.height=rowHeight;});},[containerWidth]);var handleLayout=Object(react["useCallback"])(function(event){setContainerWidth(event.nativeEvent.layout.width);},[]);var renderContentContainer=Object(react["useCallback"])(function(_ref2,children){var style=_ref2.style,props=objectWithoutProperties_default()(_ref2,List_excluded);return Object(jsx_runtime["jsx"])(Box_Box,List_objectSpread(List_objectSpread({},props),{},{style:style,vertical:true,accessibilityRole:listAccessibilityRole,children:children}));},[listAccessibilityRole]);var renderItemContainer=Object(react["useCallback"])(function(props,_,children){return Object(jsx_runtime["jsx"])(ListItem_ListItem,List_objectSpread(List_objectSpread({},props),{},{accessibilityRole:listItemAccessibilityRole,paddingHorizontal:0,paddingVertical:0,children:children}));},[listItemAccessibilityRole]);return Object(jsx_runtime["jsx"])(FlexBox,{flex:1,vertical:true,onLayout:handleLayout,children:Object(jsx_runtime["jsx"])(reactnative["RecyclerListView"],{dataProvider:dataProvider,layoutProvider:layoutProvider,rowRenderer:renderItem,style:{flex:1},contentContainerStyle:{margin:3},forceNonDeterministicRendering:variableHeight,scrollViewProps:{renderContentContainer:renderContentContainer},renderItemContainer:renderItemContainer})});}function FixedHeightList(props){return Object(jsx_runtime["jsx"])(List,List_objectSpread(List_objectSpread({},props),{},{variableHeight:false}));}function VariableHeightList(props){return Object(jsx_runtime["jsx"])(List,List_objectSpread(List_objectSpread({},props),{},{variableHeight:true}));}/* harmony default export */ var List_List = (List);
+var List_excluded=["style"];function List_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function List_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?List_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):List_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}function List(_ref){var data=_ref.data,renderItem=_ref.renderItem,_ref$rowHasChanged=_ref.rowHasChanged,rowHasChanged=_ref$rowHasChanged===void 0?function(r1,r2){return r1!==r2;}:_ref$rowHasChanged,_ref$rowHeight=_ref.rowHeight,rowHeight=_ref$rowHeight===void 0?50:_ref$rowHeight,_ref$variableHeight=_ref.variableHeight,variableHeight=_ref$variableHeight===void 0?true:_ref$variableHeight,_ref$listAccessibilit=_ref.listAccessibilityRole,listAccessibilityRole=_ref$listAccessibilit===void 0?"list":_ref$listAccessibilit,_ref$listItemAccessib=_ref.listItemAccessibilityRole,listItemAccessibilityRole=_ref$listItemAccessib===void 0?"listitem":_ref$listItemAccessib;var _useState=Object(react["useState"])(300),_useState2=slicedToArray_default()(_useState,2),containerWidth=_useState2[0],setContainerWidth=_useState2[1];var dataProvider=Object(react["useMemo"])(function(){return new reactnative["DataProvider"](rowHasChanged).cloneWithRows(data);},[data]);var layoutProvider=Object(react["useMemo"])(function(){return new reactnative["LayoutProvider"](function(){return"default";},function(_,dimensions){dimensions.width=containerWidth;dimensions.height=rowHeight;});},[containerWidth]);var handleLayout=Object(react["useCallback"])(function(event){setContainerWidth(event.nativeEvent.layout.width);},[]);var renderContentContainer=Object(react["useCallback"])(function(_ref2,children){var style=_ref2.style,props=objectWithoutProperties_default()(_ref2,List_excluded);return Object(jsx_runtime["jsx"])(Box_Box,List_objectSpread(List_objectSpread({},props),{},{style:style,vertical:true,accessibilityRole:listAccessibilityRole,children:children}));},[listAccessibilityRole]);var renderItemContainer=Object(react["useCallback"])(function(props,_,children){return Object(jsx_runtime["jsx"])(ListItem_ListItem,List_objectSpread(List_objectSpread({},props),{},{accessibilityRole:listItemAccessibilityRole,paddingHorizontal:0,paddingVertical:0,width:"100%",children:children}));},[listItemAccessibilityRole]);return Object(jsx_runtime["jsx"])(FlexBox,{flex:1,vertical:true,onLayout:handleLayout,children:Object(jsx_runtime["jsx"])(reactnative["RecyclerListView"],{dataProvider:dataProvider,layoutProvider:layoutProvider,rowRenderer:renderItem,style:{flex:1},contentContainerStyle:{margin:3},forceNonDeterministicRendering:variableHeight,scrollViewProps:{renderContentContainer:renderContentContainer},renderItemContainer:renderItemContainer})});}function FixedHeightList(props){return Object(jsx_runtime["jsx"])(List,List_objectSpread(List_objectSpread({},props),{},{variableHeight:false}));}function VariableHeightList(props){return Object(jsx_runtime["jsx"])(List,List_objectSpread(List_objectSpread({},props),{},{variableHeight:true}));}/* harmony default export */ var List_List = (List);
 // CONCATENATED MODULE: ../components/ui/data/List/index.ts
 
 // CONCATENATED MODULE: ../components/ui/data/LabelValue/LabelValue.styled.ts
@@ -161,7 +161,7 @@ var LabelValue_LabelValue=function LabelValue(_ref){var _ref$direction=_ref.dire
 // CONCATENATED MODULE: ../components/ui/data/LabelValue/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@tanstack/react-table/build/umd/index.production.js
-var index_production = __webpack_require__(125);
+var index_production = __webpack_require__(126);
 
 // CONCATENATED MODULE: ../components/ui/data/Table/TableCell/TableCell.styled.ts
 var TableCell=Object(styled_components_native_esm["b" /* default */])(FlexBox).withConfig({displayName:"TableCellstyled__TableCell"})(["padding:","px;"],function(_ref){var theme=_ref.theme;return theme.spacing.small;});
@@ -170,7 +170,7 @@ function TableCellText(props){return Object(jsx_runtime["jsx"])(global_Text_Text
 // CONCATENATED MODULE: ../components/ui/data/Table/TableCell/variations/TableCellText/index.ts
 
 // CONCATENATED MODULE: ../components/ui/data/Table/TableCell/TableCell.tsx
-function TableCell_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function TableCell_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?TableCell_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):TableCell_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}function getTableCellProps(props){if("header"in props){var header=props.header;var size=header.getSize();return{size:size,children:header.isPlaceholder?null:Object(index_production["flexRender"])(header.column.columnDef.header,header.getContext()),type:null,context:header.getContext(),cellType:"header",name:header.column.columnDef.name};}else{var cell=props.cell;var _size=cell.column.getSize();return{size:_size,children:Object(index_production["flexRender"])(cell.column.columnDef.cell,cell.getContext()),type:cell.column.columnDef.type,context:cell.getContext(),cellType:"cell",name:cell.column.columnDef.name};}}function TableCell_TableCell(props){var isSmallDevice=useIsSmallDevice();var _getTableCellProps=getTableCellProps(props),size=_getTableCellProps.size,children=_getTableCellProps.children,type=_getTableCellProps.type,context=_getTableCellProps.context,cellType=_getTableCellProps.cellType,name=_getTableCellProps.name;var Component=type?TABLE_CELL_MAPPING[type]:null;return Object(jsx_runtime["jsxs"])(TableCell,{flexShrink:0,flexGrow:0,flexBasis:!isSmallDevice?0:size+"px",horizontal:!isSmallDevice,justifyContent:!isSmallDevice?"space-between":undefined,children:[!isSmallDevice&&Object(jsx_runtime["jsx"])(global_Text_Text,{fontWeight:600,children:name}),Object(jsx_runtime["jsxs"])(jsx_runtime["Fragment"],{children:[cellType==="cell"&&Component!==null&&Object(jsx_runtime["jsx"])(Component,TableCell_objectSpread(TableCell_objectSpread({},context),{},{children:children})),cellType==="cell"&&Component===null&&Object(jsx_runtime["jsx"])(TableCellText_TableCellText,TableCell_objectSpread(TableCell_objectSpread({},context),{},{children:children})),cellType==="header"&&Object(jsx_runtime["jsx"])(global_Text_Text,{fontWeight:600,children:children})]})]});}var TABLE_CELL_MAPPING={text:TableCellText_TableCellText};/* harmony default export */ var Table_TableCell_TableCell = (TableCell_TableCell);
+function TableCell_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function TableCell_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?TableCell_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):TableCell_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}function getTableCellProps(props){if("header"in props){var _context$table$option,_context$table$option2;var header=props.header;var size=header.getSize();var context=header.getContext();return{size:size,children:header.isPlaceholder?null:Object(index_production["flexRender"])(header.column.columnDef.header,context),type:null,context:context,cellType:"header",name:header.column.columnDef.name,isMinSmallDevice:(_context$table$option=(_context$table$option2=context.table.options.meta)==null?void 0:_context$table$option2.isMinSmallDevice)!=null?_context$table$option:true};}else{var _context$table$option3,_context$table$option4;var cell=props.cell;var _size=cell.column.getSize();var _context=cell.getContext();return{size:_size,children:Object(index_production["flexRender"])(cell.column.columnDef.cell,_context),type:cell.column.columnDef.type,context:_context,cellType:"cell",name:cell.column.columnDef.name,isMinSmallDevice:(_context$table$option3=(_context$table$option4=_context.table.options.meta)==null?void 0:_context$table$option4.isMinSmallDevice)!=null?_context$table$option3:true};}}function TableCell_TableCell(props){var _getTableCellProps=getTableCellProps(props),size=_getTableCellProps.size,children=_getTableCellProps.children,type=_getTableCellProps.type,context=_getTableCellProps.context,cellType=_getTableCellProps.cellType,name=_getTableCellProps.name,isMinSmallDevice=_getTableCellProps.isMinSmallDevice;var Component=type?TABLE_CELL_MAPPING[type]:null;var accessibilityRole=cellType==="header"?"columnheader":"cell";return Object(jsx_runtime["jsxs"])(TableCell,{flexShrink:0,flexGrow:0,flexBasis:!isMinSmallDevice?undefined:size+"px",horizontal:!isMinSmallDevice,justifyContent:!isMinSmallDevice?"space-between":undefined,accessibilityRole:accessibilityRole,children:[!isMinSmallDevice&&Object(jsx_runtime["jsx"])(global_Text_Text,{fontWeight:600,children:name}),Object(jsx_runtime["jsxs"])(jsx_runtime["Fragment"],{children:[cellType==="cell"&&Component!==null&&Object(jsx_runtime["jsx"])(Component,TableCell_objectSpread(TableCell_objectSpread({},context),{},{children:children})),cellType==="cell"&&Component===null&&Object(jsx_runtime["jsx"])(TableCellText_TableCellText,TableCell_objectSpread(TableCell_objectSpread({},context),{},{children:children})),cellType==="header"&&Object(jsx_runtime["jsx"])(global_Text_Text,{fontWeight:600,children:children})]})]});}var TABLE_CELL_MAPPING={text:TableCellText_TableCellText};/* harmony default export */ var Table_TableCell_TableCell = (TableCell_TableCell);
 // CONCATENATED MODULE: ../components/ui/data/Table/TableCell/index.ts
 
 // CONCATENATED MODULE: ../components/ui/layout/Card/Card.styled.ts
@@ -180,19 +180,24 @@ var Card_excluded=["children","header","footer"];function Card_ownKeys(object,en
 // CONCATENATED MODULE: ../components/ui/layout/Card/index.ts
 
 // CONCATENATED MODULE: ../components/ui/data/Table/TableRow/TableRow.tsx
-function TableRowWrapper(_ref){var children=_ref.children;var isSmallDevice=useIsSmallDevice();if(isSmallDevice){return Object(jsx_runtime["jsx"])(jsx_runtime["Fragment"],{children:children});}else{return Object(jsx_runtime["jsx"])(layout_Card_Card,{marginBottom:16,marginHorizontal:16,children:children});}}function TableRow(_ref2){var children=_ref2.children;var isSmallDevice=useIsSmallDevice();return Object(jsx_runtime["jsx"])(TableRowWrapper,{children:Object(jsx_runtime["jsx"])(FlexBox,{horizontal:isSmallDevice,vertical:!isSmallDevice,flex:!isSmallDevice?1:undefined,children:children})});}/* harmony default export */ var TableRow_TableRow = (TableRow);
+function TableRow_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function TableRow_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?TableRow_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):TableRow_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}function TableRowWrapper(_ref){var children=_ref.children,isMinSmallDevice=_ref.isMinSmallDevice,accessibilityRole=_ref.accessibilityRole,mobileRowHeight=_ref.mobileRowHeight;if(isMinSmallDevice){return Object(jsx_runtime["jsx"])(jsx_runtime["Fragment"],{children:children});}else{return Object(jsx_runtime["jsx"])(layout_Card_Card,{marginBottom:16,marginHorizontal:16,accessibilityRole:accessibilityRole,minHeight:mobileRowHeight,height:mobileRowHeight,maxHeight:mobileRowHeight,children:Object(jsx_runtime["jsx"])(FlexBox,{flex:1,overflow:"scroll",children:children})});}}function TableRow(_ref2){var children=_ref2.children,isHeader=_ref2.isHeader,isMinSmallDevice=_ref2.isMinSmallDevice,position=_ref2.position,left=_ref2.left,right=_ref2.right,top=_ref2.top,width=_ref2.width,height=_ref2.height,mobileRowHeight=_ref2.mobileRowHeight;var theme=Object(styled_components_native_esm["c" /* useTheme */])();var style=Object(react["useMemo"])(function(){return{position:position,left:left,right:right,top:top,width:width,height:height};},[position,left,right,top,width,height]);var flexboxProps=Object(react["useMemo"])(function(){return TableRow_objectSpread({horizontal:isMinSmallDevice,vertical:!isMinSmallDevice,backgroundColor:isHeader&&isMinSmallDevice?theme.colors.gray.lighter:undefined,accessibilityRole:isMinSmallDevice?"row":undefined},isMinSmallDevice?style:{});},[isMinSmallDevice,isHeader,style]);return Object(jsx_runtime["jsx"])(TableRowWrapper,{isMinSmallDevice:isMinSmallDevice,accessibilityRole:"row",mobileRowHeight:mobileRowHeight,children:Object(jsx_runtime["jsx"])(FlexBox,TableRow_objectSpread(TableRow_objectSpread({},flexboxProps),{},{children:children}))});}/* harmony default export */ var TableRow_TableRow = (TableRow);
 // CONCATENATED MODULE: ../components/ui/data/Table/TableRow/index.ts
 
 // CONCATENATED MODULE: ../components/ui/data/Table/TableHead/TableHead.tsx
-function TableHead(_ref){var table=_ref.table;var isSmallDevice=useIsSmallDevice();if(!isSmallDevice)return null;return Object(jsx_runtime["jsx"])(FlexBox,{vertical:true,children:table.getHeaderGroups().map(function(headerGroup){return Object(jsx_runtime["jsx"])(TableRow_TableRow,{children:headerGroup.headers.map(function(header){return Object(jsx_runtime["jsx"])(Table_TableCell_TableCell,{header:header},header.id);})},headerGroup.id);})});}/* harmony default export */ var TableHead_TableHead = (TableHead);
+function TableHead(_ref){var isMinSmallDevice=_ref.isMinSmallDevice,mobileRowHeight=_ref.mobileRowHeight,headerGroups=_ref.headerGroups;if(!isMinSmallDevice)return null;return Object(jsx_runtime["jsx"])(FlexBox,{vertical:true,accessibilityRole:"rowgroup",flexShrink:0,flexBasis:"44px",children:headerGroups.map(function(headerGroup,index){return Object(jsx_runtime["jsx"])(TableRow_TableRow,{id:headerGroup.id,index:index,isHeader:true,isMinSmallDevice:isMinSmallDevice,mobileRowHeight:mobileRowHeight,children:headerGroup.headers.map(function(header){return Object(jsx_runtime["jsx"])(Table_TableCell_TableCell,{header:header},header.id);})},headerGroup.id);})});}/* harmony default export */ var TableHead_TableHead = (TableHead);
 // CONCATENATED MODULE: ../components/ui/data/Table/TableHead/index.ts
 
-// CONCATENATED MODULE: ../components/ui/data/Table/TableBody/TableBody.tsx
-function TableBody(_ref){var table=_ref.table;var rowModel=table.getRowModel();return Object(jsx_runtime["jsx"])(FlexBox,{vertical:true,flex:1,children:rowModel.rows.map(function(row){return Object(jsx_runtime["jsx"])(TableRow_TableRow,{children:row.getVisibleCells().map(function(cell){return Object(jsx_runtime["jsx"])(Table_TableCell_TableCell,{cell:cell},cell.id);})},row.id);})});}/* harmony default export */ var TableBody_TableBody = (TableBody);
+// EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-window/dist/index.esm.js + 5 modules
+var index_esm = __webpack_require__(261);
+
+// CONCATENATED MODULE: ../components/ui/data/Table/TableBody/TableBody.web.tsx
+function TableBody_web_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function TableBody_web_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?TableBody_web_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):TableBody_web_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}function TableBody(_ref){var rowModel=_ref.rowModel,isMinSmallDevice=_ref.isMinSmallDevice;var _useState=Object(react["useState"])(0),_useState2=slicedToArray_default()(_useState,2),height=_useState2[0],setHeight=_useState2[1];var RenderRow=Object(react["useCallback"])(function(_ref2){var index=_ref2.index,style=_ref2.style;var row=rowModel.rows[index];return Object(jsx_runtime["jsx"])(TableRow_TableRow,TableBody_web_objectSpread(TableBody_web_objectSpread({index:index,isMinSmallDevice:isMinSmallDevice},style),{},{children:row.getVisibleCells().map(function(cell){return Object(jsx_runtime["jsx"])(Table_TableCell_TableCell,{cell:cell},cell.id);})}),row.id);},[rowModel.rows]);return Object(jsx_runtime["jsx"])(FlexBox,{vertical:true,flex:1,onLayout:function onLayout(e){return setHeight(e.nativeEvent.layout.height);},children:height!==0&&Object(jsx_runtime["jsx"])(index_esm["a" /* FixedSizeList */],{height:height,itemCount:rowModel.rows.length,width:"100%",itemSize:43,innerElementType:function innerElementType(props){return Object(jsx_runtime["jsx"])("div",TableBody_web_objectSpread(TableBody_web_objectSpread({},props),{},{tabIndex:0,role:"rowgroup"}));},children:RenderRow})});}/* harmony default export */ var TableBody_web = (TableBody);
 // CONCATENATED MODULE: ../components/ui/data/Table/TableBody/index.ts
 
+// CONCATENATED MODULE: ../components/ui/data/Table/Table.styled.ts
+var Table=Object(styled_components_native_esm["b" /* default */])(FlexBox).withConfig({displayName:"Tablestyled__Table"})(["border-width:",";border-color:",";border-radius:",";"],function(_ref){var isMinSmallDevice=_ref.isMinSmallDevice;return isMinSmallDevice?"1px":"0px";},function(_ref2){var theme=_ref2.theme;return theme.colors.gray.light;},function(_ref3){var theme=_ref3.theme;return theme.borderRadius.default;});
 // CONCATENATED MODULE: ../components/ui/data/Table/Table.tsx
-function Table(props){var data=props.data,columns=props.columns;var table=Object(index_production["useReactTable"])({data:data,columns:columns,getCoreRowModel:Object(index_production["getCoreRowModel"])()});return Object(jsx_runtime["jsxs"])(FlexBox,{vertical:true,flex:1,children:[Object(jsx_runtime["jsx"])(TableHead_TableHead,{table:table}),Object(jsx_runtime["jsx"])(TableBody_TableBody,{table:table})]});}/* harmony default export */ var Table_Table = (Table);
+function Table_Table(props){var data=props.data,columns=props.columns,getRowId=props.getRowId,accessibilityLabel=props.accessibilityLabel,mobileRowHeight=props.mobileRowHeight,rowHeight=props.rowHeight;var isMinSmallDevice=useIsSmallDevice();var table=Object(index_production["useReactTable"])({data:data,columns:columns,getCoreRowModel:Object(index_production["getCoreRowModel"])(),meta:{isMinSmallDevice:isMinSmallDevice,mobileRowHeight:mobileRowHeight,rowHeight:rowHeight},getRowId:getRowId});var rowModel=Object(react["useMemo"])(function(){return table.getRowModel();},[data]);return Object(jsx_runtime["jsxs"])(Table,{vertical:true,flex:1,isMinSmallDevice:isMinSmallDevice,accessibilityRole:"table",accessibilityLabel:accessibilityLabel,children:[Object(jsx_runtime["jsx"])(TableHead_TableHead,{headerGroups:table.getHeaderGroups(),isMinSmallDevice:isMinSmallDevice,mobileRowHeight:mobileRowHeight}),Object(jsx_runtime["jsx"])(TableBody_web,{rowModel:rowModel,isMinSmallDevice:isMinSmallDevice,mobileRowHeight:mobileRowHeight,rowHeight:rowHeight,getRowId:getRowId})]});}/* harmony default export */ var data_Table_Table = (Table_Table);
 // CONCATENATED MODULE: ../components/ui/data/Table/index.ts
 
 // CONCATENATED MODULE: ../components/ui/data/index.ts
@@ -206,7 +211,7 @@ var FalsyText_excluded=["component"];function FalsyText_ownKeys(object,enumerabl
 // CONCATENATED MODULE: ../components/devsupport/components/FalsyText/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-web/dist/exports/Pressable/index.js + 4 modules
-var Pressable = __webpack_require__(157);
+var Pressable = __webpack_require__(158);
 
 // CONCATENATED MODULE: ../components/ui/forms/ButtonBase/ButtonBase.styled.ts
 var ButtonBase_styled_Pressable=Object(styled_components_native_esm["b" /* default */])(Pressable["a" /* default */]).withConfig({displayName:"ButtonBasestyled__Pressable"})(["cursor:pointer;padding:",";border-radius:",";"],function(_ref){var theme=_ref.theme;return theme.spacing.small+"px "+theme.spacing.small+"px";},function(_ref2){var theme=_ref2.theme;return theme.borderRadius.default;});var ButtonBase_styled_ButtonBase=styled_components_native_esm["b" /* default */].View.withConfig({displayName:"ButtonBasestyled__ButtonBase"})(["border:0px;"]);
@@ -214,7 +219,7 @@ var ButtonBase_styled_Pressable=Object(styled_components_native_esm["b" /* defau
 var StyleSheet = __webpack_require__(14);
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/ts-deepmerge/dist/index.js
-var dist = __webpack_require__(137);
+var dist = __webpack_require__(138);
 var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
 
 // CONCATENATED MODULE: ../components/ui/forms/ButtonBase/hooks/useButtonInteractionStyles.ts
@@ -232,7 +237,7 @@ var Button_excluded=["children","accessoryLeft","accessoryRight","style","border
 // CONCATENATED MODULE: ../components/ui/forms/Button/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/@expo/vector-icons/FontAwesome.js + 6 modules
-var FontAwesome = __webpack_require__(259);
+var FontAwesome = __webpack_require__(260);
 
 // CONCATENATED MODULE: ../components/ui/global/Icon/Icon.tsx
 var Icon_excluded=["paddingRight","paddingHorizontal","paddingLeft"];function Icon_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);enumerableOnly&&(symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;})),keys.push.apply(keys,symbols);}return keys;}function Icon_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=null!=arguments[i]?arguments[i]:{};i%2?Icon_ownKeys(Object(source),!0).forEach(function(key){defineProperty_default()(target,key,source[key]);}):Object.getOwnPropertyDescriptors?Object.defineProperties(target,Object.getOwnPropertyDescriptors(source)):Icon_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}return target;}var Icon_Icon=function Icon(_ref){var paddingRight=_ref.paddingRight,paddingHorizontal=_ref.paddingHorizontal,paddingLeft=_ref.paddingLeft,props=objectWithoutProperties_default()(_ref,Icon_excluded);return Object(jsx_runtime["jsx"])(FlexBox,{horizontal:true,paddingRight:paddingRight,paddingLeft:paddingLeft,paddingHorizontal:paddingHorizontal,children:Object(jsx_runtime["jsx"])(FontAwesome["a" /* default */],Icon_objectSpread({},props))});};/* harmony default export */ var global_Icon_Icon = (Icon_Icon);
@@ -253,10 +258,10 @@ var SearchInput_excluded=["size"];function SearchInput_ownKeys(object,enumerable
 // CONCATENATED MODULE: ../components/hooks/useResponsiveProp.ts
 function useResponsiveProp(defaultValue,prop,allowUndefined){var deviceSize=useDeviceSize();return responsiveProp(defaultValue,deviceSize,prop,allowUndefined);}function canReturnProp(keyDefined,prop,allowUndefined){if(allowUndefined&&keyDefined){return true;}else if(prop===undefined){return false;}else{return true;}}function responsiveProp(defaultValue,deviceSize,prop,allowUndefined){if(prop===undefined)return defaultValue;if(deviceSize.xxl&&canReturnProp('xxl'in prop,prop==null?void 0:prop.xxl,allowUndefined))return prop.xxl;if(deviceSize.xl&&canReturnProp('xl'in prop,prop==null?void 0:prop.xl,allowUndefined))return prop.xl;if(deviceSize.lg&&canReturnProp('lg'in prop,prop==null?void 0:prop.lg,allowUndefined))return prop.lg;if(deviceSize.m&&canReturnProp('m'in prop,prop==null?void 0:prop.m,allowUndefined))return prop.m;if(deviceSize.s&&canReturnProp('s'in prop,prop==null?void 0:prop.s,allowUndefined))return prop.s;if(deviceSize.xs&&canReturnProp('xs'in prop,prop==null?void 0:prop.xs,allowUndefined))return prop.xs;return defaultValue;}/* harmony default export */ var hooks_useResponsiveProp = (useResponsiveProp);
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/expo-font/build/FontHooks.js
-var FontHooks = __webpack_require__(403);
+var FontHooks = __webpack_require__(405);
 
 // CONCATENATED MODULE: ../components/hooks/useThemeFonts.ts
-function useThemeFonts(){var _useFonts=Object(FontHooks["a" /* useFonts */])({"OpenSans-ExtraBold":__webpack_require__(390),"OpenSans-Bold":__webpack_require__(391),"OpenSans-SemiBold":__webpack_require__(392),"OpenSans-Medium":__webpack_require__(393),"OpenSans":__webpack_require__(394),"OpenSans-Light":__webpack_require__(395)}),_useFonts2=slicedToArray_default()(_useFonts,1),loaded=_useFonts2[0];return loaded;}/* harmony default export */ var hooks_useThemeFonts = (useThemeFonts);
+function useThemeFonts(){var _useFonts=Object(FontHooks["a" /* useFonts */])({"OpenSans-ExtraBold":__webpack_require__(392),"OpenSans-Bold":__webpack_require__(393),"OpenSans-SemiBold":__webpack_require__(394),"OpenSans-Medium":__webpack_require__(395),"OpenSans":__webpack_require__(396),"OpenSans-Light":__webpack_require__(397)}),_useFonts2=slicedToArray_default()(_useFonts,1),loaded=_useFonts2[0];return loaded;}/* harmony default export */ var hooks_useThemeFonts = (useThemeFonts);
 // CONCATENATED MODULE: ../components/ui/layout/Grid/Grid.utils.ts
 function createColFlexStyle(size,enabled){if(enabled&&size!==undefined){var percentage=size/24*100;return"flex: 0 0 "+percentage+"%;";}return"";}function createColGutterStyle(gutter,enabled){if(enabled&&gutter!==undefined){return"padding-left: "+gutter+"px;\n        padding-right: "+gutter+"px;\n        ";}return"";}
 // CONCATENATED MODULE: ../components/ui/layout/Grid/Grid.styled.ts
@@ -282,7 +287,7 @@ var IndexPath_IndexPath=createClass_default()(function IndexPath(row,section){cl
 // CONCATENATED MODULE: ../components/ui/navigation/Menu/IndexPath/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-router-dom/index.js
-var react_router_dom = __webpack_require__(90);
+var react_router_dom = __webpack_require__(91);
 
 // CONCATENATED MODULE: ../components/ui/navigation/Link/Link.styled.web.tsx
 var Link_styled_web_Link=Object(styled_components_browser_esm["b" /* default */])(react_router_dom["c" /* Link */]).withConfig({displayName:"Linkstyledweb__Link"})(["text-decoration:none;color:",";"],function(_ref){var theme=_ref.theme;return theme.colors.secondary.default;});
@@ -331,7 +336,7 @@ var Provider_web_DocumentTitle=function DocumentTitle(){var location=Object(reac
 // CONCATENATED MODULE: ../navigation/src/hooks/index.ts
 
 // EXTERNAL MODULE: /Users/zerryhogan/Code/Personal Projects/sample-ui/node_modules/react-native-web/dist/exports/SafeAreaView/index.js
-var SafeAreaView = __webpack_require__(155);
+var SafeAreaView = __webpack_require__(156);
 
 // CONCATENATED MODULE: ../navigation/src/components/DrawerContainer/DrawerContainer.web.tsx
 var DrawerContainer_web_DrawerContainer=function DrawerContainer(_ref){var width=_ref.width,children=_ref.children;var _useDrawerNavigation=useDrawerNavigation(),drawerState=_useDrawerNavigation.drawerState,drawerType=_useDrawerNavigation.drawerType;if(drawerState==="closed"&&drawerType!=="permanent")return null;return Object(jsx_runtime["jsx"])(SafeAreaView["a" /* default */],{style:{flexGrow:0,flexBasis:"200px"},children:Object(jsx_runtime["jsx"])(FlexBox,{flex:1,vertical:true,width:width,children:children})});};
@@ -361,7 +366,7 @@ var drawer_Drawer=function Drawer(){return Object(jsx_runtime["jsx"])(DrawerCont
 // CONCATENATED MODULE: ./src/navigation/header.tsx
 var header_Header=function Header(){var theme=Object(styled_components_native_esm["c" /* useTheme */])();var _useDrawerNavigation=useDrawerNavigation(),toggleDrawer=_useDrawerNavigation.toggleDrawer;return Object(jsx_runtime["jsx"])(FlexBox,{horizontal:true,height:50,backgroundColor:theme.colors.primary.dark,alignItems:"center",padding:theme.spacing.medium,children:Object(jsx_runtime["jsx"])(global_Icon_Icon,{name:"bars",size:20,color:theme.colors.white.default,onPress:toggleDrawer})});};/* harmony default export */ var navigation_header = (header_Header);
 // CONCATENATED MODULE: ./src/screens/PatientHistory/PatientHistory.tsx
-var defaultData=[{firstName:"tanner",lastName:"linsley",age:24,visits:100,status:"In Relationship",progress:50},{firstName:"tandy",lastName:"miller",age:40,visits:40,status:"Single",progress:80},{firstName:"joe",lastName:"dirte",age:45,visits:20,status:"Complicated",progress:10}];var PatientHistory_columns=[{accessorKey:"firstName",header:function header(){return"First Name";},footer:function footer(info){return info.column.id;},type:"text",cell:function cell(info){return info.getValue();},name:"First Name"},{accessorFn:function accessorFn(row){return row.lastName;},id:"lastName",header:function header(){return"Last Name";},footer:function footer(info){return info.column.id;},type:"text",name:"Last Name"},{accessorKey:"age",header:function header(){return"Age";},footer:function footer(info){return info.column.id;},type:"text",name:"Age"},{accessorKey:"visits",header:function header(){return"Visits";},footer:function footer(info){return info.column.id;},type:"text",name:"Visits"},{accessorKey:"status",header:"Status",footer:function footer(info){return info.column.id;},type:"text",name:"Status"},{accessorKey:"progress",header:"Profile Progress",footer:function footer(info){return info.column.id;},type:"text",name:"Profile Progress"}];var PatientHistory_PatientHistory=function PatientHistory(){return Object(jsx_runtime["jsx"])(Box_Box,{flex:1,overflow:"visible",marginVertical:16,children:Object(jsx_runtime["jsx"])(ScrollView["a" /* default */],{style:{flex:1},nestedScrollEnabled:true,children:Object(jsx_runtime["jsx"])(Table_Table,{data:defaultData,columns:PatientHistory_columns})})});};/* harmony default export */ var screens_PatientHistory_PatientHistory = (PatientHistory_PatientHistory);
+var defaultData=[{firstName:"tanner",lastName:"linsley",age:24,visits:100,status:"In Relationship",progress:50},{firstName:"tandy",lastName:"miller",age:40,visits:40,status:"Single",progress:80},{firstName:"joe",lastName:"dirte",age:45,visits:20,status:"Complicated",progress:10}];var PatientHistory_columns=[{accessorKey:"firstName",header:function header(){return"First Name";},footer:function footer(info){return info.column.id;},type:"text",cell:function cell(info){return info.getValue();},name:"First Name"},{accessorFn:function accessorFn(row){return row.lastName;},id:"lastName",header:function header(){return"Last Name";},footer:function footer(info){return info.column.id;},type:"text",name:"Last Name"},{accessorKey:"age",header:function header(){return"Age";},footer:function footer(info){return info.column.id;},type:"text",name:"Age"},{accessorKey:"visits",header:function header(){return"Visits";},footer:function footer(info){return info.column.id;},type:"text",name:"Visits"},{accessorKey:"status",header:"Status",footer:function footer(info){return info.column.id;},type:"text",name:"Status"},{accessorKey:"progress",header:"Profile Progress",footer:function footer(info){return info.column.id;},type:"text",name:"Profile Progress"}];var PatientHistory_PatientHistory=function PatientHistory(){return Object(jsx_runtime["jsx"])(Box_Box,{flex:1,overflow:"visible",marginVertical:16,children:Object(jsx_runtime["jsx"])(ScrollView["a" /* default */],{style:{flex:1},nestedScrollEnabled:true,children:Object(jsx_runtime["jsx"])(data_Table_Table,{data:defaultData,columns:PatientHistory_columns,getRowId:function getRowId(row){return row.firstName;},accessibilityLabel:"Patient History",mobileRowHeight:250,rowHeight:44})})});};/* harmony default export */ var screens_PatientHistory_PatientHistory = (PatientHistory_PatientHistory);
 // CONCATENATED MODULE: ./src/screens/PatientHistory/index.ts
 
 // CONCATENATED MODULE: ./src/App.tsx
@@ -371,5 +376,5 @@ Object(registerRootComponent["a" /* default */])(App);
 
 /***/ })
 
-},[[264,1,2]]]);
-//# sourceMappingURL=app.befba80f.chunk.js.map
+},[[266,1,2]]]);
+//# sourceMappingURL=app.e8fcab17.chunk.js.map

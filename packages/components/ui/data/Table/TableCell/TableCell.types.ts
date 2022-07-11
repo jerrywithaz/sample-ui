@@ -26,6 +26,7 @@ Value extends unknown = any
     size: number;
     context: ReturnType<Header<Data, Value>['getContext']>;
     name: string;
+    isMinSmallDevice: boolean;
 };
 
 type GetTableCellCellProps<
@@ -38,6 +39,7 @@ Value extends unknown = any
     size: number;
     context: ReturnType<Cell<Data, Value>['getContext']>;
     name: string;
+    isMinSmallDevice: boolean;
 };
 
 export type GetTableCellProps<

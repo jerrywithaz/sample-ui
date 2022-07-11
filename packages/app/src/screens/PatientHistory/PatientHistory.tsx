@@ -89,7 +89,14 @@ const PatientHistory = () => {
   return (
     <Box flex={1} overflow="visible" marginVertical={16}>
       <ScrollView style={{ flex: 1 }} nestedScrollEnabled>
-        <Table data={defaultData} columns={columns} />
+        <Table
+          data={defaultData}
+          columns={columns}
+          getRowId={(row) => row.firstName}
+          accessibilityLabel="Patient History"
+          mobileRowHeight={250}
+          rowHeight={44}
+        />
       </ScrollView>
     </Box>
   );

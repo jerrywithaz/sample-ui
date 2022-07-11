@@ -2468,6 +2468,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@faker-js/faker@npm:^7.3.0":
+  version: 7.3.0
+  resolution: "@faker-js/faker@npm:7.3.0"
+  checksum: ef5b64af30ce0ec76cb22798fbbe50184946fac389b4d81235f9d8d9eaaa77d67a80f46954fa993996b7c774bae23314529a95a42a6b68794f0795976c9be82b
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.0.1, @gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -3197,6 +3204,38 @@ __metadata:
   version: 4.6.0
   resolution: "@sindresorhus/is@npm:4.6.0"
   checksum: 83839f13da2c29d55c97abc3bc2c55b250d33a0447554997a85c539e058e57b8da092da396e252b11ec24a0279a0bed1f537fa26302209327060643e327f81d2
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-a11y@npm:^6.5.9":
+  version: 6.5.9
+  resolution: "@storybook/addon-a11y@npm:6.5.9"
+  dependencies:
+    "@storybook/addons": 6.5.9
+    "@storybook/api": 6.5.9
+    "@storybook/channels": 6.5.9
+    "@storybook/client-logger": 6.5.9
+    "@storybook/components": 6.5.9
+    "@storybook/core-events": 6.5.9
+    "@storybook/csf": 0.0.2--canary.4566f4d.1
+    "@storybook/theming": 6.5.9
+    axe-core: ^4.2.0
+    core-js: ^3.8.2
+    global: ^4.4.0
+    lodash: ^4.17.21
+    react-sizeme: ^3.0.1
+    regenerator-runtime: ^0.13.7
+    ts-dedent: ^2.0.0
+    util-deprecate: ^1.0.2
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: c43a7ea0c1aca0174c1098e2be6a5abdb684943180dde297b7a4936ac3e8fe329603ee0fb9329bcdadc15b749ceedc70b26596bc77070847a9c4eb8c9f7b5df7
   languageName: node
   linkType: hard
 
@@ -5446,6 +5485,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-window@npm:^1.8.5":
+  version: 1.8.5
+  resolution: "@types/react-window@npm:1.8.5"
+  dependencies:
+    "@types/react": "*"
+  checksum: 5f519e1402300d11b6e6595223feb6499f3227e38da166cbc565773cd7f71862abcf855b7835d391b5119fcfacdfba79d73a965b45f60a293fc1ff25986319ed
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:17.0.2":
   version: 17.0.2
   resolution: "@types/react@npm:17.0.2"
@@ -5514,6 +5562,13 @@ __metadata:
   version: 2.0.6
   resolution: "@types/unist@npm:2.0.6"
   checksum: 25cb860ff10dde48b54622d58b23e66214211a61c84c0f15f88d38b61aa1b53d4d46e42b557924a93178c501c166aa37e28d7f6d994aba13d24685326272d5db
+  languageName: node
+  linkType: hard
+
+"@types/uuid@npm:^8.3.4":
+  version: 8.3.4
+  resolution: "@types/uuid@npm:8.3.4"
+  checksum: 6f11f3ff70f30210edaa8071422d405e9c1d4e53abbe50fdce365150d3c698fe7bbff65c1e71ae080cbfb8fded860dbb5e174da96fdbbdfcaa3fb3daa474d20f
   languageName: node
   linkType: hard
 
@@ -5971,15 +6026,17 @@ __metadata:
     "@react-navigation/native": ^6.0.10
     "@tanstack/react-table": ^8.2.2
     "@types/lodash.merge": ^4.6.7
+    "@types/react-window": ^1.8.5
     "@types/styled-components": ^5.1.25
     "@types/styled-components-react-native": ^5.1.3
-    expo-font: ^10.1.0
+    expo-font: ~10.1.0
     lodash.merge: ^4.6.2
     react-native-gesture-handler: ^2.5.0
     react-native-reanimated: 2.8.0
     react-native-svg: ^12.3.0
     react-responsive: ^9.0.0-beta.10
     react-router-dom: ^6.3.0
+    react-window: ^1.8.7
     recyclerlistview: ^4.0.1
     styled-components: ^5.3.5
     ts-deepmerge: ^2.0.1
@@ -6774,6 +6831,13 @@ __metadata:
   version: 1.0.5
   resolution: "available-typed-arrays@npm:1.0.5"
   checksum: 20eb47b3cefd7db027b9bbb993c658abd36d4edd3fe1060e83699a03ee275b0c9b216cc076ff3f2db29073225fb70e7613987af14269ac1fe2a19803ccc97f1a
+  languageName: node
+  linkType: hard
+
+"axe-core@npm:^4.2.0":
+  version: 4.4.2
+  resolution: "axe-core@npm:4.4.2"
+  checksum: 93fbb36c5ac8ab5e67e49678a6f7be0dc799a9f560edd95cca1f0a8183def8c50205972366b9941a3ea2b20224a1fe230e6d87ef38cb6db70472ed1b694febd1
   languageName: node
   linkType: hard
 
@@ -10340,17 +10404,6 @@ __metadata:
   peerDependencies:
     expo: "*"
   checksum: bba54c98847a0d890a7d7fef67f8179a5905aa7fd46019de81cb7dadda1dfc4673e660e3e6b88f05e97f340c087229a5e54c7a5c1b2f28c3d51a1137c9df3b28
-  languageName: node
-  linkType: hard
-
-"expo-font@npm:^10.1.0":
-  version: 10.2.0
-  resolution: "expo-font@npm:10.2.0"
-  dependencies:
-    fontfaceobserver: ^2.1.0
-  peerDependencies:
-    expo: "*"
-  checksum: bffd3b4c2ae235eb5edd51dc3f27ca41056fc6ad9055d0473961f3b7097ad47b5f1622a51c8d62e6193bad8e195e2e9907ad776daefb1a183f9e9ddfa436c31a
   languageName: node
   linkType: hard
 
@@ -14561,6 +14614,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"memoize-one@npm:>=3.1.1 <6":
+  version: 5.2.1
+  resolution: "memoize-one@npm:5.2.1"
+  checksum: a3cba7b824ebcf24cdfcd234aa7f86f3ad6394b8d9be4c96ff756dafb8b51c7f71320785fbc2304f1af48a0467cbbd2a409efc9333025700ed523f254cb52e3d
+  languageName: node
+  linkType: hard
+
 "memoizerific@npm:^1.11.3":
   version: 1.11.3
   resolution: "memoizerific@npm:1.11.3"
@@ -17879,6 +17939,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-uuid@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "react-native-uuid@npm:2.0.1"
+  checksum: 2fae6e2ee6cef108a31ae9d5be661a1947a86f4c6a812c7386b57d970861b364dc887bc4fe3225227aeea7925ccdc24d4478ff30193305abc283eb4a30ee2138
+  languageName: node
+  linkType: hard
+
 "react-native-web@npm:0.17.7":
   version: 0.17.7
   resolution: "react-native-web@npm:0.17.7"
@@ -18085,6 +18152,19 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 87360d4392276d4e87511a73be9b0634b8bcce8f4f648cf659334d993f25ad3d4062f468f1e1944fc614123acae4299580aad00b760c6a96cec190e076f847f5
+  languageName: node
+  linkType: hard
+
+"react-window@npm:^1.8.7":
+  version: 1.8.7
+  resolution: "react-window@npm:1.8.7"
+  dependencies:
+    "@babel/runtime": ^7.0.0
+    memoize-one: ">=3.1.1 <6"
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 1e122c29224781e70359978287a2e850ccdf509cd71ba16b16ea258725687a62f5c16ab69f52f732b4ed20df583196dbe2a04804f3e4a176bb3e62f3fc910452
   languageName: node
   linkType: hard
 
@@ -19692,10 +19772,12 @@ __metadata:
     "@babel/core": ^7.12.9
     "@expo/match-media": ^0.3.0
     "@expo/ngrok": ^4.1.0
+    "@faker-js/faker": ^7.3.0
     "@mdx-js/react": ^1.6.22
     "@react-native-async-storage/async-storage": ^1.17.7
     "@react-native-community/datetimepicker": ^6.1.2
     "@react-native-community/slider": 4.2.1
+    "@storybook/addon-a11y": ^6.5.9
     "@storybook/addon-actions": ~6.5.9
     "@storybook/addon-docs": ~6.5.9
     "@storybook/addon-essentials": ~6.5.9
@@ -19712,12 +19794,14 @@ __metadata:
     "@storybook/react": ~6.5.9
     "@storybook/react-native": next
     "@storybook/testing-library": ^0.0.13
+    "@types/uuid": ^8.3.4
     "@zerry-ui/components": "workspace:^"
     "@zerry-ui/navigation": "workspace:^"
     babel-loader: ^8.2.5
     babel-plugin-styled-components: ^2.0.7
     concurrently: ^7.2.2
     expo: ~45.0.0
+    expo-font: ~10.1.0
     expo-screen-orientation: ~4.2.0
     expo-status-bar: ~1.3.0
     react: 17.0.2
@@ -19727,10 +19811,12 @@ __metadata:
     react-native-reanimated: ~2.8.0
     react-native-safe-area-context: 4.2.4
     react-native-screens: ~3.11.1
+    react-native-uuid: ^2.0.1
     react-native-web: 0.17.7
     storybook-addon-react-router-v6: ^0.1.10
     styled-components: ^5.3.5
     typescript: ^4.7.4
+    uuid: ^8.3.2
   languageName: unknown
   linkType: soft
 

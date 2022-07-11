@@ -36,10 +36,13 @@ const getStories = () => {
     require("../stories/Drawer.stories.tsx"),
     require("../stories/FlexBox.stories.tsx"),
     require("../stories/Grid.stories.tsx"),
+    require("../stories/Icon.stories.tsx"),
     require("../stories/List.stories.tsx"),
     require("../stories/Menu.stories.tsx"),
     require("../stories/Navigation.stories.tsx"),
     require("../stories/Recipe.cards.stories.tsx"),
+    require("../stories/SearchInput.stories.tsx"),
+    require("../stories/Table.stories.tsx"),
     require("../stories/Text.stories.tsx"),
     require("../stories/TextInput.stories.tsx"),
   ];

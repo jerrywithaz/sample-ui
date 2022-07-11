@@ -14,4 +14,6 @@ export interface FixedHeightListProps<Data extends any> extends Omit<ListProps<D
     rowHeight: number;
 }
 
-export interface VariableHeightListProps<Data extends any> extends Omit<ListProps<Data>, 'rowHeight' | 'variableHeight'> {}
+export interface VariableHeightListProps<Data extends any> extends Omit<ListProps<Data>, 'rowHeight' | 'variableHeight'> {
+    rowHeight?: number;
+}

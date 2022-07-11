@@ -1,5 +1,5 @@
 import React from "react";
-import { View, ScrollView } from "react-native";
+import { View } from "react-native";
 import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
 import ThemeProvider from "@zerry-ui/components/theme/provider";
 import { useThemeFonts } from "@zerry-ui/components";

@@ -8,7 +8,7 @@ import { flexRender } from "@tanstack/react-table";
 import * as Styled from "./TableCell.styled";
 import Text from "../../../global/Text";
 import TableCellText from "./variations/TableCellText";
-import { useIsSmallDevice } from "../../../../devsupport/responsive";
+import { AccessibilityRole } from "react-native";
 
 function getTableCellProps<Data extends any, Value extends any>(
   props: TableCellProps<Data, Value>
@@ -16,28 +16,32 @@ function getTableCellProps<Data extends any, Value extends any>(
   if ("header" in props) {
     const { header } = props;
     const size = header.getSize();
+    const context = header.getContext();
 
     return {
       size,
       children: header.isPlaceholder
         ? null
-        : flexRender(header.column.columnDef.header, header.getContext()),
+        : flexRender(header.column.columnDef.header, context),
       type: null,
-      context: header.getContext(),
+      context: context,
       cellType: "header",
       name: (header.column.columnDef as any).name as string,
+      isMinSmallDevice: context.table.options.meta?.isMinSmallDevice ?? true,
     };
   } else {
     const { cell } = props;
     const size = cell.column.getSize();
+    const context = cell.getContext();
 
     return {
       size,
-      children: flexRender(cell.column.columnDef.cell, cell.getContext()),
+      children: flexRender(cell.column.columnDef.cell, context),
       type: (cell.column.columnDef as any).type as TableCellType,
-      context: cell.getContext(),
+      context: context,
       cellType: "cell",
       name: (cell.column.columnDef as any).name as string,
+      isMinSmallDevice: context.table.options.meta?.isMinSmallDevice ?? true,
     };
   }
 }
@@ -45,21 +49,23 @@ function getTableCellProps<Data extends any, Value extends any>(
 function TableCell<Data extends any, Value extends any>(
   props: TableCellProps<Data, Value>
 ) {
-  const isSmallDevice = useIsSmallDevice();
-  const { size, children, type, context, cellType, name } =
+  const { size, children, type, context, cellType, name, isMinSmallDevice } =
     getTableCellProps(props);
 
   const Component = type ? TABLE_CELL_MAPPING[type] : null;
+
+  const accessibilityRole = cellType === "header" ? "columnheader" as AccessibilityRole : "cell" as AccessibilityRole;
 
   return (
     <Styled.TableCell
       flexShrink={0}
       flexGrow={0}
-      flexBasis={!isSmallDevice ? 0 : `${size}px`}
-      horizontal={!isSmallDevice}
-      justifyContent={!isSmallDevice ? "space-between" : undefined}
+      flexBasis={!isMinSmallDevice ? undefined : `${size}px`}
+      horizontal={!isMinSmallDevice}
+      justifyContent={!isMinSmallDevice ? "space-between" : undefined}
+      accessibilityRole={accessibilityRole}
     >
-        {!isSmallDevice && (
+        {!isMinSmallDevice && (
             <Text fontWeight={600}>{name}</Text>
         )}
       <>

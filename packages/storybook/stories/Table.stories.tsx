@@ -1,7 +1,10 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Table, ColumnDef } from "@zerry-ui/components";
-
+import { Table, ColumnDef, FlexBox, Text } from "@zerry-ui/components";
+import { faker } from "@faker-js/faker";
+import { v4 } from "uuid";
+import uuid from "react-native-uuid";
+import { Platform } from "react-native";
 
 export default {
   title: "Data/Table",
@@ -9,90 +12,88 @@ export default {
 } as ComponentMeta<typeof Table>;
 
 type Person = {
-  firstName: string
-  lastName: string
-  age: number
-  visits: number
-  status: string
-  progress: number
-}
+  firstName: string;
+  lastName: string;
+  age: number;
+  visits: number;
+  status: string;
+  progress: number;
+  id: string;
+};
 
-const defaultData: Person[] = [
-  {
-    firstName: 'tanner',
-    lastName: 'linsley',
-    age: 24,
-    visits: 100,
-    status: 'In Relationship',
-    progress: 50,
-  },
-  {
-    firstName: 'tandy',
-    lastName: 'miller',
-    age: 40,
-    visits: 40,
-    status: 'Single',
-    progress: 80,
-  },
-  {
-    firstName: 'joe',
-    lastName: 'dirte',
-    age: 45,
-    visits: 20,
-    status: 'Complicated',
-    progress: 10,
-  },
-]
+const defaultData: Person[] = new Array(10000).fill(null).map((_, index) => ({
+  firstName: faker.name.firstName(),
+  lastName: faker.name.lastName(),
+  age: Number(faker.random.numeric(2)),
+  visits: Number(faker.random.numeric(3)),
+  progress: Number(faker.random.numeric(3)),
+  status: "In Progress",
+  id: Platform.OS === "web" ? v4() : (uuid.v4() as string),
+}));
 
 const columns: ColumnDef<Person>[] = [
   {
-    accessorKey: 'firstName',
+    accessorKey: "firstName",
     header: () => "First Name",
-    footer: info => info.column.id,
+    footer: (info) => info.column.id,
     type: "text",
     cell: (info) => info.getValue(),
     name: "First Name",
   },
   {
-    accessorFn: row => row.lastName,
-    id: 'lastName',
+    accessorFn: (row) => row.lastName,
+    id: "lastName",
     header: () => "Last Name",
-    footer: info => info.column.id,
+    footer: (info) => info.column.id,
     type: "text",
     name: "Last Name",
   },
   {
-    accessorKey: 'age',
-    header: () => 'Age',
-    footer: info => info.column.id,
+    accessorKey: "age",
+    header: () => "Age",
+    footer: (info) => info.column.id,
     type: "text",
     name: "Age",
   },
   {
-    accessorKey: 'visits',
+    accessorKey: "visits",
     header: () => "Visits",
-    footer: info => info.column.id,
+    footer: (info) => info.column.id,
     type: "text",
     name: "Visits",
   },
   {
-    accessorKey: 'status',
-    header: 'Status',
-    footer: info => info.column.id,
+    accessorKey: "status",
+    header: "Status",
+    footer: (info) => info.column.id,
     type: "text",
     name: "Status",
   },
   {
-    accessorKey: 'progress',
-    header: 'Profile Progress',
-    footer: info => info.column.id,
+    accessorKey: "progress",
+    header: "Profile Progress",
+    footer: (info) => info.column.id,
     type: "text",
     name: "Profile Progress",
   },
-]
+];
+
+const getRowId = (row: Person) => row.id;
 
 const Template: ComponentStory<typeof Table> = (args) => (
-  <Table data={defaultData} columns={columns} />
+  <FlexBox flex={1}>
+    <Text style={{ marginBottom: 10 }}>
+      Rendering 10,000 items performantly
+    </Text>
+    <Table
+      data={defaultData}
+      columns={columns}
+      getRowId={getRowId}
+      accessibilityLabel="Example Table"
+      mobileRowHeight={300}
+      rowHeight={44}
+    />
+  </FlexBox>
 );
 
 export const Primary = Template.bind({});

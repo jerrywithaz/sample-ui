@@ -1,5 +1,7 @@
-import { Table } from "@tanstack/react-table";
+import { HeaderGroup } from "@tanstack/react-table";
 
 export interface TableHeadProps<Data extends any> {
-    table: Table<Data>;
+    isMinSmallDevice: boolean;
+    mobileRowHeight: number;
+    headerGroups: HeaderGroup<Data>[];
 }

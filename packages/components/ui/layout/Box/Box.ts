@@ -42,7 +42,11 @@ const Box = styled.View<BoxProps>`
     paddingLeft,
     paddingRight,
     paddingTop,
-    paddingBottom
+    paddingBottom,
+    left,
+    right,
+    top,
+    bottom
   }) => `
         ${createStyleProp("padding-top", paddingVertical ?? paddingTop)}
         ${createStyleProp("padding-bottom", paddingVertical ?? paddingBottom)}
@@ -78,6 +82,10 @@ const Box = styled.View<BoxProps>`
         ${createStyleProp("align-self", alignSelf)}
         ${createStyleProp("background-color", backgroundColor, "")}
         ${createStyleProp("border-radius", borderRadius)}
+        ${createStyleProp("left", left)}
+        ${createStyleProp("right", right)}
+        ${createStyleProp("top", top)}
+        ${createStyleProp("bottom", bottom)}
     `}
 `;
 

@@ -45,7 +45,7 @@ function List<Data extends any>({
 
   const renderItemContainer = useCallback((props: Record<string, any>, _: Record<string, any>, children?: React.ReactNode) => {
     return (
-      <ListItem {...props} accessibilityRole={listItemAccessibilityRole} paddingHorizontal={0} paddingVertical={0}>
+      <ListItem {...props} accessibilityRole={listItemAccessibilityRole} paddingHorizontal={0} paddingVertical={0} width="100%">
         {children}
       </ListItem>
     );

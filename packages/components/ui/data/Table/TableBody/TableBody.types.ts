@@ -1,5 +1,9 @@
-import { Table } from "@tanstack/react-table";
+import { RowModel } from "@tanstack/react-table";
 
 export interface TableBodyProps<Data extends any> {
-    table: Table<Data>;
+    rowModel: RowModel<Data>;
+    isMinSmallDevice: boolean;
+    mobileRowHeight: number;
+    rowHeight: number;
+    getRowId: (data: Data) => string;
 }

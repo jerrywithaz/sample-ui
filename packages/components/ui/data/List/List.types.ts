@@ -1,19 +1,37 @@
-export type ListRenderItem<Data extends any> = (type: string | number, data: Data, index: number) => JSX.Element | JSX.Element[] | null;
+import React from "react";
+import { ListRenderItem } from "react-native";
 
-export interface ListProps<Data extends any> {
-    data: Data[];
-    renderItem: ListRenderItem<Data>;
-    rowHeight?: number;
-    rowHasChanged?: (r1: Data, r2: Data) => boolean;
-    variableHeight?: boolean;
-    listAccessibilityRole?: "list" | "menu";
-    listItemAccessibilityRole?: "listitem" | "menuitem";
+export type ListItemHeight = ((index: number) => number) | number;
+
+export interface ListItemInnerProps {
+  index: number;
+  containerWidth: number;
+  setSize: (index: number, size: number) => void;
+  itemHeight?: number;
+  children: React.ReactNode;
 }
 
-export interface FixedHeightListProps<Data extends any> extends Omit<ListProps<Data>, 'rowHeight' | 'variableHeight'> {
-    rowHeight: number;
+export interface ListBaseProps<
+  Data extends any,
+  VariableHeight extends boolean
+> {
+  data: Data[];
+  renderItem: ListRenderItem<Data>;
+  listAccessibilityRole?: "list" | "menu" | "rowgroup";
+  listItemAccessibilityRole?: "listitem" | "menuitem" | "row" | null;
+  getItemId: (item: Data, index: number) => string;
+  initialNumToRender?: number;
+  variableHeight?: VariableHeight extends true ? true : false;
+  itemHeight?: number;
 }
 
-export interface VariableHeightListProps<Data extends any> extends Omit<ListProps<Data>, 'rowHeight' | 'variableHeight'> {
-    rowHeight?: number;
-}
+export interface FixedHeightListProps<Data extends any>
+  extends ListBaseProps<Data, false> {}
+
+export interface VariableHeightListProps<Data extends any>
+  extends ListBaseProps<Data, true> {}
+
+export type ListProps<Data extends any, VariableHeight extends boolean> =
+  VariableHeight extends false
+    ? FixedHeightListProps<Data>
+    : VariableHeightListProps<Data>;

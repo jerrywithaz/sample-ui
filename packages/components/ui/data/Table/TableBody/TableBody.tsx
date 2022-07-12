@@ -3,8 +3,9 @@ import React, { useCallback, useMemo, useState } from "react";
 import TableCell from "../TableCell";
 import TableRow from "../TableRow";
 import { TableBodyProps } from "./TableBody.types";
-import { FlatList, ListRenderItem } from "react-native";
+import { ListRenderItem } from "react-native";
 import { Row } from "@tanstack/react-table";
+import { VariableHeightList } from "../../List";
 
 function TableBody<Data extends any>({
   rowModel,
@@ -31,25 +32,6 @@ function TableBody<Data extends any>({
       );
     },
     [isMinSmallDevice, mobileRowHeight]
-  );
-
-  const handleItemLayout = useCallback(
-    (_: Row<Data>[] | null | undefined, index: number) => {
-      if (isMinSmallDevice) {
-        return {
-          length: rowHeight,
-          offset: rowHeight * index,
-          index,
-        };
-      } else {
-        return {
-          length: mobileRowHeight,
-          offset: mobileRowHeight * index,
-          index,
-        };
-      }
-    },
-    [mobileRowHeight, rowHeight, isMinSmallDevice]
   );
 
   const initialNumToRender = useMemo(() => {
@@ -79,15 +61,15 @@ function TableBody<Data extends any>({
         })
       }
     >
-      {dimensions.width && dimensions.height ? (
-        <FlatList
-          data={rowModel.rows}
-          renderItem={renderItem}
-          getItemLayout={handleItemLayout}
-          initialNumToRender={initialNumToRender}
-          keyExtractor={handleKeyExtraction}
-        />
-      ) : null}
+      <VariableHeightList
+        data={rowModel.rows}
+        renderItem={renderItem}
+        getItemId={handleKeyExtraction}
+        initialNumToRender={initialNumToRender}
+        itemHeight={isMinSmallDevice ? rowHeight : mobileRowHeight}
+        listAccessibilityRole="rowgroup"
+        listItemAccessibilityRole={null}
+      />
     </FlexBox>
   );
 }

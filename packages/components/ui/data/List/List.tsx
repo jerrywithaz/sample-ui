@@ -1,80 +1,83 @@
-import React, { useCallback, useMemo, useState } from "react";
-import { LayoutChangeEvent } from "react-native";
-import {
-  RecyclerListView,
-  DataProvider,
-  LayoutProvider,
-} from "recyclerlistview";
-import Box, { FlexBox } from "../../layout/Box";
+import React, { useCallback, useState } from "react";
+import { AccessibilityRole, FlatList, LayoutChangeEvent, ListRenderItemInfo } from "react-native";
+import { FlexBox } from "../../layout/Box";
 import ListItem from "../ListItem";
-import { ListProps, FixedHeightListProps, VariableHeightListProps } from "./List.types";
+import {
+  ListProps,
+  FixedHeightListProps,
+  VariableHeightListProps,
+} from "./List.types";
 
-function List<Data extends any>({
+function List<Data extends any, VariableHeight extends boolean>({
   data,
   renderItem,
-  rowHasChanged = (r1, r2) => r1 !== r2,
-  rowHeight = 50,
-  variableHeight = true,
+  itemHeight = 50,
   listAccessibilityRole = "list",
   listItemAccessibilityRole = "listitem",
-}: ListProps<Data>) {
-  const [containerWidth, setContainerWidth] = useState(300);
-  const dataProvider = useMemo(() => {
-    return new DataProvider(rowHasChanged).cloneWithRows(data);
-  }, [data]);
-
-  const layoutProvider = useMemo(() => {
-    return new LayoutProvider(
-      () => {
-        return "default";
-      },
-      (_, dimensions) => {
-        dimensions.width = containerWidth;
-        dimensions.height = rowHeight;
-      }
-    );
-  }, [containerWidth]);
+  getItemId,
+  initialNumToRender,
+}: ListProps<Data, VariableHeight>) {
+  const [containerWidth, setContainerWidth] = useState(0);
+  const [containerHeight, setContainerHeight] = useState(0);
 
   const handleLayout = useCallback((event: LayoutChangeEvent) => {
     setContainerWidth(event.nativeEvent.layout.width);
+    setContainerHeight(event.nativeEvent.layout.height);
   }, []);
 
-  const renderContentContainer = useCallback(({ style, ...props }: Record<string, any>, children: React.ReactNode) => {
-    return <Box {...props} style={style} vertical accessibilityRole={listAccessibilityRole}>{children}</Box>;
-  }, [listAccessibilityRole]);
+  const renderItemContainer = useCallback(
+    (info: ListRenderItemInfo<Data>) => {
+      return (
+        <ListItem
+          accessibilityRole={listItemAccessibilityRole === null ? undefined : listItemAccessibilityRole}
+          paddingHorizontal={0}
+          paddingVertical={0}
+          width="100%"
+        >
+          {renderItem(info)}
+        </ListItem>
+      );
+    },
+    [listItemAccessibilityRole]
+  );
 
-  const renderItemContainer = useCallback((props: Record<string, any>, _: Record<string, any>, children?: React.ReactNode) => {
-    return (
-      <ListItem {...props} accessibilityRole={listItemAccessibilityRole} paddingHorizontal={0} paddingVertical={0} width="100%">
-        {children}
-      </ListItem>
-    );
-  }, [listItemAccessibilityRole]);
+  const handleItemLayout = useCallback(
+    (_: Data[] | null | undefined, index: number) => {
+      return {
+        length: itemHeight,
+        offset: itemHeight * index,
+        index,
+      };
+    },
+    [itemHeight]
+  );
 
   return (
     <FlexBox flex={1} vertical onLayout={handleLayout}>
-      <RecyclerListView
-        dataProvider={dataProvider}
-        layoutProvider={layoutProvider}
-        rowRenderer={renderItem}
-        style={{ flex: 1 }}
-        contentContainerStyle={{ margin: 3 }}
-        forceNonDeterministicRendering={variableHeight}
-        scrollViewProps={{
-          renderContentContainer,
-        }}
-        renderItemContainer={renderItemContainer}
-      />
+      {containerHeight !== 0 && containerWidth !== 0 && (
+        <FlatList<Data>
+          data={data}
+          renderItem={renderItemContainer}
+          getItemLayout={handleItemLayout}
+          initialNumToRender={initialNumToRender}
+          keyExtractor={getItemId}
+          accessibilityRole={listAccessibilityRole as AccessibilityRole}
+        />
+      )}
     </FlexBox>
   );
 }
 
-export function FixedHeightList<Data extends any>(props: FixedHeightListProps<Data>) {
-  return <List {...props} variableHeight={false} />;
+export function FixedHeightList<Data extends any>(
+  props: FixedHeightListProps<Data>
+) {
+  return <List<Data, false> {...props} variableHeight={false} />;
 }
 
-export function VariableHeightList<Data extends any>(props: VariableHeightListProps<Data>) {
-  return <List {...props} variableHeight={true} />;
+export function VariableHeightList<Data extends any>(
+  props: VariableHeightListProps<Data>
+) {
+  return <List<Data, true> {...props} variableHeight={true} />;
 }
 
 export default List;

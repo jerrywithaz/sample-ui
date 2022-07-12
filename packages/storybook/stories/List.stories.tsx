@@ -4,25 +4,24 @@ import {
   FlexBox,
   List,
   ListItem,
-  ListRenderItem,
   FixedHeightList,
   VariableHeightList,
 } from "@zerry-ui/components";
+import { ListRenderItem } from "react-native";
 
 export default {
   title: "Layout/List",
   component: List,
 } as ComponentMeta<typeof List>;
 
-const RenderFixedHeightItem: ListRenderItem<{ id: number }> = (type, item) => {
+const RenderFixedHeightItem: ListRenderItem<{ id: number }> = ({item}) => {
   return (
     <ListItem title={`${Math.random()}`} description={`${Math.random()}`} />
   );
 };
 
 const RenderVariableHeightItem: ListRenderItem<{ id: number, name: string; description: string; }> = (
-  type,
-  item
+  {item}
 ) => {
   return (
     <ListItem title={item.name} description={item.description} />
@@ -33,8 +32,9 @@ const FixedHeightTemplate: ComponentStory<typeof List> = (args) => (
   <FlexBox flex={1} vertical width={300}>
     <FixedHeightList
       data={[{ id: 1 }, { id: 2 }]}
+      getItemId={(item) => item.id.toString()}
       renderItem={RenderFixedHeightItem}
-      rowHeight={60}
+      itemHeight={65}
     />
   </FlexBox>
 );
@@ -56,6 +56,7 @@ const VariableHeightTemplate: ComponentStory<typeof List> = (args) => (
         },
       ]}
       renderItem={RenderVariableHeightItem}
+      getItemId={(item) => item.id.toString()}
     />
   </FlexBox>
 );

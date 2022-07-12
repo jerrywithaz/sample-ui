@@ -8,7 +8,8 @@ const Menu: React.FC<MenuProps> = ({ children, ...rest }) => {
     <FlexBox vertical flex={1} {...rest}>
       <VariableHeightList
         data={React.Children.toArray(children)}
-        renderItem={(_, item) => {
+        getItemId={(_, index) => index.toString()}
+        renderItem={({ item }) => {
           return <>{item}</>;
         }}
       />

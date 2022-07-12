@@ -1,6 +1,5 @@
-import { Box, Table, ColumnDef } from "@zerry-ui/components";
+import { Table, ColumnDef, FlexBox } from "@zerry-ui/components";
 import React from "react";
-import { ScrollView } from "react-native";
 
 type Person = {
   firstName: string;
@@ -87,8 +86,7 @@ const columns: ColumnDef<Person>[] = [
 
 const PatientHistory = () => {
   return (
-    <Box flex={1} overflow="visible" marginVertical={16}>
-      <ScrollView style={{ flex: 1 }} nestedScrollEnabled>
+    <FlexBox flex={1} marginVertical={16}>
         <Table
           data={defaultData}
           columns={columns}
@@ -97,8 +95,7 @@ const PatientHistory = () => {
           mobileRowHeight={250}
           rowHeight={44}
         />
-      </ScrollView>
-    </Box>
+    </FlexBox>
   );
 };
 

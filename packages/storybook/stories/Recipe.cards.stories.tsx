@@ -149,8 +149,9 @@ const OrdersCard = () => {
               description: "Prescribed on April 20th for you know...",
             },
           ]}
-          rowHeight={50}
-          renderItem={(type, item) => {
+          itemHeight={50}
+          getItemId={(item) => item.id.toString()}
+          renderItem={({ item }) => {
             return (
               <ListItem title={item.name} description={item.description} />
             );

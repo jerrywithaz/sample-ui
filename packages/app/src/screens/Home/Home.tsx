@@ -153,7 +153,8 @@ const OrdersCard = () => {
               description: "Prescribed on April 20th for you know...",
             },
           ]}
-          renderItem={(_, item) => {
+          getItemId={(item) => item.id.toString()}
+          renderItem={({ item }) => {
             return (
               <ListItem title={item.name} description={item.description} />
             );

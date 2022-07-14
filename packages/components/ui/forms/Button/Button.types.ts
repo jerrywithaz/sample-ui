@@ -10,4 +10,5 @@ export interface ButtonProps extends TouchableWebProps {
     borderRadius?: Exclude<ThemeBorderRadiusKey, "circle">;
     status?: ThemeStatus;
     size?: 'large' | 'medium' | 'small' | 'xSmall';
+    tabIndex?: number;
 }

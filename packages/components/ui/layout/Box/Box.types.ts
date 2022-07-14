@@ -8,4 +8,6 @@ export type BoxProps = FlexStyle & ViewProps & {
   wrap?: boolean;
   fullWidth?: boolean;
   wrapText?: boolean;
+  tabIndex?: number;
+  id?: string;
 };

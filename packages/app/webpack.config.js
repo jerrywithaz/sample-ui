@@ -4,11 +4,6 @@ const createExpoWebpackConfigAsync = require("@expo/webpack-config");
 // Expo CLI will await this method so you can optionally return a promise.
 module.exports = async function (env, argv) {
   const config = await createExpoWebpackConfigAsync(env, argv);
-  // If you want to add a new alias to the config.
-  //   config.resolve.alias['moduleA'] = 'moduleB';
-
-  // console.log(config.module.rules[0]);
-  // console.log(config.module.rules[1].oneOf[2]);
 
   config.module.rules.push({
       test: /\.(mjs|[jt]sx?)$/,
@@ -30,9 +25,6 @@ module.exports = async function (env, argv) {
       ],
       exclude: /node_modules/
     });
-
-//   const loader = getExpoBabelLoader(config);
-//   console.log(loader);
 
   // Maybe you want to turn off compression in dev mode.
   if (config.mode === "development") {

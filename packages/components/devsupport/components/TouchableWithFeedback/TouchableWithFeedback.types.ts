@@ -1,9 +1,7 @@
-import React from "react";
-import {
-  TouchableOpacity,
-  TouchableOpacityProps,
-} from "react-native";
+import { TouchableOpacityProps } from "react-native";
 
 export interface TouchableWithFeedbackProps extends TouchableOpacityProps {
   focusable?: boolean;
+  tabIndex?: number;
+  accessibilityControls?: string;
 }

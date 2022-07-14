@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import ListItem from "../ListItem";
 import {
   ListProps,
@@ -16,19 +16,13 @@ function ListItemInner(props: ListItemInnerProps) {
 
   const { setSize, containerWidth } = useListContext();
 
-  const [mounted, setMounted] = useState(false);
-
   const rowRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (rowRef.current && mounted) {
+    if (rowRef.current) {
       setSize(index, rowRef.current.getBoundingClientRect().height);
     }
-  }, [index, containerWidth, mounted]);
+  }, [index, containerWidth]);
 
   if (itemHeight !== undefined) {
     return <>{children}</>;

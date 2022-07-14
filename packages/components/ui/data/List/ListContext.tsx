@@ -30,7 +30,6 @@ function ListContextProvider<Data extends any>({
   const setSize = useCallback((index: number, height: number) => {
     sizeMap.current = { ...sizeMap.current, [index]: height };
     listRef?.current?.resetAfterIndex(index);
-    console.log(sizeMap.current);
   }, []);
 
   const getSize = useCallback(

@@ -64,30 +64,24 @@ function List<Data extends any, VariableHeight extends boolean>({
     [listItemAccessibilityRole]
   );
 
-  const handleItemLayout = useCallback(
-    (_: Data[] | null | undefined, index: number) => {
-      return {
-        length: responsiveItemHeight,
-        offset: responsiveItemHeight * index,
-        index,
-      };
-    },
-    [responsiveItemHeight]
-  );
-
   const RenderList = useCallback(({}: ListContextChildrenProps) => {
     const { getSize } = useListContext();
+    const handleItemLayout = useCallback(
+      (_: Data[] | null | undefined, index: number) => {
+        return {
+          length: getSize(index),
+          offset: getSize(index) * index,
+          index,
+        };
+      },
+      []
+    );
+
     return (
       <FlatList<Data>
         data={data}
         renderItem={renderItemContainer}
-        getItemLayout={(_, index) => {
-          return {
-            length: getSize(index),
-            offset: getSize(index) * index,
-            index,
-          };
-        }}
+        getItemLayout={handleItemLayout}
         initialNumToRender={initialNumToRender}
         keyExtractor={getItemId}
         accessibilityRole={listAccessibilityRole as AccessibilityRole}

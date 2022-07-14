@@ -1,10 +1,9 @@
 import useResponsiveProp from "@zerry-ui/components/hooks/useResponsiveProp";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback } from "react";
 import {
   AccessibilityRole,
   FlatList,
   ListRenderItemInfo,
-  View,
 } from "react-native";
 import { FlexBox } from "../../layout/Box";
 import ListItem from "../ListItem";

@@ -62,7 +62,7 @@ export default function App() {
                 options={{ headerTitle: "Patient History" }}
               />
             </DrawerStack.Navigator>
-            <StatusBar style="auto" />
+            <StatusBar style="light" />
           </FlexBox>
         </ThemeProvider>
       </NavigationContainer>

@@ -10,9 +10,9 @@ import { VariableHeightList } from "../../List";
 function TableBody<Data extends any>({
   rowModel,
   isMinSmallDevice,
-  mobileRowHeight,
   rowHeight,
   getRowId,
+  responsiveItemHeight
 }: TableBodyProps<Data>) {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
@@ -23,7 +23,6 @@ function TableBody<Data extends any>({
           id={row.id}
           index={index}
           isMinSmallDevice={isMinSmallDevice}
-          mobileRowHeight={mobileRowHeight}
         >
           {row.getVisibleCells().map((cell) => {
             return <TableCell<Data, any> key={cell.id} cell={cell} />;
@@ -31,19 +30,15 @@ function TableBody<Data extends any>({
         </TableRow>
       );
     },
-    [isMinSmallDevice, mobileRowHeight]
+    [isMinSmallDevice]
   );
 
   const initialNumToRender = useMemo(() => {
     if (dimensions.height && dimensions.width) {
-      if (isMinSmallDevice) {
         return Math.ceil(dimensions.height / rowHeight);
-      } else {
-        return Math.ceil(dimensions.height / mobileRowHeight);
-      }
     }
     return 10;
-  }, [dimensions]);
+  }, [dimensions, rowHeight]);
 
   const handleKeyExtraction = useCallback((row: Row<Data>) => {
     const key = getRowId(row.original);
@@ -66,7 +61,7 @@ function TableBody<Data extends any>({
         renderItem={renderItem}
         getItemId={handleKeyExtraction}
         initialNumToRender={initialNumToRender}
-        itemHeight={isMinSmallDevice ? rowHeight : mobileRowHeight}
+        itemHeight={responsiveItemHeight}
         listAccessibilityRole="rowgroup"
         listItemAccessibilityRole={null}
       />

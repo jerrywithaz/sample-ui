@@ -58,9 +58,7 @@ function TableCell<Data extends any, Value extends any>(
 
   return (
     <Styled.TableCell
-      flexShrink={0}
-      flexGrow={0}
-      flexBasis={!isMinSmallDevice ? undefined : `${size}px`}
+      flexBasis={!isMinSmallDevice ? "auto" : `${size}px`}
       horizontal={!isMinSmallDevice}
       justifyContent={!isMinSmallDevice ? "space-between" : undefined}
       accessibilityRole={accessibilityRole}

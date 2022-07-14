@@ -13,7 +13,15 @@ function ListItem<Data extends any>({
   ...props
 }: React.PropsWithChildren<ListItemProps<Data>>) {
   return (
-    <FlexBox ref={forwardedRef} horizontal paddingHorizontal={8} paddingVertical={12} {...props} accessibilityRole={accessibilityRole as AccessibilityRole} width="100%">
+    <FlexBox
+      ref={forwardedRef}
+      horizontal
+      paddingHorizontal={8}
+      paddingVertical={12}
+      {...props}
+      accessibilityRole={accessibilityRole as AccessibilityRole}
+      width="100%"
+    >
       {children ? (
         children
       ) : (
@@ -28,12 +36,17 @@ function ListItem<Data extends any>({
   );
 }
 
-function ListItemInner<Data extends any>(props: React.PropsWithChildren<ListItemProps<Data>>, ref: React.Ref<View>) {
-  return <ListItem {...props} forwardedRef={ref} />
-};
+function ListItemInner<Data extends any>(
+  props: React.PropsWithChildren<ListItemProps<Data>>,
+  ref: React.Ref<View>
+) {
+  return <ListItem {...props} forwardedRef={ref} />;
+}
 
 const ListItemWithRef = React.forwardRef(ListItemInner) as <Data extends any>(
-  props: React.PropsWithChildren<ListItemProps<Data>>& { ref?: React.ForwardedRef<View> }
-) => ReturnType<typeof ListItemInner>;;
+  props: React.PropsWithChildren<ListItemProps<Data>> & {
+    ref?: React.ForwardedRef<View>;
+  }
+) => ReturnType<typeof ListItemInner>;
 
 export default ListItemWithRef;

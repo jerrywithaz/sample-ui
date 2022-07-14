@@ -92,8 +92,10 @@ const PatientHistory = () => {
           columns={columns}
           getRowId={(row) => row.firstName}
           accessibilityLabel="Patient History"
-          mobileRowHeight={250}
-          rowHeight={44}
+          rowHeight={{
+            xs: 250,
+            s: 44
+          }}
         />
     </FlexBox>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
 import ThemeProvider from "@zerry-ui/components/theme/provider";
-import { useThemeFonts } from "@zerry-ui/components";
+import { useThemeFonts, ResponsiveProvider } from "@zerry-ui/components";
 
 const LoadFonts = ({ children }) => {
   const loaded = useThemeFonts();
@@ -21,7 +21,9 @@ const withTheme = (Story) => {
     <ThemeProvider>
       <StoryContainer>
         <LoadFonts>
-          <Story />
+          <ResponsiveProvider>
+            <Story />
+          </ResponsiveProvider>
         </LoadFonts>
       </StoryContainer>
     </ThemeProvider>

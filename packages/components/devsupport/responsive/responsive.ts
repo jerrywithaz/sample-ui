@@ -1,49 +1,56 @@
 import { useMediaQuery } from "react-responsive";
 import { ResponsiveSize } from "./responsive.types";
 
+/** Returns true for devices with a `width <= 576px` */
 export function useIsXSmallDevice() {
   return useMediaQuery({
     maxWidth: 576,
   });
 }
 
-export function useIsSmallDevice() {
+/** Returns true for devices with a `width >= 576px` */
+export function useIsMinSmallDevice() {
   return useMediaQuery({
     minWidth: 576,
   });
 }
 
-export function useIsMediumDevice() {
+/** Returns true for devices with a `width >= 768px` */
+export function useIsMinMediumDevice() {
   return useMediaQuery({
     minWidth: 768,
   });
 }
 
-export function useIsLargeDevice() {
+/** Returns true for devices with a `width >= 992px` */
+export function useIsMinLargeDevice() {
   return useMediaQuery({
     minWidth: 992,
   });
 }
 
-export function useIsXLargeDevice() {
+/** Returns true for devices with a `width >= 1200px` */
+export function useIsMinXLargeDevice() {
   return useMediaQuery({
     minWidth: 1200,
   });
 }
 
-export function useIsXXLargeDevice() {
+/** Returns true for devices with a `width >= 1600px` */
+export function useIsMinXXLargeDevice() {
   return useMediaQuery({
     minWidth: 1600,
   });
 }
 
+/** Returns a record of current device sizes. */
 export function useResponsiveSize(): Record<ResponsiveSize, boolean>{
     const isXSmallDevice = useIsXSmallDevice();
-    const isSmallDevice = useIsSmallDevice();
-    const isMediumDevice = useIsMediumDevice();
-    const isLargeDevice = useIsLargeDevice();
-    const isXLargeDevice = useIsXLargeDevice();
-    const isXXLargeDevice = useIsXXLargeDevice();
+    const isSmallDevice = useIsMinSmallDevice();
+    const isMediumDevice = useIsMinMediumDevice();
+    const isLargeDevice = useIsMinLargeDevice();
+    const isXLargeDevice = useIsMinXLargeDevice();
+    const isXXLargeDevice = useIsMinXXLargeDevice();
 
     return {
         xs: isXSmallDevice,

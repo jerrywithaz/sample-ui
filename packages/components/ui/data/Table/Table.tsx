@@ -4,8 +4,9 @@ import { TableProps } from "./Table.types";
 import TableHead from "./TableHead";
 import TableBody from "./TableBody";
 import * as Styled from "./Table.styled";
-import { useIsSmallDevice } from "../../../devsupport/responsive";
+import { useIsMinSmallDevice } from "../../../devsupport/responsive";
 import { AccessibilityRole } from "react-native";
+import useResponsiveProp from "../../../hooks/useResponsiveProp";
 
 /**
  * A performant, virtualized and responsive Data Table component for rendering
@@ -17,18 +18,18 @@ function Table<Data extends any>(props: TableProps<Data>) {
     columns,
     getRowId,
     accessibilityLabel,
-    mobileRowHeight,
     rowHeight,
   } = props;
-  const isMinSmallDevice = useIsSmallDevice();
+  const currentRowHeight = useResponsiveProp(50, rowHeight);
+
+  const isMinSmallDevice = useIsMinSmallDevice();
   const table = useReactTable({
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
     meta: {
       isMinSmallDevice,
-      mobileRowHeight,
-      rowHeight,
+      rowHeight: currentRowHeight,
     },
     getRowId,
   });
@@ -48,14 +49,13 @@ function Table<Data extends any>(props: TableProps<Data>) {
       <TableHead<Data>
         headerGroups={table.getHeaderGroups()}
         isMinSmallDevice={isMinSmallDevice}
-        mobileRowHeight={mobileRowHeight}
       />
       <TableBody<Data>
         rowModel={rowModel}
         isMinSmallDevice={isMinSmallDevice}
-        mobileRowHeight={mobileRowHeight}
-        rowHeight={rowHeight}
+        rowHeight={currentRowHeight}
         getRowId={getRowId}
+        responsiveItemHeight={rowHeight}
       />
     </Styled.Table>
   );

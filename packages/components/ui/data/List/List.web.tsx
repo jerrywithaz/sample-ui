@@ -1,36 +1,49 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { FlexBox } from "../../layout/Box";
 import ListItem from "../ListItem";
 import {
   ListProps,
   FixedHeightListProps,
   VariableHeightListProps,
   ListItemInnerProps,
+  ListContextChildrenProps,
 } from "./List.types";
 import { ListChildComponentProps, VariableSizeList } from "react-window";
-import { LayoutChangeEvent } from "react-native";
+import ListContextProvider, { useListContext } from "./ListContext";
+import useResponsiveProp from "@zerry-ui/components/hooks/useResponsiveProp";
 
 function ListItemInner(props: ListItemInnerProps) {
-  const { children, index, setSize, containerWidth, itemHeight } = props;
+  const { children, index, itemHeight } = props;
+
+  const { setSize, containerWidth } = useListContext();
+
+  const [mounted, setMounted] = useState(false);
 
   const rowRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (rowRef.current) {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (rowRef.current && mounted) {
       setSize(index, rowRef.current.getBoundingClientRect().height);
     }
-  }, [setSize, index, containerWidth]);
+  }, [index, containerWidth, mounted]);
 
   if (itemHeight !== undefined) {
     return <>{children}</>;
   }
 
   return (
-    <div ref={rowRef} style={{ boxSizing: "border-box", width: "100%" }}>
+    <div
+      ref={rowRef}
+      style={{ boxSizing: "border-box", width: "100%", height: "100%" }}
+      data-measure="true"
+    >
       {children}
     </div>
   );
-};
+}
 
 function List<Data extends any, VariableHeight extends boolean = false>({
   data,
@@ -39,42 +52,31 @@ function List<Data extends any, VariableHeight extends boolean = false>({
   listAccessibilityRole = "list",
   listItemAccessibilityRole = "listitem",
 }: ListProps<Data, VariableHeight>) {
-  const [containerWidth, setContainerWidth] = useState(0);
-  const [containerHeight, setContainerHeight] = useState(0);
-
-  const handleLayout = useCallback((event: LayoutChangeEvent) => {
-    setContainerWidth(event.nativeEvent.layout.width);
-    setContainerHeight(event.nativeEvent.layout.height);
-  }, []);
+  const responsiveItemHeight = useResponsiveProp(undefined, itemHeight);
 
   const listRef = useRef<VariableSizeList>(null);
-  const sizeMap = useRef<Record<number, number>>({});
-
-  const setSize = useCallback((index, size) => {
-    sizeMap.current = { ...sizeMap.current, [index]: size };
-    listRef.current?.resetAfterIndex(index);
-  }, []);
 
   const RenderRow = useCallback(
     ({ index, style }: ListChildComponentProps<Data>) => {
       return (
         <ListItem
-          accessibilityRole={listItemAccessibilityRole == null ? undefined : listItemAccessibilityRole }
+          accessibilityRole={
+            listItemAccessibilityRole == null
+              ? undefined
+              : listItemAccessibilityRole
+          }
           paddingHorizontal={0}
           paddingVertical={0}
-          height={typeof itemHeight === "number" ? style.height : undefined}
-          width={style.width}
-          top={style.top}
-          left={style.left}
-          right={style.right}
-          position={style.position === "relative" ? "relative" : "absolute"}
+          style={{
+            height: typeof itemHeight === "number" ? style.height : undefined,
+            width: style.width,
+            top: style.top,
+            left: style.left,
+            right: style.right,
+            position: style.position === "relative" ? "relative" : "absolute",
+          }}
         >
-          <ListItemInner
-            index={index}
-            setSize={setSize}
-            containerWidth={containerWidth}
-            itemHeight={itemHeight}
-          >
+          <ListItemInner index={index} itemHeight={responsiveItemHeight}>
             {renderItem({
               index,
               item: data[index],
@@ -88,20 +90,16 @@ function List<Data extends any, VariableHeight extends boolean = false>({
         </ListItem>
       );
     },
-    [data, itemHeight]
+    [data, itemHeight, renderItem]
   );
 
-  const getSize = useCallback((index: number) => {
-    return sizeMap.current[index] || itemHeight || 50;
-  }, []);
-
-  return (
-    <FlexBox flex={1} vertical onLayout={handleLayout}>
-      {containerHeight !== 0 && containerWidth !== 0 && (
+  const RenderList = useCallback(
+    ({ width, height, getSize }: ListContextChildrenProps) => {
+      return (
         <VariableSizeList
           ref={listRef}
-          height={containerHeight}
-          width={containerWidth}
+          height={height}
+          width={width}
           itemCount={data.length}
           itemSize={getSize}
           innerElementType={(props) => (
@@ -110,8 +108,15 @@ function List<Data extends any, VariableHeight extends boolean = false>({
         >
           {RenderRow}
         </VariableSizeList>
-      )}
-    </FlexBox>
+      );
+    },
+    [data]
+  );
+
+  return (
+    <ListContextProvider itemHeight={responsiveItemHeight} listRef={listRef}>
+      {RenderList}
+    </ListContextProvider>
   );
 }
 
@@ -124,7 +129,9 @@ export function FixedHeightList<Data extends any>(
 export function VariableHeightList<Data extends any>(
   props: VariableHeightListProps<Data>
 ) {
-  return <List<Data, true> {...props} variableHeight={true} itemHeight={undefined} />;
+  return (
+    <List<Data, true> {...props} variableHeight={true} itemHeight={undefined} />
+  );
 }
 
 export default List;

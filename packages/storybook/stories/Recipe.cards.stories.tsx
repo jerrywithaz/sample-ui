@@ -149,7 +149,10 @@ const OrdersCard = () => {
               description: "Prescribed on April 20th for you know...",
             },
           ]}
-          itemHeight={50}
+          itemHeight={{
+            xs: 300,
+            s: 50
+          }}
           getItemId={(item) => item.id.toString()}
           renderItem={({ item }) => {
             return (

@@ -1,5 +1,7 @@
 import '@expo/match-media';
 
+export { ResponsiveProvider } from "./devsupport/responsive";
+
 export type {
   Theme,
   ThemeBorderRadius,

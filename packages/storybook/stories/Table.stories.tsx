@@ -90,8 +90,10 @@ const Template: ComponentStory<typeof Table> = (args) => (
       columns={columns}
       getRowId={getRowId}
       accessibilityLabel="Example Table"
-      mobileRowHeight={300}
-      rowHeight={44}
+      rowHeight={{
+        xs: 300,
+        s: 44
+      }}
     />
   </FlexBox>
 );

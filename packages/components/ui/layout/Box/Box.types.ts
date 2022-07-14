@@ -1,6 +1,6 @@
-import { FlexStyle } from "react-native";
+import { FlexStyle, ViewProps } from "react-native";
 
-export type BoxProps = FlexStyle & {
+export type BoxProps = FlexStyle & ViewProps & {
   backgroundColor?: string;
   borderRadius?: number | string;
   horizontal?: boolean;

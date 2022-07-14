@@ -1,3 +1,4 @@
+import { ResponsiveProp } from "../../../types";
 import type { TableCellTextColumnDef } from "./TableCell/variations/TableCellText";
 
 export type ColumnDef<Data extends any> = TableCellTextColumnDef<Data>;
@@ -11,6 +12,5 @@ export interface TableProps<Data extends any> {
   getRowId: (data: Data) => string;
   /** A short accessibility label used to quick describe the table such as `Patient History` */
   accessibilityLabel: string;
-  rowHeight: number;
-  mobileRowHeight: number;
+  rowHeight?: ResponsiveProp<number>;
 }

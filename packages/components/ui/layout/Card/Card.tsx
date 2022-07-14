@@ -11,6 +11,7 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
   return (
     <Styled.Card
       {...props}
+      vertical
       style={{
         shadowColor: "#000",
         shadowOffset: {
@@ -28,7 +29,7 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
         </Styled.CardHeader>
       )}
 
-      <Styled.CardContent>
+      <Styled.CardContent flexBasis="auto" vertical>
         {children}
       </Styled.CardContent>
 

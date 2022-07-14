@@ -34,7 +34,10 @@ const FixedHeightTemplate: ComponentStory<typeof List> = (args) => (
       data={[{ id: 1 }, { id: 2 }]}
       getItemId={(item) => item.id.toString()}
       renderItem={RenderFixedHeightItem}
-      itemHeight={65}
+      itemHeight={{
+        xs: 300,
+        s: 65
+      }}
     />
   </FlexBox>
 );

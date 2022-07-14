@@ -1,40 +1,64 @@
-import React, { useCallback, useState } from "react";
-import { AccessibilityRole, FlatList, LayoutChangeEvent, ListRenderItemInfo } from "react-native";
+import useResponsiveProp from "@zerry-ui/components/hooks/useResponsiveProp";
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import {
+  AccessibilityRole,
+  FlatList,
+  ListRenderItemInfo,
+  View,
+} from "react-native";
 import { FlexBox } from "../../layout/Box";
 import ListItem from "../ListItem";
 import {
   ListProps,
   FixedHeightListProps,
   VariableHeightListProps,
+  ListContextChildrenProps,
+  ListItemInnerProps,
 } from "./List.types";
+import ListContextProvider, { useListContext } from "./ListContext";
+
+function ListItemInner(props: ListItemInnerProps) {
+  const { children, index } = props;
+  const { setSize } = useListContext();
+
+  return (
+    <FlexBox
+      flex={1}
+      onLayout={(e) => setSize(index, e.nativeEvent.layout.height)}
+      data-measure="true"
+    >
+      {children}
+    </FlexBox>
+  );
+}
 
 function List<Data extends any, VariableHeight extends boolean>({
   data,
   renderItem,
-  itemHeight = 50,
+  itemHeight,
   listAccessibilityRole = "list",
   listItemAccessibilityRole = "listitem",
   getItemId,
   initialNumToRender,
 }: ListProps<Data, VariableHeight>) {
-  const [containerWidth, setContainerWidth] = useState(0);
-  const [containerHeight, setContainerHeight] = useState(0);
-
-  const handleLayout = useCallback((event: LayoutChangeEvent) => {
-    setContainerWidth(event.nativeEvent.layout.width);
-    setContainerHeight(event.nativeEvent.layout.height);
-  }, []);
+  const responsiveItemHeight = useResponsiveProp(50, itemHeight);
 
   const renderItemContainer = useCallback(
     (info: ListRenderItemInfo<Data>) => {
       return (
         <ListItem
-          accessibilityRole={listItemAccessibilityRole === null ? undefined : listItemAccessibilityRole}
+          accessibilityRole={
+            listItemAccessibilityRole === null
+              ? undefined
+              : listItemAccessibilityRole
+          }
           paddingHorizontal={0}
           paddingVertical={0}
           width="100%"
         >
-          {renderItem(info)}
+          <ListItemInner index={info.index} itemHeight={responsiveItemHeight}>
+            {renderItem(info)}
+          </ListItemInner>
         </ListItem>
       );
     },
@@ -44,27 +68,38 @@ function List<Data extends any, VariableHeight extends boolean>({
   const handleItemLayout = useCallback(
     (_: Data[] | null | undefined, index: number) => {
       return {
-        length: itemHeight,
-        offset: itemHeight * index,
+        length: responsiveItemHeight,
+        offset: responsiveItemHeight * index,
         index,
       };
     },
-    [itemHeight]
+    [responsiveItemHeight]
   );
 
+  const RenderList = useCallback(({}: ListContextChildrenProps) => {
+    const { getSize } = useListContext();
+    return (
+      <FlatList<Data>
+        data={data}
+        renderItem={renderItemContainer}
+        getItemLayout={(_, index) => {
+          return {
+            length: getSize(index),
+            offset: getSize(index) * index,
+            index,
+          };
+        }}
+        initialNumToRender={initialNumToRender}
+        keyExtractor={getItemId}
+        accessibilityRole={listAccessibilityRole as AccessibilityRole}
+      />
+    );
+  }, []);
+
   return (
-    <FlexBox flex={1} vertical onLayout={handleLayout}>
-      {containerHeight !== 0 && containerWidth !== 0 && (
-        <FlatList<Data>
-          data={data}
-          renderItem={renderItemContainer}
-          getItemLayout={handleItemLayout}
-          initialNumToRender={initialNumToRender}
-          keyExtractor={getItemId}
-          accessibilityRole={listAccessibilityRole as AccessibilityRole}
-        />
-      )}
-    </FlexBox>
+    <ListContextProvider itemHeight={responsiveItemHeight} listRef={undefined}>
+      {RenderList}
+    </ListContextProvider>
   );
 }
 

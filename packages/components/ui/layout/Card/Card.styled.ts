@@ -9,9 +9,8 @@ export const Card = styled(FlexBox)`
     padding: ${({ theme }) => theme.spacing.medium}px;
 `;
 
-
-export const CardContent = styled(Box)`
-    flex: 1;
+export const CardContent = styled(FlexBox)`
+    /* flex: 1; */
 `;
 
 export const CardHeader = styled(Box)`

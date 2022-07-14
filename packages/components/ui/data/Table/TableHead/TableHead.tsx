@@ -1,11 +1,22 @@
-import React from "react";
-import { AccessibilityRole } from "react-native";
+import React, { useMemo } from "react";
+import { AccessibilityRole, ScrollView } from "react-native";
+import { useTheme } from "styled-components/native";
 import { FlexBox } from "../../../layout/Box";
 import TableCell from "../TableCell";
 import TableRow from "../TableRow";
 import { TableHeadProps } from "./TableHead.types";
 
-function TableHead<Data extends any>({ isMinSmallDevice, mobileRowHeight, headerGroups }: TableHeadProps<Data>) {
+function TableHead<Data extends any>({
+  isMinSmallDevice,
+  headerGroups,
+}: TableHeadProps<Data>) {
+  const theme = useTheme();
+  
+  const scrollViewStyle = useMemo(
+    () => ({ flex: 1, backgroundColor: theme.colors.gray.lighter }),
+    [theme]
+  );
+
   if (!isMinSmallDevice) return null;
 
   return (
@@ -15,22 +26,22 @@ function TableHead<Data extends any>({ isMinSmallDevice, mobileRowHeight, header
       flexShrink={0}
       flexBasis="44px"
     >
-      {headerGroups.map((headerGroup, index) => {
-        return (
-          <TableRow
-            key={headerGroup.id}
-            id={headerGroup.id}
-            index={index}
-            isHeader
-            isMinSmallDevice={isMinSmallDevice}
-            mobileRowHeight={mobileRowHeight}
-          >
-            {headerGroup.headers.map((header) => {
-              return <TableCell<Data, any> key={header.id} header={header} />;
-            })}
-          </TableRow>
-        );
-      })}
+      <ScrollView horizontal style={scrollViewStyle}>
+        {headerGroups.map((headerGroup, index) => {
+          return (
+            <TableRow
+              key={headerGroup.id}
+              id={headerGroup.id}
+              index={index}
+              isMinSmallDevice={isMinSmallDevice}
+            >
+              {headerGroup.headers.map((header) => {
+                return <TableCell<Data, any> key={header.id} header={header} />;
+              })}
+            </TableRow>
+          );
+        })}
+      </ScrollView>
     </FlexBox>
   );
 }

@@ -7,7 +7,14 @@ import { LayoutChangeEvent } from "react-native";
 const AnimatedFlexbox = animated(FlexBox);
 
 const AnimatedContent: React.FC<React.PropsWithChildren<AnimatedContentProps>> =
-  ({ setContentHeight, children, animation, id, accessibilityLabelledBy }) => {
+  ({
+    setContentHeight,
+    children,
+    animation,
+    id,
+    accessibilityLabelledBy,
+    contentPadding,
+  }) => {
     return (
       <AnimatedFlexbox
         flex={1}
@@ -20,7 +27,13 @@ const AnimatedContent: React.FC<React.PropsWithChildren<AnimatedContentProps>> =
         accessibilityRole="region"
       >
         <FlexBox
-          padding={12}
+          padding={
+            contentPadding === true
+              ? 12
+              : contentPadding === false
+              ? 0
+              : contentPadding
+          }
           flex={1}
           flexBasis="0%"
           onLayout={(e: LayoutChangeEvent) =>

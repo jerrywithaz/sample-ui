@@ -1,33 +1,35 @@
-import { FlexBox } from "../../../layout/Box";
-import React, { useState } from "react";
+import React from "react";
 import MenuItemLink from "../MenuItemLink";
 import { MenuGroupProps } from "./MenuGroup.types";
-import Menu from "../Menu";
+import Collapse from "../../../data/Collapse";
 
-const MenuGroup: React.FC<MenuGroupProps> = ({ children, title, to, name, icon }) => {
-  const [submenuOpen, setSubmenuOpen] = useState(false);
-
+const MenuGroup: React.FC<MenuGroupProps> = ({
+  children,
+  title,
+  to,
+  name,
+  icon,
+}) => {
   return (
-    <FlexBox vertical>
-      <MenuItemLink
-        title={title}
-        to={to}
-        name={name}
-        paddingVertical={4}
-        paddingHorizontal={4}
-        onPress={() => setSubmenuOpen((submenuOpen) => submenuOpen ? false : true)}
-        icon={icon}
-      />
-      <Menu
-        paddingHorizontal={4}
-        overflow={submenuOpen ? undefined : "hidden"}
-        display={submenuOpen ? "flex" : "none"}
-        flex={undefined}
-        minHeight={1}
-      >
-        {children}
-      </Menu>
-    </FlexBox>
+    <>
+        <Collapse.Panel
+          id={name}
+          accessibilityRole="menuitem"
+          contentPadding="0px 8px"
+          header={
+            <MenuItemLink
+              title={title}
+              to={to}
+              name={name}
+              paddingVertical={4}
+              paddingHorizontal={4}
+              icon={icon}
+            />
+          }
+        >
+          {children}
+        </Collapse.Panel>
+    </>
   );
 };
 

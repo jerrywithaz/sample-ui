@@ -9,4 +9,5 @@ export interface AnimatedContentProps {
     contentHeight: number;
     id: string;
     accessibilityLabelledBy: string;
+    contentPadding: boolean | number | string;
 }

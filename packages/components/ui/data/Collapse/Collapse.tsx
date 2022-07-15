@@ -2,16 +2,10 @@ import React from "react";
 import { FlexBox } from "../../layout/Box";
 import { ICollapse } from "./Collapse.types";
 import Panel from './Panel';
-import { NativeModules } from "react-native";
 
-const { UIManager } = NativeModules;
-
-UIManager.setLayoutAnimationEnabledExperimental &&
-UIManager.setLayoutAnimationEnabledExperimental(true);
-
-const Collapse: ICollapse = ({ children }) => {
+const Collapse: ICollapse = ({ children, accessibilityRole }) => {
     return (
-        <FlexBox vertical flex={1} accessibilityRole="list" padding={0} margin={0}>
+        <FlexBox vertical flex={1} accessibilityRole={accessibilityRole ?? "list"} padding={0} margin={0}>
             {children}
         </FlexBox>
     );

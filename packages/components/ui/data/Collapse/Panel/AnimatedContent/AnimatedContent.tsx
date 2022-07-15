@@ -14,6 +14,7 @@ const AnimatedContent: React.FC<React.PropsWithChildren<AnimatedContentProps>> =
     contentHeight,
     id,
     accessibilityLabelledBy,
+    contentPadding,
   }) => {
     const ref = useRef<View | null>(null);
 
@@ -36,12 +37,22 @@ const AnimatedContent: React.FC<React.PropsWithChildren<AnimatedContentProps>> =
           measured
             ? {
                 height: animation.maxHeight,
-                overflow: "hidden"
+                overflow: "hidden",
               }
             : styles.outscreen,
         ]}
       >
-        <FlexBox ref={ref} padding={12} flex={1}>
+        <FlexBox
+          ref={ref}
+          padding={
+            contentPadding === true
+              ? 12
+              : contentPadding === false
+              ? 0
+              : contentPadding
+          }
+          flex={1}
+        >
           {children}
         </FlexBox>
       </AnimatedFlexbox>

@@ -6,7 +6,14 @@ import { AccessibilityRole, StyleSheet } from "react-native";
 import { useSpring } from "@react-spring/web";
 import AnimatedContent from "./AnimatedContent";
 
-const Panel: React.FC<PanelProps> = ({ children, header, id, defaultOpen = false }) => {
+const Panel: React.FC<PanelProps> = ({
+  children,
+  header,
+  id,
+  defaultOpen = false,
+  accessibilityRole,
+  contentPadding = true
+}) => {
   const [contentHeight, setContentHeight] = useState(0);
   const [open, setOpen] = useState(defaultOpen);
 
@@ -21,13 +28,19 @@ const Panel: React.FC<PanelProps> = ({ children, header, id, defaultOpen = false
   const sectionId = `${id}-section`;
 
   return (
-    <FlexBox vertical flexBasis="auto" accessibilityRole={"listitem" as AccessibilityRole} nativeID={id}>
+    <FlexBox
+      vertical
+      flexBasis="auto"
+      accessibilityRole={accessibilityRole === null ? undefined : accessibilityRole ?? ("listitem" as AccessibilityRole)}
+      nativeID={id}
+    >
       <TouchableWithoutFeedback
         accessibilityRole="button"
         tabIndex={0}
         style={styles.header}
         onPress={handleHeaderPress}
         accessibilityControls={sectionId}
+        aria-expanded={open}
       >
         {header}
       </TouchableWithoutFeedback>
@@ -38,6 +51,7 @@ const Panel: React.FC<PanelProps> = ({ children, header, id, defaultOpen = false
         contentHeight={contentHeight}
         id={sectionId}
         accessibilityLabelledBy={id}
+        contentPadding={contentPadding}
       >
         {children}
       </AnimatedContent>

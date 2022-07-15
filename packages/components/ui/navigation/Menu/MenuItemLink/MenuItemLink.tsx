@@ -4,9 +4,9 @@ import ListItem from "../../../data/ListItem";
 import { MenuItemLinkProps } from "./MenuItemLink.types";
 import Icon from "../../../global/Icon";
 
-const MenuItemLink: React.FC<MenuItemLinkProps> = ({ title, to, name, onPress, icon }) => {
+const MenuItemLink: React.FC<MenuItemLinkProps> = ({ title, to, name, onPress, icon, accessibilityRole }) => {
   return (
-    <ListItem paddingHorizontal={12} paddingVertical={8}>
+    <ListItem paddingHorizontal={12} paddingVertical={8} accessibilityRole={accessibilityRole}>
         {icon && (
             <Icon name={icon} size={20} paddingRight={12} />
         )}

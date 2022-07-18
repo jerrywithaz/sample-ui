@@ -6,6 +6,6 @@ export interface ListItemProps<Data extends any> extends Omit<BoxProps, 'accessi
     description?: string;
     item?: Data;
     style?: ViewStyle;
-    accessibilityRole?: "listitem" | "menuitem" | "row";
+    accessibilityRole?: "listitem" | "menuitem" | "row" | "presentation";
     forwardedRef?: React.Ref<View>
 }

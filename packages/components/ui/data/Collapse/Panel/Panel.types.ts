@@ -7,4 +7,5 @@ export interface PanelProps {
     defaultOpen?: boolean;
     accessibilityRole?: AccessibilityRole | null;
     contentPadding?: boolean | number | string;
+    contentAccessibilityRole?: AccessibilityRole;
 }

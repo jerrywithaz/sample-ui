@@ -15,6 +15,7 @@ const AnimatedContent: React.FC<React.PropsWithChildren<AnimatedContentProps>> =
     id,
     accessibilityLabelledBy,
     contentPadding,
+    contentAccessibilityRole = "region"
   }) => {
     const ref = useRef<View | null>(null);
 
@@ -32,7 +33,7 @@ const AnimatedContent: React.FC<React.PropsWithChildren<AnimatedContentProps>> =
       <AnimatedFlexbox
         nativeID={id}
         accessibilityLabelledBy={accessibilityLabelledBy}
-        accessibilityRole="region"
+        accessibilityRole={contentAccessibilityRole}
         style={[
           measured
             ? {

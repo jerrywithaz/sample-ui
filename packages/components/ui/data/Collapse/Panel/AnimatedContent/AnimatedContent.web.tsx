@@ -14,6 +14,7 @@ const AnimatedContent: React.FC<React.PropsWithChildren<AnimatedContentProps>> =
     id,
     accessibilityLabelledBy,
     contentPadding,
+    contentAccessibilityRole = "region"
   }) => {
     return (
       <AnimatedFlexbox
@@ -24,7 +25,7 @@ const AnimatedContent: React.FC<React.PropsWithChildren<AnimatedContentProps>> =
         style={animation}
         nativeID={id}
         accessibilityLabelledBy={accessibilityLabelledBy}
-        accessibilityRole="region"
+        accessibilityRole={contentAccessibilityRole}
       >
         <FlexBox
           padding={

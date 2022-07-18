@@ -9,5 +9,6 @@ export interface IndexPath {
 
 export interface MenuProps extends BoxProps {
   onSelect?: () => void;
-  children?: React.ReactElement<MenuItemProps | MenuGroupProps> | React.ReactElement<MenuItemProps | MenuGroupProps>[]
+  children?: React.ReactElement<MenuItemProps | MenuGroupProps> | React.ReactElement<MenuItemProps | MenuGroupProps>[];
+  name: string;
 }

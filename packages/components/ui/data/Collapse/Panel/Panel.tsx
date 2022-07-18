@@ -12,7 +12,8 @@ const Panel: React.FC<PanelProps> = ({
   id,
   defaultOpen = false,
   accessibilityRole,
-  contentPadding = true
+  contentPadding = true,
+  contentAccessibilityRole
 }) => {
   const [contentHeight, setContentHeight] = useState(0);
   const [open, setOpen] = useState(defaultOpen);
@@ -52,6 +53,7 @@ const Panel: React.FC<PanelProps> = ({
         id={sectionId}
         accessibilityLabelledBy={id}
         contentPadding={contentPadding}
+        contentAccessibilityRole={contentAccessibilityRole ?? "region" as AccessibilityRole}
       >
         {children}
       </AnimatedContent>

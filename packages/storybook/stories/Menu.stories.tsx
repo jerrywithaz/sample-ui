@@ -11,7 +11,7 @@ export default {
 const Template: ComponentStory<typeof Menu> = (args) => (
   <NavigationContainer memoryRouter>
     <FlexBox flex={1} vertical width={300}>
-      <Menu>
+      <Menu name="Sidebar Menu">
         <MenuItem title="Home" to="/" name="Home" icon="home" />
         <MenuItem title="Dashboard" to="/dashboard" name="Dashboard" icon="dashboard" />
         <MenuItem title="Profile" to="/profile" name="Home" icon="user" />

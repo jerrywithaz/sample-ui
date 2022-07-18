@@ -4,13 +4,13 @@ import ListItem from "../../../data/ListItem";
 import { MenuItemLinkProps } from "./MenuItemLink.types";
 import Icon from "../../../global/Icon";
 
-const MenuItemLink: React.FC<MenuItemLinkProps> = ({ title, to, name, onPress, icon, accessibilityRole }) => {
+const MenuItemLink: React.FC<MenuItemLinkProps> = ({ title, to, name, onPress, icon }) => {
   return (
-    <ListItem paddingHorizontal={12} paddingVertical={8} accessibilityRole={accessibilityRole}>
+    <ListItem paddingHorizontal={12} paddingVertical={8} accessibilityRole="presentation">
         {icon && (
             <Icon name={icon} size={20} paddingRight={12} />
         )}
-      <Link to={to} name={name} onPress={onPress} fontSize="medium" fontWeight={600}>
+      <Link to={to} name={name} onPress={onPress} fontSize="medium" fontWeight={600} accessibilityRole="menuitem">
         {title}
       </Link>
     </ListItem>

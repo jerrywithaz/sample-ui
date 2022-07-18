@@ -1,3 +1,4 @@
+import { AccessibilityRole } from "react-native";
 import { ThemeFontWeightKey } from "../../../theme";
 import { TextProps } from "../../global/Text";
 
@@ -9,4 +10,5 @@ export interface LinkProps {
     onPress?: () => void;
     fontSize?: TextProps['fontSize'];
     fontWeight?: ThemeFontWeightKey;
+    accessibilityRole?: AccessibilityRole;
 }

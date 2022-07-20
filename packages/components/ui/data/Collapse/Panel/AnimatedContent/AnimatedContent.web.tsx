@@ -14,13 +14,12 @@ const AnimatedContent: React.FC<React.PropsWithChildren<AnimatedContentProps>> =
     id,
     accessibilityLabelledBy,
     contentPadding,
-    contentAccessibilityRole = "region"
+    contentAccessibilityRole = "region",
   }) => {
     return (
       <AnimatedFlexbox
         flex={1}
         vertical
-        maxHeight={0}
         overflow="hidden"
         style={animation}
         nativeID={id}

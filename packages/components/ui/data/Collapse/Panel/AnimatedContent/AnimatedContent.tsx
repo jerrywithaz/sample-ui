@@ -15,7 +15,7 @@ const AnimatedContent: React.FC<React.PropsWithChildren<AnimatedContentProps>> =
     id,
     accessibilityLabelledBy,
     contentPadding,
-    contentAccessibilityRole = "region"
+    contentAccessibilityRole = "region",
   }) => {
     const ref = useRef<View | null>(null);
 

@@ -13,7 +13,8 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "deploy": "gh-pages -b deploy -d web-build",
-    "predeploy": "rm -rf web-build && expo build:web"
+    "predeploy": "rm -rf web-build && expo build:web",
+    "publish:dev": "expo publish --release-channel development"
   },
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
